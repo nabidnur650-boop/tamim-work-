@@ -1,0 +1,119 @@
+protocol_id: boichitro_q1_v1
+stage_s_schedule_selection: reports/model/stage_s_retention_pilot_selection.json
+seeds: [1701, 2903, 4307]
+variants:
+  M0:
+    base_checkpoint: runs/U_M0_DENSE_200M/1701/final_checkpoint.pt
+    groupdro: true
+  M1:
+    base_checkpoint: runs/U_M1_SWITCH_200M/1701/final_checkpoint.pt
+    groupdro: false
+  M2:
+    base_checkpoint: runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt
+    groupdro: false
+  M3:
+    base_checkpoint: runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt
+    groupdro: true
+
+stage_a:
+  token_budget: 12000000
+  mixture:
+    general_replay: 0.65
+    dialect_clm: 0.20
+    normalization: 0.10
+    romanized: 0.05
+  trainer:
+    epochs: 1
+    micro_batch_size: 32
+    gradient_accumulation_steps: 64
+    muon_lr: 0.01
+    adamw_lr: 0.00015
+    router_lr: 0.0002
+    weight_decay: 0.10
+    warmup_fraction: 0.05
+    min_lr_ratio: 0.10
+    gradient_clip: 1.0
+    groupdro_eta: 0.01
+    groupdro_uniform_mix: 0.10
+    groupdro_max_ratio: 10.0
+    adversary_ramp_fraction: 0.10
+    num_workers: 2
+    log_every_steps: 10
+    early_stopping_patience: 1
+    save_optimizer_state: false
+
+stage_s:
+  token_budget: 6000000
+  mixture:
+    normalization: 0.30
+    identification: 0.20
+    dialect_clm: 0.10
+    general_replay: 0.35
+    romanized: 0.05
+  trainer:
+    epochs: 1
+    micro_batch_size: 64
+    gradient_accumulation_steps: 16
+    muon_lr: 0.002
+    adamw_lr: 0.00003
+    router_lr: 0.00005
+    weight_decay: 0.10
+    warmup_fraction: 0.05
+    min_lr_ratio: 0.10
+    gradient_clip: 1.0
+    groupdro_eta: 0.01
+    groupdro_uniform_mix: 0.10
+    groupdro_max_ratio: 10.0
+    adversary_ramp_fraction: 0.10
+    num_workers: 2
+    log_every_steps: 10
+    validation_checkpoints: 6
+    early_stopping_patience: 1
+    selection_metric: objective
+    selection_mode: max
+    save_optimizer_state: false
+    retain_last_checkpoint: false
+
+stage_id:
+  trainer:
+    epochs: 20
+    micro_batch_size: 128
+    gradient_accumulation_steps: 4
+    muon_lr: 0.004
+    adamw_lr: 0.0001
+    router_lr: 0.00015
+    weight_decay: 0.10
+    warmup_fraction: 0.05
+    min_lr_ratio: 0.10
+    gradient_clip: 1.0
+    adversary_ramp_fraction: 0.10
+    num_workers: 2
+    log_every_steps: 20
+    validate_every_epochs: 1
+    early_stopping_patience: 4
+    selection_metric: objective
+    selection_mode: max
+    selection_tolerance: 0.002
+    selection_tie_breaker: ece_15
+    selection_tie_mode: min
+    save_optimizer_state: false
+    retain_last_checkpoint: false
+
+evaluation:
+  normalization_batch_size: 32
+  normalization_max_new_tokens: 96
+  identification_batch_size: 256
+  replay_validation_examples: 2048
+  replay_degradation_limit: 0.05
+  test_access: forbidden_during_training
+
+artifact_retention:
+  # Stage A is a deterministic branch point. Once every requested child is
+  # complete and Stage S passes the replay guard, selected Stage-S/ID weights,
+  # all logs, hashes, manifests, and validation predictions are retained while
+  # the reconstructable branch-point tensor file can be retired.
+  discard_stage_a_after_completed_branches: true
+  stage_a_pins:
+    - protocol_id: boichitro_q1_v1
+      variant: M3
+      reason: required as the registered source for M3B bidirectional specialization

@@ -1,0 +1,14 @@
+protocol_id: boichitro_data_v1_native_review
+input: reports/HUMAN_NATIVE_REVIEW_SAMPLE.csv
+minimum_unique_reviewers: 3
+thresholds:
+  overall_mean_dialect_authenticity: 3.8
+  overall_mean_target_adequacy: 4.0
+  overall_mean_target_fluency: 4.0
+  overall_label_accuracy: 0.95
+  per_dialect_mean_dialect_authenticity: 3.3
+  per_dialect_mean_target_adequacy: 3.5
+  per_dialect_mean_target_fluency: 3.5
+  per_dialect_label_accuracy: 0.85
+  maximum_unsafe_or_pii_flags: 0
+policy_on_failure: frozen_v1_not_modified_create_reviewed_v2_and_rerun_if_needed

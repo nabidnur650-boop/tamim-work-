@@ -1,0 +1,16 @@
+protocol_id: boichitro_inference_benchmark_v1
+task_protocol_id: boichitro_q1_v1
+seed: 1701
+variants: [M0, M1, M2, M3]
+normalization:
+  validation_frame: data/final/v1/normalization_validation.parquet
+  examples: 128
+  warmup_examples: 8
+  max_new_tokens: 64
+  batch_sizes: [1, 32]
+identification:
+  validation_cache: cache/tasks/identification_validation.pt
+  examples: 2048
+  warmup_examples: 32
+  batch_sizes: [1, 256]
+test_access: forbidden

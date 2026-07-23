@@ -1,0 +1,25 @@
+protocol_id: locked_external_test_v1
+protocol_freeze_id: locked_test_v1
+baseline_config: configs/external_model_baselines.yaml
+normalization:
+  batch_size: 32
+  max_new_tokens: 96
+  tracks:
+    iid:
+      frame: data/final/v1/normalization_test_iid.parquet
+    source_ood:
+      frame: data/final/v1/normalization_test_ood.parquet
+      exclude_dialects: [RAJ]
+    zero_shot_raj:
+      frame: data/final/v1/normalization_test_ood.parquet
+      include_dialects: [RAJ]
+    romanized_ood:
+      frame: data/final/v1/romanized_test_ood.parquet
+identification:
+  batch_size: 256
+  frame: data/final/v1/identification_evaluation.parquet
+  tracks:
+    iid: test
+    source_ood: test_ood
+    external: test_external
+test_policy: one_scripted_evaluation_per_frozen_external_checkpoint

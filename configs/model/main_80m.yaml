@@ -1,0 +1,30 @@
+model:
+  max_seq_len: 1024
+  n_layers: 16
+  d_model: 512
+  n_heads: 8
+  n_kv_heads: 2
+  dense_ffn_dim: 2304
+  dropout: 0.0
+  rope_theta: 10000.0
+  rms_norm_eps: 0.000001
+  qk_norm: true
+  tie_embeddings: true
+  dense_prefix_layers: 4
+  n_routed_experts: 8
+  expert_dim: 768
+  top_k: 2
+  shared_expert: true
+  dynamic_bias_update_rate: 0.001
+  banked_upcycle_fraction: 0.02
+  use_grouped_gemm: true
+  use_mtp: true
+optimizer:
+  muon_lr: 0.02
+  adamw_lr: 0.0003
+  router_lr: 0.0002
+  weight_decay: 0.10
+  warmup_fraction: 0.02
+  min_lr_ratio: 0.10
+  gradient_clip: 1.0
+  precision: bfloat16

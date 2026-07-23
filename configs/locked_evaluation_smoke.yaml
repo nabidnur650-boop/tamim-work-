@@ -1,0 +1,28 @@
+protocol_id: smoke_locked_test
+task_protocol_id: smoke_task_pipeline
+normalization:
+  batch_size: 4
+  max_new_tokens: 4
+  max_examples: 8
+  tracks:
+    iid:
+      frame: data/final/v1/normalization_test_iid.parquet
+      cache: cache/tasks/normalization_test_iid.pt
+    source_ood:
+      frame: data/final/v1/normalization_test_ood.parquet
+      cache: cache/tasks/normalization_test_ood.pt
+    romanized_ood:
+      frame: data/final/v1/romanized_test_ood.parquet
+      cache: cache/tasks/normalization_romanized_test_ood.pt
+identification:
+  batch_size: 16
+  max_examples: 16
+  tracks:
+    iid: cache/tasks/identification_test_iid.pt
+    source_ood: cache/tasks/identification_test_ood.pt
+    external: cache/tasks/identification_test_external.pt
+routing:
+  examples_per_track: 4
+  batch_size: 4
+  tracks: [normalization_source_ood, identification_source_ood]
+test_policy: smoke_only_not_scientific_evidence

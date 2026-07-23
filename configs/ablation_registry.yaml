@@ -1,0 +1,32 @@
+core_factorial:
+  protocol_id: boichitro_factorial_pilot_v1
+  seed: 1701
+  variant: M3
+  stage_a_token_budget: 5000000
+  stage_s_token_budget: 1000000
+  factors:
+    lexical_prior: no_lexical_prior
+    dialect_auxiliary_head: no_dialect_head
+    source_adversary: no_source_adversary
+    task_conditioning: no_task_conditioning
+confirmatory:
+  protocol_id: boichitro_confirmatory_ablation_v1
+  seeds: [1701, 2903, 4307]
+  variant: M3
+  ablations:
+    - [no_lexical_prior]
+    - [no_dialect_head]
+    - [no_source_adversary]
+    - [no_task_conditioning]
+    - [randomized_lexical_prior]
+    - [no_groupdro]
+    - [no_synthetic]
+    - [no_general_replay]
+optimization:
+  protocol_id: boichitro_optimization_ablation_v1
+  seeds: [1701, 2903, 4307]
+  variant: M3
+  ablations:
+    - [adamw_only]
+    - [no_mtp]
+test_access: forbidden

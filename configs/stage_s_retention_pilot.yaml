@@ -1,0 +1,71 @@
+protocol_id: boichitro_stage_s_retention_pilot_v1
+development_variant: M0
+development_seed: 1701
+stage_a_checkpoint: runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_a/last_checkpoint.pt
+rejected_default_stage_s: runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_s
+token_budget: 6000000
+validation_checkpoints: 6
+normalization_validation_limit: null
+replay_validation_examples: 2048
+replay_degradation_limit: 0.05
+selection:
+  primary: validation_macro_chrfpp
+  constraint: replay_relative_degradation_lte_0.05
+  tie_breakers:
+    - validation_worst_dialect_chrfpp
+    - lower_replay_relative_degradation
+    - lexical_candidate_id
+  test_data_access: forbidden
+
+# These schedules are fixed before the pilot is run. They use the same Stage-A
+# tensor, data order seed, 6M-token budget, validation examples, and GroupDRO
+# configuration. Only the declared optimizer rates and replay/task mixture vary.
+candidates:
+  - id: ret25_balanced
+    rationale: Threefold lower mature-checkpoint rates with 25% replay.
+    mixture:
+      normalization: 0.40
+      identification: 0.20
+      dialect_clm: 0.10
+      general_replay: 0.25
+      romanized: 0.05
+    optimizer:
+      muon_lr: 0.002
+      adamw_lr: 0.000030
+      router_lr: 0.000050
+  - id: ret25_conservative
+    rationale: Sixfold lower mature-checkpoint rates with 25% replay.
+    mixture:
+      normalization: 0.40
+      identification: 0.20
+      dialect_clm: 0.10
+      general_replay: 0.25
+      romanized: 0.05
+    optimizer:
+      muon_lr: 0.001
+      adamw_lr: 0.000015
+      router_lr: 0.000025
+  - id: ret35_balanced
+    rationale: Threefold lower mature-checkpoint rates with 35% replay.
+    mixture:
+      normalization: 0.30
+      identification: 0.20
+      dialect_clm: 0.10
+      general_replay: 0.35
+      romanized: 0.05
+    optimizer:
+      muon_lr: 0.002
+      adamw_lr: 0.000030
+      router_lr: 0.000050
+  - id: ret35_conservative
+    rationale: Sixfold lower mature-checkpoint rates with 35% replay.
+    mixture:
+      normalization: 0.30
+      identification: 0.20
+      dialect_clm: 0.10
+      general_replay: 0.35
+      romanized: 0.05
+    optimizer:
+      muon_lr: 0.001
+      adamw_lr: 0.000015
+      router_lr: 0.000025

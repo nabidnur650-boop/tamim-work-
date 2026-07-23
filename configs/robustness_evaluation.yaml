@@ -1,0 +1,18 @@
+protocol_id: locked_robustness_v1
+base_protocol_id: locked_test_v1
+task_protocol_id: boichitro_q1_v1
+locked_evaluation_config: configs/locked_evaluation.yaml
+families: [grapheme_deletion, adjacent_swap, whitespace_noise]
+severities: [0.00, 0.05, 0.10, 0.20]
+perturbation_seed: 77191
+sampling_seed: 55021
+examples_per_dialect: 80
+normalization_frame: data/final/v1/normalization_test_iid.parquet
+identification_frame: data/final/v1/identification_evaluation.parquet
+normalization_batch_size: 32
+normalization_max_new_tokens: 96
+identification_batch_size: 256
+primary_curves:
+  normalization: macro_chrfpp
+  identification: regional_macro_f1
+sampling_policy: per_dialect_bottom_sha256_row_id

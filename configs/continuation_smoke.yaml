@@ -1,0 +1,32 @@
+run_id: SMOKE_U_M2
+seed: 1701
+architecture: standard_moe
+initial_checkpoint: runs/SMOKE_F_DENSE/1701/final_checkpoint.pt
+upcycle_noise_std: 0.0
+packed_data: cache/pretraining_smoke5_packed
+token_budget: 8192
+validation_token_cap: 4096
+micro_batch_size: 2
+gradient_accumulation_steps: 2
+global_token_batch: 512
+warmup_fraction: 0.05
+eval_every_tokens: 4096
+checkpoint_every_tokens: 4096
+log_every_optimizer_steps: 4
+resume_checkpoint_every_steps: 4
+model_config: configs/model/smoke.yaml
+model_overrides:
+  dense_prefix_layers: 1
+  n_routed_experts: 4
+  expert_dim: 128
+  top_k: 2
+  shared_expert: true
+fixed_token_budget: true
+test_data_access: forbidden
+optimizer:
+  muon_lr: 0.02
+  adamw_lr: 0.0003
+  router_lr: 0.0002
+  weight_decay: 0.10
+  min_lr_ratio: 0.10
+  gradient_clip: 1.0

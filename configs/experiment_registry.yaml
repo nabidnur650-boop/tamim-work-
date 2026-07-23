@@ -1,0 +1,619 @@
+registry_version: "1.2.0"
+study_id: boichitro_moe_q1_v1
+created_on: "2026-07-19"
+status: dataset_v1_internal_training_ready_native_review_required
+
+objective:
+  primary_task: source_blind_dialect_to_standard_bangla_normalization
+  primary_comparison: M3_BOICHITRO_vs_M2_STANDARD_MOE
+  primary_endpoint: macro_chrfpp_locked_source_ood_five_trained_dialects
+  secondary_endpoint: macro_chrfpp_locked_eight_dialect_iid
+  zero_shot_endpoint: macro_chrfpp_locked_raj_no_normalization_training
+  auxiliary_task: source_robust_dialect_identification
+  claim_scope: upcycling_and_specialization_from_a_shared_dense_foundation
+
+source_archives:
+  raw:
+    filename: archive(1).zip
+    sha256: 09261dc5eec4cb0c57cf2c6b21f9003ab1acadc21253d9b8c86d2e837aa9e83c
+    member_count: 37
+    policy: canonical_read_only
+  derived:
+    filename: archive (1).zip
+    sha256: 96a1c3c3114c622280809057e7acbade6960dee1b5dbf71414b1b75b53bacf12
+    member_count: 3
+    policy: quarantined_ablation_only
+
+local_data:
+  aligned_rows: 22364
+  unique_dialect_tagged_pairs: 22345
+  normalization_dialects:
+    - BAR
+    - CHI
+    - KHU
+    - MYM
+    - NAR
+    - NOA
+    - RAN
+    - SYL
+  identification_labels_conditional:
+    - BAR
+    - CHI
+    - KHU
+    - KIS
+    - MYM
+    - NAR
+    - NOA
+    - NSD
+    - RAJ
+    - RAN
+    - SYL
+    - TAN
+    - STD
+  protected_sources:
+    - Vashantor_validation
+    - Vashantor_test
+    - every_connected_parent_or_child
+  duplicate_exclusions:
+    - Vashantor_JSON
+    - BanglaDial_XLSX
+    - Regional_cleaned_dataset_XLSX
+
+data_manifests:
+  canonical_rows:
+    path: data/manifests/canonical_rows.parquet
+    sha256: 5d08f70340ac8ebd8672a0046067ad0286d866f8bedf7720a568979aada0442d
+    rows: 180276
+  connected_components:
+    path: data/manifests/semantic_components.parquet
+    sha256: 37a4fde74f11893af0e39fcecb8861802b56abc969863dab7b145ebb643f0aca
+    rows: 151292
+  exclusions:
+    path: data/manifests/excluded_rows.parquet
+    sha256: d1edcff83b2a015476405febae16fdcca49211fd90c4a5133f4d84e0bd55a6cf
+    rows: 137386
+  split_manifest:
+    path: data/manifests/splits_v1.parquet
+    sha256: a3a014de498a62a14cd7095257bbf1a18fb5e01f1e7b3599f3c66be8375baf99
+    rows: 180276
+  license_ledger:
+    path: data/manifests/licenses.yaml
+    sha256: 04694367df584c6d83446a35cf868d89cec02ee6ade7c8cdb01e133a9dd5b47a
+  gate_status:
+    path: reports/data_gate.json
+    required_value: pass
+
+dataset_release:
+  version: boichitro_data_v1.0.0
+  status: PASS_INTERNAL_DATA_ENGINEERING
+  publication_status: CONDITIONAL_NATIVE_REVIEW_REQUIRED
+  training_authorized: true
+  public_redistribution_authorized: false
+  normalization_authentic_rows: 54598
+  normalization_synthetic_train_rows: 3325
+  normalization_all_rows: 57923
+  identification_rows: 122353
+  romanized_ood_rows: 1342
+  tokenizer_unique_train_texts: 100236
+  label_interpretation: 12_regional_plus_standard_equals_13
+  dataset_card: data/final/v1/DATASET_CARD.md
+  final_report: reports/final_dataset_report.json
+  native_review_sheet: reports/HUMAN_NATIVE_REVIEW_SAMPLE.csv
+
+preliminary_manifests:
+  status: RED_REMAINING_GATES
+  canonical_rows:
+    path: data/manifests/canonical_rows_preliminary.parquet
+    sha256: df28845a6a6347250b85fe70e2ca6e0a4fd704cc34ea62f948811b666bc8fcf2
+    rows: 136768
+  exact_components:
+    path: data/manifests/exact_components_preliminary.parquet
+    sha256: ee0623e82d07bb26b628a791e7ebb85f1838cd311fa45b5f9c683c28fb33f0f9
+    rows: 109174
+  quarantined_rows:
+    path: data/manifests/quarantined_rows_preliminary.parquet
+    sha256: 0fd232ff9b8f00faf6e8018a53bb139844424c82f9b79a6b1cd47f573e862764
+    rows: 51101
+  blocked_rows:
+    path: data/manifests/blocked_rows_preliminary.parquet
+    sha256: b8e0785655a538ff01fa4aad5964b6072ca0d61ea58389c8532852ab36d5e16b
+  precheck_report:
+    path: reports/data_gate_precheck.json
+  training_authorized: false
+
+protocols:
+  N_IID:
+    task: normalization
+    split: connected_group_source_stratified
+    vashantor_policy: preserve_official_roles_then_remove_connected_overlap
+    unsplit_source_ratio: [0.80, 0.10, 0.10]
+  N_LOSO:
+    task: normalization
+    folds:
+      - [BAR, Vashantor, BanglaRegionalTextCorpus]
+      - [CHI, Vashantor, ChatgaiyyaAlap]
+      - [SYL, Vashantor, Sylheti1200]
+  N_OOD:
+    task: normalization
+    locked: true
+    sources: [onubad_v2, bd_dialect_v2]
+    dialects: [BAR, CHI, MYM, NOA, RAJ, SYL]
+    rows: 8979
+    tracks: [sentence, phrase, lexical]
+  ID_IID:
+    task: identification
+    split: connected_group_source_stratified
+  ID_LOSO:
+    task: identification
+    eligible_only_if_sources_at_least: 2
+  ID_OOD:
+    task: identification
+    locked: true
+    source_ood_rows: 6803
+    external_transcript_rows: 1151
+    note: label coverage differs by external source and is macro-reported only over eligible labels
+
+seed_sets:
+  pilot: [1701]
+  main: [1701, 2903, 4307]
+  cheap: [1701, 2903, 4307, 5501, 6703]
+  bootstrap: 91173
+  perturbation: 72119
+
+tokenizer:
+  training_corpus: data/manifests/tokenizer_train_v1.parquet
+  training_corpus_sha256: 59ca69a87bd160732a6a7bf4b2f90e2537976f4b7d93b0567dca659a56b1f22f
+  training_corpus_rows: 100236
+  heldout_excluded: true
+  special_tokens:
+    - "<pad>"
+    - "<unk>"
+    - "<bos>"
+    - "<eos>"
+    - "<sep>"
+    - "<mask>"
+    - "<cls>"
+    - "<task_norm>"
+    - "<task_id>"
+    - "<task_clm>"
+    - "<dial_unknown>"
+  families:
+    - clean_rebuilt_custom_wordpiece
+    - sentencepiece_unigram
+    - byte_fallback_bpe
+    - diatok_bn
+  vocab_sizes: [16000, 24000, 32000]
+  intrinsic_build_count: 12
+  proxy_shortlist_count: 4
+  proxy_short_budget_tokens: 25000000
+  finalist_count: 2
+  finalist_budget_tokens: 75000000
+  finalist_seeds: [1701, 2903, 4307]
+  freeze_rule:
+    global_bpc_relative_to_best_max: 1.01
+    median_sequence_length_relative_to_best_max: 1.05
+    final_objective: minimum_worst_dialect_bpc
+  selected_id: wordpiece_natural_32k
+  selected_sha256: 0b7ed9de33aedc6c6271a7b8e7b6317d86f22a2f4a0f9c3a7d3fb3723245d512
+  frozen_path: artifacts/tokenizers/frozen
+  selection_evidence: reports/tokenizer/tokenizer_proxy_summary.csv
+  selection_seeds: [1701, 2903, 4307]
+  proxy_tokens_per_candidate_seed: 2000000
+
+architecture:
+  common:
+    type: decoder_only
+    layers: 16
+    hidden_size: 512
+    query_heads: 8
+    kv_heads: 2
+    head_dim: 64
+    context_length: 1024
+    dense_ffn_width: 2304
+    activation: swiglu
+    norm: rmsnorm
+    qk_norm: true
+    position: rope
+    tied_embeddings: true
+  moe:
+    dense_prefix_layers: 4
+    moe_layers: 12
+    shared_experts_per_layer: 1
+    routed_experts_per_layer: 8
+    expert_width: 768
+    routed_top_k: 2
+    shared_always_active: true
+    softmax_before_topk: true
+    dropless_single_gpu: true
+    load_balance: auxiliary_loss_free_dynamic_bias
+  proposed_router:
+    layers_5_to_8:
+      causal_dialect_evidence_prior: train_only_annealed
+      task_conditioning: false
+    layers_9_to_12:
+      causal_dialect_evidence_prior: false
+      task_conditioning: false
+    layers_13_to_16:
+      causal_dialect_evidence_prior: false
+      task_conditioning: true
+    dialect_head: true
+    source_head: gradient_reversal
+    gold_dialect_at_inference: false
+
+optimizer:
+  hybrid:
+    matrix_optimizer: muon
+    residual_optimizer: adamw
+    muon_parameter_families:
+      - attention_2d_weights
+      - dense_ffn_2d_weights
+      - shared_expert_2d_weights
+      - routed_expert_2d_weights
+    adamw_parameter_families:
+      - embeddings
+      - tied_output
+      - norms
+      - biases
+      - routers
+      - task_embeddings
+      - auxiliary_heads
+      - mtp_heads
+    ownership_assertions:
+      exactly_one_optimizer: true
+      no_missing_parameter: true
+      no_duplicate_parameter: true
+  initial_search_space:
+    muon_lr: [0.01, 0.02, 0.03]
+    adamw_lr: [0.0002, 0.0003, 0.0005]
+    router_lr: [0.0001, 0.0002, 0.0003]
+    weight_decay: [0.05, 0.10]
+    warmup_fraction: [0.02, 0.05]
+    gradient_clip: [1.0, adaptive_group]
+  hybrid_selected:
+    foundation_muon_lr: 0.02
+    foundation_adamw_lr: 0.0003
+    task_rates: configs/task_experiments.yaml
+    task_stage_s_muon_lr: 0.002
+    task_stage_s_adamw_lr: 0.00003
+    task_stage_s_router_lr: 0.00005
+    task_stage_s_selection_report: reports/model/stage_s_retention_pilot_selection.json
+    basis: validation_selected_replay_guarded_retention_pilot
+  adamw_only_control_selection:
+    protocol: configs/optimizer_pilot.yaml
+    candidates: [0.00005, 0.00010, 0.00020, 0.00030]
+    selection: validation_macro_chrfpp_subject_to_replay_guard
+    test_access: forbidden
+  mature_checkpoint_continuation_selection:
+    protocol: configs/continuation_lr_pilot.yaml
+    candidates_muon_lr: [0.001, 0.002, 0.005, 0.010]
+    proportional_adamw_lr: [0.000015, 0.000030, 0.000075, 0.000150]
+    budget_per_candidate: 10000000
+    scheduler_horizon: 200000000
+    warmup_restart: false
+    stability_guard: no_final_validation_bpc_regression
+    selection: minimum_final_validation_bpc_among_stable_candidates
+    trigger: rejected_0.02_muon_restart_validation_regression
+    test_access: forbidden
+
+training_stages:
+  F_DENSE_FOUNDATION:
+    model: M0_DENSE
+    recommended_tokens: [1000000000, 1500000000]
+    minimum_tokens: 300000000
+    global_token_batch_target: 262144
+    eval_every_tokens: 25000000
+    checkpoint_every_tokens: 50000000
+    selection: fixed_budget
+  U_MOE_CONTINUATION:
+    source_checkpoint: F_DENSE_FOUNDATION
+    tokens: [200000000, 300000000]
+    global_token_batch_target: 131072
+    eval_every_tokens: 10000000
+    routing_topology: validation_selected_complementary_expert_bank_top2
+    upcycling_selection_report: reports/model/upcycling_strategy_selection.json
+    optimizer_schedule: validation_selected_mature_checkpoint_lr_without_warmup_restart
+  A_DIALECT_ADAPT:
+    tokens: 12000000
+    global_token_batch_target: 65536
+    authentic_repeat_cap: 5
+    mixture:
+      general_bangla_replay: 0.65
+      authentic_dialect: 0.20
+      aligned_normalization: 0.10
+      real_romanized_or_code_mixed: 0.05
+  S_MULTITASK:
+    maximum_effective_pair_passes: 8
+    approximate_maximum_tokens: 6000000
+    global_token_batch_target: [16384, 32768]
+    validation_checkpoints: 6
+    selection: validation_macro_chrfpp_subject_to_general_replay_degradation_lte_0.05
+    selection_report: reports/model/stage_s_retention_pilot_selection.json
+    mixture:
+      source_blind_normalization: 0.30
+      identification: 0.20
+      dialect_clm: 0.10
+      standard_bangla_replay: 0.35
+      romanized_or_noise: 0.05
+  ID_BIDIRECTIONAL:
+    source_checkpoint: A_DIALECT_ADAPT
+    mntp_tokens: [5000000, 10000000]
+    attention: bidirectional
+    supervised_contrastive: true
+
+upcycling_recovery_pilot:
+  development_only: true
+  seed: 1701
+  matched_data_seed: 2903
+  tokens_per_condition: 20000000
+  validation_every_tokens: 5000000
+  banked_constraint_tokens: 4000000
+  conditions:
+    - matched_20m_banked_upcycle
+    - identical_upcycle_without_bank_constraint
+    - standard_moe_from_scratch
+    - annealed_cross_bank_release
+    - permanent_complementary_bank_routing
+  guards:
+    maximum_transient_validation_bpc_regression_percent: 0.5
+    maximum_final_validation_bpc_regression_percent: 0.0
+  selected_strategy: permanent_paired_bank
+  selection_basis: validation_only_fixed_before_main_200m_continuation
+  test_access: forbidden
+
+model_runs:
+  confirmatory:
+    - id: M0_DENSE
+      architecture: common_dense
+      robustness: groupdro_control
+      optimizer: hybrid
+      seeds: main
+    - id: M1_SWITCH
+      architecture: top1_no_shared
+      robustness: none
+      optimizer: hybrid
+      seeds: main
+    - id: M2_STANDARD_MOE
+      architecture: shared_top2_loss_free_complementary_bank_routing
+      robustness: none
+      optimizer: hybrid
+      seeds: main
+    - id: M3_BOICHITRO
+      architecture: shared_top2_staged_router
+      robustness: source_adversary_groupdro
+      optimizer: hybrid
+      seeds: main
+    - id: M4_TOTAL_MATCH_DENSE
+      architecture: total_parameter_matched_dense
+      robustness: groupdro_control
+      optimizer: hybrid
+      seeds: main
+      optional_if_compute: true
+
+normalization_baselines:
+  - id: N_COPY
+    seeds: none
+    input_contract: source_text_only
+  - id: N_WORD_REWRITE_INFERRED_SUPPORTED_DIALECT
+    seeds: none
+    input_contract: source_text_only
+    dialect_signal: frozen_character_svm_argmax_over_normalization_supported_labels
+  - id: N_WORD_REWRITE_ORACLE_GOLD_DIALECT
+    seeds: none
+    reporting_role: diagnostic_oracle_only
+    confirmatory_comparator: false
+  - id: N_NEURAL_REWRITE_SELECTOR_V2
+    seeds: main
+    reporting_role: separate_validation_selected_system_view
+    inference_contract: source_text_and_candidate_outputs_only
+    cross_validation_group: semantic_group_id
+    development_inference: selection_conditioned_exploratory
+    source_ood_architectural_comparator: false
+  - id: N_CHAR_REWRITE
+    seeds: cheap
+  - id: N_BANGLAT5_SMALL
+    seeds: main
+  - id: N_MT5_SMALL
+    seeds: main
+  - id: N_MBART50
+    seeds: main
+    optional_if_compute: true
+  - id: N_NLLB200_600M
+    seeds: main
+    optional_if_compute: true
+
+identification_baselines:
+  - id: ID_MAJORITY
+    seeds: none
+  - id: ID_CHAR_SVM
+    seeds: cheap
+  - id: ID_NEURAL_CHAR_SVM_BLEND
+    seeds: main
+    reporting_role: separate_validation_selected_system_view
+    source_ood_architectural_comparator: false
+  - id: ID_CHAR_TFIDF_SGD
+    seeds: cheap
+  - id: ID_BANGLABERT_MIT
+    model_id: sagorsarker/bangla-bert-base
+    revision: 875aa80a42ec196c16bd931ae5d85ad949f58b16
+    license: MIT
+    seeds: main
+  - id: ID_XLMR_BASE
+    seeds: main
+  - id: ID_M0_CAUSAL
+    seeds: main
+  - id: ID_M2_CAUSAL
+    seeds: main
+  - id: ID_M3_CAUSAL
+    seeds: main
+  - id: ID_M3_BIDIRECTIONAL
+    seeds: main
+
+pilot_factorial:
+  id_prefix: PF_ROUTER
+  checkpoint: pilot_shared_checkpoint
+  adaptation_tokens: 5000000
+  seed_set: pilot
+  full_factorial:
+    causal_dialect_evidence_prior: [false, true]
+    dialect_head: [false, true]
+    source_adversary: [false, true]
+    task_conditioned_late_routing: [false, true]
+  expanded_run_count: 16
+  test_access: forbidden
+
+confirmatory_ablations:
+  common_parent: M3_BOICHITRO
+  seeds: main
+  runs:
+    - A01_NO_LEXICAL_PRIOR
+    - A02_NO_DIALECT_HEAD
+    - A03_NO_SOURCE_ADVERSARY
+    - A04_NO_TASK_CONDITIONING
+    - A05_RANDOMIZED_LEXICAL_PRIOR
+    - A06_NO_GROUPDRO
+    - A07_NO_SYNTHETIC
+    - A08_NO_GENERAL_REPLAY
+
+pilot_only_ablations:
+  seeds: pilot
+  runs:
+    - P01_NO_SHARED_EXPERT
+    - P02_FOUR_ROUTED_EXPERTS
+    - P03_SIXTEEN_ROUTED_EXPERTS
+    - P04_TOP1
+    - P05_AUXILIARY_BALANCE_LOSS
+    - P06_ALL_LAYER_STRUCTURED_ROUTING
+    - P07_STANDARD_CLONED_UPCYCLING
+    - P08_RANDOM_EXPERT_INITIALIZATION
+    - P09_MOE_FROM_SCRATCH
+    - P10_ADAMW_ONLY
+    - P11_MTP_OFF
+    - P12_MTP_TWO_FUTURE
+    - P13_NO_GENERAL_REPLAY
+    - P14_AUDITED_SYNTHETIC
+    - P15_QUALITY_WEIGHTED_SYNTHETIC
+
+loss_grid:
+  dialect_weight: [0.10, 0.20]
+  source_adversary_max_weight: [0.01, 0.03]
+  mtp_weight: [0.05, 0.10]
+  router_z_weight: [0.0001, 0.001]
+  source_adversary_schedule: linear_ramp
+  load_balance_gradient_loss_in_M3: false
+
+decoding:
+  selected: greedy_for_all_confirmatory_models
+  dev_grid:
+    greedy: true
+    beam_size: [2, 4, 6]
+    length_penalty: [0.8, 1.0, 1.2]
+    status: exploratory_optional_not_used_for_primary_results
+  report_greedy_for_all_main_models: true
+
+metrics:
+  normalization:
+    primary: macro_chrfpp
+    secondary:
+      - sacrebleu_with_signature
+      - ter
+      - cer
+      - wer
+      - number_preservation
+      - worst_dialect_chrfpp
+  identification:
+    primary: regional_only_macro_f1
+    secondary:
+      - thirteen_class_macro_f1
+      - balanced_accuracy
+      - mcc
+      - worst_dialect_f1
+      - ece
+      - brier
+  language_model:
+    cross_tokenizer:
+      - bits_per_character
+      - bits_per_byte
+    same_tokenizer:
+      - nll
+      - perplexity
+  efficiency:
+    - total_parameters
+    - active_parameters
+    - measured_flops_per_token
+    - tokens_per_second
+    - peak_vram
+    - gpu_hours
+    - batch1_latency
+    - batched_latency
+  routing:
+    - expert_load_cv
+    - expert_load_gini
+    - router_entropy
+    - expert_dialect_mutual_information
+    - conditional_expert_source_association
+    - dropped_token_rate
+
+statistics:
+  main_neural_seeds: 3
+  bootstrap_resamples: 10000
+  bootstrap_unit: global_semantic_group
+  repeated_row_dependence: synchronized_across_seeds_architectures_and_dialects
+  randomization_resamples: 10000
+  randomization_unit: one_paired_swap_per_global_semantic_group_synchronized_across_seeds_architectures_and_dialects
+  primary_alpha: 0.05
+  effect_interval: paired_seed_and_global_semantic_group_hierarchical_bootstrap
+  primary_test: paired_global_semantic_group_randomization
+  secondary_correction: holm_within_registered_family
+  human_analysis: semantic_group_cluster_bootstrap_and_quadratic_weighted_kappa
+
+selection:
+  normalization:
+    objective: dev_macro_chrfpp
+    general_replay_bpc_degradation_max: 0.05
+    latency_tie_threshold_chrfpp: 0.1
+  identification:
+    objective: dev_regional_macro_f1
+    calibration_tie_threshold_macro_f1: 0.2
+  test_metrics_allowed_for_selection: false
+
+test_firewall:
+  locked: true
+  prior_access_disclosure: fixed_classical_baselines_and_tiny_pipeline_smoke_only
+  main_neural_test_access_before_freeze: false
+  prerequisites:
+    - data_manifest_hash_frozen
+    - tokenizer_hash_frozen
+    - code_commit_frozen
+    - hyperparameters_frozen
+    - checkpoints_frozen
+    - decoding_frozen
+    - metric_versions_frozen
+    - bootstrap_script_frozen
+  evaluations_per_frozen_seed_checkpoint: 1
+  post_test_model_changes_allowed: false
+
+acceptance_gates:
+  data:
+    protected_train_connections: 0
+    license_ledger_complete: true
+    derived_archive_in_main_manifest: false
+  tokenizer:
+    old_rare_count_le5_fraction_target_below: 0.612
+    severe_dialect_cost_disparity: false
+  moe:
+    nonfinite_loss: 0
+    persistent_expert_collapse: false
+    hidden_token_dropping: false
+    active_flops_matched: true
+  primary:
+    m3_minus_m2_macro_chrfpp_ci_lower_above: 0.0
+    maximum_iid_chrfpp_loss: 1.0
+    human_win_probability_ci_lower_above: 0.5
+
+artifact_paths:
+  runs: runs/{run_id}/{seed}/
+  predictions: predictions/{protocol}/{run_id}_{seed}.parquet
+  routing: routing/{run_id}_{seed}_{analysis_set}.parquet
+  metrics: metrics/{protocol}/{run_id}_{seed}.json
+  figure_data: figures/data/{figure_id}.parquet
+  figures: figures/{figure_id}.pdf

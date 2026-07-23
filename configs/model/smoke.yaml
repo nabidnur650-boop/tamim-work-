@@ -1,0 +1,19 @@
+model:
+  max_seq_len: 128
+  n_layers: 4
+  d_model: 128
+  n_heads: 4
+  n_kv_heads: 2
+  dense_ffn_dim: 384
+  dropout: 0.0
+  dense_prefix_layers: 1
+  n_routed_experts: 4
+  expert_dim: 128
+  top_k: 2
+  shared_expert: true
+  use_mtp: true
+optimizer:
+  muon_lr: 0.02
+  adamw_lr: 0.0003
+  router_lr: 0.0002
+  weight_decay: 0.10

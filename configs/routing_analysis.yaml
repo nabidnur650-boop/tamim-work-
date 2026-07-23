@@ -1,0 +1,9 @@
+protocol_id: locked_test_v1
+suffix: base
+variants: [M2, M3]
+seeds: [1701, 2903, 4307]
+tasks: [normalization, identification]
+track: source_ood
+permutation_replicates: 1000
+permutation_seed: 66391
+metrics: [normalized_mutual_information, mean_pairwise_dialect_js_divergence, expert_purity]

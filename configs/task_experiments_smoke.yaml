@@ -1,0 +1,88 @@
+protocol_id: smoke_task_pipeline
+seeds: [1701]
+variants:
+  M0:
+    base_checkpoint: runs/SMOKE_F_DENSE/1701/final_checkpoint.pt
+    groupdro: true
+  M2:
+    base_checkpoint: runs/SMOKE_U_M2/1701/final_checkpoint.pt
+    groupdro: false
+  M3:
+    base_checkpoint: runs/SMOKE_U_M2/1701/final_checkpoint.pt
+    groupdro: true
+stage_a:
+  token_budget: 4096
+  mixture:
+    general_replay: 0.65
+    dialect_clm: 0.20
+    normalization: 0.10
+    romanized: 0.05
+  trainer:
+    epochs: 1
+    micro_batch_size: 4
+    gradient_accumulation_steps: 2
+    muon_lr: 0.01
+    adamw_lr: 0.00015
+    router_lr: 0.0002
+    weight_decay: 0.10
+    warmup_fraction: 0.05
+    min_lr_ratio: 0.10
+    gradient_clip: 1.0
+    num_workers: 0
+    log_every_steps: 2
+    early_stopping_patience: 1
+    save_optimizer_state: false
+stage_s:
+  token_budget: 4096
+  mixture:
+    normalization: 0.55
+    identification: 0.20
+    dialect_clm: 0.10
+    general_replay: 0.10
+    romanized: 0.05
+  trainer:
+    epochs: 1
+    micro_batch_size: 4
+    gradient_accumulation_steps: 2
+    muon_lr: 0.006
+    adamw_lr: 0.0001
+    router_lr: 0.00015
+    weight_decay: 0.10
+    warmup_fraction: 0.05
+    min_lr_ratio: 0.10
+    gradient_clip: 1.0
+    num_workers: 0
+    log_every_steps: 2
+    early_stopping_patience: 1
+    selection_metric: objective
+    selection_mode: max
+    save_optimizer_state: false
+stage_id:
+  trainer:
+    epochs: 2
+    micro_batch_size: 16
+    gradient_accumulation_steps: 2
+    muon_lr: 0.004
+    adamw_lr: 0.0001
+    router_lr: 0.00015
+    weight_decay: 0.10
+    warmup_fraction: 0.05
+    min_lr_ratio: 0.10
+    gradient_clip: 1.0
+    num_workers: 0
+    log_every_steps: 1
+    validate_every_epochs: 1
+    early_stopping_patience: 2
+    selection_metric: objective
+    selection_mode: max
+    max_optimizer_steps: 4
+    save_optimizer_state: false
+evaluation:
+  normalization_batch_size: 8
+  normalization_max_new_tokens: 8
+  normalization_validation_limit: 32
+  identification_batch_size: 32
+  identification_validation_limit: 64
+  replay_validation_examples: 32
+  replay_degradation_limit: 0.05
+  test_access: forbidden_during_training

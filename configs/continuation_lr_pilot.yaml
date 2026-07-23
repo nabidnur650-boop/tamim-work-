@@ -1,0 +1,33 @@
+protocol_id: boichitro_continuation_lr_pilot_v1
+base_config: configs/continuation_m0_dense_200m.yaml
+seed: 1701
+data_seed: 2903
+token_budget: 10000000
+scheduler_token_budget: 200000000
+eval_every_tokens: 5000000
+checkpoint_every_tokens: 10000000
+warmup_fraction: 0.0
+final_relative_bpc_regression_max: 0.0
+intermediate_relative_bpc_regression_max: 0.01
+selection_metric: final_validation_bpc
+selection_mode: min
+candidates:
+  - id: muon_1e3_adamw_1p5e5
+    muon_lr: 0.001
+    adamw_lr: 0.000015
+  - id: muon_2e3_adamw_3e5
+    muon_lr: 0.002
+    adamw_lr: 0.000030
+  - id: muon_5e3_adamw_7p5e5
+    muon_lr: 0.005
+    adamw_lr: 0.000075
+  - id: muon_1e2_adamw_1p5e4
+    muon_lr: 0.010
+    adamw_lr: 0.000150
+rejected_trigger_run:
+  path: runs/aborted/U_M0_DENSE_200M_high_lr_restart_20260720/1701
+  config_snapshot: reports/model/rejected_high_lr_restart_config.yaml
+  muon_lr: 0.020
+  adamw_lr: 0.000300
+  warmup_fraction: 0.02
+test_data_access: forbidden

@@ -1,0 +1,24 @@
+run_id: SMOKE_F_DENSE
+seed: 1701
+architecture: dense
+packed_data: cache/pretraining_smoke5_packed
+token_budget: 16384
+validation_token_cap: 4096
+micro_batch_size: 2
+gradient_accumulation_steps: 2
+global_token_batch: 512
+warmup_fraction: 0.05
+eval_every_tokens: 8192
+checkpoint_every_tokens: 8192
+log_every_optimizer_steps: 4
+resume_checkpoint_every_steps: 4
+model_config: configs/model/smoke.yaml
+fixed_token_budget: true
+test_data_access: forbidden
+optimizer:
+  muon_lr: 0.02
+  adamw_lr: 0.0003
+  router_lr: 0.0002
+  weight_decay: 0.10
+  min_lr_ratio: 0.10
+  gradient_clip: 1.0

@@ -1,0 +1,48 @@
+protocol_id: locked_test_v1
+output_subdir: source_blind_system_fusion
+bootstrap_seed: 319173
+bootstrap_replicates: 10000
+randomization_seed: 419173
+randomization_replicates: 10000
+confidence_level: 0.95
+resampling_unit: global_semantic_group
+repeated_row_dependence: synchronized_across_seeds_architectures_and_dialects
+confirmatory_comparisons:
+  - id: M3_fused_vs_raw_normalization_source_ood
+    family: system_fusion
+    task: normalization
+    track: source_ood
+    treatment: M3
+    control: M3
+    treatment_prediction_prefix: normalization_fused
+    control_prediction_prefix: normalization
+    metric: macro_chrfpp
+  - id: M3_fused_vs_inferred_rewrite_source_ood
+    family: system_fusion
+    task: normalization
+    track: source_ood
+    treatment: M3
+    control: M3
+    treatment_prediction_prefix: normalization_fused
+    control_prediction_prefix: normalization_inferred_rewrite
+    metric: macro_chrfpp
+  - id: M3_fused_vs_raw_identification_source_ood
+    family: system_fusion
+    task: identification
+    track: source_ood
+    treatment: M3
+    control: M3
+    treatment_prediction_prefix: identification_fused
+    control_prediction_prefix: identification
+    metric: regional_macro_f1
+  - id: M3_fused_vs_char_svm_identification_source_ood
+    family: system_fusion
+    task: identification
+    track: source_ood
+    treatment: M3
+    control: M3
+    treatment_prediction_prefix: identification_fused
+    control_prediction_prefix: identification_char_svm
+    metric: regional_macro_f1
+multiple_testing: holm_within_preregistered_system_fusion_family
+primary_inference: paired_randomization_two_sided_with_holm_and_hierarchical_bootstrap_ci

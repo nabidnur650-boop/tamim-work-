@@ -1,0 +1,70 @@
+dataset_version: boichitro_data_v1.0.0
+build_date: "2026-07-19"
+taxonomy_version: boichitro_taxonomy_v1
+seed: 72119
+
+split:
+  train: 0.80
+  validation: 0.10
+  test: 0.10
+  priority: [test_external, test_ood, test, validation, train]
+
+quality:
+  maximum_characters: 1000
+  minimum_bengali_letters_parallel: 1
+  minimum_bengali_tokens_transcript: 3
+  minimum_bengali_letter_ratio: 0.65
+  sentence_minimum_tokens: 4
+  transcript_marker: "<>"
+
+deduplication:
+  compact_exact: true
+  simhash_bits: 64
+  simhash_character_ngram: 4
+  simhash_max_hamming_candidate: 6
+  near_jaccard_threshold: 0.90
+  near_minimum_compact_characters: 20
+
+sampling:
+  dialect_temperature_alpha: 0.70
+  minimum_weight: 0.25
+  maximum_weight: 4.0
+  synthetic_example_loss_weight: 0.50
+
+source_priority:
+  local_vashantor_v2: 0
+  local_chatgaiyyaalap_v1: 0
+  local_sylheti_translation_v2: 0
+  local_regional_text_corpus_v4: 0
+  kothon_v4: 1
+  chattogramsent_v2_novel: 2
+  sylheti_translation_v3_novel: 3
+
+normalization_training_sources:
+  - local_vashantor_v2
+  - local_chatgaiyyaalap_v1
+  - local_sylheti_translation_v2
+  - local_regional_text_corpus_v4
+  - kothon_v4
+  - chattogramsent_v2_novel
+  - sylheti_translation_v3_novel
+
+normalization_locked_ood_sources:
+  - onubad_v2
+  - bd_dialect_v2
+
+romanized_locked_source:
+  - bhasabodh_v1
+
+identification_sources:
+  - accepted_authentic_normalization_rows
+  - bangladial_v2
+  - hf_bengali_regional_asr_refine
+
+explicit_exclusions:
+  - local_derived_archive_all_51101_rows
+  - bhasabodh_bengali_script_duplicates_of_onubad
+  - hf_unmapped_habiganj
+  - hf_unmapped_sandwip
+  - hf_chittagonian_vulgar_lexicon_from_task_labels
+  - all_synthetic_rows_from_identification_and_evaluation

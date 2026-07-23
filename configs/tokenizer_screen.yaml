@@ -1,0 +1,22 @@
+seed: 1701
+balance_alpha: 0.5
+families:
+  wordpiece_natural:
+    corpus: natural
+  wordpiece_balanced:
+    corpus: balanced
+  unigram_balanced:
+    corpus: balanced
+  byte_bpe_balanced:
+    corpus: balanced
+vocab_sizes: [16000, 24000, 32000]
+intrinsic_shortlist: 4
+proxy_shortlist_rule: at_least_one_candidate_per_family_then_best_overall
+hard_gates:
+  unk_rate_max: 0.00002
+  canonical_roundtrip_exact_rate_min: 0.98
+  dialect_cost_ratio_max: 2.0
+selection_data:
+  - normalization_validation
+  - identification_validation
+test_splits_forbidden: true

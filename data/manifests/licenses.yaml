@@ -1,0 +1,93 @@
+ledger_version: 1.0.0
+generated_on: '2026-07-19'
+sources:
+  local_vashantor_v2:
+    provider: Mendeley/local ZIP
+    doi: 10.17632/bj5jgk878b.2
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: versioned_repository_metadata_and_local_title/fingerprint audit
+  local_chatgaiyyaalap_v1:
+    provider: Mendeley/local ZIP
+    doi: 10.17632/wtms9xbkkw.1
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: versioned_repository_metadata_and_local_title/fingerprint audit
+  local_sylheti_translation_v2:
+    provider: Mendeley/local ZIP
+    doi: 10.17632/5rmskrvh6g.2
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: versioned_repository_metadata_and_local_title/fingerprint audit
+  local_regional_text_corpus_v4:
+    provider: Mendeley/local ZIP
+    doi: 10.17632/92r62h4k5k.4
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: versioned_repository_metadata_and_local_title/fingerprint audit
+  kothon_v4:
+    provider: Mendeley
+    doi: 10.17632/2fv6vf9v2z.4
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: immutable_repository_version_and_download_sha256
+  sylheti_translation_v3_novel:
+    provider: Mendeley
+    doi: 10.17632/5rmskrvh6g.3
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: immutable_repository_version_and_download_sha256
+  chattogramsent_v2_novel:
+    provider: Mendeley
+    doi: 10.17632/k6hts2ktxw.2
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: immutable_repository_version_and_download_sha256
+  onubad_v2:
+    provider: Mendeley
+    doi: 10.17632/6ft99kf89b.2
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: immutable_repository_version_and_download_sha256
+  bd_dialect_v2:
+    provider: Mendeley
+    doi: 10.17632/k769s4vk5z.2
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: immutable_repository_version_and_download_sha256
+  bhasabodh_v1:
+    provider: Mendeley
+    doi: 10.17632/2jb4k7bb8x.1
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: immutable_repository_version_and_download_sha256
+  bangladial_v2:
+    provider: Mendeley
+    doi: 10.17632/sx6ybcps2n.2
+    license: CC BY 4.0
+    redistribution: allowed_with_attribution
+    verification: immutable_repository_version_and_download_sha256
+    caveat: merged component provenance remains lower-confidence
+  hf_bengali_regional_asr_refine:
+    provider: Hugging Face
+    repository: sha1779/bengali_regional_dataset_refine
+    revision: 6e3221bdf7f9c8c426276f1b619d7de597963f42
+    license: apache-2.0
+    redistribution: text-column extract retained locally
+    verification: pinned commit and repository card license tag
+    caveat: upstream competition provenance should be cited and rechecked before public
+      redistribution
+  hf_chittagonian_vulgar_lexicon:
+    provider: Hugging Face
+    repository: kit-nlp/Vulgar_Lexicon_of_Chittagonian_Dialect_of_Bangla_or_Bengali
+    revision: ce4be3814b8eca1a4c0fa85f983625565f887088
+    license: apache-2.0
+    redistribution: auxiliary_only
+    verification: pinned commit and repository card license tag
+  synthetic_robustness_v1:
+    provider: deterministic_local_build
+    license: inherits_each_parent_license
+    redistribution: subject_to_parent_attribution
+    authenticity_claim: false
+required_release_action: include per-source attribution and indicate normalization/augmentation
+  modifications

@@ -1,0 +1,191 @@
+registry_version: "1.0.0"
+frozen_on: "2026-07-19"
+
+taxonomy:
+  version: boichitro_taxonomy_v1
+  labels:
+    BAR: Barishal
+    CHI: Chittagong
+    KHU: Khulna
+    KIS: Kishoreganj
+    MYM: Mymensingh
+    NAR: Narail
+    NOA: Noakhali
+    NSD: Narsingdi
+    RAJ: Rajshahi
+    RAN: Rangpur
+    SYL: Sylhet
+    TAN: Tangail
+    STD: Standard Bangla
+  note: >-
+    This is a 13-label inventory: 12 regional labels plus Standard Bangla.
+    It is not a claim that the archive contains 13 regional dialects.
+
+mendeley:
+  - source_id: kothon_v4
+    dataset_id: 2fv6vf9v2z
+    version: 4
+    doi: 10.17632/2fv6vf9v2z.4
+    selected_files:
+      - Chittagonian_Sylheti_dataset.zip
+    decision: admit_candidate
+    role: authentic_parallel_train_candidate
+    expected_license: CC BY 4.0
+    dialects: [CHI, SYL]
+
+  - source_id: bd_dialect_v2
+    dataset_id: k769s4vk5z
+    version: 2
+    doi: 10.17632/k769s4vk5z.2
+    selected_files:
+      - BD-Dialect 02.zip
+    decision: admit_eval_only
+    role: locked_source_ood_phrase_and_lexical_challenge
+    expected_license: CC BY 4.0
+    dialects: [CHI, MYM, NOA, RAJ, SYL]
+
+  - source_id: sylheti_translation_v3
+    dataset_id: 5rmskrvh6g
+    version: 3
+    doi: 10.17632/5rmskrvh6g.3
+    selected_files:
+      - Bangla Dialect Transaction Dataset_v3.csv
+    decision: admit_candidate
+    role: authentic_parallel_train_candidate
+    expected_license: CC BY 4.0
+    dialects: [SYL]
+
+  - source_id: bangladial_v2
+    dataset_id: sx6ybcps2n
+    version: 2
+    doi: 10.17632/sx6ybcps2n.2
+    selected_files:
+      - BanglaDial A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis..csv
+    decision: admit_conditional
+    role: identification_train_candidate_merged_provenance
+    expected_license: CC BY 4.0
+    dialects: [BAR, CHI, KIS, MYM, NAR, NOA, NSD, RAJ, RAN, SYL, TAN, STD]
+
+  - source_id: onubad_v2
+    dataset_id: 6ft99kf89b
+    version: 2
+    doi: 10.17632/6ft99kf89b.2
+    selected_files:
+      - ONUBAD Dataset.zip
+    decision: admit_eval_only
+    role: locked_source_ood_parallel
+    expected_license: CC BY 4.0
+    dialects: [BAR, CHI, SYL]
+
+  - source_id: chattogramsent_v2
+    dataset_id: k6hts2ktxw
+    version: 2
+    doi: 10.17632/k6hts2ktxw.2
+    selected_files:
+      - ChattogramSent _ A Multilingual Sentiment Dataset for the Chattogram Dialect, Standard Bengali, and English full.csv
+    decision: admit_conditional
+    role: parallel_train_candidate_novel_remainder_not_source_ood
+    expected_license: CC BY 4.0
+    dialects: [CHI]
+
+  - source_id: bhasabodh_v1
+    dataset_id: 2jb4k7bb8x
+    version: 1
+    doi: 10.17632/2jb4k7bb8x.1
+    selected_files:
+      - BhashaBodh.csv
+    decision: admit_eval_only
+    role: locked_romanized_robustness_parallel
+    expected_license: CC BY 4.0
+    dialects: [CHI, SYL]
+
+  - source_id: vashantor_v2_metadata
+    dataset_id: bj5jgk878b
+    version: 2
+    doi: 10.17632/bj5jgk878b.2
+    selected_files: []
+    decision: metadata_only_local_copy
+    role: license_and_provenance_verification
+    expected_license: CC BY 4.0
+    dialects: [BAR, CHI, MYM, NOA, SYL]
+
+  - source_id: chatgaiyyaalap_v1_metadata
+    dataset_id: wtms9xbkkw
+    version: 1
+    doi: 10.17632/wtms9xbkkw.1
+    selected_files: []
+    decision: metadata_only_local_copy
+    role: license_and_provenance_verification
+    expected_license: CC BY 4.0
+    dialects: [CHI]
+
+  - source_id: regional_text_corpus_v4_metadata
+    dataset_id: 92r62h4k5k
+    version: 4
+    doi: 10.17632/92r62h4k5k.4
+    selected_files: []
+    decision: metadata_only_local_copy
+    role: license_and_provenance_verification
+    expected_license: CC BY 4.0
+    dialects: [BAR, KHU, NAR, RAN]
+
+huggingface:
+  - source_id: hf_bengali_regional_asr_refine
+    repo_id: sha1779/bengali_regional_dataset_refine
+    revision: 6e3221bdf7f9c8c426276f1b619d7de597963f42
+    decision: admit_conditional
+    role: authentic_identification_transcript_candidate
+    expected_license: apache-2.0
+    selected_columns: [transcriptions, district]
+    exact_label_map:
+      barishal: BAR
+      chittagong: CHI
+      kishoreganj: KIS
+      narail: NAR
+      narsingdi: NSD
+      rangpur: RAN
+      sylhet: SYL
+      tangail: TAN
+    excluded_unmapped_labels: [habiganj, sandwip]
+    note: >-
+      District names are mapped only on exact taxonomy matches. Habiganj and
+      Sandwip are retained in the audit but are not collapsed into another
+      dialect by geographic inference.
+
+  - source_id: hf_chittagonian_vulgar_lexicon
+    repo_id: kit-nlp/Vulgar_Lexicon_of_Chittagonian_Dialect_of_Bangla_or_Bengali
+    revision: ce4be3814b8eca1a4c0fa85f983625565f887088
+    decision: admit_auxiliary_only
+    role: tokenizer_and_safety_lexicon_only
+    expected_license: apache-2.0
+    selected_files: [Vulgar Word.csv]
+    dialects: [CHI]
+
+huggingface_rejections:
+  - repo_id: TanjimKIT/Vulgar_Lexicon_of_Chittagonian_Dialect_of_Bangla_or_Bengali
+    reason: exact_blob_duplicate_of_kit_nlp_release
+  - repo_id: TanjimKIT/Cyberbullying-detection-in-Chittagonian-dialect-of-Bangla-CBDCB
+    reason: gated_and_genre_narrow_not_needed_for_core_tasks
+  - repo_id: Regional-TinyStories/bangla-generated_4o-mini_2M
+    reason: no_dataset_card_no_license_fully_synthetic_4_76GB
+  - repo_id: sha1779/Bengali_Regional_dataset
+    reason: no_card_no_license_and_superseded_by_refined_release
+
+synthetic_policy:
+  allowed_source_split: train
+  task: normalization_robustness_only
+  authenticity_claim: false
+  classification_eligible: false
+  maximum_fraction_of_authentic_train_per_dialect: 0.15
+  maximum_total_fraction: 0.10
+  parent_id_required: true
+  methods:
+    - terminal_punctuation_variant
+    - single_safe_boundary_join
+    - quote_and_dash_typography_variant
+  forbidden:
+    - protected_validation_or_test_parent
+    - label_transfer
+    - untraceable_llm_generation
+    - synthetic_validation_or_test
+    - geographic_label_inference

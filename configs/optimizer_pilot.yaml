@@ -1,0 +1,12 @@
+protocol_prefix: boichitro_adamw_lr_pilot_v1
+variant: M3
+seed: 1701
+adamw_learning_rates: [0.00005, 0.00010, 0.00020, 0.00030]
+stage_a_token_budget: 2000000
+stage_s_token_budget: 1000000
+normalization_validation_limit: 512
+replay_validation_examples: 512
+stage_s_validation_checkpoints: 2
+selection_metric: objective
+selection_mode: max
+test_access: forbidden

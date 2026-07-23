@@ -1,0 +1,23 @@
+protocol_id: blind_native_normalization_v1
+prediction_protocol_id: locked_test_v1
+external_prediction_protocol_id: locked_external_test_v1
+seed: 1701
+sampling_seed: 44771
+examples_per_dialect: 20
+systems:
+  M0: predictions/locked_test_v1/M0__base/1701/normalization_source_ood.parquet
+  M2: predictions/locked_test_v1/M2__base/1701/normalization_source_ood.parquet
+  M3: predictions/locked_test_v1/M3__base/1701/normalization_source_ood.parquet
+  M3_FUSED: predictions/locked_test_v1/M3__base/1701/normalization_fused_source_ood.parquet
+  BANGLAT5_SMALL: predictions/locked_external_test_v1/normalization/BANGLAT5_SMALL/1701/normalization_source_ood.parquet
+raters: 6
+ratings_per_item: 3
+rating_dimensions:
+  meaning_preservation: {minimum: 1, maximum: 5}
+  standard_bangla_fluency: {minimum: 1, maximum: 5}
+  overall_quality: {minimum: 1, maximum: 5}
+binary_dimensions: [hallucination_or_unsupported_content]
+bootstrap_replicates: 10000
+randomization_replicates: 10000
+randomization_seed: 53772
+test_policy: prepare_only_after_all_frozen_predictions_exist

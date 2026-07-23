@@ -1,0 +1,23 @@
+run_id: PREFLIGHT_F_DENSE
+seed: 1701
+packed_data: data/pretraining/packed_1024
+token_budget: 262144
+validation_token_cap: 16384
+micro_batch_size: 4
+gradient_accumulation_steps: 64
+global_token_batch: 262144
+warmup_fraction: 0.02
+eval_every_tokens: 1000000000
+checkpoint_every_tokens: 1000000000
+log_every_optimizer_steps: 1
+resume_checkpoint_every_steps: 1
+optimizer:
+  muon_lr: 0.02
+  adamw_lr: 0.0003
+  router_lr: 0.0002
+  weight_decay: 0.10
+  min_lr_ratio: 0.10
+  gradient_clip: 1.0
+model_config: configs/model/main_80m.yaml
+fixed_token_budget: true
+test_data_access: forbidden

@@ -1,0 +1,53 @@
+seeds: [1701, 2903, 4307]
+local_files_only: true
+normalization:
+  models:
+    BANGLAT5_SMALL:
+      model_id: csebuetnlp/banglat5_small
+      revision: 5710e9754346bbe1ac7ff64b3e04a1beee89be63
+      license: CC-BY-NC-SA-4.0
+      prefix: ""
+      use_fast_tokenizer: false
+    MT5_SMALL:
+      model_id: google/mt5-small
+      revision: 73fb5dbe4756edadc8fbe8c769b0a109493acf7a
+      license: Apache-2.0
+      prefix: "normalize Bangla dialect: "
+      use_fast_tokenizer: false
+  max_source_length: 128
+  max_target_length: 128
+  batch_size: 16
+  gradient_accumulation_steps: 4
+  epochs: 8
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  warmup_fraction: 0.05
+  gradient_clip: 1.0
+  early_stopping_patience: 3
+  generation_batch_size: 32
+  generation_max_new_tokens: 96
+identification:
+  models:
+    BANGLABERT_MIT:
+      model_id: sagorsarker/bangla-bert-base
+      revision: 875aa80a42ec196c16bd931ae5d85ad949f58b16
+      license: MIT
+      use_fast_tokenizer: true
+    XLMR_BASE:
+      model_id: FacebookAI/xlm-roberta-base
+      revision: e73636d4f797dec63c3081bb6ed5c7b0bb3f2089
+      license: MIT
+      use_fast_tokenizer: true
+  max_length: 128
+  batch_size: 64
+  gradient_accumulation_steps: 2
+  epochs: 12
+  learning_rate: 0.00002
+  weight_decay: 0.01
+  warmup_fraction: 0.06
+  gradient_clip: 1.0
+  early_stopping_patience: 3
+  evaluation_batch_size: 256
+precision: bfloat16
+selection_uses_validation_only: true
+test_access_during_training: forbidden

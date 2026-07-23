@@ -1,0 +1,23 @@
+run_id: F_DENSE_300M
+seed: 1701
+packed_data: data/pretraining/packed_1024
+token_budget: 300000000
+validation_token_cap: 1000000
+micro_batch_size: 4
+gradient_accumulation_steps: 64
+global_token_batch: 262144
+warmup_fraction: 0.02
+eval_every_tokens: 25000000
+checkpoint_every_tokens: 50000000
+log_every_optimizer_steps: 10
+resume_checkpoint_every_steps: 50
+optimizer:
+  muon_lr: 0.02
+  adamw_lr: 0.0003
+  router_lr: 0.0002
+  weight_decay: 0.10
+  min_lr_ratio: 0.10
+  gradient_clip: 1.0
+model_config: configs/model/main_80m.yaml
+fixed_token_budget: true
+test_data_access: forbidden

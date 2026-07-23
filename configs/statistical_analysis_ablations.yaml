@@ -1,0 +1,102 @@
+protocol_id: locked_test_v1
+output_subdir: ablations
+bootstrap_seed: 119173
+bootstrap_replicates: 10000
+randomization_seed: 219173
+randomization_replicates: 10000
+confidence_level: 0.95
+resampling_unit: global_semantic_group
+repeated_row_dependence: synchronized_across_seeds_architectures_and_dialects
+confirmatory_comparisons:
+  - id: M3_lexical_prior_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_lexical_prior
+    metric: macro_chrfpp
+  - id: M3_dialect_auxiliary_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_dialect_head
+    metric: macro_chrfpp
+  - id: M3_source_adversary_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_source_adversary
+    metric: macro_chrfpp
+  - id: M3_task_conditioning_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_task_conditioning
+    metric: macro_chrfpp
+  - id: M3_lexical_prior_alignment_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: randomized_lexical_prior
+    metric: macro_chrfpp
+  - id: M3_groupdro_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_groupdro
+    metric: macro_chrfpp
+  - id: M3_synthetic_augmentation_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_synthetic
+    metric: macro_chrfpp
+  - id: M3_general_replay_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_general_replay
+    metric: macro_chrfpp
+  - id: M3_hybrid_optimizer_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: adamw_only
+    metric: macro_chrfpp
+  - id: M3_mtp_normalization_source_ood
+    family: ablations
+    task: normalization
+    track: source_ood
+    treatment: M3
+    treatment_suffix: base
+    control: M3
+    control_suffix: no_mtp
+    metric: macro_chrfpp
+multiple_testing: holm
+primary_inference: paired_randomization_two_sided_with_holm_and_hierarchical_bootstrap_ci

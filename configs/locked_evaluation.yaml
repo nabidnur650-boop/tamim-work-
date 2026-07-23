@@ -1,0 +1,48 @@
+protocol_id: locked_test_v1
+protocol_freeze_id: locked_test_v1
+task_protocol_id: boichitro_q1_v1
+normalization:
+  batch_size: 32
+  max_new_tokens: 96
+  tracks:
+    iid:
+      frame: data/final/v1/normalization_test_iid.parquet
+      cache: cache/tasks/normalization_test_iid.pt
+    source_ood:
+      frame: data/final/v1/normalization_test_ood.parquet
+      cache: cache/tasks/normalization_test_ood.pt
+      exclude_dialects: [RAJ]
+    zero_shot_raj:
+      frame: data/final/v1/normalization_test_ood.parquet
+      cache: cache/tasks/normalization_test_ood.pt
+      include_dialects: [RAJ]
+    romanized_ood:
+      frame: data/final/v1/romanized_test_ood.parquet
+      cache: cache/tasks/normalization_romanized_test_ood.pt
+identification:
+  batch_size: 256
+  tracks:
+    iid:
+      cache: cache/tasks/identification_test_iid.pt
+      frame: data/final/v1/identification_evaluation.parquet
+      split: test
+    source_ood:
+      cache: cache/tasks/identification_test_ood.pt
+      frame: data/final/v1/identification_evaluation.parquet
+      split: test_ood
+    external:
+      cache: cache/tasks/identification_test_external.pt
+      frame: data/final/v1/identification_evaluation.parquet
+      split: test_external
+fusion:
+  enabled: true
+  contract: raw_neural_outputs_remain_primary_for_architecture_and_source_ood_inference;fixed_source_blind_fusion_is_a_separate_validation_selected_system_view
+  identification_selection_report: reports/model/id_fusion_selection.json
+  normalization_selection_report: reports/model/normalization_fusion_selection_v2.json
+  normalization_rewrite_artifact: artifacts/baselines/normalization_word_rewrite.pkl
+routing:
+  examples_per_track: 256
+  batch_size: 32
+  tracks: [normalization_source_ood, identification_source_ood]
+  sampling: dialect_stratified_bottom_sha256_row_id
+test_policy: one_scripted_evaluation_per_frozen_checkpoint

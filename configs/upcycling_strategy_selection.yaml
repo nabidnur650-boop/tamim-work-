@@ -1,0 +1,33 @@
+protocol_id: boichitro_upcycling_selection_v1
+seed: 1701
+baseline_condition: abrupt_banked_release
+test_data_access: forbidden
+guards:
+  maximum_transient_validation_bpc_regression_percent: 0.5
+  maximum_final_validation_bpc_regression_percent: 0.0
+  initial_bpc_match_absolute_tolerance: 0.00001
+selection: minimum_final_validation_bpc_among_eligible_candidates
+conditions:
+  abrupt_banked_release:
+    run_id: P_M2_BANKED_20M
+    role: negative_control
+  unbanked_transfer:
+    run_id: P_M2_UNBANKED_20M
+    role: negative_control
+  random_initialization:
+    run_id: P_M2_SCRATCH_20M
+    role: negative_control
+  annealed_cross_bank:
+    run_id: P_M2_ANNEALED_20M
+    role: candidate
+    model_overrides:
+      banked_upcycle_fraction: 0.02
+      banked_upcycle_release_fraction: 0.10
+      banked_pairing_penalty: 0.25
+  permanent_paired_bank:
+    run_id: P_M2_PAIRED_20M
+    role: candidate
+    model_overrides:
+      banked_upcycle_fraction: 1.0
+      banked_upcycle_release_fraction: 1.0
+      banked_pairing_penalty: 0.25

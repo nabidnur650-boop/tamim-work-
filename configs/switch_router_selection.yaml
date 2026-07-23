@@ -1,0 +1,19 @@
+protocol_id: boichitro_switch_router_selection_v1
+seed: 1701
+test_data_access: forbidden
+guards:
+  initial_bpc_match_absolute_tolerance: 0.00001
+  maximum_final_validation_bpc_regression_percent: 0.0
+  maximum_logged_router_load_cv: 0.50
+selection: minimum_final_validation_bpc_among_eligible_candidates
+candidates:
+  loss_free_straight_through:
+    run_id: P_M1_LOSS_FREE_ROUTER_10M
+    upcycle_router_init_std: 0.001
+    model_overrides:
+      balance_loss_weight: 0.0
+  auxiliary_balance_straight_through:
+    run_id: P_M1_AUX_ROUTER_10M
+    upcycle_router_init_std: 0.001
+    model_overrides:
+      balance_loss_weight: 0.01

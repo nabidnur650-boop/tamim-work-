@@ -1,0 +1,39 @@
+run_id: P_M2_UNBANKED_20M
+seed: 1701
+data_seed: 2903
+architecture: standard_moe
+initial_checkpoint: runs/F_DENSE_300M/1701/final_checkpoint.pt
+upcycle_noise_std: 0.00001
+packed_data: data/pretraining/packed_1024
+token_budget: 20000000
+scheduler_token_budget: 200000000
+validation_token_cap: 1000000
+evaluate_at_start: true
+micro_batch_size: 4
+gradient_accumulation_steps: 32
+global_token_batch: 131072
+warmup_fraction: 0.0
+optimizer_selection_report: reports/model/continuation_lr_pilot_selection.json
+eval_every_tokens: 5000000
+checkpoint_every_tokens: 20000000
+log_every_optimizer_steps: 10
+resume_checkpoint_every_steps: 50
+model_config: configs/model/main_80m.yaml
+model_overrides:
+  dense_prefix_layers: 4
+  n_routed_experts: 8
+  expert_dim: 768
+  top_k: 2
+  shared_expert: true
+  use_mtp: true
+  banked_upcycle_fraction: 0.0
+fixed_token_budget: true
+development_only: true
+test_data_access: forbidden
+optimizer:
+  muon_lr: 0.02
+  adamw_lr: 0.0003
+  router_lr: 0.0002
+  weight_decay: 0.10
+  min_lr_ratio: 0.10
+  gradient_clip: 1.0
