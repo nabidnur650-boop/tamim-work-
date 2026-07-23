@@ -1,9 +1,9 @@
 # Boichitro-MoE: Source-Invariant Sparse Small Language Modeling for Bangla Dialect Normalization
 
-**Manuscript type:** Original research article
-**Authors:** AUTHOR DETAILS REQUIRED BEFORE SUBMISSION
-**Affiliations:** AFFILIATION DETAILS REQUIRED BEFORE SUBMISSION
-**Corresponding author:** REQUIRED BEFORE SUBMISSION
+**Manuscript type:** Original research article  
+**Authors:** AUTHOR DETAILS REQUIRED BEFORE SUBMISSION  
+**Affiliations:** AFFILIATION DETAILS REQUIRED BEFORE SUBMISSION  
+**Corresponding author:** REQUIRED BEFORE SUBMISSION  
 **Draft generated:** 2026-07-21T21:12:07.382633+00:00
 
 ## Submission status (not part of the blinded manuscript)

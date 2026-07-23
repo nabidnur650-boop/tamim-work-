@@ -17,3 +17,4 @@ optimizer:
   adamw_lr: 0.0003
   router_lr: 0.0002
   weight_decay: 0.10
+

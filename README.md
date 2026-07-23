@@ -1,101 +1,118 @@
-# Boichitro-MoE
+# Boichitro-MoE experiment workspace
 
-Boichitro-MoE is a reproducible research pipeline for Bangla dialect
-normalization, dialect identification, tokenizer evaluation, dense-model
-baselines, and mixture-of-experts experiments.
+This directory contains the reproducible data, tokenizer, model, and locked
+evaluation pipeline for the Bangla dialect SLM/MoE study. The original ZIP
+archives and notebooks in the parent directory are treated as immutable inputs.
 
-This repository is a compact GitHub-ready snapshot of the experiment. It
-contains the source code, configurations, tests, research protocol, manuscript,
-result summaries, tables, figures, and original notebooks. The 91 GB working
-directory remains unchanged outside this repository.
+## Current status
 
-## Important status
+`boichitro_data_v1.0.0` passes the internal data-engineering gate. Model and
+tokenizer experiments are authorized from the final manifests, but public
+redistribution and claims of full linguistic validation remain blocked until
+the stratified native-speaker review sheet is completed.
 
-- The code and lightweight research outputs are included.
-- Raw/processed datasets, model checkpoints, caches, full predictions, and
-  training runs are intentionally excluded because of size and redistribution
-  constraints.
-- The native-speaker review and blinded human evaluation described in
-  `reports/NATIVE_REVIEW_INSTRUCTIONS.md` remain publication requirements.
-- Dataset sources, versions, licenses, and use decisions are recorded in
-  `data/manifests/licenses.yaml` and `data/final/v1/DATASET_CARD.md`.
-- No license is granted for third-party datasets or model artifacts by this
-  repository.
+Frozen data/tokenizer build:
 
-## Repository contents
+- 13-label inventory: 12 regional varieties plus Standard Bangla;
+- 54,598 authentic normalization rows and 3,325 traceable train-only
+  robustness perturbations;
+- 122,353 conflict-cleaned dialect-identification rows;
+- 1,342 romanized source-held-out evaluation rows;
+- 100,236 unique tokenizer-training texts;
+- immutable Hugging Face commits and Mendeley versions with verified hashes;
+- exact/compact and SimHash + character-ngram leakage controls;
+- ONUBAD and BD-Dialect source-held-out evaluation tracks;
+- full quarantine of all 51,101 rows in the old derived ZIP;
+- per-source license ledger, dataset card, descriptive figures, and 83
+  regression tests.
 
-- `src/boichitro/`: model, data, metrics, inference, optimization, and protocol
-  code
-- `tools/`: dataset, training, evaluation, statistics, and reporting commands
-- `configs/`: registered experiment and evaluation configurations
-- `tests/`: regression and protocol tests
-- `artifacts/tokenizers/frozen/`: frozen 32k WordPiece tokenizer and metadata
-- `manuscript/`: manuscript draft and submission materials
-- `reports/`: lightweight audits, result summaries, and evaluation reports
-- `metrics/`, `tables/`, `figures/`: publication-oriented outputs
-- `docs/`: experiment blueprint, research plan, and original workspace README
-- `notebooks/`: original exploratory notebooks
+Registered model experiment:
 
-## Environment
+- a scratch-trained 16-layer, 512-wide dense foundation with a frozen custom
+  32k WordPiece tokenizer and 300M-token fixed budget;
+- compute-matched 200M-token dense, Switch top-1, and shared top-2 MoE
+  continuations from the same foundation checkpoint and block order;
+- a validation-only mature-checkpoint LR pilot that prevents a high-LR warmup
+  restart from degrading the shared foundation, with the rejected run retained
+  as an auditable diagnostic;
+- the proposed task-conditioned, source-adversarial Boichitro-MoE, plus a
+  bidirectional MNTP/contrastive identification specialist;
+- Muon for eligible hidden matrices and AdamW for embeddings, norms, routers,
+  and heads, with an AdamW-only confirmatory ablation;
+- a validation-only short pilot that selects the AdamW-only control's learning
+  rate before its full three-seed ablation;
+- three-seed main/task runs, a 2^4 validation-only factorial study, ten
+  three-seed confirmatory/optimization ablations, and pinned external models;
+- a matched validation-only upcycling study covering abrupt bank release,
+  unbanked transfer, scratch initialization, annealed release, and permanent
+  complementary-bank top-2 routing, with the stable strategy selected before
+  the full MoE continuation;
+- hierarchical paired bootstrap intervals, paired semantic-group
+  randomization tests, Holm correction within registered families, routing
+  analysis, perturbation robustness, calibration, and systems benchmarks;
+- an immutable protocol freeze that must succeed before any main neural locked
+  test evaluation can run.
 
-The recorded experiment used Python 3.12. Create an isolated environment:
+Publication blockers that cannot be automated:
 
-```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
+- complete `reports/HUMAN_NATIVE_REVIEW_SAMPLE.csv` with qualified native
+  reviewers, then update the publication gate without changing locked tests.
+- complete the blinded native-speaker system-output ratings generated after
+  locked inference. Machine metrics are not a substitute for these ratings.
 
-Run the available tests from the repository root:
+Native-data-review instructions are in
+`reports/NATIVE_REVIEW_INSTRUCTIONS.md`; after completion, run
+`PYTHONPATH=src python tools/analyze_native_review.py`. Blinded system-rating
+packets and their instructions are generated by the main pipeline under
+`human_evaluation/blind_native_normalization_v1/`.
 
-```bash
-pytest -q
-```
+## Reproduce
 
-Tests that depend on omitted datasets are skipped automatically in the compact
-snapshot and become active when the documented Parquet artifacts are restored.
-GitHub Actions runs the same compact-repository test suite on every push and
-pull request.
+From the parent workspace:
 
-## Reproducing the pipeline
+    python bangla_dialect_moe/tools/audit_local_archives.py
+    python bangla_dialect_moe/tools/build_preliminary_manifest.py
+    python bangla_dialect_moe/tools/fetch_external_sources.py
+    python bangla_dialect_moe/tools/build_final_dataset.py
+    python bangla_dialect_moe/tools/plot_final_dataset.py
+    cd bangla_dialect_moe && PYTHONPATH=.:src pytest -q
 
-Place the two original local archives beside this repository using their
-original names:
+After the data/tokenizer/pretraining caches are present, the resumable registered
+experiment is:
 
-```text
-archive(1).zip
-archive (1).zip
-```
+    cd bangla_dialect_moe
+    PYTHONPATH=src python tools/run_full_pipeline.py
 
-Then run the data preparation stages:
+The pipeline trains and selects only on training/validation data, freezes code,
+configs, datasets, tokenizer, selected checkpoints, calibration files, and run
+manifests, then performs the scripted locked evaluations. Progress and logs are
+written under `reports/pipeline/`.
 
-```bash
-python tools/audit_local_archives.py
-python tools/build_preliminary_manifest.py
-python tools/fetch_external_sources.py
-python tools/build_final_dataset.py
-python tools/plot_final_dataset.py
-```
+The builds verify both local ZIP hashes and every pinned external file before
+writing. The preliminary artifacts are retained as an audit trail and are not
+training inputs.
 
-After the data, tokenizer, and pretraining caches are available, run the
-resumable registered experiment:
+## Main artifacts
 
-```bash
-PYTHONPATH=src python tools/run_full_pipeline.py
-```
+- data/final/v1/DATASET_CARD.md
+- reports/FINAL_DATASET_REPORT.md
+- reports/final_dataset_report.json
+- reports/data_gate.json
+- reports/HUMAN_NATIVE_REVIEW_SAMPLE.csv
+- data/final/v1/normalization_all.parquet
+- data/final/v1/identification_all.parquet
+- data/final/v1/romanized_test_ood.parquet
+- data/manifests/tokenizer_train_v1.parquet
+- data/manifests/licenses.yaml
+- figures/data/
+- configs/experiment_registry.yaml
+- configs/task_experiments.yaml
+- configs/ablation_registry.yaml
+- configs/locked_evaluation.yaml
+- tools/run_full_pipeline.py
+- tools/freeze_protocol.py
+- reports/EVALUATION_TRACK_CONTRACT.md
+- reports/PRIOR_TEST_ACCESS_DISCLOSURE.md
 
-The full protocol and registered design are documented in
-`docs/EXPERIMENT_BLUEPRINT.md` and `docs/Q1_RESEARCH_PLAN.md`.
-
-## Results
-
-Start with:
-
-- `reports/ALL_RESULTS_AND_EVALUATION.md`
-- `reports/ALL_RESULTS_AND_EVALUATION.pdf`
-- `reports/Q1_JOURNAL_READINESS_AUDIT.md`
-- `manuscript/BOICHITRO_MOE_Q1_MANUSCRIPT.md`
-
-Detailed machine-readable summaries are available under `reports/model/`,
-`reports/tokenizer/`, and `metrics/`.
+The full research protocol is in the parent file
+BANGLA_DIALECT_MOE_EXPERIMENT_BLUEPRINT.md.

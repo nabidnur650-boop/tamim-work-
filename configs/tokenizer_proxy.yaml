@@ -19,3 +19,4 @@ selection:
   global_bpc_relative_to_best_max: 1.01
   token_cost_relative_to_best_max: 1.07
   final_objective: minimum_worst_dialect_bpc
+
