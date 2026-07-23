@@ -1,0 +1,19 @@
+path,rows,bytes,size,sha256
+data/final/v1/excluded_rows.parquet,137386.0,16667370,15.90 MiB,d1edcff83b2a015476405febae16fdcca49211fd90c4a5133f4d84e0bd55a6cf
+data/final/v1/identification_all.parquet,122353.0,28422001,27.11 MiB,fcca0ac251ceb761691a49058e762987d54b6d31209e17fc0c1a59f42deea181
+data/final/v1/identification_evaluation.parquet,29456.0,5999020,5.72 MiB,212d0cfd6b216c08855fb4222d451a27f8ad7d82e8351d6d53749a83ec9bd728
+data/final/v1/identification_train.parquet,92897.0,22542700,21.50 MiB,e8ffc3ec6402e8de9c9e56d3e9049d09f7aceb5e2e71b0a7c54d06c2d72b5a81
+data/final/v1/normalization_all.parquet,57923.0,18797608,17.93 MiB,2cc87a3d74f5775b7d7e5dde81049b886769513a2310379a9fa109781f7b8626
+data/final/v1/normalization_synthetic_train.parquet,3325.0,1569697,1.50 MiB,1257aac85595d0f0cff46048675b8c3c90d5805c5e690a703a3149fb5ed0fea8
+data/final/v1/normalization_test_iid.parquet,5033.0,1736548,1.66 MiB,fd449a8976c10ea0c486088b5298700af61b41af1a8797fcfc1d048cfa82f19b
+data/final/v1/normalization_test_ood.parquet,8979.0,1105359,1.05 MiB,8dbe9c2fc4685f165ed890e89cf6e3e715e518a9dce0969aa02558227c19161f
+data/final/v1/normalization_train.parquet,39622.0,14310018,13.65 MiB,a430ed7fcef2ca8793350d59c05bc5aa3ab1d712e6e06b886556f9629d77fb60
+data/final/v1/normalization_validation.parquet,4289.0,1410940,1.35 MiB,1caa3f426fcee218ce988a98af4d991baf14729a49f7b6822b88061c050e7b72
+data/final/v1/romanized_test_ood.parquet,1342.0,225815,220.52 KiB,41c0ea2c9719c62316ad8dfe2626135662ed60420132d58769a959bcda3bb8be
+data/final/v1/tokenizer_train.parquet,100236.0,16041782,15.30 MiB,59ca69a87bd160732a6a7bf4b2f90e2537976f4b7d93b0567dca659a56b1f22f
+data/manifests/canonical_rows.parquet,180276.0,48292649,46.06 MiB,5d08f70340ac8ebd8672a0046067ad0286d866f8bedf7720a568979aada0442d
+data/manifests/excluded_rows.parquet,137386.0,16667370,15.90 MiB,d1edcff83b2a015476405febae16fdcca49211fd90c4a5133f4d84e0bd55a6cf
+data/manifests/licenses.yaml,,3601,3.52 KiB,04694367df584c6d83446a35cf868d89cec02ee6ade7c8cdb01e133a9dd5b47a
+data/manifests/semantic_components.parquet,151292.0,5143860,4.91 MiB,37a4fde74f11893af0e39fcecb8861802b56abc969863dab7b145ebb643f0aca
+data/manifests/splits_v1.parquet,180276.0,6108453,5.83 MiB,a3a014de498a62a14cd7095257bbf1a18fb5e01f1e7b3599f3c66be8375baf99
+data/manifests/tokenizer_train_v1.parquet,100236.0,16041782,15.30 MiB,59ca69a87bd160732a6a7bf4b2f90e2537976f4b7d93b0567dca659a56b1f22f

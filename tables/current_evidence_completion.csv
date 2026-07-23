@@ -1,0 +1,8 @@
+evidence_item,completed,expected,fraction
+Main M0–M3 development runs,12,12,1.0
+Bidirectional ID seeds,2,3,0.6666666666666666
+Native dataset review rows,0,230,0.0
+Q1 figure pairs,44,44,1.0
+Regression tests passing,107,107,1.0
+Locked main evaluations,0,12,0.0
+Protocol freeze,0,1,0.0

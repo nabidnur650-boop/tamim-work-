@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-07-24T05:09:34.826932+09:00",
+  "source_root": "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe",
+  "output_root": "/home/urad/Desktop/Boichitro_MoE_Documentation",
+  "source_files_indexed": 2577,
+  "source_figure_pairs": 44,
+  "generated_visuals": 21,
+  "total_visuals": 65,
+  "configuration_cards": 43,
+  "python_cards": 88,
+  "run_manifest_cards": 20,
+  "training_report_cards": 76,
+  "csv_cards": 94,
+  "json_cards": 30,
+  "main_run_manifests": 12,
+  "bidirectional_manifests": 2,
+  "docx": {
+    "path": "Boichitro_MoE_Full_Experiment_Documentation.docx",
+    "bytes": 16065002,
+    "sha256": "0992266c6792e146a2c7e0bb5449c87097723da476cb144cc06136711c50e60d"
+  },
+  "pdf": {
+    "path": "Boichitro_MoE_Full_Experiment_Documentation.pdf",
+    "bytes": 21649097,
+    "sha256": "52042d4a8f42769c53b06675b35036dee9c9236bf8510d2d7e5785d116df7236",
+    "pages": 532,
+    "page_size": "A4",
+    "words": 74675,
+    "tagged": true,
+    "fonts_embedded": true
+  },
+  "representative_pages_visually_inspected": [
+    1,
+    10,
+    120,
+    200,
+    300,
+    340,
+    400,
+    470,
+    530,
+    532
+  ],
+  "checks": {
+    "output_outside_source_folder": true,
+    "at_least_50_visuals": true,
+    "at_least_300_pdf_pages": true,
+    "all_12_main_manifests_documented": true,
+    "large_artifact_warning_present": true,
+    "docx_zip_integrity": true,
+    "pdf_opens_and_text_extracts": true,
+    "representative_page_rendering": true,
+    "missing_embedded_assets_reported": false
+  }
+}

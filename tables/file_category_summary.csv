@@ -1,0 +1,15 @@
+category,files,logical_bytes,logical_size
+run,1669,114927035044,107.03 GiB
+data,116,25794918432,24.02 GiB
+artifact,70,260060001,248.01 MiB
+other,30,189145778,180.38 MiB
+prediction,116,104217137,99.39 MiB
+figure,180,22586129,21.54 MiB
+report,93,3874554,3.70 MiB
+tool,110,1990461,1.90 MiB
+test,59,395898,386.62 KiB
+source_code,26,366456,357.87 KiB
+configuration,45,72743,71.04 KiB
+metric,37,29712,29.02 KiB
+manuscript,4,27378,26.74 KiB
+table,22,24281,23.71 KiB
