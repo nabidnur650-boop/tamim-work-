@@ -1,0 +1,10 @@
+quantity,count
+excluded_row_decisions,137386
+human_review_sample_rows,230
+identification_all,122353
+legacy_derived_archive_quarantined_rows,51101
+normalization_all,57923
+normalization_authentic,54598
+normalization_synthetic,3325
+romanized_ood,1342
+tokenizer_train_unique_texts,100236

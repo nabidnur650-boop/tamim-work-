@@ -1,0 +1,3 @@
+strategy,run_id,initial_validation_bpc,final_validation_bpc,maximum_router_load_cv,final_router_load_cv,eligible,selected
+loss_free_straight_through,P_M1_LOSS_FREE_ROUTER_10M,1.2303335273898253,1.2270098335202515,0.5061083436012268,0.5061083436012268,False,False
+auxiliary_balance_straight_through,P_M1_AUX_ROUTER_10M,1.2303335273898253,1.2269397058261782,0.2616977393627167,0.06746005266904831,True,True

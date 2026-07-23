@@ -1,0 +1,6 @@
+strategy,run_id,initial_validation_bpc,final_validation_bpc,maximum_regression_percent,eligible,selected
+abrupt_banked_release,P_M2_BANKED_20M,1.2303345879245327,1.2621794427402053,3.6781062749295192,False,False
+unbanked_transfer,P_M2_UNBANKED_20M,1.397035339749581,1.2558707147253643,0.0,False,False
+random_initialization,P_M2_SCRATCH_20M,3.519621897730057,2.559431579024191,0.0,False,False
+annealed_cross_bank,P_M2_ANNEALED_20M,1.2303345879245327,1.2641091981016637,2.7451565215366207,False,False
+permanent_paired_bank,P_M2_PAIRED_20M,1.2303345879245327,1.2287236039923957,0.0,True,True
