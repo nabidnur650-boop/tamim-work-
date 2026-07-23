@@ -1,0 +1,19 @@
+{
+  "created": [
+    "fig_tokenizer_tradeoff",
+    "fig_compute_pareto",
+    "fig_classical_id_floor",
+    "fig_classical_norm_floor",
+    "fig_continuation_lr_stability",
+    "fig_architecture",
+    "fig_protocol_flow",
+    "fig_upcycling_recovery",
+    "fig_switch_router_recovery"
+  ],
+  "protocol": "locked_test_v1",
+  "seeds": [
+    1701,
+    2903,
+    4307
+  ]
+}

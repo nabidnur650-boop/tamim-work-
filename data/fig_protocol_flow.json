@@ -1,0 +1,19 @@
+{
+  "development_sequence": [
+    "audited data and frozen tokenizer",
+    "300M-token dense foundation",
+    "matched 200M-token M0/M1/M2 continuations",
+    "12M-token source-blind dialect adaptation",
+    "normalization, causal ID, and bidirectional ID branches",
+    "validation-only ablations and selection",
+    "immutable protocol freeze",
+    "single scripted locked evaluation"
+  ],
+  "main_neural_test_access_before_freeze": "forbidden",
+  "prior_access_disclosure": "fixed classical baselines and tiny pipeline smoke only",
+  "seeds": [
+    1701,
+    2903,
+    4307
+  ]
+}

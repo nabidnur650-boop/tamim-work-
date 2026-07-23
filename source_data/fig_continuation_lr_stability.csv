@@ -1,0 +1,6 @@
+candidate,muon_lr,adamw_lr,final_relative_bpc_change_percent,eligible,selected,schedule
+muon_1e3_adamw_1p5e5,0.001,1.5e-05,-0.28583461635686147,True,True,no restart warmup
+muon_2e3_adamw_3e5,0.002,3e-05,0.1405966243113843,False,False,no restart warmup
+muon_5e3_adamw_7p5e5,0.005,7.5e-05,1.932633351207258,False,False,no restart warmup
+muon_1e2_adamw_1p5e4,0.01,0.00015,5.124414908315078,False,False,no restart warmup
+rejected_high_lr_restart,0.02,0.0003,10.73639432095177,False,False,2% restart warmup

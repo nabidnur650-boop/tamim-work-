@@ -1,0 +1,10 @@
+{
+  "tokenizer": "Frozen WP-natural 32k",
+  "backbone": "16-layer, d=512, GQA 8Q/2KV, RoPE, QK norm, RMSNorm",
+  "dense_prefix_layers": 4,
+  "moe_layers": 12,
+  "experts": "1 shared + 8 routed, top-2, width 768, dropless",
+  "early_router": "causal lexical/dialect curriculum (layers 5\u20138)",
+  "late_router": "task-conditioned bias (layers 13\u201316)",
+  "optimization": "Muon matrices + AdamW embeddings/norms/routers/heads"
+}

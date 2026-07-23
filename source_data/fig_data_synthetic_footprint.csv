@@ -1,0 +1,39 @@
+dialect,split,origin,rows
+BAR,test,authentic,491
+BAR,test_ood,authentic,608
+BAR,train,authentic,2727
+BAR,train,synthetic train-only,408
+BAR,validation,authentic,333
+CHI,test,authentic,1879
+CHI,test_ood,authentic,2096
+CHI,train,authentic,13655
+CHI,train,synthetic train-only,909
+CHI,validation,authentic,1706
+KHU,test,authentic,101
+KHU,train,authentic,711
+KHU,train,synthetic train-only,106
+KHU,validation,authentic,89
+MYM,test,authentic,375
+MYM,test_ood,authentic,1384
+MYM,train,authentic,1868
+MYM,train,synthetic train-only,280
+MYM,validation,authentic,250
+NAR,test,authentic,101
+NAR,train,authentic,928
+NAR,train,synthetic train-only,139
+NAR,validation,authentic,101
+NOA,test,authentic,373
+NOA,test_ood,authentic,1400
+NOA,train,authentic,1869
+NOA,train,synthetic train-only,280
+NOA,validation,authentic,249
+RAJ,test_ood,authentic,1387
+RAN,test,authentic,127
+RAN,train,authentic,1100
+RAN,train,synthetic train-only,164
+RAN,validation,authentic,159
+SYL,test,authentic,1586
+SYL,test_ood,authentic,2104
+SYL,train,authentic,13439
+SYL,train,synthetic train-only,1039
+SYL,validation,authentic,1402

@@ -1,0 +1,8 @@
+reason,documents
+accepted,567746
+all rejected,17873
+benchmark_direct_substring,2476
+low_bengali_letter_ratio,3505
+invalid_unicode,69
+too_long,130
+benchmark_compact_substring,49
