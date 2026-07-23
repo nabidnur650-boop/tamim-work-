@@ -1,0 +1,46 @@
+BOICHITRO-MOE BACKUP VERIFIED
+Date: 2026-07-24 KST
+
+Archive:
+  boichitro-moe-complete-backup-2026-07-24.tar.zst
+Archive bytes:
+  91448677220
+SHA-256:
+  b6eb7ada951247cae22ee6c7a489743aeef9239a5be498566d2761c408bd9138
+
+Verification results:
+  archive creation: PASS
+  complete decompression and tar listing: PASS
+  saved SHA-256 verification: PASS
+  final SHA-256 check of all three retained artifacts: PASS
+  source regular-file count: 3091
+  archived non-directory entry count: 3091
+  file-count comparison: PASS
+  source files modified during backup window: 0
+  critical archive entries: PASS
+
+Critical entries checked:
+  Tamim_sir _work/archive(1).zip
+  Tamim_sir _work/archive (1).zip
+  Tamim_sir _work/bangla_dialect_moe/data/pretraining/raw_fineweb2/data/ben_Beng/train/000_00000.parquet
+  Tamim_sir _work/bangla_dialect_moe/runs/F_DENSE_300M/1701/final_checkpoint.pt
+  boichitro-moe-github/README.md
+  boichitro-moe-github/.git/HEAD
+
+GitHub-ready repository commit:
+  7cccbd8
+
+Portable GitHub artifacts:
+  boichitro-moe-github-source-7cccbd8.zip
+    bytes: 19001130
+    committed files: 475
+    ZIP integrity test: PASS
+    SHA-256: ffbeb66659a7c8e6909be4d04cb4455b27aa842938bd863ffdee23ab0e0b17a1
+  boichitro-moe-github-history-7cccbd8.bundle
+    bytes: 18863221
+    bundle verification: PASS
+    test clone at commit 7cccbd8: PASS
+    test-clone tracked files: 475
+    SHA-256: 46d515311450e629109469692e2a52b886eb72decaff3dc129c206553f985435
+
+Read RESTORE_INSTRUCTIONS.md before deleting or restoring anything.
