@@ -1,0 +1,22 @@
+# Complete every REQUIRED field before submission. Do not invent author data.
+title: "Boichitro-MoE: Source-Invariant Sparse Small Language Modeling for Bangla Dialect Normalization"
+authors:
+  - name: REQUIRED
+    affiliation_ids: [REQUIRED]
+    email: REQUIRED
+    orcid: REQUIRED
+    corresponding: REQUIRED
+affiliations:
+  - id: REQUIRED
+    institution: REQUIRED
+    city: REQUIRED
+    country: REQUIRED
+credit_roles: REQUIRED
+funding_statement: REQUIRED
+competing_interests: REQUIRED
+ethics_or_irb_determination: REQUIRED
+human_reviewer_consent: REQUIRED
+human_reviewer_compensation: REQUIRED
+data_availability_statement: REQUIRED
+code_availability_statement: REQUIRED
+generative_ai_disclosure: REQUIRED

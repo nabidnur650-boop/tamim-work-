@@ -1,0 +1,17 @@
+{
+  "model_id": "N_WORD_REWRITE",
+  "split": "validation",
+  "rows": 4289,
+  "corpus_chrfpp": 57.49042851009373,
+  "macro_chrfpp": 50.46243953048928,
+  "worst_dialect_chrfpp": 30.575454778513706,
+  "corpus_sacrebleu": 30.221735251505613,
+  "macro_sacrebleu": 23.773882799650394,
+  "corpus_ter": 45.079315586389676,
+  "cer": 0.2577582352064391,
+  "wer": 0.4707355114102775,
+  "exact_match": 0.08743296805782233,
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+  "bleu_signature": "nrefs:1|case:mixed|eff:yes|tok:none|smooth:exp|version:2.6.0",
+  "ter_signature": "nrefs:1|case:lc|tok:tercom|norm:yes|punct:yes|asian:yes|version:2.6.0"
+}

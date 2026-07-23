@@ -1,0 +1,19 @@
+{
+  "model_id": "N_COPY_SOURCE_BLIND",
+  "split": "validation",
+  "evidence": "development_only",
+  "test_data_access": false,
+  "rows": 4289,
+  "corpus_chrfpp": 42.244489257519525,
+  "macro_chrfpp": 38.40058530639884,
+  "worst_dialect_chrfpp": 23.763874216320445,
+  "corpus_sacrebleu": 13.630496816120944,
+  "macro_sacrebleu": 10.020972925275945,
+  "corpus_ter": 63.10558522040769,
+  "cer": 0.3483529587121777,
+  "wer": 0.6571991462813987,
+  "exact_match": 0.04150151550477967,
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+  "bleu_signature": "nrefs:1|case:mixed|eff:yes|tok:none|smooth:exp|version:2.6.0",
+  "ter_signature": "nrefs:1|case:lc|tok:tercom|norm:yes|punct:yes|asian:yes|version:2.6.0"
+}

@@ -1,0 +1,14 @@
+{
+  "model_id": "ID_CHAR_TFIDF_SVM",
+  "split": "external_transcript",
+  "accuracy": 0.9704604691572546,
+  "balanced_accuracy": 0.9586258383908088,
+  "macro_f1_13": 0.5943184384990119,
+  "regional_macro_f1": 0.9657674625608943,
+  "weighted_f1": 0.9742421751556488,
+  "mcc": 0.9654840226474501,
+  "ece_15": 0.014604038801738523,
+  "brier": 0.0434816847842065,
+  "worst_present_dialect_f1": 0.8739495798319328,
+  "examples": 1151.0
+}

@@ -1,0 +1,17 @@
+{
+  "model_id": "N_COPY",
+  "split": "iid_test",
+  "rows": 5033,
+  "corpus_chrfpp": 43.08735024871198,
+  "macro_chrfpp": 39.25963467167002,
+  "worst_dialect_chrfpp": 25.853001893810596,
+  "corpus_sacrebleu": 13.792467663168702,
+  "macro_sacrebleu": 10.749806499897417,
+  "corpus_ter": 62.10236360405189,
+  "cer": 0.33381515695265945,
+  "wer": 0.6396853200577732,
+  "exact_match": 0.029604609576793166,
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+  "bleu_signature": "nrefs:1|case:mixed|eff:yes|tok:none|smooth:exp|version:2.6.0",
+  "ter_signature": "nrefs:1|case:lc|tok:tercom|norm:yes|punct:yes|asian:yes|version:2.6.0"
+}
