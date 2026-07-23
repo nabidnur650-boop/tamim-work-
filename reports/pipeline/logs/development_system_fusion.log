@@ -1,0 +1,327 @@
+
+[2026-07-22T15:01:55.021164+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/summarize_development_results.py
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_q1_v1",
+  "test_data_access": false,
+  "completed_runs": 12,
+  "expected_runs": 12,
+  "completed_by_variant": {
+    "M0": 3,
+    "M1": 3,
+    "M2": 3,
+    "M3": 3
+  },
+  "outputs": {
+    "reports/model/main_validation_results_current.csv": "71334a2c6599d1a86de00e02fcb943416e22e970f0018b0f6acf1fd0456031a5",
+    "reports/model/main_validation_by_dialect_all_current.csv": "41690081a817ebe33881dfac7079e77f4bcb363a14aaa0670fef0590a610a49a",
+    "reports/model/main_identification_by_class_all_current.csv": "a42eaba0a27cb806a777acebf7f55f582ae6a30d147e5002b1be9c74de1cc06b",
+    "reports/model/main_validation_by_dialect_current.csv": "46881826f245d73399ca37bf720679b3a17b81067744747bfab36f263b4dbf82",
+    "reports/model/main_identification_by_class_current.csv": "ecc3035bb417022090b0c33eaf45b5185781d824a5183caf48a32fe44824331a"
+  }
+}
+
+[2026-07-22T15:01:55.287322+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/audit_cross_task_input_firewall.py
+{
+  "status": "PASS",
+  "protocol_id": "boichitro_cross_task_input_firewall_v1",
+  "created_at": "2026-07-22T15:02:07.086230+00:00",
+  "identification_training_rows": 92897,
+  "scope": "automated aggregate-only overlap audit between the frozen ID-classifier training inputs and normalization evaluation inputs",
+  "protected_text_emitted": false,
+  "model_or_hyperparameter_selection_use": false,
+  "prior_test_access_disclosure_applies": true,
+  "near_duplicate_method": {
+    "simhash_bits": 64,
+    "character_ngram": 4,
+    "maximum_hamming_candidate": 6,
+    "minimum_jaccard": 0.9,
+    "minimum_compact_characters": 20
+  },
+  "tracks": [
+    {
+      "track": "normalization_validation",
+      "rows": 4289,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    },
+    {
+      "track": "normalization_iid_test",
+      "rows": 5033,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    },
+    {
+      "track": "normalization_ood_and_zero_shot",
+      "rows": 8979,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    },
+    {
+      "track": "romanized_ood",
+      "rows": 1342,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    }
+  ]
+}
+
+[2026-07-22T15:02:07.350404+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/audit_source_blind_baselines.py
+Building dialect-agnostic rewrite counts
+Selected pooled rewrite: {'min_count': 2, 'minimum_confidence': 0.6, 'mapping_entries': 2209, 'macro_chrfpp': 48.236512328345526, 'worst_dialect_chrfpp': 28.60899322181002}
+N_COPY_SOURCE_BLIND: macro_chrfpp=38.4006; worst=23.7639
+N_WORD_REWRITE_POOLED_SOURCE_BLIND: macro_chrfpp=48.2365; worst=28.6090
+N_WORD_REWRITE_CONSENSUS_SOURCE_BLIND: macro_chrfpp=45.8770; worst=25.6061
+N_WORD_REWRITE_INFERRED_DIALECT: macro_chrfpp=49.8516; worst=30.1733
+N_WORD_REWRITE_INFERRED_SUPPORTED_DIALECT: macro_chrfpp=50.0053; worst=30.3877
+N_WORD_REWRITE_ORACLE_GOLD_DIALECT: macro_chrfpp=50.4624; worst=30.5755
+
+[2026-07-22T15:02:54.600570+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_identification_fusion_pilot.py
+{
+  "alpha_neural": 0.42500000000000004,
+  "mean_regional_macro_f1": 0.8008737673741632,
+  "mean_macro_f1_13": 0.8106688457012585,
+  "mean_accuracy": 0.8767988539428274,
+  "mean_worst_present_dialect_f1": 0.4508263131317245,
+  "mean_ece_15": 0.0440130875088335
+}
+
+[2026-07-22T15:02:59.342430+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_normalization_fusion_pilot.py --version v1
+Extracting source-blind selector features
+Cross-validating hist_leaf15_l2
+Cross-validating extra_leaf8
+Cross-validating extra_leaf20
+{
+  "model": "extra_leaf8",
+  "threshold": -2.0,
+  "oof_margin_correlation": 0.5771206074758686,
+  "neural_selection_fraction": 0.4092640087044377,
+  "selected_neural_win_rate": 0.5537409798708697,
+  "mean_macro_chrfpp": 52.478147048167955,
+  "mean_worst_dialect_chrfpp": 34.444948661718705,
+  "mean_corpus_chrfpp": 59.52582478432263,
+  "mean_exact_match": 0.12668065594155592
+}
+
+[2026-07-22T15:12:24.864246+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_normalization_fusion_pilot.py --version v2
+Extracting source-blind selector features
+Cross-validating extra_leaf8
+{
+  "model": "extra_leaf8",
+  "threshold": -4.0,
+  "oof_margin_correlation": 0.5872616614442574,
+  "neural_selection_fraction": 0.4586539208828787,
+  "selected_neural_win_rate": 0.5416419554350589,
+  "mean_macro_chrfpp": 52.66700837450551,
+  "mean_worst_dialect_chrfpp": 34.85107579111115,
+  "mean_corpus_chrfpp": 59.45202962696677,
+  "mean_exact_match": 0.12535944664645993
+}
+
+[2026-07-22T15:15:53.133268+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/audit_development_fusion.py
+{
+  "normalization": {
+    "task": "normalization",
+    "run_points": [
+      {
+        "seed": 0,
+        "treatment": 52.523347218920094,
+        "control": 50.00526014259165,
+        "delta": 2.5180870763284418
+      },
+      {
+        "seed": 1,
+        "treatment": 52.827825397144046,
+        "control": 50.00526014259165,
+        "delta": 2.8225652545523943
+      },
+      {
+        "seed": 2,
+        "treatment": 52.780730807633816,
+        "control": 50.00526014259165,
+        "delta": 2.775470665042164
+      },
+      {
+        "seed": 3,
+        "treatment": 52.606682952379686,
+        "control": 50.00526014259165,
+        "delta": 2.6014228097880334
+      },
+      {
+        "seed": 4,
+        "treatment": 52.51894641950851,
+        "control": 50.00526014259165,
+        "delta": 2.5136862769168573
+      },
+      {
+        "seed": 5,
+        "treatment": 52.74451745144691,
+        "control": 50.00526014259165,
+        "delta": 2.739257308855258
+      }
+    ],
+    "mean_delta": 2.661748231913858,
+    "bootstrap_mean_delta": 2.6618856062604905,
+    "confidence_lower_95": 2.0857505184342875,
+    "confidence_upper_95": 3.268362326958343,
+    "bootstrap_probability_positive": 1.0,
+    "paired_randomization_observed_delta": 2.661748231913858,
+    "paired_randomization_p_two_sided": 0.0001999600079984003,
+    "bootstrap_replicates": 5000,
+    "randomization_replicates": 5000
+  },
+  "identification": {
+    "task": "identification",
+    "run_points": [
+      {
+        "seed": 0,
+        "treatment": 0.8013365135296011,
+        "control": 0.760473111073548,
+        "delta": 0.04086340245605313
+      },
+      {
+        "seed": 1,
+        "treatment": 0.7969091390036409,
+        "control": 0.751882575530527,
+        "delta": 0.045026563473113956
+      },
+      {
+        "seed": 2,
+        "treatment": 0.7990159713790558,
+        "control": 0.765155735561942,
+        "delta": 0.033860235817113726
+      },
+      {
+        "seed": 3,
+        "treatment": 0.8025664645646309,
+        "control": 0.7669714809199738,
+        "delta": 0.035594983644657074
+      },
+      {
+        "seed": 4,
+        "treatment": 0.804342982614011,
+        "control": 0.7678318337997753,
+        "delta": 0.03651114881423578
+      },
+      {
+        "seed": 5,
+        "treatment": 0.8010715331540399,
+        "control": 0.7586434247222485,
+        "delta": 0.042428108431791345
+      }
+    ],
+    "mean_delta": 0.039047407106160836,
+    "bootstrap_mean_delta": 0.03908198973962148,
+    "confidence_lower_95": 0.030924662822691826,
+    "confidence_upper_95": 0.047896727002659865,
+    "bootstrap_probability_positive": 1.0,
+    "paired_randomization_observed_delta": 0.039047407106160836,
+    "paired_randomization_p_two_sided": 0.0001999600079984003,
+    "bootstrap_replicates": 5000,
+    "randomization_replicates": 5000
+  }
+}
+
+[2026-07-22T15:20:04.961255+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/evaluate_development_fusion_transfer.py
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_fixed_fusion_architecture_transfer_v1",
+  "test_data_access": false,
+  "source_blind": true,
+  "selection_artifacts_modified": false,
+  "selection_variants": [
+    "M0",
+    "M1"
+  ],
+  "transfer_variants": [
+    "M2",
+    "M3"
+  ],
+  "completed_runs": 6,
+  "expected_runs": 6,
+  "interpretation": "fixed-selector transfer to later architectures; validation rows are shared, so this is not an independent-row generalization estimate",
+  "normalization_selection_report_sha256": "0f4cfaf1a7bef5783b2a3449b9aa686c5be167462f6f781aec2af6ac54ae7c94",
+  "identification_selection_report_sha256": "7c9c4304db8dd4b188cd1b7fc50de3537fe43a1870db0631a2fb999ef8c81131",
+  "runs": [
+    {
+      "variant": "M2",
+      "seed": 1701,
+      "normalization_raw_macro_chrfpp": 41.72801121042136,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.85790488785544,
+      "normalization_fused_worst_dialect_chrfpp": 36.37813657754152,
+      "normalization_selected_neural_fraction": 0.47843320121240385,
+      "identification_raw_regional_macro_f1": 0.7533386836217163,
+      "identification_fused_regional_macro_f1": 0.8046200764999353,
+      "identification_fused_ece_15": 0.048851377807866775
+    },
+    {
+      "variant": "M2",
+      "seed": 2903,
+      "normalization_raw_macro_chrfpp": 42.02153196041707,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 55.0155031096422,
+      "normalization_fused_worst_dialect_chrfpp": 36.789433551962254,
+      "normalization_selected_neural_fraction": 0.47237118209372814,
+      "identification_raw_regional_macro_f1": 0.7555390633477385,
+      "identification_fused_regional_macro_f1": 0.7980345546812271,
+      "identification_fused_ece_15": 0.040018275591294464
+    },
+    {
+      "variant": "M2",
+      "seed": 4307,
+      "normalization_raw_macro_chrfpp": 42.10328101050355,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 55.101636448802296,
+      "normalization_fused_worst_dialect_chrfpp": 35.74978212559562,
+      "normalization_selected_neural_fraction": 0.47866635579389133,
+      "identification_raw_regional_macro_f1": 0.7694467247197595,
+      "identification_fused_regional_macro_f1": 0.7984243749120141,
+      "identification_fused_ece_15": 0.040197861358642256
+    },
+    {
+      "variant": "M3",
+      "seed": 1701,
+      "normalization_raw_macro_chrfpp": 40.57730504653903,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.51428624134302,
+      "normalization_fused_worst_dialect_chrfpp": 36.38354809107533,
+      "normalization_selected_neural_fraction": 0.4579155980415015,
+      "identification_raw_regional_macro_f1": 0.7529187697249647,
+      "identification_fused_regional_macro_f1": 0.7986470485740832,
+      "identification_fused_ece_15": 0.046714914817049966
+    },
+    {
+      "variant": "M3",
+      "seed": 2903,
+      "normalization_raw_macro_chrfpp": 40.253017510749665,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.40596118766316,
+      "normalization_fused_worst_dialect_chrfpp": 36.055427898362815,
+      "normalization_selected_neural_fraction": 0.46537654464910233,
+      "identification_raw_regional_macro_f1": 0.7535469046138868,
+      "identification_fused_regional_macro_f1": 0.7942227232599562,
+      "identification_fused_ece_15": 0.0465806666989495
+    },
+    {
+      "variant": "M3",
+      "seed": 4307,
+      "normalization_raw_macro_chrfpp": 39.69577720636692,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.12102257840991,
+      "normalization_fused_worst_dialect_chrfpp": 35.258204686600244,
+      "normalization_selected_neural_fraction": 0.4436931685707624,
+      "identification_raw_regional_macro_f1": 0.7465634726302675,
+      "identification_fused_regional_macro_f1": 0.7961107564400761,
+      "identification_fused_ece_15": 0.04548700149871508
+    }
+  ]
+}

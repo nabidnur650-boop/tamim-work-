@@ -175,3 +175,4 @@ def expert_load_metrics(counts: np.ndarray) -> dict[str, float]:
         "maximum_load": float(values.max()),
         "dropped_rate": 0.0,
     }
+

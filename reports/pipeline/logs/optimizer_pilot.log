@@ -1,0 +1,112 @@
+
+[2026-07-22T15:20:40.407434+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_optimizer_pilot.py
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+[epoch 01 step 00010/00024] loss=7.6320 tok/s=3,527 grad=74.952
+[epoch 01 step 00020/00024] loss=7.7782 tok/s=3,540 grad=17.458
+[epoch 01 step 00024/00024] loss=6.8221 tok/s=3,529 grad=17.877
+[epoch 01 step 00010/00039] loss=5.2852 tok/s=2,186 grad=28.846
+[epoch 01 step 00020/00039] loss=4.5430 tok/s=2,223 grad=11.323
+validation_step=20 validation={'objective': 20.004957419369862, 'macro_chrfpp': 20.004957419369862, 'worst_dialect_chrfpp': 12.180542316022356, 'replay_nll': 3.410936251685225, 'replay_relative_degradation': 0.015831081942469183, 'replay_guard_pass': 1.0} best=20.004957
+[epoch 01 step 00030/00039] loss=4.7232 tok/s=2,057 grad=8.146
+[epoch 01 step 00039/00039] loss=3.7578 tok/s=2,099 grad=8.146
+validation_step=39 validation={'objective': 20.92484888742098, 'macro_chrfpp': 20.92484888742098, 'worst_dialect_chrfpp': 13.091614591974047, 'replay_nll': 3.413834845094539, 'replay_relative_degradation': 0.01669432917485003, 'replay_guard_pass': 1.0} best=20.924849
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+[epoch 01 step 00010/00024] loss=7.0156 tok/s=3,432 grad=53.940
+[epoch 01 step 00020/00024] loss=7.4322 tok/s=3,449 grad=14.330
+[epoch 01 step 00024/00024] loss=5.8988 tok/s=3,469 grad=18.487
+[epoch 01 step 00010/00039] loss=4.9648 tok/s=2,262 grad=26.415
+[epoch 01 step 00020/00039] loss=4.1829 tok/s=2,264 grad=16.234
+validation_step=20 validation={'objective': 22.318864184625465, 'macro_chrfpp': 22.318864184625465, 'worst_dialect_chrfpp': 15.55088553915688, 'replay_nll': 3.4297856747557462, 'replay_relative_degradation': 0.01197128285591953, 'replay_guard_pass': 1.0} best=22.318864
+[epoch 01 step 00030/00039] loss=4.4345 tok/s=2,113 grad=9.647
+[epoch 01 step 00039/00039] loss=3.4587 tok/s=2,142 grad=8.288
+validation_step=39 validation={'objective': 22.943813646665287, 'macro_chrfpp': 22.943813646665287, 'worst_dialect_chrfpp': 15.981547768994487, 'replay_nll': 3.4323924745863916, 'replay_relative_degradation': 0.012740429041403933, 'replay_guard_pass': 1.0} best=22.943814
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+[epoch 01 step 00010/00024] loss=6.6773 tok/s=3,381 grad=37.394
+[epoch 01 step 00020/00024] loss=7.0175 tok/s=3,406 grad=18.055
+[epoch 01 step 00024/00024] loss=5.3639 tok/s=3,412 grad=18.687
+[epoch 01 step 00010/00039] loss=4.6341 tok/s=2,214 grad=28.963
+[epoch 01 step 00020/00039] loss=3.8375 tok/s=2,191 grad=14.706
+validation_step=20 validation={'objective': 25.241401468034322, 'macro_chrfpp': 25.241401468034322, 'worst_dialect_chrfpp': 16.52835632944942, 'replay_nll': 3.4439581759936586, 'replay_relative_degradation': 0.011354282546690575, 'replay_guard_pass': 1.0} best=25.241401
+[epoch 01 step 00030/00039] loss=4.1312 tok/s=1,976 grad=9.840
+[epoch 01 step 00039/00039] loss=3.2191 tok/s=2,015 grad=7.792
+validation_step=39 validation={'objective': 27.226386180878958, 'macro_chrfpp': 27.226386180878958, 'worst_dialect_chrfpp': 17.470840696488224, 'replay_nll': 3.4515742939739686, 'replay_relative_degradation': 0.013590835124320133, 'replay_guard_pass': 1.0} best=27.226386
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+[epoch 01 step 00010/00024] loss=6.5355 tok/s=3,325 grad=56.131
+[epoch 01 step 00020/00024] loss=6.8642 tok/s=3,367 grad=18.057
+[epoch 01 step 00024/00024] loss=4.8669 tok/s=3,396 grad=19.134
+[epoch 01 step 00010/00039] loss=4.5951 tok/s=2,230 grad=40.787
+[epoch 01 step 00020/00039] loss=3.6737 tok/s=2,137 grad=11.293
+validation_step=20 validation={'objective': 26.671819219375507, 'macro_chrfpp': 26.671819219375507, 'worst_dialect_chrfpp': 17.463720629953638, 'replay_nll': 3.486768838630349, 'replay_relative_degradation': 0.020995966358295037, 'replay_guard_pass': 1.0} best=26.671819
+[epoch 01 step 00030/00039] loss=3.9604 tok/s=1,944 grad=8.376
+[epoch 01 step 00039/00039] loss=3.1122 tok/s=1,991 grad=5.297
+validation_step=39 validation={'objective': 29.909007471468673, 'macro_chrfpp': 29.909007471468673, 'worst_dialect_chrfpp': 22.46398791249912, 'replay_nll': 3.4815266317554636, 'replay_relative_degradation': 0.019460942867556286, 'replay_guard_pass': 1.0} best=29.909007
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "selection_metric": "objective",
+  "selection_mode": "max",
+  "selected_adamw_learning_rate": 0.0003,
+  "selected_protocol_id": "boichitro_adamw_lr_pilot_v1_3em04",
+  "candidates": [
+    {
+      "adamw_learning_rate": 5e-05,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_5em05",
+      "selection_value": 20.92484888742098,
+      "macro_chrfpp": 20.92484888742098,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_5em05/M3__adamw_only/1701/stage_s/best_selection.json"
+    },
+    {
+      "adamw_learning_rate": 0.0001,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_1em04",
+      "selection_value": 22.943813646665287,
+      "macro_chrfpp": 22.943813646665287,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_1em04/M3__adamw_only/1701/stage_s/best_selection.json"
+    },
+    {
+      "adamw_learning_rate": 0.0002,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_2em04",
+      "selection_value": 27.226386180878958,
+      "macro_chrfpp": 27.226386180878958,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_2em04/M3__adamw_only/1701/stage_s/best_selection.json"
+    },
+    {
+      "adamw_learning_rate": 0.0003,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_3em04",
+      "selection_value": 29.909007471468673,
+      "macro_chrfpp": 29.909007471468673,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_3em04/M3__adamw_only/1701/stage_s/best_selection.json"
+    }
+  ],
+  "test_data_access": false
+}

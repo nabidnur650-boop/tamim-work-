@@ -1,8 +1,8 @@
 # Boichitro-MoE: consolidated results and Q1 evaluation
 
-**Snapshot:** 2026-07-22 06:12 KST
-**Report status:** interim, evidence-audited snapshot
-**Pipeline status at snapshot:** `RUNNING`
+**Snapshot:** 2026-07-22 06:12 KST  
+**Report status:** interim, evidence-audited snapshot  
+**Pipeline status at snapshot:** `RUNNING`  
 **Submission status:** **NOT READY**
 
 This report inventories every finalized result family currently present in the

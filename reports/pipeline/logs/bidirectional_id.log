@@ -1,0 +1,321 @@
+
+[2026-07-22T16:41:36.187576+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_bidirectional_identification.py
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+[epoch 01 step 00010/00328] loss=6.0389 tok/s=3,656 grad=15.008
+[epoch 01 step 00020/00328] loss=6.4480 tok/s=3,741 grad=14.823
+[epoch 01 step 00030/00328] loss=7.1159 tok/s=3,828 grad=10.776
+[epoch 01 step 00040/00328] loss=6.8024 tok/s=3,848 grad=12.771
+[epoch 01 step 00050/00328] loss=6.7266 tok/s=3,858 grad=12.684
+[epoch 01 step 00060/00328] loss=6.6713 tok/s=3,885 grad=12.236
+[epoch 01 step 00070/00328] loss=7.3221 tok/s=3,896 grad=7.257
+[epoch 01 step 00080/00328] loss=6.3939 tok/s=3,878 grad=10.746
+[epoch 01 step 00090/00328] loss=6.5388 tok/s=3,738 grad=7.802
+[epoch 01 step 00100/00328] loss=6.7624 tok/s=3,557 grad=10.031
+[epoch 01 step 00110/00328] loss=5.5668 tok/s=3,545 grad=6.089
+[epoch 01 step 00120/00328] loss=6.8109 tok/s=3,250 grad=8.461
+[epoch 01 step 00130/00328] loss=6.7876 tok/s=3,196 grad=5.140
+[epoch 01 step 00140/00328] loss=6.8249 tok/s=3,145 grad=5.090
+[epoch 01 step 00150/00328] loss=6.0570 tok/s=3,003 grad=4.877
+[epoch 01 step 00160/00328] loss=6.2854 tok/s=2,953 grad=5.378
+[epoch 01 step 00170/00328] loss=6.5626 tok/s=2,844 grad=5.090
+[epoch 01 step 00180/00328] loss=5.6968 tok/s=2,785 grad=5.504
+[epoch 01 step 00190/00328] loss=6.4772 tok/s=2,672 grad=4.071
+[epoch 01 step 00200/00328] loss=6.2130 tok/s=2,624 grad=4.722
+[epoch 01 step 00210/00328] loss=5.8155 tok/s=2,608 grad=4.663
+[epoch 01 step 00220/00328] loss=6.2861 tok/s=2,652 grad=3.387
+[epoch 01 step 00230/00328] loss=5.7251 tok/s=2,695 grad=3.645
+[epoch 01 step 00240/00328] loss=5.7833 tok/s=2,735 grad=3.170
+[epoch 01 step 00250/00328] loss=6.5750 tok/s=2,775 grad=3.046
+[epoch 01 step 00260/00328] loss=5.8029 tok/s=2,810 grad=3.431
+[epoch 01 step 00270/00328] loss=5.2406 tok/s=2,839 grad=2.233
+[epoch 01 step 00280/00328] loss=6.7138 tok/s=2,868 grad=3.146
+[epoch 01 step 00290/00328] loss=6.5735 tok/s=2,896 grad=2.740
+[epoch 01 step 00300/00328] loss=6.5669 tok/s=2,922 grad=3.958
+[epoch 01 step 00310/00328] loss=5.9844 tok/s=2,949 grad=3.624
+[epoch 01 step 00320/00328] loss=6.6888 tok/s=2,962 grad=2.541
+[epoch 01 step 00328/00328] loss=6.3107 tok/s=2,930 grad=6.033
+[epoch 01 step 00020/03640] loss=2.8211 tok/s=2,136 grad=6.323
+[epoch 01 step 00040/03640] loss=1.3706 tok/s=1,944 grad=3.492
+[epoch 01 step 00060/03640] loss=1.0318 tok/s=2,035 grad=3.410
+[epoch 01 step 00080/03640] loss=0.9489 tok/s=1,997 grad=3.528
+[epoch 01 step 00100/03640] loss=0.8675 tok/s=1,989 grad=3.658
+[epoch 01 step 00120/03640] loss=0.9506 tok/s=1,961 grad=3.405
+[epoch 01 step 00140/03640] loss=0.9548 tok/s=2,005 grad=3.580
+[epoch 01 step 00160/03640] loss=1.0287 tok/s=2,000 grad=4.384
+[epoch 01 step 00180/03640] loss=0.7304 tok/s=2,015 grad=3.473
+validation={'objective': 0.7072428564176052, 'accuracy': 0.8138308263332682, 'balanced_accuracy': 0.7079534294705184, 'macro_f1_13': 0.7232296337645864, 'regional_macro_f1': 0.7072428564176052, 'weighted_f1': 0.8132747144568728, 'mcc': 0.7859161892892061, 'ece_15': 0.02120786112782128, 'brier': 0.2597668246187538, 'worst_present_dialect_f1': 0.3870967741935484, 'examples': 10238.0} best=0.707243
+[epoch 02 step 00200/03640] loss=0.6080 tok/s=2,006 grad=3.230
+[epoch 02 step 00220/03640] loss=0.4419 tok/s=2,043 grad=3.418
+[epoch 02 step 00240/03640] loss=0.7458 tok/s=2,052 grad=5.152
+[epoch 02 step 00260/03640] loss=0.6150 tok/s=2,056 grad=3.575
+[epoch 02 step 00280/03640] loss=0.6716 tok/s=2,064 grad=6.848
+[epoch 02 step 00300/03640] loss=0.6384 tok/s=2,068 grad=5.514
+[epoch 02 step 00320/03640] loss=0.7014 tok/s=2,072 grad=5.112
+[epoch 02 step 00340/03640] loss=0.6474 tok/s=2,069 grad=4.421
+[epoch 02 step 00360/03640] loss=0.7611 tok/s=2,081 grad=4.139
+validation={'objective': 0.7383659545355604, 'accuracy': 0.8351240476655597, 'balanced_accuracy': 0.7403897501910985, 'macro_f1_13': 0.7522053180436401, 'regional_macro_f1': 0.7383659545355604, 'weighted_f1': 0.8338092199065665, 'mcc': 0.8099122266437124, 'ece_15': 0.04323936119882311, 'brier': 0.2353383969191487, 'worst_present_dialect_f1': 0.3795620437956204, 'examples': 10238.0} best=0.738366
+[epoch 03 step 00380/03640] loss=0.3953 tok/s=2,081 grad=2.391
+[epoch 03 step 00400/03640] loss=0.5423 tok/s=2,092 grad=3.123
+[epoch 03 step 00420/03640] loss=0.3773 tok/s=2,113 grad=2.816
+[epoch 03 step 00440/03640] loss=0.4220 tok/s=2,115 grad=2.335
+[epoch 03 step 00460/03640] loss=0.5720 tok/s=2,130 grad=5.277
+[epoch 03 step 00480/03640] loss=0.4870 tok/s=2,133 grad=3.674
+[epoch 03 step 00500/03640] loss=0.5880 tok/s=2,120 grad=2.813
+[epoch 03 step 00520/03640] loss=0.5360 tok/s=2,123 grad=2.527
+[epoch 03 step 00540/03640] loss=0.3684 tok/s=2,130 grad=1.953
+validation={'objective': 0.72873768998733, 'accuracy': 0.8312170345770659, 'balanced_accuracy': 0.7310147068754923, 'macro_f1_13': 0.7435266545972021, 'regional_macro_f1': 0.72873768998733, 'weighted_f1': 0.8305707508270659, 'mcc': 0.8056425625820803, 'ece_15': 0.06087556496061689, 'brier': 0.2451679796921179, 'worst_present_dialect_f1': 0.37142857142857144, 'examples': 10238.0} best=0.738366
+[epoch 04 step 00560/03640] loss=0.2927 tok/s=2,130 grad=2.230
+[epoch 04 step 00580/03640] loss=0.3578 tok/s=2,138 grad=3.026
+[epoch 04 step 00600/03640] loss=0.3021 tok/s=2,143 grad=3.132
+[epoch 04 step 00620/03640] loss=0.3290 tok/s=2,149 grad=3.419
+[epoch 04 step 00640/03640] loss=0.4000 tok/s=2,155 grad=3.278
+[epoch 04 step 00660/03640] loss=0.4669 tok/s=2,158 grad=3.206
+[epoch 04 step 00680/03640] loss=0.3963 tok/s=2,156 grad=2.816
+[epoch 04 step 00700/03640] loss=0.3869 tok/s=2,162 grad=3.974
+[epoch 04 step 00720/03640] loss=0.3510 tok/s=2,165 grad=3.183
+validation={'objective': 0.7420443972013125, 'accuracy': 0.8380543074819301, 'balanced_accuracy': 0.7416349200539223, 'macro_f1_13': 0.7557757161094595, 'regional_macro_f1': 0.7420443972013125, 'weighted_f1': 0.8371455072831374, 'mcc': 0.8133726728209129, 'ece_15': 0.07726747314837744, 'brier': 0.24667179882018764, 'worst_present_dialect_f1': 0.37037037037037035, 'examples': 10238.0} best=0.742044
+[epoch 05 step 00740/03640] loss=0.2512 tok/s=2,148 grad=1.545
+[epoch 05 step 00760/03640] loss=0.3660 tok/s=2,148 grad=2.312
+[epoch 05 step 00780/03640] loss=0.4279 tok/s=2,152 grad=2.760
+[epoch 05 step 00800/03640] loss=0.4212 tok/s=2,158 grad=2.942
+[epoch 05 step 00820/03640] loss=0.3588 tok/s=2,162 grad=2.158
+[epoch 05 step 00840/03640] loss=0.4394 tok/s=2,167 grad=3.156
+[epoch 05 step 00860/03640] loss=0.6239 tok/s=2,169 grad=3.200
+[epoch 05 step 00880/03640] loss=0.4181 tok/s=2,164 grad=2.452
+[epoch 05 step 00900/03640] loss=0.4429 tok/s=2,166 grad=2.705
+validation={'objective': 0.749339554507927, 'accuracy': 0.8401054893533894, 'balanced_accuracy': 0.7509970902556542, 'macro_f1_13': 0.7625766887968086, 'regional_macro_f1': 0.749339554507927, 'weighted_f1': 0.8393941443689167, 'mcc': 0.8157531231156177, 'ece_15': 0.09066437045521601, 'brier': 0.2489873789872007, 'worst_present_dialect_f1': 0.4153846153846154, 'examples': 10238.0} best=0.749340
+[epoch 06 step 00920/03640] loss=0.2439 tok/s=2,162 grad=1.807
+[epoch 06 step 00940/03640] loss=0.2912 tok/s=2,164 grad=2.127
+[epoch 06 step 00960/03640] loss=0.3848 tok/s=2,168 grad=2.413
+[epoch 06 step 00980/03640] loss=0.3008 tok/s=2,171 grad=2.375
+[epoch 06 step 01000/03640] loss=0.4733 tok/s=2,172 grad=2.916
+[epoch 06 step 01020/03640] loss=0.4567 tok/s=2,173 grad=2.328
+[epoch 06 step 01040/03640] loss=0.3536 tok/s=2,174 grad=2.340
+[epoch 06 step 01060/03640] loss=0.3471 tok/s=2,176 grad=2.409
+[epoch 06 step 01080/03640] loss=0.3948 tok/s=2,183 grad=3.201
+validation={'objective': 0.7508517671383869, 'accuracy': 0.842254346552061, 'balanced_accuracy': 0.7635478063105092, 'macro_f1_13': 0.7638812259415949, 'regional_macro_f1': 0.7508517671383869, 'weighted_f1': 0.8417825738638306, 'mcc': 0.818367692315399, 'ece_15': 0.09092612966420618, 'brier': 0.2501191081582461, 'worst_present_dialect_f1': 0.46153846153846156, 'examples': 10238.0} best=0.749340
+[epoch 07 step 01100/03640] loss=0.2698 tok/s=2,172 grad=2.203
+[epoch 07 step 01120/03640] loss=0.2286 tok/s=2,175 grad=1.586
+[epoch 07 step 01140/03640] loss=0.3381 tok/s=2,185 grad=1.822
+[epoch 07 step 01160/03640] loss=0.2161 tok/s=2,185 grad=1.896
+[epoch 07 step 01180/03640] loss=0.2059 tok/s=2,184 grad=1.683
+[epoch 07 step 01200/03640] loss=0.2616 tok/s=2,185 grad=1.853
+[epoch 07 step 01220/03640] loss=0.4542 tok/s=2,187 grad=2.364
+[epoch 07 step 01240/03640] loss=0.3090 tok/s=2,192 grad=2.124
+[epoch 07 step 01260/03640] loss=0.3946 tok/s=2,194 grad=2.064
+validation={'objective': 0.7505152113288988, 'accuracy': 0.8395194373901153, 'balanced_accuracy': 0.7533098451638478, 'macro_f1_13': 0.7635194610752909, 'regional_macro_f1': 0.7505152113288988, 'weighted_f1': 0.8390726739244669, 'mcc': 0.8150431650794712, 'ece_15': 0.09848289151260639, 'brier': 0.2571210954425783, 'worst_present_dialect_f1': 0.46153846153846156, 'examples': 10238.0} best=0.749340
+[epoch 08 step 01280/03640] loss=0.2149 tok/s=2,187 grad=1.622
+[epoch 08 step 01300/03640] loss=0.3893 tok/s=2,188 grad=1.812
+[epoch 08 step 01320/03640] loss=0.3266 tok/s=2,192 grad=2.456
+[epoch 08 step 01340/03640] loss=0.3237 tok/s=2,192 grad=1.947
+[epoch 08 step 01360/03640] loss=0.2984 tok/s=2,193 grad=1.560
+[epoch 08 step 01380/03640] loss=0.2786 tok/s=2,195 grad=2.188
+[epoch 08 step 01400/03640] loss=0.3689 tok/s=2,197 grad=2.526
+[epoch 08 step 01420/03640] loss=0.3150 tok/s=2,199 grad=1.891
+[epoch 08 step 01440/03640] loss=0.4345 tok/s=2,201 grad=2.200
+validation={'objective': 0.7383115394998429, 'accuracy': 0.8369798788825943, 'balanced_accuracy': 0.7453229991195686, 'macro_f1_13': 0.7519012651974151, 'regional_macro_f1': 0.7383115394998429, 'weighted_f1': 0.8363759289264039, 'mcc': 0.8123055904098612, 'ece_15': 0.1089281223788581, 'brier': 0.267213222060106, 'worst_present_dialect_f1': 0.3472222222222222, 'examples': 10238.0} best=0.749340
+[epoch 09 step 01460/03640] loss=0.2718 tok/s=2,199 grad=1.239
+[epoch 09 step 01480/03640] loss=0.2989 tok/s=2,200 grad=1.077
+[epoch 09 step 01500/03640] loss=0.3827 tok/s=2,197 grad=1.546
+[epoch 09 step 01520/03640] loss=0.2222 tok/s=2,203 grad=1.160
+[epoch 09 step 01540/03640] loss=0.2309 tok/s=2,207 grad=2.015
+[epoch 09 step 01560/03640] loss=0.3076 tok/s=2,208 grad=2.088
+[epoch 09 step 01580/03640] loss=0.3940 tok/s=2,210 grad=1.877
+[epoch 09 step 01600/03640] loss=0.3531 tok/s=2,211 grad=1.866
+[epoch 09 step 01620/03640] loss=0.2783 tok/s=2,210 grad=2.464
+validation={'objective': 0.745757629774039, 'accuracy': 0.8373705801914436, 'balanced_accuracy': 0.752758018497446, 'macro_f1_13': 0.7586758434644891, 'regional_macro_f1': 0.745757629774039, 'weighted_f1': 0.8373874123466687, 'mcc': 0.8127018237444995, 'ece_15': 0.11621520478910802, 'brier': 0.27385951092708466, 'worst_present_dialect_f1': 0.3974358974358974, 'examples': 10238.0} best=0.749340
+[epoch 10 step 01640/03640] loss=0.3613 tok/s=2,202 grad=1.438
+[epoch 10 step 01660/03640] loss=0.2634 tok/s=2,205 grad=1.789
+[epoch 10 step 01680/03640] loss=0.2351 tok/s=2,205 grad=2.263
+[epoch 10 step 01700/03640] loss=0.3237 tok/s=2,206 grad=1.850
+[epoch 10 step 01720/03640] loss=0.2566 tok/s=2,207 grad=1.994
+[epoch 10 step 01740/03640] loss=0.2116 tok/s=2,208 grad=1.358
+[epoch 10 step 01760/03640] loss=0.2260 tok/s=2,207 grad=1.209
+[epoch 10 step 01780/03640] loss=0.3021 tok/s=2,208 grad=2.525
+[epoch 10 step 01800/03640] loss=0.3156 tok/s=2,206 grad=1.895
+[epoch 10 step 01820/03640] loss=0.2437 tok/s=2,206 grad=2.249
+validation={'objective': 0.7403455654634717, 'accuracy': 0.8403985153350264, 'balanced_accuracy': 0.7427056935786461, 'macro_f1_13': 0.7538416039907145, 'regional_macro_f1': 0.7403455654634717, 'weighted_f1': 0.8382052895428357, 'mcc': 0.8157975309379962, 'ece_15': 0.11496000299290249, 'brier': 0.27022783187271393, 'worst_present_dialect_f1': 0.3888888888888889, 'examples': 10238.0} best=0.749340
+Bidirectional ID specialization complete: seed=1701
+[epoch 01 step 00010/00328] loss=6.2602 tok/s=1,922 grad=14.393
+[epoch 01 step 00020/00328] loss=7.1651 tok/s=1,902 grad=10.234
+[epoch 01 step 00030/00328] loss=6.6116 tok/s=1,867 grad=18.851
+[epoch 01 step 00040/00328] loss=7.6301 tok/s=1,878 grad=19.813
+[epoch 01 step 00050/00328] loss=7.1640 tok/s=1,897 grad=7.299
+[epoch 01 step 00060/00328] loss=6.6013 tok/s=1,909 grad=15.364
+[epoch 01 step 00070/00328] loss=6.0623 tok/s=1,924 grad=13.542
+[epoch 01 step 00080/00328] loss=6.8988 tok/s=1,945 grad=6.945
+[epoch 01 step 00090/00328] loss=6.5108 tok/s=1,974 grad=10.248
+[epoch 01 step 00100/00328] loss=6.7294 tok/s=1,961 grad=8.889
+[epoch 01 step 00110/00328] loss=6.5693 tok/s=1,946 grad=17.018
+[epoch 01 step 00120/00328] loss=6.8579 tok/s=1,966 grad=6.568
+[epoch 01 step 00130/00328] loss=6.7226 tok/s=1,981 grad=6.609
+[epoch 01 step 00140/00328] loss=6.6991 tok/s=1,983 grad=8.331
+[epoch 01 step 00150/00328] loss=6.5076 tok/s=1,960 grad=7.049
+[epoch 01 step 00160/00328] loss=6.2868 tok/s=1,948 grad=6.002
+[epoch 01 step 00170/00328] loss=6.0213 tok/s=1,938 grad=7.513
+[epoch 01 step 00180/00328] loss=5.9477 tok/s=1,924 grad=6.254
+[epoch 01 step 00190/00328] loss=5.5150 tok/s=1,919 grad=3.854
+[epoch 01 step 00200/00328] loss=5.9069 tok/s=1,920 grad=5.636
+[epoch 01 step 00210/00328] loss=5.9909 tok/s=1,906 grad=3.517
+[epoch 01 step 00220/00328] loss=5.9824 tok/s=1,915 grad=3.544
+[epoch 01 step 00230/00328] loss=6.1632 tok/s=1,899 grad=2.344
+[epoch 01 step 00240/00328] loss=6.1320 tok/s=1,913 grad=2.882
+[epoch 01 step 00250/00328] loss=5.7463 tok/s=1,909 grad=2.883
+[epoch 01 step 00260/00328] loss=5.4881 tok/s=1,910 grad=1.740
+[epoch 01 step 00270/00328] loss=5.5372 tok/s=1,906 grad=3.245
+[epoch 01 step 00280/00328] loss=5.7263 tok/s=1,903 grad=3.534
+[epoch 01 step 00290/00328] loss=5.4375 tok/s=1,891 grad=2.528
+[epoch 01 step 00300/00328] loss=5.7075 tok/s=1,892 grad=2.408
+[epoch 01 step 00310/00328] loss=5.5923 tok/s=1,876 grad=2.697
+[epoch 01 step 00320/00328] loss=5.7015 tok/s=1,877 grad=2.683
+[epoch 01 step 00328/00328] loss=5.8043 tok/s=1,869 grad=4.707
+[epoch 01 step 00020/03640] loss=2.7077 tok/s=1,895 grad=6.901
+[epoch 01 step 00040/03640] loss=1.6007 tok/s=1,937 grad=3.359
+[epoch 01 step 00060/03640] loss=1.0737 tok/s=2,003 grad=2.965
+[epoch 01 step 00080/03640] loss=0.9730 tok/s=2,071 grad=2.845
+[epoch 01 step 00100/03640] loss=0.9536 tok/s=2,036 grad=3.870
+[epoch 01 step 00120/03640] loss=1.0014 tok/s=2,047 grad=4.363
+[epoch 01 step 00140/03640] loss=0.6741 tok/s=2,018 grad=3.023
+[epoch 01 step 00160/03640] loss=0.8355 tok/s=2,011 grad=4.944
+[epoch 01 step 00180/03640] loss=0.9892 tok/s=2,054 grad=6.030
+validation={'objective': 0.711307367380302, 'accuracy': 0.8166634108224262, 'balanced_accuracy': 0.7066369529855033, 'macro_f1_13': 0.7268813969428175, 'regional_macro_f1': 0.711307367380302, 'weighted_f1': 0.8147583783283675, 'mcc': 0.7888206957364071, 'ece_15': 0.018594407901665635, 'brier': 0.258947038637054, 'worst_present_dialect_f1': 0.32558139534883723, 'examples': 10238.0} best=0.711307
+[epoch 02 step 00200/03640] loss=0.7924 tok/s=1,998 grad=4.732
+[epoch 02 step 00220/03640] loss=0.6498 tok/s=2,025 grad=3.178
+[epoch 02 step 00240/03640] loss=0.5800 tok/s=2,014 grad=3.279
+[epoch 02 step 00260/03640] loss=0.7191 tok/s=2,018 grad=3.532
+[epoch 02 step 00280/03640] loss=0.7403 tok/s=2,021 grad=4.313
+[epoch 02 step 00300/03640] loss=0.8176 tok/s=2,033 grad=4.271
+[epoch 02 step 00320/03640] loss=0.9084 tok/s=2,050 grad=3.003
+[epoch 02 step 00340/03640] loss=0.6763 tok/s=2,053 grad=4.255
+[epoch 02 step 00360/03640] loss=0.8260 tok/s=2,046 grad=3.468
+validation={'objective': 0.7445776697877924, 'accuracy': 0.8344403203750732, 'balanced_accuracy': 0.7497448209889641, 'macro_f1_13': 0.7578290941878366, 'regional_macro_f1': 0.7445776697877924, 'weighted_f1': 0.8330348385518884, 'mcc': 0.8091666103022338, 'ece_15': 0.040923491871364, 'brier': 0.23610070449457934, 'worst_present_dialect_f1': 0.46987951807228917, 'examples': 10238.0} best=0.744578
+[epoch 03 step 00380/03640] loss=0.3217 tok/s=2,035 grad=2.406
+[epoch 03 step 00400/03640] loss=0.3950 tok/s=2,030 grad=2.913
+[epoch 03 step 00420/03640] loss=0.5560 tok/s=2,046 grad=3.452
+[epoch 03 step 00440/03640] loss=0.4552 tok/s=2,046 grad=2.906
+[epoch 03 step 00460/03640] loss=0.5313 tok/s=2,039 grad=2.851
+[epoch 03 step 00480/03640] loss=0.6037 tok/s=2,054 grad=3.272
+[epoch 03 step 00500/03640] loss=0.5412 tok/s=2,057 grad=3.035
+[epoch 03 step 00520/03640] loss=0.5260 tok/s=2,056 grad=3.106
+[epoch 03 step 00540/03640] loss=0.5647 tok/s=2,063 grad=2.914
+validation={'objective': 0.7306472463282168, 'accuracy': 0.8320961125219769, 'balanced_accuracy': 0.728075201406189, 'macro_f1_13': 0.7446092672355592, 'regional_macro_f1': 0.7306472463282168, 'weighted_f1': 0.8291695166011581, 'mcc': 0.8060182774823188, 'ece_15': 0.07545993520333721, 'brier': 0.2497880926158974, 'worst_present_dialect_f1': 0.3382352941176471, 'examples': 10238.0} best=0.744578
+[epoch 04 step 00560/03640] loss=0.3202 tok/s=2,044 grad=2.351
+[epoch 04 step 00580/03640] loss=0.3203 tok/s=2,049 grad=2.498
+[epoch 04 step 00600/03640] loss=0.4799 tok/s=2,049 grad=2.651
+[epoch 04 step 00620/03640] loss=0.3830 tok/s=2,049 grad=2.970
+[epoch 04 step 00640/03640] loss=0.3983 tok/s=2,048 grad=2.463
+[epoch 04 step 00660/03640] loss=0.3642 tok/s=2,045 grad=2.931
+[epoch 04 step 00680/03640] loss=0.4122 tok/s=2,067 grad=2.893
+[epoch 04 step 00700/03640] loss=0.5180 tok/s=2,072 grad=4.698
+[epoch 04 step 00720/03640] loss=0.4721 tok/s=2,069 grad=3.585
+validation={'objective': 0.7420399299691981, 'accuracy': 0.8393240867356906, 'balanced_accuracy': 0.7383574407063935, 'macro_f1_13': 0.75535275542249, 'regional_macro_f1': 0.7420399299691981, 'weighted_f1': 0.8366344590851837, 'mcc': 0.8144044295835268, 'ece_15': 0.08346111775550744, 'brier': 0.24510616829900006, 'worst_present_dialect_f1': 0.42105263157894735, 'examples': 10238.0} best=0.744578
+[epoch 05 step 00740/03640] loss=0.3612 tok/s=2,059 grad=2.757
+[epoch 05 step 00760/03640] loss=0.3001 tok/s=2,057 grad=2.287
+[epoch 05 step 00780/03640] loss=0.3778 tok/s=2,050 grad=3.356
+[epoch 05 step 00800/03640] loss=0.4183 tok/s=2,049 grad=2.685
+[epoch 05 step 00820/03640] loss=0.3609 tok/s=2,047 grad=3.300
+[epoch 05 step 00840/03640] loss=0.5754 tok/s=2,042 grad=3.094
+[epoch 05 step 00860/03640] loss=0.3087 tok/s=2,042 grad=2.403
+[epoch 05 step 00880/03640] loss=0.4565 tok/s=2,041 grad=2.084
+[epoch 05 step 00900/03640] loss=0.3823 tok/s=2,038 grad=3.140
+validation={'objective': 0.7243315352593237, 'accuracy': 0.8382496581363548, 'balanced_accuracy': 0.7393514747440089, 'macro_f1_13': 0.7394603539538166, 'regional_macro_f1': 0.7243315352593237, 'weighted_f1': 0.8364872598967439, 'mcc': 0.8136796904558944, 'ece_15': 0.08901241370321228, 'brier': 0.25235772966142656, 'worst_present_dialect_f1': 0.2564102564102564, 'examples': 10238.0} best=0.744578
+[epoch 06 step 00920/03640] loss=0.3236 tok/s=2,038 grad=2.227
+[epoch 06 step 00940/03640] loss=0.2877 tok/s=2,041 grad=2.055
+[epoch 06 step 00960/03640] loss=0.2422 tok/s=2,044 grad=2.164
+[epoch 06 step 00980/03640] loss=0.3488 tok/s=2,050 grad=2.306
+[epoch 06 step 01000/03640] loss=0.3181 tok/s=2,055 grad=3.164
+[epoch 06 step 01020/03640] loss=0.4322 tok/s=2,051 grad=2.871
+[epoch 06 step 01040/03640] loss=0.2924 tok/s=2,051 grad=2.903
+[epoch 06 step 01060/03640] loss=0.2662 tok/s=2,055 grad=2.371
+[epoch 06 step 01080/03640] loss=0.3865 tok/s=2,053 grad=2.364
+validation={'objective': 0.7394813545131141, 'accuracy': 0.8358077749560461, 'balanced_accuracy': 0.7571133940802292, 'macro_f1_13': 0.7528951697977836, 'regional_macro_f1': 0.7394813545131141, 'weighted_f1': 0.8356943355705547, 'mcc': 0.8109281922552085, 'ece_15': 0.093966563096338, 'brier': 0.2578782099540457, 'worst_present_dialect_f1': 0.37735849056603776, 'examples': 10238.0} best=0.744578
+Bidirectional ID specialization complete: seed=2903
+[epoch 01 step 00010/00328] loss=6.2703 tok/s=1,789 grad=10.379
+[epoch 01 step 00020/00328] loss=7.1833 tok/s=1,853 grad=9.114
+[epoch 01 step 00030/00328] loss=6.3311 tok/s=1,896 grad=13.767
+[epoch 01 step 00040/00328] loss=6.4342 tok/s=1,881 grad=11.246
+[epoch 01 step 00050/00328] loss=6.8130 tok/s=1,865 grad=7.354
+[epoch 01 step 00060/00328] loss=6.3105 tok/s=1,881 grad=10.819
+[epoch 01 step 00070/00328] loss=5.5222 tok/s=1,880 grad=12.813
+[epoch 01 step 00080/00328] loss=6.7330 tok/s=1,879 grad=16.705
+[epoch 01 step 00090/00328] loss=7.2336 tok/s=1,848 grad=7.124
+[epoch 01 step 00100/00328] loss=6.4069 tok/s=1,849 grad=10.270
+[epoch 01 step 00110/00328] loss=6.3511 tok/s=1,853 grad=7.463
+[epoch 01 step 00120/00328] loss=6.6789 tok/s=1,851 grad=8.971
+[epoch 01 step 00130/00328] loss=6.6852 tok/s=1,852 grad=6.604
+[epoch 01 step 00140/00328] loss=6.1420 tok/s=1,844 grad=6.741
+[epoch 01 step 00150/00328] loss=6.1303 tok/s=1,848 grad=6.724
+[epoch 01 step 00160/00328] loss=6.1401 tok/s=1,833 grad=3.795
+[epoch 01 step 00170/00328] loss=6.6296 tok/s=1,833 grad=7.645
+[epoch 01 step 00180/00328] loss=6.4509 tok/s=1,835 grad=5.769
+[epoch 01 step 00190/00328] loss=5.7565 tok/s=1,842 grad=5.224
+[epoch 01 step 00200/00328] loss=6.5943 tok/s=1,836 grad=4.755
+[epoch 01 step 00210/00328] loss=6.4276 tok/s=1,836 grad=3.552
+[epoch 01 step 00220/00328] loss=6.0462 tok/s=1,833 grad=3.760
+[epoch 01 step 00230/00328] loss=5.9473 tok/s=1,827 grad=4.341
+[epoch 01 step 00240/00328] loss=6.4048 tok/s=1,841 grad=3.286
+[epoch 01 step 00250/00328] loss=5.9897 tok/s=1,834 grad=3.526
+[epoch 01 step 00260/00328] loss=6.3523 tok/s=1,842 grad=3.720
+[epoch 01 step 00270/00328] loss=5.9231 tok/s=1,843 grad=1.858
+[epoch 01 step 00280/00328] loss=6.1614 tok/s=1,843 grad=2.574
+[epoch 01 step 00290/00328] loss=6.2007 tok/s=1,845 grad=3.141
+[epoch 01 step 00300/00328] loss=6.3533 tok/s=1,848 grad=2.679
+[epoch 01 step 00310/00328] loss=6.2172 tok/s=1,845 grad=2.363
+[epoch 01 step 00320/00328] loss=5.0567 tok/s=1,849 grad=2.139
+[epoch 01 step 00328/00328] loss=6.0491 tok/s=1,845 grad=8.546
+[epoch 01 step 00020/03640] loss=2.7355 tok/s=2,326 grad=6.574
+[epoch 01 step 00040/03640] loss=1.4752 tok/s=2,224 grad=3.684
+[epoch 01 step 00060/03640] loss=1.1000 tok/s=2,243 grad=2.985
+[epoch 01 step 00080/03640] loss=0.8754 tok/s=2,241 grad=3.756
+[epoch 01 step 00100/03640] loss=1.0202 tok/s=2,263 grad=4.229
+[epoch 01 step 00120/03640] loss=0.8864 tok/s=2,221 grad=4.165
+[epoch 01 step 00140/03640] loss=0.8786 tok/s=2,209 grad=3.680
+[epoch 01 step 00160/03640] loss=0.9267 tok/s=2,215 grad=6.042
+[epoch 01 step 00180/03640] loss=0.9071 tok/s=2,190 grad=4.912
+validation={'objective': 0.7012388830701899, 'accuracy': 0.8223285798007424, 'balanced_accuracy': 0.6982977511990072, 'macro_f1_13': 0.7178458556626235, 'regional_macro_f1': 0.7012388830701899, 'weighted_f1': 0.821601013517362, 'mcc': 0.7954636998007254, 'ece_15': 0.01573240933246647, 'brier': 0.24950771632346744, 'worst_present_dialect_f1': 0.1981981981981982, 'examples': 10238.0} best=0.701239
+[epoch 02 step 00200/03640] loss=0.6302 tok/s=2,134 grad=3.088
+[epoch 02 step 00220/03640] loss=0.8057 tok/s=2,116 grad=4.034
+[epoch 02 step 00240/03640] loss=0.5856 tok/s=2,116 grad=3.947
+[epoch 02 step 00260/03640] loss=0.7066 tok/s=2,139 grad=3.793
+[epoch 02 step 00280/03640] loss=0.4507 tok/s=2,128 grad=4.013
+[epoch 02 step 00300/03640] loss=0.5424 tok/s=2,098 grad=3.730
+[epoch 02 step 00320/03640] loss=0.6606 tok/s=2,084 grad=4.909
+[epoch 02 step 00340/03640] loss=0.8653 tok/s=2,105 grad=4.467
+[epoch 02 step 00360/03640] loss=0.7255 tok/s=2,083 grad=5.058
+validation={'objective': 0.7379743998218763, 'accuracy': 0.8363938269193202, 'balanced_accuracy': 0.7311543063933458, 'macro_f1_13': 0.752017233927591, 'regional_macro_f1': 0.7379743998218763, 'weighted_f1': 0.8342423911911477, 'mcc': 0.8112347126705585, 'ece_15': 0.037524682585558244, 'brier': 0.233741167912339, 'worst_present_dialect_f1': 0.39655172413793105, 'examples': 10238.0} best=0.737974
+[epoch 03 step 00380/03640] loss=0.4287 tok/s=2,067 grad=3.310
+[epoch 03 step 00400/03640] loss=0.4749 tok/s=2,060 grad=2.474
+[epoch 03 step 00420/03640] loss=0.4084 tok/s=2,047 grad=2.583
+[epoch 03 step 00440/03640] loss=0.3288 tok/s=2,041 grad=3.011
+[epoch 03 step 00460/03640] loss=0.5189 tok/s=2,032 grad=3.194
+[epoch 03 step 00480/03640] loss=0.4196 tok/s=2,039 grad=2.333
+[epoch 03 step 00500/03640] loss=0.5851 tok/s=2,043 grad=2.664
+[epoch 03 step 00520/03640] loss=0.5056 tok/s=2,032 grad=3.034
+[epoch 03 step 00540/03640] loss=0.6713 tok/s=2,039 grad=3.015
+validation={'objective': 0.7410228196968532, 'accuracy': 0.8370775542098066, 'balanced_accuracy': 0.755569188606353, 'macro_f1_13': 0.7545508881810306, 'regional_macro_f1': 0.7410228196968532, 'weighted_f1': 0.836295186512366, 'mcc': 0.8123130960770365, 'ece_15': 0.06857339022482804, 'brier': 0.24487869157660094, 'worst_present_dialect_f1': 0.39751552795031053, 'examples': 10238.0} best=0.741023
+[epoch 04 step 00560/03640] loss=0.3091 tok/s=2,021 grad=2.967
+[epoch 04 step 00580/03640] loss=0.3817 tok/s=2,024 grad=2.293
+[epoch 04 step 00600/03640] loss=0.4526 tok/s=2,026 grad=3.461
+[epoch 04 step 00620/03640] loss=0.4528 tok/s=2,020 grad=2.169
+[epoch 04 step 00640/03640] loss=0.4730 tok/s=2,021 grad=2.388
+[epoch 04 step 00660/03640] loss=0.3664 tok/s=2,028 grad=2.818
+
+[2026-07-22T22:15:29.847620+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_bidirectional_identification.py
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+Bidirectional ID specialization complete: seed=1701
+Bidirectional ID specialization complete: seed=2903
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+[epoch 01 step 00020/03640] loss=2.7355 tok/s=4,255 grad=6.574

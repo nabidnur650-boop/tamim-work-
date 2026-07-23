@@ -2,9 +2,9 @@
 
 Status: **INCOMPLETE**
 
-Automated computational pipeline complete: **no**
-Required human validation complete: **no**
-Submission package complete: **no**
+Automated computational pipeline complete: **no**  
+Required human validation complete: **no**  
+Submission package complete: **no**  
 Overall submission-ready: **no**
 
 A Q1 acceptance outcome cannot be guaranteed by an artifact audit. The audit only establishes reproducibility, protocol completion, and whether required human evidence is present.

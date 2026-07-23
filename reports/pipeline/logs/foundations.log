@@ -1,0 +1,1367 @@
+
+[2026-07-19T19:51:12.799640+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/foundation_300m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/F_DENSE_300M/1701
+
+[2026-07-19T19:51:15.663484+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/continuation_m0_dense_200m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+initial_validation {'validation_nll': 3.662278144213618, 'validation_perplexity': 38.949975535390415, 'validation_bpc': 1.23032926563568, 'validation_predicted_tokens': 1002540, 'global_step': 0, 'tokens_seen': 0}
+[step 00010/01526] tok=1,310,720 loss=3.6098 tok/s=19,643
+[step 00020/01526] tok=2,621,440 loss=4.3207 tok/s=24,890
+[step 00030/01526] tok=3,932,160 loss=3.9119 tok/s=24,995
+[step 00040/01526] tok=5,242,880 loss=4.4080 tok/s=24,754
+[step 00050/01526] tok=6,553,600 loss=4.2893 tok/s=24,883
+[step 00060/01526] tok=7,864,320 loss=4.3856 tok/s=24,179
+[step 00070/01526] tok=9,175,040 loss=4.5303 tok/s=24,816
+validation {'validation_nll': 4.055474766906427, 'validation_perplexity': 57.7125565047966, 'validation_bpc': 1.3624222670403967, 'validation_predicted_tokens': 1002540, 'global_step': 77, 'tokens_seen': 10092544}
+[step 00080/01526] tok=10,485,760 loss=4.1811 tok/s=19,829
+[step 00090/01526] tok=11,796,480 loss=4.0425 tok/s=24,908
+
+[2026-07-19T20:33:57.107361+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/foundation_300m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/F_DENSE_300M/1701
+
+[2026-07-19T20:33:59.932909+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_continuation_lr_pilot.py
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_continuation_lr_pilot_v1",
+  "selection_metric": "final_validation_bpc",
+  "selection_mode": "min",
+  "selected_candidate": "muon_1e3_adamw_1p5e5",
+  "selected_muon_lr": 0.001,
+  "selected_adamw_lr": 1.5e-05,
+  "scheduler_token_budget": 200000000,
+  "warmup_fraction": 0.0,
+  "candidates": [
+    {
+      "id": "muon_1e3_adamw_1p5e5",
+      "muon_lr": 0.001,
+      "adamw_lr": 1.5e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.226812558699324,
+      "maximum_post_start_validation_bpc": 1.2279528731436664,
+      "final_relative_bpc_regression": -0.0028583461635686147,
+      "maximum_relative_bpc_regression": -0.0019315093596393718,
+      "eligible": true,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_1e3_adamw_1p5e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_2e3_adamw_3e5",
+      "muon_lr": 0.002,
+      "adamw_lr": 3e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.2320590670510787,
+      "maximum_post_start_validation_bpc": 1.2320590670510787,
+      "final_relative_bpc_regression": 0.001405966243113843,
+      "maximum_relative_bpc_regression": 0.001405966243113843,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_2e3_adamw_3e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_5e3_adamw_7p5e5",
+      "muon_lr": 0.005,
+      "adamw_lr": 7.5e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.2541070193530184,
+      "maximum_post_start_validation_bpc": 1.2541070193530184,
+      "final_relative_bpc_regression": 0.01932633351207258,
+      "maximum_relative_bpc_regression": 0.01932633351207258,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_5e3_adamw_7p5e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_1e2_adamw_1p5e4",
+      "muon_lr": 0.01,
+      "adamw_lr": 0.00015,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.293376441945278,
+      "maximum_post_start_validation_bpc": 1.293376441945278,
+      "final_relative_bpc_regression": 0.05124414908315078,
+      "maximum_relative_bpc_regression": 0.05124414908315078,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_1e2_adamw_1p5e4.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/final_checkpoint.pt"
+    }
+  ],
+  "rejected_high_lr_trigger": {
+    "path": "runs/aborted/U_M0_DENSE_200M_high_lr_restart_20260720/1701",
+    "config_snapshot": "reports/model/rejected_high_lr_restart_config.yaml",
+    "muon_lr": 0.02,
+    "adamw_lr": 0.0003,
+    "warmup_fraction": 0.02,
+    "initial_validation_bpc": 1.23032926563568,
+    "post_restart_validation_bpc": 1.3624222670403967,
+    "relative_bpc_regression": 0.1073639432095177
+  },
+  "test_data_access": false
+}
+
+[2026-07-19T20:34:17.553139+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/continuation_m0_dense_200m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+initial_validation {'validation_nll': 3.662278144213618, 'validation_perplexity': 38.949975535390415, 'validation_bpc': 1.23032926563568, 'validation_predicted_tokens': 1002540, 'global_step': 0, 'tokens_seen': 0}
+[step 00010/01526] tok=1,310,720 loss=3.5999 tok/s=19,805
+[step 00020/01526] tok=2,621,440 loss=4.2071 tok/s=25,139
+[step 00030/01526] tok=3,932,160 loss=3.6033 tok/s=25,215
+[step 00040/01526] tok=5,242,880 loss=3.9998 tok/s=25,136
+[step 00050/01526] tok=6,553,600 loss=3.7987 tok/s=24,907
+[step 00060/01526] tok=7,864,320 loss=3.8826 tok/s=24,852
+[step 00070/01526] tok=9,175,040 loss=4.0992 tok/s=25,172
+validation {'validation_nll': 3.6517034501445536, 'validation_perplexity': 38.540261577969844, 'validation_bpc': 1.226776734922285, 'validation_predicted_tokens': 1002540, 'global_step': 77, 'tokens_seen': 10092544}
+[step 00080/01526] tok=10,485,760 loss=3.7321 tok/s=20,204
+[step 00090/01526] tok=11,796,480 loss=3.6283 tok/s=25,269
+[step 00100/01526] tok=13,107,200 loss=4.0079 tok/s=25,189
+[step 00110/01526] tok=14,417,920 loss=4.1562 tok/s=24,623
+[step 00120/01526] tok=15,728,640 loss=4.0042 tok/s=25,311
+[step 00130/01526] tok=17,039,360 loss=4.0585 tok/s=25,214
+[step 00140/01526] tok=18,350,080 loss=4.0788 tok/s=25,331
+[step 00150/01526] tok=19,660,800 loss=3.7005 tok/s=25,160
+validation {'validation_nll': 3.646371910523395, 'validation_perplexity': 38.33532943371861, 'validation_bpc': 1.2249856232239091, 'validation_predicted_tokens': 1002540, 'global_step': 153, 'tokens_seen': 20054016}
+[step 00160/01526] tok=20,971,520 loss=3.7908 tok/s=19,315
+[step 00170/01526] tok=22,282,240 loss=3.3556 tok/s=25,197
+[step 00180/01526] tok=23,592,960 loss=3.3273 tok/s=25,366
+[step 00190/01526] tok=24,903,680 loss=3.4105 tok/s=25,329
+[step 00200/01526] tok=26,214,400 loss=3.9309 tok/s=25,271
+[step 00210/01526] tok=27,525,120 loss=3.6924 tok/s=24,301
+[step 00220/01526] tok=28,835,840 loss=4.0439 tok/s=25,065
+validation {'validation_nll': 3.6410873539593753, 'validation_perplexity': 38.1332785617715, 'validation_bpc': 1.2232102953158164, 'validation_predicted_tokens': 1002540, 'global_step': 229, 'tokens_seen': 30015488}
+[step 00230/01526] tok=30,146,560 loss=3.3878 tok/s=20,128
+[step 00240/01526] tok=31,457,280 loss=3.3896 tok/s=25,171
+[step 00250/01526] tok=32,768,000 loss=3.4510 tok/s=25,181
+[step 00260/01526] tok=34,078,720 loss=3.5887 tok/s=24,660
+[step 00270/01526] tok=35,389,440 loss=3.8776 tok/s=24,729
+[step 00280/01526] tok=36,700,160 loss=3.9285 tok/s=17,093
+[step 00290/01526] tok=38,010,880 loss=3.9960 tok/s=18,895
+[step 00300/01526] tok=39,321,600 loss=3.7951 tok/s=16,839
+validation {'validation_nll': 3.636309203323053, 'validation_perplexity': 37.95150662522558, 'validation_bpc': 1.2216050926709074, 'validation_predicted_tokens': 1002540, 'global_step': 306, 'tokens_seen': 40108032}
+[step 00310/01526] tok=40,632,320 loss=4.1911 tok/s=13,328
+[step 00320/01526] tok=41,943,040 loss=3.4758 tok/s=18,291
+[step 00330/01526] tok=43,253,760 loss=3.6487 tok/s=20,129
+[step 00340/01526] tok=44,564,480 loss=4.2307 tok/s=24,174
+[step 00350/01526] tok=45,875,200 loss=3.8873 tok/s=19,166
+[step 00360/01526] tok=47,185,920 loss=3.9173 tok/s=22,646
+[step 00370/01526] tok=48,496,640 loss=3.4704 tok/s=24,354
+[step 00380/01526] tok=49,807,360 loss=3.8921 tok/s=16,267
+validation {'validation_nll': 3.6307085514068604, 'validation_perplexity': 37.73954755545614, 'validation_bpc': 1.2197235736579353, 'validation_predicted_tokens': 1002540, 'global_step': 382, 'tokens_seen': 50069504}
+[step 00390/01526] tok=51,118,080 loss=3.6486 tok/s=11,093
+[step 00400/01526] tok=52,428,800 loss=4.1544 tok/s=13,975
+[step 00410/01526] tok=53,739,520 loss=4.0124 tok/s=14,237
+[step 00420/01526] tok=55,050,240 loss=3.5106 tok/s=14,248
+[step 00430/01526] tok=56,360,960 loss=3.5929 tok/s=14,301
+[step 00440/01526] tok=57,671,680 loss=4.0562 tok/s=14,223
+[step 00450/01526] tok=58,982,400 loss=4.0559 tok/s=17,707
+validation {'validation_nll': 3.6255910503621003, 'validation_perplexity': 37.54690871655707, 'validation_bpc': 1.2180043674550318, 'validation_predicted_tokens': 1002540, 'global_step': 458, 'tokens_seen': 60030976}
+[step 00460/01526] tok=60,293,120 loss=4.3355 tok/s=16,771
+[step 00470/01526] tok=61,603,840 loss=3.8409 tok/s=13,795
+[step 00480/01526] tok=62,914,560 loss=3.9042 tok/s=15,056
+[step 00490/01526] tok=64,225,280 loss=3.6714 tok/s=13,352
+[step 00500/01526] tok=65,536,000 loss=4.0357 tok/s=15,202
+[step 00510/01526] tok=66,846,720 loss=3.9746 tok/s=13,073
+[step 00520/01526] tok=68,157,440 loss=4.1995 tok/s=15,236
+[step 00530/01526] tok=69,468,160 loss=3.5582 tok/s=13,330
+validation {'validation_nll': 3.6205681577020763, 'validation_perplexity': 37.358787476272724, 'validation_bpc': 1.216316944601162, 'validation_predicted_tokens': 1002540, 'global_step': 535, 'tokens_seen': 70123520}
+[step 00540/01526] tok=70,778,880 loss=3.6874 tok/s=11,387
+[step 00550/01526] tok=72,089,600 loss=3.9878 tok/s=14,751
+[step 00560/01526] tok=73,400,320 loss=3.9688 tok/s=13,171
+[step 00570/01526] tok=74,711,040 loss=3.4160 tok/s=15,197
+[step 00580/01526] tok=76,021,760 loss=3.9456 tok/s=13,429
+[step 00590/01526] tok=77,332,480 loss=3.4806 tok/s=14,985
+[step 00600/01526] tok=78,643,200 loss=3.6666 tok/s=13,645
+[step 00610/01526] tok=79,953,920 loss=4.0433 tok/s=14,619
+validation {'validation_nll': 3.615117869085195, 'validation_perplexity': 37.155725178888765, 'validation_bpc': 1.2144859396016907, 'validation_predicted_tokens': 1002540, 'global_step': 611, 'tokens_seen': 80084992}
+[step 00620/01526] tok=81,264,640 loss=3.9165 tok/s=11,100
+[step 00630/01526] tok=82,575,360 loss=3.8643 tok/s=13,964
+[step 00640/01526] tok=83,886,080 loss=3.9587 tok/s=14,322
+[step 00650/01526] tok=85,196,800 loss=3.8235 tok/s=14,120
+[step 00660/01526] tok=86,507,520 loss=3.7811 tok/s=14,175
+[step 00670/01526] tok=87,818,240 loss=3.8143 tok/s=14,017
+[step 00680/01526] tok=89,128,960 loss=3.2517 tok/s=14,238
+validation {'validation_nll': 3.610763900134028, 'validation_perplexity': 36.994301975917494, 'validation_bpc': 1.2130232392792824, 'validation_predicted_tokens': 1002540, 'global_step': 687, 'tokens_seen': 90046464}
+[step 00690/01526] tok=90,439,680 loss=3.7582 tok/s=11,078
+[step 00700/01526] tok=91,750,400 loss=3.3703 tok/s=14,561
+[step 00710/01526] tok=93,061,120 loss=4.2146 tok/s=13,560
+[step 00720/01526] tok=94,371,840 loss=3.7303 tok/s=14,749
+[step 00730/01526] tok=95,682,560 loss=4.4351 tok/s=13,634
+[step 00740/01526] tok=96,993,280 loss=3.6503 tok/s=14,937
+[step 00750/01526] tok=98,304,000 loss=4.3558 tok/s=13,575
+[step 00760/01526] tok=99,614,720 loss=3.3539 tok/s=13,417
+validation {'validation_nll': 3.6066300168329355, 'validation_perplexity': 36.84168751127266, 'validation_bpc': 1.211634475945156, 'validation_predicted_tokens': 1002540, 'global_step': 763, 'tokens_seen': 100007936}
+[step 00770/01526] tok=100,925,440 loss=4.0137 tok/s=11,260
+[step 00780/01526] tok=102,236,160 loss=3.9206 tok/s=14,904
+[step 00790/01526] tok=103,546,880 loss=3.8774 tok/s=13,684
+[step 00800/01526] tok=104,857,600 loss=4.4455 tok/s=15,046
+[step 00810/01526] tok=106,168,320 loss=3.9538 tok/s=13,361
+[step 00820/01526] tok=107,479,040 loss=3.8171 tok/s=15,746
+[step 00830/01526] tok=108,789,760 loss=4.0416 tok/s=13,810
+[step 00840/01526] tok=110,100,480 loss=3.9190 tok/s=15,472
+validation {'validation_nll': 3.6023220996467433, 'validation_perplexity': 36.68331793889629, 'validation_bpc': 1.2101872465487538, 'validation_predicted_tokens': 1002540, 'global_step': 840, 'tokens_seen': 110100480}
+[step 00850/01526] tok=111,411,200 loss=3.6881 tok/s=11,487
+[step 00860/01526] tok=112,721,920 loss=3.4655 tok/s=13,643
+[step 00870/01526] tok=114,032,640 loss=4.1130 tok/s=15,815
+[step 00880/01526] tok=115,343,360 loss=3.2978 tok/s=13,790
+[step 00890/01526] tok=116,654,080 loss=3.9859 tok/s=15,433
+[step 00900/01526] tok=117,964,800 loss=3.7097 tok/s=14,073
+[step 00910/01526] tok=119,275,520 loss=3.4847 tok/s=15,001
+validation {'validation_nll': 3.598339374697938, 'validation_perplexity': 36.537508924671805, 'validation_bpc': 1.2088492643233364, 'validation_predicted_tokens': 1002540, 'global_step': 916, 'tokens_seen': 120061952}
+[step 00920/01526] tok=120,586,240 loss=3.8176 tok/s=11,178
+[step 00930/01526] tok=121,896,960 loss=3.4885 tok/s=14,099
+[step 00940/01526] tok=123,207,680 loss=3.6210 tok/s=14,573
+[step 00950/01526] tok=124,518,400 loss=4.0758 tok/s=13,765
+[step 00960/01526] tok=125,829,120 loss=3.6927 tok/s=14,847
+[step 00970/01526] tok=127,139,840 loss=4.1967 tok/s=14,265
+[step 00980/01526] tok=128,450,560 loss=3.6842 tok/s=15,029
+[step 00990/01526] tok=129,761,280 loss=3.9452 tok/s=21,295
+validation {'validation_nll': 3.5952170819652323, 'validation_perplexity': 36.4236060376971, 'validation_bpc': 1.2078003412285685, 'validation_predicted_tokens': 1002540, 'global_step': 992, 'tokens_seen': 130023424}
+[step 01000/01526] tok=131,072,000 loss=3.8261 tok/s=13,770
+[step 01010/01526] tok=132,382,720 loss=3.8539 tok/s=18,198
+[step 01020/01526] tok=133,693,440 loss=4.1841 tok/s=16,296
+[step 01030/01526] tok=135,004,160 loss=4.0036 tok/s=14,677
+[step 01040/01526] tok=136,314,880 loss=3.6641 tok/s=14,406
+[step 01050/01526] tok=137,625,600 loss=3.7540 tok/s=14,746
+[step 01060/01526] tok=138,936,320 loss=3.7795 tok/s=14,516
+validation {'validation_nll': 3.592344346338389, 'validation_perplexity': 36.319120798065995, 'validation_bpc': 1.2068352559524202, 'validation_predicted_tokens': 1002540, 'global_step': 1069, 'tokens_seen': 140115968}
+[step 01070/01526] tok=140,247,040 loss=3.7860 tok/s=11,345
+[step 01080/01526] tok=141,557,760 loss=3.5853 tok/s=14,814
+[step 01090/01526] tok=142,868,480 loss=3.4852 tok/s=13,659
+[step 01100/01526] tok=144,179,200 loss=3.7123 tok/s=14,408
+[step 01110/01526] tok=145,489,920 loss=3.7659 tok/s=13,990
+[step 01120/01526] tok=146,800,640 loss=3.4445 tok/s=13,616
+[step 01130/01526] tok=148,111,360 loss=3.6797 tok/s=14,631
+[step 01140/01526] tok=149,422,080 loss=3.6765 tok/s=13,102
+validation {'validation_nll': 3.589388846377937, 'validation_perplexity': 36.21193810522578, 'validation_bpc': 1.2058423662939233, 'validation_predicted_tokens': 1002540, 'global_step': 1145, 'tokens_seen': 150077440}
+[step 01150/01526] tok=150,732,800 loss=3.5240 tok/s=10,947
+[step 01160/01526] tok=152,043,520 loss=4.0581 tok/s=13,110
+[step 01170/01526] tok=153,354,240 loss=3.7899 tok/s=13,870
+[step 01180/01526] tok=154,664,960 loss=3.4833 tok/s=13,427
+[step 01190/01526] tok=155,975,680 loss=3.3835 tok/s=15,193
+[step 01200/01526] tok=157,286,400 loss=3.9323 tok/s=13,723
+[step 01210/01526] tok=158,597,120 loss=3.6589 tok/s=15,032
+[step 01220/01526] tok=159,907,840 loss=3.7071 tok/s=16,668
+validation {'validation_nll': 3.5871327799193713, 'validation_perplexity': 36.13033365341299, 'validation_bpc': 1.2050844488229147, 'validation_predicted_tokens': 1002540, 'global_step': 1221, 'tokens_seen': 160038912}
+[step 01230/01526] tok=161,218,560 loss=3.4477 tok/s=16,953
+[step 01240/01526] tok=162,529,280 loss=3.3876 tok/s=23,156
+[step 01250/01526] tok=163,840,000 loss=3.5881 tok/s=23,699
+[step 01260/01526] tok=165,150,720 loss=3.5833 tok/s=23,511
+[step 01270/01526] tok=166,461,440 loss=3.9036 tok/s=23,925
+[step 01280/01526] tok=167,772,160 loss=3.5984 tok/s=23,929
+[step 01290/01526] tok=169,082,880 loss=3.7018 tok/s=23,947
+validation {'validation_nll': 3.585342482158116, 'validation_perplexity': 36.06570746528131, 'validation_bpc': 1.2044830046826451, 'validation_predicted_tokens': 1002540, 'global_step': 1297, 'tokens_seen': 170000384}
+[step 01300/01526] tok=170,393,600 loss=4.4263 tok/s=19,018
+[step 01310/01526] tok=171,704,320 loss=3.5817 tok/s=23,479
+[step 01320/01526] tok=173,015,040 loss=3.5822 tok/s=24,271
+[step 01330/01526] tok=174,325,760 loss=4.1030 tok/s=24,322
+[step 01340/01526] tok=175,636,480 loss=3.7928 tok/s=24,330
+[step 01350/01526] tok=176,947,200 loss=3.2372 tok/s=24,326
+[step 01360/01526] tok=178,257,920 loss=3.5067 tok/s=23,916
+[step 01370/01526] tok=179,568,640 loss=3.6960 tok/s=24,355
+validation {'validation_nll': 3.5838894172590607, 'validation_perplexity': 36.013339707793136, 'validation_bpc': 1.203994852718273, 'validation_predicted_tokens': 1002540, 'global_step': 1374, 'tokens_seen': 180092928}
+[step 01380/01526] tok=180,879,360 loss=3.3419 tok/s=19,407
+[step 01390/01526] tok=182,190,080 loss=3.5774 tok/s=24,317
+[step 01400/01526] tok=183,500,800 loss=3.6635 tok/s=24,344
+[step 01410/01526] tok=184,811,520 loss=3.4717 tok/s=23,942
+[step 01420/01526] tok=186,122,240 loss=3.4919 tok/s=24,320
+[step 01430/01526] tok=187,432,960 loss=3.9753 tok/s=24,338
+[step 01440/01526] tok=188,743,680 loss=4.0575 tok/s=24,336
+[step 01450/01526] tok=190,054,400 loss=3.7724 tok/s=24,325
+validation {'validation_nll': 3.5825876206767804, 'validation_perplexity': 35.966488167449086, 'validation_bpc': 1.2035575188047865, 'validation_predicted_tokens': 1002540, 'global_step': 1450, 'tokens_seen': 190054400}
+[step 01460/01526] tok=191,365,120 loss=3.8310 tok/s=19,128
+[step 01470/01526] tok=192,675,840 loss=3.2145 tok/s=24,334
+[step 01480/01526] tok=193,986,560 loss=3.1463 tok/s=24,323
+[step 01490/01526] tok=195,297,280 loss=3.9796 tok/s=24,337
+[step 01500/01526] tok=196,608,000 loss=3.9896 tok/s=24,327
+[step 01510/01526] tok=197,918,720 loss=3.8469 tok/s=23,927
+[step 01520/01526] tok=199,229,440 loss=3.6737 tok/s=24,353
+validation {'validation_nll': 3.5816706073527436, 'validation_perplexity': 35.9335215363109, 'validation_bpc': 1.20324945145296, 'validation_predicted_tokens': 1002540, 'global_step': 1526, 'tokens_seen': 200000512}
+{
+  "status": "COMPLETE_FIXED_BUDGET",
+  "tokens_seen": 200000512,
+  "optimizer_steps": 1526,
+  "elapsed_seconds": 11850.336791167007,
+  "tokens_per_second": 16877.20066733261,
+  "parameter_report": {
+    "total_parameters": 83787290,
+    "active_parameters_per_token": 83787290,
+    "inactive_expert_parameters_per_token": 0,
+    "active_fraction": 1.0
+  },
+  "architecture": "dense",
+  "training_config_sha256": "f9cd376e88bf04c4fcae81ff7a6213fafe9d794b1e3867bfcef48e3c9b7b6518",
+  "data_seed": 2903,
+  "block_order_sha256": "8557150d14f5ad299de42d65eb60273520f4a357b8fc29166cbf868ca9e7bc54",
+  "initialization_report": {
+    "scheme": "dense_checkpoint_copy",
+    "source_checkpoint": "runs/F_DENSE_300M/1701/final_checkpoint.pt",
+    "source_checkpoint_sha256": "29ab475382478a1e46c916809d6dc01cb140f38fa77f4b2f14d03c4c0480fdb5",
+    "source_tokens_seen": 300000256
+  },
+  "optimizer_selection_source": {
+    "path": "reports/model/continuation_lr_pilot_selection.json",
+    "sha256": "0a4095871995ce748158799077dcd06419fc203532aa0777d06cc1613a9e1e0b",
+    "selected_muon_lr": 0.001,
+    "selected_adamw_lr": 1.5e-05
+  },
+  "resolved_optimizer": {
+    "muon_lr": 0.001,
+    "adamw_lr": 1.5e-05,
+    "router_lr": 0.0002,
+    "weight_decay": 0.1,
+    "min_lr_ratio": 0.1,
+    "gradient_clip": 1.0
+  },
+  "scheduler_token_budget": 200000000,
+  "scheduler_steps": 1526,
+  "final_validation": {
+    "validation_nll": 3.5816706073527436,
+    "validation_perplexity": 35.9335215363109,
+    "validation_bpc": 1.20324945145296,
+    "validation_predicted_tokens": 1002540
+  },
+  "peak_memory_gib": 5.086769104003906
+}
+
+[2026-07-19T23:51:52.828802+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/continuation_m2_200m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+initial_validation {'validation_nll': 3.662293986884915, 'validation_perplexity': 38.95059261193791, 'validation_bpc': 1.2303345879245327, 'validation_predicted_tokens': 1002540, 'global_step': 0, 'tokens_seen': 0}
+/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py:350: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  router_entropy=float(
+[step 00010/01526] tok=1,310,720 loss=3.6005 tok/s=14,851
+[step 00020/01526] tok=2,621,440 loss=4.2084 tok/s=19,098
+[step 00030/01526] tok=3,932,160 loss=3.6036 tok/s=19,073
+[step 00040/01526] tok=5,242,880 loss=4.1824 tok/s=19,070
+[step 00050/01526] tok=6,553,600 loss=3.9594 tok/s=19,067
+[step 00060/01526] tok=7,864,320 loss=4.0315 tok/s=18,675
+[step 00070/01526] tok=9,175,040 loss=4.2559 tok/s=19,106
+validation {'validation_nll': 3.7769958865885833, 'validation_perplexity': 43.68461089238391, 'validation_bpc': 1.2688682815633956, 'validation_predicted_tokens': 1002540, 'global_step': 77, 'tokens_seen': 10092544}
+[step 00080/01526] tok=10,485,760 loss=3.8832 tok/s=14,922
+
+[2026-07-20T10:01:00.193106+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/foundation_300m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/F_DENSE_300M/1701
+
+[2026-07-20T10:01:03.109742+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_continuation_lr_pilot.py
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_continuation_lr_pilot_v1",
+  "selection_metric": "final_validation_bpc",
+  "selection_mode": "min",
+  "selected_candidate": "muon_1e3_adamw_1p5e5",
+  "selected_muon_lr": 0.001,
+  "selected_adamw_lr": 1.5e-05,
+  "scheduler_token_budget": 200000000,
+  "warmup_fraction": 0.0,
+  "candidates": [
+    {
+      "id": "muon_1e3_adamw_1p5e5",
+      "muon_lr": 0.001,
+      "adamw_lr": 1.5e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.226812558699324,
+      "maximum_post_start_validation_bpc": 1.2279528731436664,
+      "final_relative_bpc_regression": -0.0028583461635686147,
+      "maximum_relative_bpc_regression": -0.0019315093596393718,
+      "eligible": true,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_1e3_adamw_1p5e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_2e3_adamw_3e5",
+      "muon_lr": 0.002,
+      "adamw_lr": 3e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.2320590670510787,
+      "maximum_post_start_validation_bpc": 1.2320590670510787,
+      "final_relative_bpc_regression": 0.001405966243113843,
+      "maximum_relative_bpc_regression": 0.001405966243113843,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_2e3_adamw_3e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_5e3_adamw_7p5e5",
+      "muon_lr": 0.005,
+      "adamw_lr": 7.5e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.2541070193530184,
+      "maximum_post_start_validation_bpc": 1.2541070193530184,
+      "final_relative_bpc_regression": 0.01932633351207258,
+      "maximum_relative_bpc_regression": 0.01932633351207258,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_5e3_adamw_7p5e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_1e2_adamw_1p5e4",
+      "muon_lr": 0.01,
+      "adamw_lr": 0.00015,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.293376441945278,
+      "maximum_post_start_validation_bpc": 1.293376441945278,
+      "final_relative_bpc_regression": 0.05124414908315078,
+      "maximum_relative_bpc_regression": 0.05124414908315078,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_1e2_adamw_1p5e4.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/final_checkpoint.pt"
+    }
+  ],
+  "rejected_high_lr_trigger": {
+    "path": "runs/aborted/U_M0_DENSE_200M_high_lr_restart_20260720/1701",
+    "config_snapshot": "reports/model/rejected_high_lr_restart_config.yaml",
+    "muon_lr": 0.02,
+    "adamw_lr": 0.0003,
+    "warmup_fraction": 0.02,
+    "initial_validation_bpc": 1.23032926563568,
+    "post_restart_validation_bpc": 1.3624222670403967,
+    "relative_bpc_regression": 0.1073639432095177
+  },
+  "test_data_access": false
+}
+
+[2026-07-20T10:01:21.507438+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/continuation_m0_dense_200m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/U_M0_DENSE_200M/1701
+
+[2026-07-20T10:01:25.991308+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m2_banked_20m.yaml --resume
+/home/urad/.local/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+Traceback (most recent call last):
+  File "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py", line 515, in <module>
+    main()
+  File "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py", line 205, in main
+    model = BoichitroForMultiTask(BoichitroConfig.from_dict(values)).to(device)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/src/boichitro/modeling.py", line 93, in from_dict
+    config.validate()
+  File "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/src/boichitro/modeling.py", line 83, in validate
+    raise ValueError(
+ValueError: banked_upcycle_release_fraction must be in [banked_upcycle_fraction, 1]
+
+[2026-07-20T10:02:10.371131+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/foundation_300m.yaml --resume
+Traceback (most recent call last):
+  File "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py", line 530, in <module>
+    main()
+  File "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py", line 88, in main
+    raise RuntimeError(
+RuntimeError: Completed run/config hash mismatch at /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/F_DENSE_300M/1701: None != e9f59f03690749bdf7ba8d52e209d577afb290deca66c87c1ff234fb5e5ac5c6
+
+[2026-07-20T10:02:34.544910+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/foundation_300m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/F_DENSE_300M/1701
+
+[2026-07-20T10:02:35.608959+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_continuation_lr_pilot.py
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_continuation_lr_pilot_v1",
+  "selection_metric": "final_validation_bpc",
+  "selection_mode": "min",
+  "selected_candidate": "muon_1e3_adamw_1p5e5",
+  "selected_muon_lr": 0.001,
+  "selected_adamw_lr": 1.5e-05,
+  "scheduler_token_budget": 200000000,
+  "warmup_fraction": 0.0,
+  "candidates": [
+    {
+      "id": "muon_1e3_adamw_1p5e5",
+      "muon_lr": 0.001,
+      "adamw_lr": 1.5e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.226812558699324,
+      "maximum_post_start_validation_bpc": 1.2279528731436664,
+      "final_relative_bpc_regression": -0.0028583461635686147,
+      "maximum_relative_bpc_regression": -0.0019315093596393718,
+      "eligible": true,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_1e3_adamw_1p5e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_1E3_ADAMW_1P5E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_2e3_adamw_3e5",
+      "muon_lr": 0.002,
+      "adamw_lr": 3e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.2320590670510787,
+      "maximum_post_start_validation_bpc": 1.2320590670510787,
+      "final_relative_bpc_regression": 0.001405966243113843,
+      "maximum_relative_bpc_regression": 0.001405966243113843,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_2e3_adamw_3e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_2E3_ADAMW_3E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_5e3_adamw_7p5e5",
+      "muon_lr": 0.005,
+      "adamw_lr": 7.5e-05,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.2541070193530184,
+      "maximum_post_start_validation_bpc": 1.2541070193530184,
+      "final_relative_bpc_regression": 0.01932633351207258,
+      "maximum_relative_bpc_regression": 0.01932633351207258,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_5e3_adamw_7p5e5.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M/1701/final_checkpoint.pt"
+    },
+    {
+      "id": "muon_1e2_adamw_1p5e4",
+      "muon_lr": 0.01,
+      "adamw_lr": 0.00015,
+      "initial_validation_bpc": 1.23032926563568,
+      "final_validation_bpc": 1.293376441945278,
+      "maximum_post_start_validation_bpc": 1.293376441945278,
+      "final_relative_bpc_regression": 0.05124414908315078,
+      "maximum_relative_bpc_regression": 0.05124414908315078,
+      "eligible": false,
+      "resolved_config": "reports/model/continuation_lr_pilot_configs/muon_1e2_adamw_1p5e4.yaml",
+      "validation_log": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/validation_log.jsonl",
+      "training_report": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/training_report.json",
+      "final_checkpoint": "runs/P_CONT_LR_MUON_1E2_ADAMW_1P5E4_10M/1701/final_checkpoint.pt"
+    }
+  ],
+  "rejected_high_lr_trigger": {
+    "path": "runs/aborted/U_M0_DENSE_200M_high_lr_restart_20260720/1701",
+    "config_snapshot": "reports/model/rejected_high_lr_restart_config.yaml",
+    "muon_lr": 0.02,
+    "adamw_lr": 0.0003,
+    "warmup_fraction": 0.02,
+    "initial_validation_bpc": 1.23032926563568,
+    "post_restart_validation_bpc": 1.3624222670403967,
+    "relative_bpc_regression": 0.1073639432095177
+  },
+  "test_data_access": false
+}
+
+[2026-07-20T10:02:39.828016+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/continuation_m0_dense_200m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/U_M0_DENSE_200M/1701
+
+[2026-07-20T10:02:40.814345+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m2_banked_20m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_M2_BANKED_20M/1701
+
+[2026-07-20T10:02:41.792688+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m2_unbanked_20m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_M2_UNBANKED_20M/1701
+
+[2026-07-20T10:02:42.817321+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m2_scratch_20m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_M2_SCRATCH_20M/1701
+
+[2026-07-20T10:02:43.831179+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m2_annealed_20m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_M2_ANNEALED_20M/1701
+
+[2026-07-20T10:02:44.866012+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m2_paired_20m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_M2_PAIRED_20M/1701
+
+[2026-07-20T10:02:45.930926+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/select_upcycling_strategy.py
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_upcycling_selection_v1",
+  "protocol_sha256": "40e0f1cce37678cf7ed164673ddd149f50a14a37eca472a07502ae381c911fee",
+  "test_data_access": "forbidden_and_not_accessed",
+  "seed": 1701,
+  "dense_equivalent_baseline_validation_bpc": 1.2303345879245327,
+  "guards": {
+    "maximum_transient_validation_bpc_regression_percent": 0.5,
+    "maximum_final_validation_bpc_regression_percent": 0.0,
+    "initial_bpc_match_absolute_tolerance": 1e-05
+  },
+  "selection_rule": "minimum_final_validation_bpc_among_eligible_candidates",
+  "eligible_candidates": [
+    "permanent_paired_bank"
+  ],
+  "selected_strategy": "permanent_paired_bank",
+  "selected_run_id": "P_M2_PAIRED_20M",
+  "selected_model_overrides": {
+    "banked_upcycle_fraction": 1.0,
+    "banked_upcycle_release_fraction": 1.0,
+    "banked_pairing_penalty": 0.25
+  },
+  "conditions": {
+    "abrupt_banked_release": {
+      "run_id": "P_M2_BANKED_20M",
+      "role": "negative_control",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.2303345879245327,
+      "final_validation_bpc": 1.2621794427402053,
+      "final_change_from_own_initial_percent": 2.5883085079638515,
+      "maximum_transient_change_from_own_initial_percent": 3.6781062749295192,
+      "minimum_change_from_own_initial_percent": 0.0,
+      "validation_points": [
+        {
+          "validation_nll": 3.662293986884915,
+          "validation_perplexity": 38.95059261193791,
+          "validation_bpc": 1.2303345879245327,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.796997051822896,
+          "validation_perplexity": 44.5671505021002,
+          "validation_bpc": 1.2755876016056131,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.7812145924081606,
+          "validation_perplexity": 43.8692926997836,
+          "validation_bpc": 1.270285540719731,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.7616865790620144,
+          "validation_perplexity": 43.02092301357065,
+          "validation_bpc": 1.2637251743648574,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.757085453734106,
+          "validation_perplexity": 42.82343304153002,
+          "validation_bpc": 1.2621794427402053,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.757085453734106,
+        "validation_perplexity": 42.82343304153002,
+        "validation_bpc": 1.2621794427402053,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "b82b32fa409bfcdd6bfa00a938abdac27ff55d13089492cf8ecd9cbab4477273",
+      "training_report_sha256": "b76ee4f1083a3ccf76e6f558ab810a2d15db4365a6917fc5fa5255839cb132a8",
+      "validation_log_sha256": "3ce18da9272e105ff9b4177158018f7789b1f518cd6bb33ef18c3c9add4738db",
+      "model_overrides": null,
+      "eligible": false,
+      "eligibility_reasons": [
+        "registered_negative_control"
+      ]
+    },
+    "unbanked_transfer": {
+      "run_id": "P_M2_UNBANKED_20M",
+      "role": "negative_control",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.397035339749581,
+      "final_validation_bpc": 1.2558707147253643,
+      "final_change_from_own_initial_percent": -10.104585117332856,
+      "maximum_transient_change_from_own_initial_percent": 0.0,
+      "minimum_change_from_own_initial_percent": -10.104585117332856,
+      "validation_points": [
+        {
+          "validation_nll": 4.158506291253226,
+          "validation_perplexity": 63.975889847730244,
+          "validation_bpc": 1.397035339749581,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.8022319326595384,
+          "validation_perplexity": 44.80106594977038,
+          "validation_bpc": 1.2773462411304708,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.7704802639630377,
+          "validation_perplexity": 43.40090372138884,
+          "validation_bpc": 1.2666793814077064,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.7483082917271826,
+          "validation_perplexity": 42.449209544628694,
+          "validation_bpc": 1.259230786504631,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.7383064834439024,
+          "validation_perplexity": 42.02675685609278,
+          "validation_bpc": 1.2558707147253643,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.7383064834439024,
+        "validation_perplexity": 42.02675685609278,
+        "validation_bpc": 1.2558707147253643,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "72cca610ba0f2b0da9df88ff3ee16fe3c19a226098977d015942936e23cf4af4",
+      "training_report_sha256": "abeaa2bd62278c22ea22cc9d30c016e889c9af96cf09618bc8695f3246134c70",
+      "validation_log_sha256": "aa920f82f3cb804942aedb36f0c1e05049ba3a5dc0dc8e77d63ed575370a2aa3",
+      "model_overrides": null,
+      "eligible": false,
+      "eligibility_reasons": [
+        "registered_negative_control"
+      ]
+    },
+    "random_initialization": {
+      "run_id": "P_M2_SCRATCH_20M",
+      "role": "negative_control",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 3.519621897730057,
+      "final_validation_bpc": 2.559431579024191,
+      "final_change_from_own_initial_percent": -27.281064461075513,
+      "maximum_transient_change_from_own_initial_percent": 0.0,
+      "minimum_change_from_own_initial_percent": -27.281064461075513,
+      "validation_points": [
+        {
+          "validation_nll": 10.476735547124123,
+          "validation_perplexity": 35480.39420984753,
+          "validation_bpc": 3.519621897730057,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 9.110129093637271,
+          "validation_perplexity": 9046.462656831785,
+          "validation_bpc": 3.0605153394289006,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 8.36513367283101,
+          "validation_perplexity": 4294.685782476819,
+          "validation_bpc": 2.810236787967505,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 7.953352083478655,
+          "validation_perplexity": 2845.0959831514247,
+          "validation_bpc": 2.6719002333749375,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 7.6185705690967795,
+          "validation_perplexity": 2035.650227791874,
+          "validation_bpc": 2.559431579024191,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 7.6185705690967795,
+        "validation_perplexity": 2035.650227791874,
+        "validation_bpc": 2.559431579024191,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "69f74fed0ff2e8b728531297c7de5d267a7855fcc3a4d40b8b3e126958d19673",
+      "training_report_sha256": "d3285789d9099a5e08ef87884b875305d7a2347832a8e280f0f91dc26e77e519",
+      "validation_log_sha256": "a50e3e31cb02c4983592ba0fe1d5805c85fefd24bb38ce0a5d33c574b356dd94",
+      "model_overrides": null,
+      "eligible": false,
+      "eligibility_reasons": [
+        "registered_negative_control"
+      ]
+    },
+    "annealed_cross_bank": {
+      "run_id": "P_M2_ANNEALED_20M",
+      "role": "candidate",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.2303345879245327,
+      "final_validation_bpc": 1.2641091981016637,
+      "final_change_from_own_initial_percent": 2.7451565215366207,
+      "maximum_transient_change_from_own_initial_percent": 2.7451565215366207,
+      "minimum_change_from_own_initial_percent": -0.3049113668884058,
+      "validation_points": [
+        {
+          "validation_nll": 3.662293986884915,
+          "validation_perplexity": 38.95059261193791,
+          "validation_bpc": 1.2303345879245327,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.6549702264824693,
+          "validation_perplexity": 38.66636986418208,
+          "validation_bpc": 1.2278741967683149,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.6511272362300327,
+          "validation_perplexity": 38.51806053986715,
+          "validation_bpc": 1.2265831579151911,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.652435549911188,
+          "validation_perplexity": 38.56848722521131,
+          "validation_bpc": 1.2270226812247738,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.761416446919344,
+          "validation_perplexity": 43.009303248963946,
+          "validation_bpc": 1.2636344244360893,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.76282968910373,
+        "validation_perplexity": 43.070128781116736,
+        "validation_bpc": 1.2641091981016637,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "f14a784d26b979c84ab6b8997626329fa4cd9f5699740d552c4ac8b11c7186b8",
+      "training_report_sha256": "3cb782328d9b6790a80bb1c86e6a1987bf9680db9162887e95e379b384a82554",
+      "validation_log_sha256": "15312e649168a889f347e30ef563e1046027498a0e2c82321222a908c7f9f50d",
+      "model_overrides": {
+        "banked_upcycle_fraction": 0.02,
+        "banked_upcycle_release_fraction": 0.1,
+        "banked_pairing_penalty": 0.25
+      },
+      "transient_change_from_dense_equivalent_percent": 2.7451565215366207,
+      "final_change_from_dense_equivalent_percent": 2.7451565215366207,
+      "eligible": false,
+      "eligibility_reasons": [
+        "transient_regression_guard_failed",
+        "final_regression_guard_failed"
+      ]
+    },
+    "permanent_paired_bank": {
+      "run_id": "P_M2_PAIRED_20M",
+      "role": "candidate",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.2303345879245327,
+      "final_validation_bpc": 1.2287236039923957,
+      "final_change_from_own_initial_percent": -0.13093868513073167,
+      "maximum_transient_change_from_own_initial_percent": 0.0,
+      "minimum_change_from_own_initial_percent": -0.2994563644589819,
+      "validation_points": [
+        {
+          "validation_nll": 3.662293986884915,
+          "validation_perplexity": 38.95059261193791,
+          "validation_bpc": 1.2303345879245327,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.6553465415020376,
+          "validation_perplexity": 38.680923338087815,
+          "validation_bpc": 1.2280006184554293,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.65132701445599,
+          "validation_perplexity": 38.525756378374005,
+          "validation_bpc": 1.2266502726968525,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.652046231834256,
+          "validation_perplexity": 38.55347473844048,
+          "validation_bpc": 1.2268918912069682,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.6574986272928665,
+          "validation_perplexity": 38.764257642702894,
+          "validation_bpc": 1.2287236039923957,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.6574986272928665,
+        "validation_perplexity": 38.764257642702894,
+        "validation_bpc": 1.2287236039923957,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "34507ae2c9909dc44f20428d7e2c6cec0d5725abcc48013d59d75393d572ba88",
+      "training_report_sha256": "99995f2f666b04d901edb74c1896b11506e5bd20fd5b86d5a5b7e9c734c9ea06",
+      "validation_log_sha256": "ac862a09b05b3c67faf04d0015dbc3a7730020045e4f0dfbfc369f4baa99acfa",
+      "model_overrides": {
+        "banked_upcycle_fraction": 1.0,
+        "banked_upcycle_release_fraction": 1.0,
+        "banked_pairing_penalty": 0.25
+      },
+      "transient_change_from_dense_equivalent_percent": 0.0,
+      "final_change_from_dense_equivalent_percent": -0.13093868513073167,
+      "eligible": true,
+      "eligibility_reasons": [
+        "all_validation_guards_passed"
+      ]
+    }
+  }
+}
+
+[2026-07-20T10:02:45.973540+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/continuation_m2_200m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/U_M2_STANDARD_MOE_200M/1701
+
+[2026-07-20T10:02:46.978158+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m1_loss_free_router_10m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_M1_LOSS_FREE_ROUTER_10M/1701
+
+[2026-07-20T10:02:47.954235+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/pilot_m1_aux_router_10m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/P_M1_AUX_ROUTER_10M/1701
+
+[2026-07-20T10:02:48.938039+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/select_switch_router.py
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_switch_router_selection_v1",
+  "protocol_sha256": "48eb0d0ac0631d73955bdb2c516d2cf34ec43fc4dcc770101c7f7d37551429ed",
+  "test_data_access": "forbidden_and_not_accessed",
+  "seed": 1701,
+  "dense_equivalent_baseline_validation_bpc": 1.2303335273898253,
+  "guards": {
+    "initial_bpc_match_absolute_tolerance": 1e-05,
+    "maximum_final_validation_bpc_regression_percent": 0.0,
+    "maximum_logged_router_load_cv": 0.5
+  },
+  "selection_rule": "minimum_final_validation_bpc_among_eligible_candidates",
+  "eligible_candidates": [
+    "auxiliary_balance_straight_through"
+  ],
+  "selected_strategy": "auxiliary_balance_straight_through",
+  "selected_run_id": "P_M1_AUX_ROUTER_10M",
+  "selected_upcycle_router_init_std": 0.001,
+  "selected_model_overrides": {
+    "balance_loss_weight": 0.01
+  },
+  "candidates": {
+    "loss_free_straight_through": {
+      "run_id": "P_M1_LOSS_FREE_ROUTER_10M",
+      "tokens_seen": 10000384,
+      "initial_validation_bpc": 1.2303335273898253,
+      "final_validation_bpc": 1.2270098335202515,
+      "final_change_percent": -0.2701457609324066,
+      "maximum_logged_router_load_cv": 0.5061083436012268,
+      "minimum_logged_router_load_cv": 0.24312110245227814,
+      "final_logged_router_load_cv": 0.5061083436012268,
+      "validation_points": [
+        {
+          "validation_nll": 3.6622908300283004,
+          "validation_perplexity": 38.95046965069606,
+          "validation_bpc": 1.2303335273898253,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.654576979851236,
+          "validation_perplexity": 38.65116743383915,
+          "validation_bpc": 1.2277420869667195,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.6523973065979627,
+          "validation_perplexity": 38.567012266677565,
+          "validation_bpc": 1.2270098335202515,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10000384
+        }
+      ],
+      "upcycle_router_init_std": 0.001,
+      "model_overrides": {
+        "balance_loss_weight": 0.0
+      },
+      "training_config_sha256": "b12d9da03febd69fb44519b11c9c7bc101b7c04865ba70d185a75a47e5b32ecb",
+      "training_report_sha256": "65d6663b1770f3b9c2ef0454928b036738882e399878366ce909e9e23a92b142",
+      "validation_log_sha256": "2b635a7687f641dece4da17ea9e4c922330b9a2e5d204a75a9efe0c239126df0",
+      "train_log_sha256": "f983f951705a8d76127dc2cc53a7cfd46dda99ab4eaa1fac0ec2e839df5fb9f9",
+      "eligible": false,
+      "eligibility_reasons": [
+        "router_load_cv_guard_failed"
+      ]
+    },
+    "auxiliary_balance_straight_through": {
+      "run_id": "P_M1_AUX_ROUTER_10M",
+      "tokens_seen": 10000384,
+      "initial_validation_bpc": 1.2303335273898253,
+      "final_validation_bpc": 1.2269397058261782,
+      "final_change_percent": -0.2758456538892463,
+      "maximum_logged_router_load_cv": 0.2616977393627167,
+      "minimum_logged_router_load_cv": 0.06746005266904831,
+      "final_logged_router_load_cv": 0.06746005266904831,
+      "validation_points": [
+        {
+          "validation_nll": 3.6622908300283004,
+          "validation_perplexity": 38.95046965069606,
+          "validation_bpc": 1.2303335273898253,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.6547486645834786,
+          "validation_perplexity": 38.65780381883757,
+          "validation_bpc": 1.2277997638394809,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.652188559940883,
+          "validation_perplexity": 38.558962372016886,
+          "validation_bpc": 1.2269397058261782,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10000384
+        }
+      ],
+      "upcycle_router_init_std": 0.001,
+      "model_overrides": {
+        "balance_loss_weight": 0.01
+      },
+      "training_config_sha256": "9846114f497233c852d1ef90e45d7a6e8cb1fc7cd3bf8fa7e30e2abd6cb48b03",
+      "training_report_sha256": "0bf5eaec8b97265be852677d802c45c24a88fc59de0ad77fbc33d70bc0be06da",
+      "validation_log_sha256": "781b33940b3c44b8d7a9a52a24a794c5413b78962c118328603c8f518af13d51",
+      "train_log_sha256": "4309ace8a9518b6984f197621adb59d7cef46b9cb9f1fb1210757592edaa948b",
+      "eligible": true,
+      "eligibility_reasons": [
+        "all_validation_guards_passed"
+      ]
+    }
+  }
+}
+
+[2026-07-20T10:02:48.980127+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py --config configs/continuation_m1_switch_200m.yaml --resume
+Run already complete at fixed budget: /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/runs/U_M1_SWITCH_200M/1701
+
+[2026-07-20T10:02:50.018813+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/analyze_foundation_routing.py
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "test_data_access": false,
+  "guards": {
+    "router_load_cv_threshold": 0.5,
+    "stability_start_fraction": 0.1,
+    "persistent_consecutive_logs": 3,
+    "persistent_exceedance_fraction": 0.05,
+    "nonfinite_values_allowed": 0
+  },
+  "all_runs_pass_nonfinite_guard": true,
+  "all_runs_pass_persistent_collapse_guard": true,
+  "runs": [
+    {
+      "run_id": "U_M1_SWITCH_200M",
+      "architecture": "switch",
+      "tokens_seen": 200000512,
+      "logged_points": 152,
+      "router_load_cv_mean": 0.22320989166435395,
+      "router_load_cv_max": 0.529137849807739,
+      "router_load_cv_final": 0.257709383964538,
+      "cv_threshold": 0.5,
+      "stability_start_tokens": 20000051,
+      "stability_logged_points": 137,
+      "cv_threshold_exceedances": 1,
+      "cv_threshold_exceedance_fraction": 0.0072992700729927005,
+      "longest_consecutive_cv_exceedance": 1,
+      "router_entropy_min": 1.151327610015869,
+      "router_entropy_final": 1.169250845909118,
+      "router_z_loss_max": 20.271434783935547,
+      "nonfinite_diagnostic_values": 0,
+      "validation_points": 21,
+      "validation_bpc_regressions": 0,
+      "initial_validation_bpc": 1.230333527389825,
+      "final_validation_bpc": 1.199293941742932,
+      "persistent_expert_collapse": false
+    },
+    {
+      "run_id": "U_M2_STANDARD_MOE_200M",
+      "architecture": "standard_moe",
+      "tokens_seen": 200000512,
+      "logged_points": 152,
+      "router_load_cv_mean": 0.1471841905241533,
+      "router_load_cv_max": 0.7707298398017881,
+      "router_load_cv_final": 0.04265696555376,
+      "cv_threshold": 0.5,
+      "stability_start_tokens": 20000051,
+      "stability_logged_points": 137,
+      "cv_threshold_exceedances": 0,
+      "cv_threshold_exceedance_fraction": 0.0,
+      "longest_consecutive_cv_exceedance": 0,
+      "router_entropy_min": 1.789312362670898,
+      "router_entropy_final": 2.077677965164184,
+      "router_z_loss_max": 3.684314250946045,
+      "nonfinite_diagnostic_values": 0,
+      "validation_points": 21,
+      "validation_bpc_regressions": 1,
+      "initial_validation_bpc": 1.230334587924532,
+      "final_validation_bpc": 1.202603332124675,
+      "persistent_expert_collapse": false
+    }
+  ]
+}
+
+[2026-07-20T10:02:50.264400+00:00] $ /opt/miniforge3/bin/python /home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/preflight_task_models.py
+/home/urad/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+{
+  "status": "PASS_VALIDATION_ONLY",
+  "test_data_access": false,
+  "seed": 8671,
+  "train_examples": 6,
+  "tokenizer_sha256": "0b7ed9de33aedc6c6271a7b8e7b6317d86f22a2f4a0f9c3a7d3fb3723245d512",
+  "checkpoint_sha256": {
+    "runs/U_M0_DENSE_200M/1701/final_checkpoint.pt": "920ea1c032bc868f4490baeee866d639c20fa3ffcd7328cfafd8e91d4d992ce3",
+    "runs/U_M1_SWITCH_200M/1701/final_checkpoint.pt": "d11365ae79bcdd96eb98919996d347b39c808183bd37b59854f6ad1e1d017232",
+    "runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt": "390ad184b3895de01e9f65dd4e03670fc3877cd3d2fe4537e5ddbed0dadcc6b0"
+  },
+  "models": [
+    {
+      "variant": "M0",
+      "source_checkpoint": "runs/U_M0_DENSE_200M/1701/final_checkpoint.pt",
+      "loss": 3.975060224533081,
+      "total_parameters": 83787290,
+      "active_parameters_per_token": 83787290,
+      "routed_assignments": 0,
+      "expected_assignments": 0,
+      "router_gradient_l1": 0,
+      "muon_parameter_tensors": 112,
+      "adamw_parameter_tensors": 71,
+      "permanent_paired_bank_routing": false,
+      "source_adversary": false,
+      "task_conditioning": false,
+      "causal_dialect_evidence_prior": false
+    },
+    {
+      "variant": "M1",
+      "source_checkpoint": "runs/U_M1_SWITCH_200M/1701/final_checkpoint.pt",
+      "loss": 3.9359333515167236,
+      "total_parameters": 381107738,
+      "active_parameters_per_token": 83836442,
+      "routed_assignments": 6264,
+      "expected_assignments": 6264,
+      "router_gradient_l1": 461.5545082092285,
+      "muon_parameter_tensors": 364,
+      "adamw_parameter_tensors": 83,
+      "permanent_paired_bank_routing": false,
+      "source_adversary": false,
+      "task_conditioning": false,
+      "causal_dialect_evidence_prior": false
+    },
+    {
+      "variant": "M2",
+      "source_checkpoint": "runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt",
+      "loss": 3.9923899173736572,
+      "total_parameters": 168771098,
+      "active_parameters_per_token": 83836442,
+      "routed_assignments": 12528,
+      "expected_assignments": 12528,
+      "router_gradient_l1": 260.52419090270996,
+      "muon_parameter_tensors": 400,
+      "adamw_parameter_tensors": 83,
+      "permanent_paired_bank_routing": true,
+      "source_adversary": false,
+      "task_conditioning": false,
+      "causal_dialect_evidence_prior": false
+    },
+    {
+      "variant": "M3",
+      "source_checkpoint": "runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt",
+      "loss": 7.272706985473633,
+      "total_parameters": 168790591,
+      "active_parameters_per_token": 83855935,
+      "routed_assignments": 12528,
+      "expected_assignments": 12528,
+      "router_gradient_l1": 260.1434912495315,
+      "muon_parameter_tensors": 400,
+      "adamw_parameter_tensors": 95,
+      "permanent_paired_bank_routing": true,
+      "source_adversary": true,
+      "task_conditioning": true,
+      "causal_dialect_evidence_prior": true
+    }
+  ]
+}

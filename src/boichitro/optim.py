@@ -174,3 +174,4 @@ def global_grad_norm(parameters: Iterable[nn.Parameter]) -> torch.Tensor:
     if not gradients:
         return torch.tensor(0.0)
     return torch.stack(gradients).norm(2)
+

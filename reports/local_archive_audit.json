@@ -1,0 +1,1030 @@
+{
+  "archives": {
+    "archive (1).zip": {
+      "bytes": 2291840,
+      "member_count": 3,
+      "members": [
+        {
+          "bytes": 9747468,
+          "compressed_bytes": 1483687,
+          "name": "bangla_dialect_balancing_synthetic_v0.csv",
+          "sha256": "3b651e29a5290e5b1e07178a3b9c5816e30ad2598dd1525e67270b528b9c4e35"
+        },
+        {
+          "bytes": 3760303,
+          "compressed_bytes": 371980,
+          "name": "khulna_rajshahi_7000_each (1).csv",
+          "sha256": "2e57341c0aa706dfb11ef4cb7e81020b83dc2a0b3f37fcabf6b8801908e93f8e"
+        },
+        {
+          "bytes": 4159252,
+          "compressed_bytes": 435581,
+          "name": "mymensingh_noakhali_7000_each (1).csv",
+          "sha256": "772db880f3d1e782c79c4218670438a681ae089334664516f1e2ae52b954a96c"
+        }
+      ],
+      "path": "/home/urad/Desktop/working/Tamim_sir _work/archive (1).zip",
+      "sha256": "96a1c3c3114c622280809057e7acbade6960dee1b5dbf71414b1b75b53bacf12"
+    },
+    "archive(1).zip": {
+      "bytes": 5687693,
+      "member_count": 37,
+      "members": [
+        {
+          "bytes": 155934,
+          "compressed_bytes": 35141,
+          "name": "A Dataset for Translating Local Bangla (Sylheti) Dialects into Standard Bangla/A Dataset for Translating Local Bangla (Sylheti) Dialects into Standard Bangla/Bangla Dialect Transaction Dataset_v2 - Sheet1.csv",
+          "sha256": "f5d36b030a2b888091b2a9531fa0006403ed642a2b1e03889864ab0fd276f0de"
+        },
+        {
+          "bytes": 6022922,
+          "compressed_bytes": 1211006,
+          "name": "BanglaDial A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis/BanglaDial A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis/BanglaDial_ A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis. - Sheet1.csv",
+          "sha256": "954d9dfbb9ccf3711ce8dc36ea135bf3a21dc198d95469a0bcc3cf4b1698845f"
+        },
+        {
+          "bytes": 1779000,
+          "compressed_bytes": 1208829,
+          "name": "BanglaDial A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis/BanglaDial A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis/BanglaDial_ A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis..xlsx",
+          "sha256": "94f06f2df6ba285dd08170d0196bdab43b18f081c963abe3209f3f0886bcbe8a"
+        },
+        {
+          "bytes": 461285,
+          "compressed_bytes": 450567,
+          "name": "BanglaRegionalTextCorpus A Curated Dataset for Fou (1)/BanglaRegionalTextCorpus A Curated Dataset for Fou/BanglaRegionalTextCorpus.xlsx",
+          "sha256": "c25dadb9313efae7462b4786c1aeda31211c4c143db2776fe9cc50474165de22"
+        },
+        {
+          "bytes": 261017,
+          "compressed_bytes": 251952,
+          "name": "BanglaRegionalTextCorpus A Curated Dataset for Fou (1)/BanglaRegionalTextCorpus A Curated Dataset for Fou/Regional_cleaned_dataset.xlsx",
+          "sha256": "966b0885aedab93b70c2efedc0c82c670da26a59e3cc5cbf93028b92fffa3abf"
+        },
+        {
+          "bytes": 580143,
+          "compressed_bytes": 123128,
+          "name": "ChatgaiyyaAlap A Dataset for Conversion from Chittagonian Dialect to Standard Bangla/ChatgaiyyaAlap A Dataset for Conversion from Chittagonian Dialect to Standard Bangla/Dataset_Chittagong_2.0.csv",
+          "sha256": "c009054d79894935200f91bbf9e2bbd97fdac2efdd4222a0005a08345a01425b"
+        },
+        {
+          "bytes": 52165,
+          "compressed_bytes": 13874,
+          "name": "ChatgaiyyaAlap A Dataset for Conversion from Chittagonian Dialect to Standard Bangla/ChatgaiyyaAlap A Dataset for Conversion from Chittagonian Dialect to Standard Bangla/dictionary.csv",
+          "sha256": "11df5f7e2092a73e8330f480d3c28ecd97a72a3725362b56ff8b03482e9c896f"
+        },
+        {
+          "bytes": 130271,
+          "compressed_bytes": 35927,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Test/Barishal Test Translation.csv",
+          "sha256": "4c6fa46596eb26d16876ff133483e9e16dfe6a9001c6f7fb14420cc261897803"
+        },
+        {
+          "bytes": 128947,
+          "compressed_bytes": 37471,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Test/Chittagong Test Translation.csv",
+          "sha256": "2f64a8210f443b17639078f6e39b072ce896b4090c2eb2699d922481ed0d0657"
+        },
+        {
+          "bytes": 130116,
+          "compressed_bytes": 33423,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Test/Mymensingh Test Translation.csv",
+          "sha256": "761f0cd3eb6cb5ac655728843fabfce5b486cfbedc02b35f3b9b5ac8a27287c9"
+        },
+        {
+          "bytes": 126472,
+          "compressed_bytes": 35879,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Test/Noakhali Test Translation.csv",
+          "sha256": "c43a8103c610720c2aaf02e9f4fa470a97abd0cebbefdfa09a915738f6f1a00c"
+        },
+        {
+          "bytes": 127648,
+          "compressed_bytes": 34585,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Test/Sylhet Test Translation.csv",
+          "sha256": "a0fa4e11f321f4f01318767119f77491059b7ee88d5d042824ac2cf71822ff38"
+        },
+        {
+          "bytes": 608984,
+          "compressed_bytes": 173904,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Train/Barishal Train Translation.csv",
+          "sha256": "d9451275326c02d9bd027a6a97e34fb4a08da51e514fa7ef91aaa5647ea418b5"
+        },
+        {
+          "bytes": 594779,
+          "compressed_bytes": 181112,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Train/Chittagong Train Translation.csv",
+          "sha256": "279baa3e672289a619d026424f2eeaad5a0519a9caf92f1bc55b5d3c4641a808"
+        },
+        {
+          "bytes": 603000,
+          "compressed_bytes": 158900,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Train/Mymensingh Train Translation.csv",
+          "sha256": "e3dc4e018ac49e8ff06649649ce1e98fc68f20b0d6d6a4f734651f972a63351d"
+        },
+        {
+          "bytes": 591897,
+          "compressed_bytes": 170140,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Train/Noakhali Train Translation.csv",
+          "sha256": "632b97670b7051d16d5a07d051211b2cb1f89d1063216eda635f546fa08c4885"
+        },
+        {
+          "bytes": 596723,
+          "compressed_bytes": 177989,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Train/Sylhet Train Translation.csv",
+          "sha256": "3805f116ef20210c84a42510966fe90ee0ec8d1e818bc90e6a9dc4439adbb6ff"
+        },
+        {
+          "bytes": 65324,
+          "compressed_bytes": 18033,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Validation/Barishal  Validation Translation.csv",
+          "sha256": "1d16bc87ec77e3cf7d7b1cdac462383daf713bc0ff800a7f27f3314e3e099bd8"
+        },
+        {
+          "bytes": 63977,
+          "compressed_bytes": 18968,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Validation/Chittagong Validation Translation.csv",
+          "sha256": "f864c41c9f36b6d39028a806ca5eac5717befef24ad2c80a6b9138189cb4b465"
+        },
+        {
+          "bytes": 64800,
+          "compressed_bytes": 16817,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Validation/Mymensingh Validation Translation.csv",
+          "sha256": "715792ed1547b6c552a9a05e305ddbd34ea8197566a2e1c7ac47a240c74b23a8"
+        },
+        {
+          "bytes": 63935,
+          "compressed_bytes": 18259,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Validation/Noakhali Validation Translation.csv",
+          "sha256": "164c041a30c5534dfc6f5eb0c20724afcb61349eafb7f85c2d28cfb0a581153c"
+        },
+        {
+          "bytes": 64089,
+          "compressed_bytes": 18181,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_CSV_Format/Vashantor_CSV_Format/Validation/Sylhet Validation Translation.csv",
+          "sha256": "c79c00fb49efe424ef524619c0936ee80b2c726ac6b161b1e42fda42ecc41e14"
+        },
+        {
+          "bytes": 192156,
+          "compressed_bytes": 39171,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Barishal Test Translation.json",
+          "sha256": "b3a61ed0b81efdd37b68b59677a8addcf85259e13728d968a0fe80fab2936e8e"
+        },
+        {
+          "bytes": 194402,
+          "compressed_bytes": 40720,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Chittagong Test Translation.json",
+          "sha256": "140e6a9f2fecc765f1ba703d499c90db213afda87eba42497ca6030addc9a5cf"
+        },
+        {
+          "bytes": 193856,
+          "compressed_bytes": 36724,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Mymensingh Test Translation.json",
+          "sha256": "f9020a09ea79fb97f8c6d3784a9ce12765dc96d93f3002582ac964ff98399412"
+        },
+        {
+          "bytes": 188695,
+          "compressed_bytes": 38986,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Noakhali Test Translation.json",
+          "sha256": "87b3b67a312f25a7cfaee8e157d97319031ef03e94e0c987c3ac97e54b2e6e79"
+        },
+        {
+          "bytes": 188010,
+          "compressed_bytes": 37740,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Sylhet Test Translation.json",
+          "sha256": "c8331854abace76f88a06104b6e3832127a93a05815b0cabef8892cf9e146f1d"
+        },
+        {
+          "bytes": 916970,
+          "compressed_bytes": 190112,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Barishal Train Translation.json",
+          "sha256": "9fe2da075b2fc5b02d9a46c5c36d68ccfacaecf4dcca57d81b8789b536934370"
+        },
+        {
+          "bytes": 912152,
+          "compressed_bytes": 197090,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Chittagong Train Translation.json",
+          "sha256": "482125094b0de7646d6814b0f26852f17759799ab2b5c3223f0b5061e62e7e93"
+        },
+        {
+          "bytes": 920167,
+          "compressed_bytes": 175458,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Mymensingh Train Translation.json",
+          "sha256": "016b86bfa65d62f2919f1f990d967fe5ef3a0c1643891689889a07dfbe1304e3"
+        },
+        {
+          "bytes": 901589,
+          "compressed_bytes": 186116,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Noakhali Train Translation.json",
+          "sha256": "0a9566054164c3931ede043be9c687af830bdcbd2cd7292f6cc27581fd9a34fa"
+        },
+        {
+          "bytes": 908669,
+          "compressed_bytes": 194593,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Sylhet Train Translation.json",
+          "sha256": "e9fc66cae1816966c4bf68ad912f215ae9391720a8f94b4eebb41fb3e0b26e84"
+        },
+        {
+          "bytes": 106373,
+          "compressed_bytes": 19844,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Barishal  Validation Translation.json",
+          "sha256": "87409c4ed0575f87133512966c3ba0ecac6fe5275614f6db64ab08646dc9a1e9"
+        },
+        {
+          "bytes": 107592,
+          "compressed_bytes": 20918,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Chittagong Validation Translation.json",
+          "sha256": "588099e9ceacbb03c2f508b7e39d39746533ee1b2f254bab38f5e0a240977bd6"
+        },
+        {
+          "bytes": 107058,
+          "compressed_bytes": 18678,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Mymensingh Validation Translation.json",
+          "sha256": "0c5256cfd579ac838cca10d330725f419b97ee40c0a4570fa84eb7945bff5163"
+        },
+        {
+          "bytes": 105193,
+          "compressed_bytes": 20049,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Noakhali Validation Translation.json",
+          "sha256": "d5b4e43f3e0b03a00e992dafaafbcc8a7b9f2c569d2a1d60dfe2b90a396ec65c"
+        },
+        {
+          "bytes": 104335,
+          "compressed_bytes": 19989,
+          "name": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Sylhet Validation Translation.json",
+          "sha256": "bdb64120f8eb10c147581a841dad8ca33970f5bec28e6faa93aebfd1a357132e"
+        }
+      ],
+      "path": "/home/urad/Desktop/working/Tamim_sir _work/archive(1).zip",
+      "sha256": "09261dc5eec4cb0c57cf2c6b21f9003ab1acadc21253d9b8c86d2e837aa9e83c"
+    }
+  },
+  "audit_schema_version": "1.0.0",
+  "bangladial": {
+    "cross_label_rows": 1475,
+    "cross_label_texts": 599,
+    "duplicate_rows_involved": 4962,
+    "label_counts": {
+      "BAR": 4270,
+      "CHI": 8819,
+      "KIS": 8751,
+      "MYM": 3212,
+      "NAR": 7829,
+      "NOA": 2500,
+      "NSD": 5862,
+      "RAJ": 891,
+      "RAN": 5909,
+      "STD": 4545,
+      "SYL": 3922,
+      "TAN": 6793
+    },
+    "placeholder_or_punctuation_only_rows": 24,
+    "rows": 63303,
+    "rows_containing_angle_placeholder": 3885,
+    "rows_length_at_most_two": 74,
+    "unique_normalized_texts": 60665
+  },
+  "derived_data": {
+    "cross_label_rows": 9430,
+    "cross_label_texts": 4039,
+    "dialect_counts": {
+      "BAR": 1583,
+      "KHU": 8166,
+      "KIS": 1249,
+      "MYM": 7000,
+      "NOA": 7000,
+      "NSD": 4138,
+      "RAJ": 9109,
+      "RAN": 1191,
+      "STD": 5455,
+      "SYL": 3003,
+      "TAN": 3207
+    },
+    "duplicate_rows_involved": 9432,
+    "explicit_heldout_derived_rows": 1598,
+    "explicit_heldout_source_counts": {
+      "Vashantor_Mymensingh_Test": 216,
+      "Vashantor_Mymensingh_Test_augmented": 244,
+      "Vashantor_Mymensingh_Validation": 137,
+      "Vashantor_Mymensingh_Validation_augmented": 158,
+      "Vashantor_Noakhali_Test": 224,
+      "Vashantor_Noakhali_Test_augmented": 310,
+      "Vashantor_Noakhali_Validation": 153,
+      "Vashantor_Noakhali_Validation_augmented": 156
+    },
+    "per_file": [
+      {
+        "archive_member": "bangla_dialect_balancing_synthetic_v0.csv",
+        "cross_label_rows": 7116,
+        "cross_label_texts": 2882,
+        "dialect_counts": {
+          "BAR": 1583,
+          "KHU": 1166,
+          "KIS": 1249,
+          "NSD": 4138,
+          "RAJ": 2109,
+          "RAN": 1191,
+          "STD": 5455,
+          "SYL": 3003,
+          "TAN": 3207
+        },
+        "duplicate_rows_involved": 7116,
+        "rows": 23101,
+        "source_counts": {
+          "Synthetic_Balancing_v0_ChatGPT_TemplateDialectal": 23101
+        },
+        "unique_normalized_texts": 18867
+      },
+      {
+        "archive_member": "khulna_rajshahi_7000_each (1).csv",
+        "cross_label_rows": 0,
+        "cross_label_texts": 0,
+        "dialect_counts": {
+          "KHU": 7000,
+          "RAJ": 7000
+        },
+        "duplicate_rows_involved": 2,
+        "rows": 14000,
+        "source_counts": {
+          "BanglaDial": 888,
+          "BanglaDial_augmented": 3354,
+          "Regional_Corpus": 914,
+          "Regional_Corpus_augmented": 2832,
+          "synthetic_augmented": 6012
+        },
+        "unique_normalized_texts": 13999
+      },
+      {
+        "archive_member": "mymensingh_noakhali_7000_each (1).csv",
+        "cross_label_rows": 2310,
+        "cross_label_texts": 1155,
+        "dialect_counts": {
+          "MYM": 7000,
+          "NOA": 7000
+        },
+        "duplicate_rows_involved": 2310,
+        "rows": 14000,
+        "source_counts": {
+          "BanglaDial": 3474,
+          "BanglaDial_augmented": 4090,
+          "Vashantor_Mymensingh_Test": 216,
+          "Vashantor_Mymensingh_Test_augmented": 244,
+          "Vashantor_Mymensingh_Train": 1079,
+          "Vashantor_Mymensingh_Train_augmented": 1135,
+          "Vashantor_Mymensingh_Validation": 137,
+          "Vashantor_Mymensingh_Validation_augmented": 158,
+          "Vashantor_Noakhali_Test": 224,
+          "Vashantor_Noakhali_Test_augmented": 310,
+          "Vashantor_Noakhali_Train": 1132,
+          "Vashantor_Noakhali_Train_augmented": 1492,
+          "Vashantor_Noakhali_Validation": 153,
+          "Vashantor_Noakhali_Validation_augmented": 156
+        },
+        "unique_normalized_texts": 12845
+      }
+    ],
+    "rows": 51101,
+    "unique_normalized_texts": 45709
+  },
+  "integrity_assertions": {
+    "bangladial_cross_label_texts_recomputed": 599,
+    "license_or_readme_members": [],
+    "no_empty_aligned_pair": true,
+    "normalization_dialect_count": 8
+  },
+  "overlaps": {
+    "bangladial_pair_overlap": [
+      {
+        "dataset": "BanglaRegionalTextCorpus",
+        "regional_source_overlap": 149,
+        "standard_target_overlap": 13
+      },
+      {
+        "dataset": "ChatgaiyyaAlap",
+        "regional_source_overlap": 11,
+        "standard_target_overlap": 17
+      },
+      {
+        "dataset": "Sylheti1200",
+        "regional_source_overlap": 1,
+        "standard_target_overlap": 5
+      },
+      {
+        "dataset": "Vashantor",
+        "regional_source_overlap": 12450,
+        "standard_target_overlap": 2499
+      }
+    ],
+    "derived_overlap": [
+      {
+        "archive_member": "bangla_dialect_balancing_synthetic_v0.csv",
+        "overlap_with_bangladial": 0,
+        "vashantor_exact_overlap": []
+      },
+      {
+        "archive_member": "khulna_rajshahi_7000_each (1).csv",
+        "overlap_with_bangladial": 888,
+        "vashantor_exact_overlap": []
+      },
+      {
+        "archive_member": "mymensingh_noakhali_7000_each (1).csv",
+        "overlap_with_bangladial": 5493,
+        "vashantor_exact_overlap": [
+          {
+            "dialect": "MYM",
+            "split": "test",
+            "unique_texts": 218
+          },
+          {
+            "dialect": "NOA",
+            "split": "test",
+            "unique_texts": 246
+          },
+          {
+            "dialect": "MYM",
+            "split": "train",
+            "unique_texts": 1120
+          },
+          {
+            "dialect": "NOA",
+            "split": "train",
+            "unique_texts": 1171
+          },
+          {
+            "dialect": "MYM",
+            "split": "validation",
+            "unique_texts": 156
+          },
+          {
+            "dialect": "NOA",
+            "split": "validation",
+            "unique_texts": 138
+          }
+        ]
+      }
+    ],
+    "pair_dataset_source_overlap": [
+      {
+        "left": "BanglaRegionalTextCorpus",
+        "right": "ChatgaiyyaAlap",
+        "shared_unique_regional_source_texts": 0
+      },
+      {
+        "left": "BanglaRegionalTextCorpus",
+        "right": "Sylheti1200",
+        "shared_unique_regional_source_texts": 0
+      },
+      {
+        "left": "BanglaRegionalTextCorpus",
+        "right": "Vashantor",
+        "shared_unique_regional_source_texts": 23
+      },
+      {
+        "left": "ChatgaiyyaAlap",
+        "right": "Sylheti1200",
+        "shared_unique_regional_source_texts": 0
+      },
+      {
+        "left": "ChatgaiyyaAlap",
+        "right": "Vashantor",
+        "shared_unique_regional_source_texts": 0
+      },
+      {
+        "left": "Sylheti1200",
+        "right": "Vashantor",
+        "shared_unique_regional_source_texts": 0
+      }
+    ],
+    "vashantor_overlap_with_bangladial_by_split": [
+      {
+        "dialect": "BAR",
+        "same_label_overlap_with_bangladial": 375,
+        "split": "test",
+        "unique_regional_source_texts": 375
+      },
+      {
+        "dialect": "CHI",
+        "same_label_overlap_with_bangladial": 375,
+        "split": "test",
+        "unique_regional_source_texts": 375
+      },
+      {
+        "dialect": "MYM",
+        "same_label_overlap_with_bangladial": 375,
+        "split": "test",
+        "unique_regional_source_texts": 375
+      },
+      {
+        "dialect": "NOA",
+        "same_label_overlap_with_bangladial": 374,
+        "split": "test",
+        "unique_regional_source_texts": 374
+      },
+      {
+        "dialect": "SYL",
+        "same_label_overlap_with_bangladial": 375,
+        "split": "test",
+        "unique_regional_source_texts": 375
+      },
+      {
+        "dialect": "BAR",
+        "same_label_overlap_with_bangladial": 1874,
+        "split": "train",
+        "unique_regional_source_texts": 1874
+      },
+      {
+        "dialect": "CHI",
+        "same_label_overlap_with_bangladial": 1875,
+        "split": "train",
+        "unique_regional_source_texts": 1875
+      },
+      {
+        "dialect": "MYM",
+        "same_label_overlap_with_bangladial": 1875,
+        "split": "train",
+        "unique_regional_source_texts": 1875
+      },
+      {
+        "dialect": "NOA",
+        "same_label_overlap_with_bangladial": 1875,
+        "split": "train",
+        "unique_regional_source_texts": 1875
+      },
+      {
+        "dialect": "SYL",
+        "same_label_overlap_with_bangladial": 1875,
+        "split": "train",
+        "unique_regional_source_texts": 1875
+      },
+      {
+        "dialect": "BAR",
+        "same_label_overlap_with_bangladial": 250,
+        "split": "validation",
+        "unique_regional_source_texts": 250
+      },
+      {
+        "dialect": "CHI",
+        "same_label_overlap_with_bangladial": 250,
+        "split": "validation",
+        "unique_regional_source_texts": 250
+      },
+      {
+        "dialect": "MYM",
+        "same_label_overlap_with_bangladial": 250,
+        "split": "validation",
+        "unique_regional_source_texts": 250
+      },
+      {
+        "dialect": "NOA",
+        "same_label_overlap_with_bangladial": 250,
+        "split": "validation",
+        "unique_regional_source_texts": 250
+      },
+      {
+        "dialect": "SYL",
+        "same_label_overlap_with_bangladial": 250,
+        "split": "validation",
+        "unique_regional_source_texts": 250
+      }
+    ]
+  },
+  "pair_summary": [
+    {
+      "dataset": "BanglaRegionalTextCorpus",
+      "dialect": "BAR",
+      "empty_source_or_target": 0,
+      "rows": 1136,
+      "source_equals_target": 0,
+      "split": "unsplit",
+      "unique_pairs": 1135,
+      "unique_source_texts": 1128,
+      "unique_standard_targets": 1092
+    },
+    {
+      "dataset": "BanglaRegionalTextCorpus",
+      "dialect": "KHU",
+      "empty_source_or_target": 0,
+      "rows": 917,
+      "source_equals_target": 0,
+      "split": "unsplit",
+      "unique_pairs": 917,
+      "unique_source_texts": 914,
+      "unique_standard_targets": 882
+    },
+    {
+      "dataset": "BanglaRegionalTextCorpus",
+      "dialect": "NAR",
+      "empty_source_or_target": 0,
+      "rows": 1150,
+      "source_equals_target": 2,
+      "split": "unsplit",
+      "unique_pairs": 1149,
+      "unique_source_texts": 1148,
+      "unique_standard_targets": 1020
+    },
+    {
+      "dataset": "BanglaRegionalTextCorpus",
+      "dialect": "RAN",
+      "empty_source_or_target": 0,
+      "rows": 1450,
+      "source_equals_target": 0,
+      "split": "unsplit",
+      "unique_pairs": 1446,
+      "unique_source_texts": 1427,
+      "unique_standard_targets": 1357
+    },
+    {
+      "dataset": "ChatgaiyyaAlap",
+      "dialect": "CHI",
+      "empty_source_or_target": 0,
+      "rows": 4011,
+      "source_equals_target": 0,
+      "split": "unsplit",
+      "unique_pairs": 4009,
+      "unique_source_texts": 4007,
+      "unique_standard_targets": 4008
+    },
+    {
+      "dataset": "Sylheti1200",
+      "dialect": "SYL",
+      "empty_source_or_target": 0,
+      "rows": 1200,
+      "source_equals_target": 28,
+      "split": "unsplit",
+      "unique_pairs": 1189,
+      "unique_source_texts": 1186,
+      "unique_standard_targets": 1176
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "BAR",
+      "empty_source_or_target": 0,
+      "rows": 375,
+      "source_equals_target": 1,
+      "split": "test",
+      "unique_pairs": 375,
+      "unique_source_texts": 375,
+      "unique_standard_targets": 375
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "CHI",
+      "empty_source_or_target": 0,
+      "rows": 375,
+      "source_equals_target": 0,
+      "split": "test",
+      "unique_pairs": 375,
+      "unique_source_texts": 375,
+      "unique_standard_targets": 375
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "MYM",
+      "empty_source_or_target": 0,
+      "rows": 375,
+      "source_equals_target": 6,
+      "split": "test",
+      "unique_pairs": 375,
+      "unique_source_texts": 375,
+      "unique_standard_targets": 375
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "NOA",
+      "empty_source_or_target": 0,
+      "rows": 375,
+      "source_equals_target": 0,
+      "split": "test",
+      "unique_pairs": 375,
+      "unique_source_texts": 374,
+      "unique_standard_targets": 375
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "SYL",
+      "empty_source_or_target": 0,
+      "rows": 375,
+      "source_equals_target": 2,
+      "split": "test",
+      "unique_pairs": 375,
+      "unique_source_texts": 375,
+      "unique_standard_targets": 375
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "BAR",
+      "empty_source_or_target": 0,
+      "rows": 1875,
+      "source_equals_target": 4,
+      "split": "train",
+      "unique_pairs": 1875,
+      "unique_source_texts": 1874,
+      "unique_standard_targets": 1874
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "CHI",
+      "empty_source_or_target": 0,
+      "rows": 1875,
+      "source_equals_target": 0,
+      "split": "train",
+      "unique_pairs": 1875,
+      "unique_source_texts": 1875,
+      "unique_standard_targets": 1874
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "MYM",
+      "empty_source_or_target": 0,
+      "rows": 1875,
+      "source_equals_target": 94,
+      "split": "train",
+      "unique_pairs": 1875,
+      "unique_source_texts": 1875,
+      "unique_standard_targets": 1874
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "NOA",
+      "empty_source_or_target": 0,
+      "rows": 1875,
+      "source_equals_target": 22,
+      "split": "train",
+      "unique_pairs": 1875,
+      "unique_source_texts": 1875,
+      "unique_standard_targets": 1874
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "SYL",
+      "empty_source_or_target": 0,
+      "rows": 1875,
+      "source_equals_target": 6,
+      "split": "train",
+      "unique_pairs": 1875,
+      "unique_source_texts": 1875,
+      "unique_standard_targets": 1874
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "BAR",
+      "empty_source_or_target": 0,
+      "rows": 250,
+      "source_equals_target": 2,
+      "split": "validation",
+      "unique_pairs": 250,
+      "unique_source_texts": 250,
+      "unique_standard_targets": 250
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "CHI",
+      "empty_source_or_target": 0,
+      "rows": 250,
+      "source_equals_target": 0,
+      "split": "validation",
+      "unique_pairs": 250,
+      "unique_source_texts": 250,
+      "unique_standard_targets": 250
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "MYM",
+      "empty_source_or_target": 0,
+      "rows": 250,
+      "source_equals_target": 14,
+      "split": "validation",
+      "unique_pairs": 250,
+      "unique_source_texts": 250,
+      "unique_standard_targets": 250
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "NOA",
+      "empty_source_or_target": 0,
+      "rows": 250,
+      "source_equals_target": 1,
+      "split": "validation",
+      "unique_pairs": 250,
+      "unique_source_texts": 250,
+      "unique_standard_targets": 250
+    },
+    {
+      "dataset": "Vashantor",
+      "dialect": "SYL",
+      "empty_source_or_target": 0,
+      "rows": 250,
+      "source_equals_target": 5,
+      "split": "validation",
+      "unique_pairs": 250,
+      "unique_source_texts": 250,
+      "unique_standard_targets": 250
+    }
+  ],
+  "raw_data": {
+    "aligned_pair_rows": 22364,
+    "normalization_dialect_rows": {
+      "BAR": 3636,
+      "CHI": 6511,
+      "KHU": 917,
+      "MYM": 2500,
+      "NAR": 1150,
+      "NOA": 2500,
+      "RAN": 1450,
+      "SYL": 3700
+    },
+    "normalization_dialects": [
+      "BAR",
+      "CHI",
+      "KHU",
+      "MYM",
+      "NAR",
+      "NOA",
+      "RAN",
+      "SYL"
+    ],
+    "unique_dialect_tagged_pairs": 22345,
+    "unique_source_texts": 22220,
+    "unique_standard_targets": 10998
+  },
+  "raw_diagnostics": {
+    "bangladial_csv_xlsx_exact_equal": true,
+    "dictionary_rows": 1546,
+    "regional_workbooks": {
+      "clean_rows": 4653,
+      "clean_unique_normalized_regional_texts": 4600,
+      "decision": "Use BanglaRegionalTextCorpus.xlsx once because it retains the Standard Bangla target; exclude Regional_cleaned_dataset.xlsx as a duplicate representation.",
+      "full_rows": 4653,
+      "full_unique_normalized_regional_texts": 4600,
+      "regional_text_sets_equal": true
+    },
+    "vashantor": {
+      "json_files": [
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Barishal Test Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 1,
+          "missing_standard": 1,
+          "rows": 376
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Chittagong Test Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 375
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Mymensingh Test Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 1,
+          "missing_standard": 1,
+          "rows": 376
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Noakhali Test Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 1,
+          "missing_standard": 1,
+          "rows": 376
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Test/Sylhet Test Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 1,
+          "missing_standard": 1,
+          "rows": 376
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Barishal Train Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 1875
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Chittagong Train Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 1875
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Mymensingh Train Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 1875
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Noakhali Train Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 1875
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Train/Sylhet Train Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 1875
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Barishal  Validation Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 250
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Chittagong Validation Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 250
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Mymensingh Validation Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 250
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Noakhali Validation Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 250
+        },
+        {
+          "archive_member": "Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language/Vashantor_JSON_Format/Vashantor_Json_Format/Validation/Sylhet Validation Translation.json",
+          "inconsistent_trailing_space_keys": false,
+          "missing_regional": 0,
+          "missing_standard": 0,
+          "rows": 250
+        }
+      ],
+      "regional_source_overlap_between_splits": {
+        "test_x_train": 0,
+        "test_x_validation": 0,
+        "train_x_validation": 6
+      },
+      "split_alignment": [
+        {
+          "cross_dialect_identical_source_texts": 5,
+          "per_dialect_rows": {
+            "BAR": 375,
+            "CHI": 375,
+            "MYM": 375,
+            "NOA": 375,
+            "SYL": 375
+          },
+          "rows": 1875,
+          "split": "test",
+          "standard_target_intersection": 368,
+          "standard_target_union": 383,
+          "wrong_column_inputs_shared_by_all_five_labels": 368,
+          "wrong_column_inputs_shared_by_at_least_two_labels": 377,
+          "wrong_column_rows_in_label_collisions": 1869,
+          "wrong_column_unique_inputs": 383
+        },
+        {
+          "cross_dialect_identical_source_texts": 31,
+          "per_dialect_rows": {
+            "BAR": 1875,
+            "CHI": 1875,
+            "MYM": 1875,
+            "NOA": 1875,
+            "SYL": 1875
+          },
+          "rows": 9375,
+          "split": "train",
+          "standard_target_intersection": 1868,
+          "standard_target_union": 1880,
+          "wrong_column_inputs_shared_by_all_five_labels": 1868,
+          "wrong_column_inputs_shared_by_at_least_two_labels": 1875,
+          "wrong_column_rows_in_label_collisions": 9370,
+          "wrong_column_unique_inputs": 1880
+        },
+        {
+          "cross_dialect_identical_source_texts": 5,
+          "per_dialect_rows": {
+            "BAR": 250,
+            "CHI": 250,
+            "MYM": 250,
+            "NOA": 250,
+            "SYL": 250
+          },
+          "rows": 1250,
+          "split": "validation",
+          "standard_target_intersection": 249,
+          "standard_target_union": 251,
+          "wrong_column_inputs_shared_by_all_five_labels": 249,
+          "wrong_column_inputs_shared_by_at_least_two_labels": 250,
+          "wrong_column_rows_in_label_collisions": 1249,
+          "wrong_column_unique_inputs": 251
+        }
+      ]
+    }
+  }
+}

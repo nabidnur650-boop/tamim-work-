@@ -8,100 +8,100 @@
       "commands": [
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/foundation_300m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/run_continuation_lr_pilot.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_continuation_lr_pilot.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/continuation_m0_dense_200m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/pilot_m2_banked_20m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/pilot_m2_unbanked_20m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/pilot_m2_scratch_20m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/pilot_m2_annealed_20m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/pilot_m2_paired_20m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/select_upcycling_strategy.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/select_upcycling_strategy.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/continuation_m2_200m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/pilot_m1_loss_free_router_10m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/pilot_m1_aux_router_10m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/select_switch_router.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/select_switch_router.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/train_foundation.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/train_foundation.py",
           "--config",
           "configs/continuation_m1_switch_200m.yaml",
           "--resume"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/analyze_foundation_routing.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/analyze_foundation_routing.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/preflight_task_models.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/preflight_task_models.py"
         ]
       ],
       "command_index": 16,
@@ -113,7 +113,7 @@
       "commands": [
         [
           "/opt/miniforge3/bin/python",
-          "tools/run_task_experiments.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_task_experiments.py"
         ]
       ],
       "command_index": 1,
@@ -125,39 +125,39 @@
       "commands": [
         [
           "/opt/miniforge3/bin/python",
-          "tools/summarize_development_results.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/summarize_development_results.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/audit_cross_task_input_firewall.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/audit_cross_task_input_firewall.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/audit_source_blind_baselines.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/audit_source_blind_baselines.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/run_identification_fusion_pilot.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_identification_fusion_pilot.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/run_normalization_fusion_pilot.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_normalization_fusion_pilot.py",
           "--version",
           "v1"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/run_normalization_fusion_pilot.py",
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_normalization_fusion_pilot.py",
           "--version",
           "v2"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/audit_development_fusion.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/audit_development_fusion.py"
         ],
         [
           "/opt/miniforge3/bin/python",
-          "tools/evaluate_development_fusion_transfer.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/evaluate_development_fusion_transfer.py"
         ]
       ],
       "command_index": 8,
@@ -169,7 +169,7 @@
       "commands": [
         [
           "/opt/miniforge3/bin/python",
-          "tools/run_optimizer_pilot.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_optimizer_pilot.py"
         ]
       ],
       "command_index": 1,
@@ -181,7 +181,7 @@
       "commands": [
         [
           "/opt/miniforge3/bin/python",
-          "tools/benchmark_task_inference.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/benchmark_task_inference.py"
         ]
       ],
       "command_index": 1,
@@ -193,7 +193,7 @@
       "commands": [
         [
           "/opt/miniforge3/bin/python",
-          "tools/run_bidirectional_identification.py"
+          "/home/urad/Desktop/working/Tamim_sir _work/bangla_dialect_moe/tools/run_bidirectional_identification.py"
         ]
       ],
       "command_index": 1
