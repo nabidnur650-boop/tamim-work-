@@ -1,0 +1,1364 @@
+<h1>Boichitro-MoE: consolidated results and Q1 evaluation</h1>
+<p><strong>Snapshot:</strong> 2026-07-22 06:12 KST<br />
+<strong>Report status:</strong> interim, evidence-audited snapshot<br />
+<strong>Pipeline status at snapshot:</strong> <code>RUNNING</code><br />
+<strong>Submission status:</strong> <strong>NOT READY</strong></p>
+<p>This report inventories every finalized result family currently present in the
+workspace. Development, previously accessed test, smoke-test, and missing
+locked evidence are kept separate. Values from unfinished checkpoints are not
+treated as scientific results.</p>
+<h2>Executive evaluation</h2>
+<p>The project is methodologically ambitious and unusually strong in provenance,
+leakage control, artifact tracking, and reproducibility. However, its main
+scientific claim is not yet testable: two M2 and all three M3 main runs,
+protocol freezing, locked evaluation, confirmatory statistics, robustness,
+routing analysis, and human evaluation are unfinished.</p>
+<p>The raw architecture results remain mixed, but the previously weak system-level
+evaluation has now been repaired under a source-blind contract:</p>
+<ul>
+<li>M1 improves over M0 by <strong>+0.863 macro chrF++</strong> on normalization validation,
+  but loses <strong>0.661 worst-dialect chrF++</strong>, increases replay degradation by
+  <strong>0.818 percentage points</strong>, and has worse selection-time calibration.</li>
+<li>M1 improves M0 identification regional macro-F1 by only <strong>+0.0053</strong>.</li>
+<li>The earlier <strong>50.462</strong> word-rewrite score used gold dialect metadata. It is
+  now correctly labeled as an oracle, not a deployable comparator.</li>
+<li>The corrected inferred-supported-dialect rewrite scores <strong>50.005 macro
+  chrF++</strong> and <strong>30.388 worst-dialect chrF++</strong> with no gold metadata.</li>
+<li>A semantic-group-held-out, five-fold, reference-free candidate selector
+  reaches <strong>52.667 macro chrF++</strong> and <strong>34.851 worst-dialect chrF++</strong> over six
+  M0/M1 runs. Its paired gain over the fair rewrite is <strong>+2.662</strong> (95%
+  dependence-preserving hierarchical bootstrap CI <strong>[2.086, 3.268]</strong>; paired
+  randomization <strong>p=0.000200</strong>).</li>
+<li>The frozen neural/SVM identification blend reaches <strong>0.8009 regional
+  macro-F1</strong>, a paired <strong>+0.0390</strong> over raw neural predictions (95% CI
+  <strong>[0.0309, 0.0479]</strong>; <strong>p=0.000200</strong>), with <strong>0.0440 ECE-15</strong>.</li>
+</ul>
+<p>These fusion values are development-only and selection-conditioned: the same
+development rows informed the selected family/threshold or blend weight. Their
+intervals preserve shared semantic-group dependence across runs and dialects,
+but do not include selection uncertainty and are exploratory, not confirmatory.
+Raw neural outputs remain primary for architecture and source-OOD inference,
+and the fixed fusion is saved as a separate system view for the later locked
+evaluation.</p>
+<p>Accordingly, the evidence presently supports the engineering contribution and
+some modest dense-to-Switch development gains. It does <strong>not</strong> support
+Boichitro-MoE superiority, source-OOD robustness, state-of-the-art performance,
+or publication readiness.</p>
+<p><strong>Current Q1 readiness rating: 5.5/10.</strong> The evaluation design and deployable
+development systems are materially stronger, but submission now would still
+be premature because the central M3-vs-M2 locked claim and required human
+evidence do not yet exist.</p>
+<h2>Evidence status</h2>
+<table>
+<thead>
+<tr>
+<th>Result family</th>
+<th style="text-align: right;">Finalized status</th>
+<th>Admissible interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data engineering and leakage gates</td>
+<td style="text-align: right;">Pass internally</td>
+<td>Training-ready; native linguistic validation pending</td>
+</tr>
+<tr>
+<td>Tokenizer selection</td>
+<td style="text-align: right;">Complete</td>
+<td>Validation-only, three seeds, no test access</td>
+</tr>
+<tr>
+<td>Dense foundation and three continuations</td>
+<td style="text-align: right;">Complete</td>
+<td>Descriptive, one foundation seed</td>
+</tr>
+<tr>
+<td>Development pilots</td>
+<td style="text-align: right;">Complete</td>
+<td>Hyperparameter and topology selection only</td>
+</tr>
+<tr>
+<td>M0 main task runs</td>
+<td style="text-align: right;">3/3</td>
+<td>Development validation only</td>
+</tr>
+<tr>
+<td>M1 main task runs</td>
+<td style="text-align: right;">3/3</td>
+<td>Development validation only</td>
+</tr>
+<tr>
+<td>Fair source-blind fusion</td>
+<td style="text-align: right;">Complete on M0/M1</td>
+<td>Validation-only; fixed before locked evaluation</td>
+</tr>
+<tr>
+<td>M2 main task runs</td>
+<td style="text-align: right;">1/3 finalized</td>
+<td>Seed 1701 is complete; insufficient for an aggregate claim</td>
+</tr>
+<tr>
+<td>M3 main task runs</td>
+<td style="text-align: right;">0/3</td>
+<td>No result</td>
+</tr>
+<tr>
+<td>Fixed fusion transfer to M2/M3</td>
+<td style="text-align: right;">1/6</td>
+<td>M2 seed 1701 diagnostic only; shared validation rows</td>
+</tr>
+<tr>
+<td>Locked main neural evaluation</td>
+<td style="text-align: right;">0/12</td>
+<td>No confirmatory result</td>
+</tr>
+<tr>
+<td>Confirmatory and optimization ablations</td>
+<td style="text-align: right;">0/30</td>
+<td>No causal component evidence</td>
+</tr>
+<tr>
+<td>Human dataset review</td>
+<td style="text-align: right;">0/230</td>
+<td>No native-quality corpus claim</td>
+</tr>
+<tr>
+<td>Blinded human system ratings</td>
+<td style="text-align: right;">Missing</td>
+<td>No adequacy/fluency claim</td>
+</tr>
+</tbody>
+</table>
+<p>The readiness audit passes <strong>10 of 29</strong> gates. The 19 failed gates are blocking,
+not cosmetic.</p>
+<h2>Dataset results</h2>
+<h3>Final admitted data</h3>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align: right;">Rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentic normalization pairs</td>
+<td style="text-align: right;">54,598</td>
+</tr>
+<tr>
+<td>Traceable synthetic normalization pairs, train only</td>
+<td style="text-align: right;">3,325</td>
+</tr>
+<tr>
+<td>All normalization rows</td>
+<td style="text-align: right;">57,923</td>
+</tr>
+<tr>
+<td>Identification rows</td>
+<td style="text-align: right;">122,353</td>
+</tr>
+<tr>
+<td>Real romanized source-OOD challenge</td>
+<td style="text-align: right;">1,342</td>
+</tr>
+<tr>
+<td>Unique tokenizer-training texts</td>
+<td style="text-align: right;">100,236</td>
+</tr>
+<tr>
+<td>Recorded exclusion decisions</td>
+<td style="text-align: right;">137,386</td>
+</tr>
+<tr>
+<td>Quarantined legacy-derived rows</td>
+<td style="text-align: right;">51,101</td>
+</tr>
+</tbody>
+</table>
+<p>Normalization contains 39,622 training, 4,289 validation, 5,033 IID-test, and
+8,979 OOD rows. The OOD total consists of 7,592 supported-dialect source-OOD
+rows plus 1,387 RAJ zero-shot rows. Identification contains 92,897 training,
+10,238 validation, 11,264 IID-test, 6,803 source-OOD, and 1,151 external rows.</p>
+<p>The engineering gate passes ten automatic checks: the 13-label inventory is
+consistent, exact/compact train-evaluation overlap is absent, cross-label
+conflicts are removed, synthetic data are train-only and excluded from ID,
+locked OOD sources never train, the legacy archive is absent, and licenses are
+resolved. The sole failed publication gate is native review: <strong>0 of 230 rows</strong>
+have been reviewed.</p>
+<h3>Dataset limitations</h3>
+<ul>
+<li>Normalization training is concentrated in CHI (36.76%) and SYL (36.54%);
+  together they account for 73.3% of training rows.</li>
+<li>RAJ has no normalization training or validation pair, so its 1,387-row score
+  must be labelled zero-shot and cannot be merged into supported-dialect OOD.</li>
+<li>KHU, NAR, and RAN lack defensible independent-source normalization tests.</li>
+<li>The dataset is internally verified but cannot yet be described as
+  native-speaker validated or cleared for public redistribution.</li>
+</ul>
+<h2>Tokenizer results</h2>
+<p>Twelve intrinsic candidates passed the mechanical gates; four entered the
+three-seed, 2M-token-per-seed proxy comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th style="text-align: right;">Proxy BPC mean ± SD ↓</th>
+<th style="text-align: right;">Worst-dialect BPC ↓</th>
+<th style="text-align: right;">Tokens/character ↓</th>
+<th style="text-align: right;">Tokens/s ↑</th>
+<th style="text-align: right;">Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte-BPE balanced 16k</td>
+<td style="text-align: right;">3.3807 ± 0.0113</td>
+<td style="text-align: right;">3.5934</td>
+<td style="text-align: right;">0.6859</td>
+<td style="text-align: right;">153,304</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td>Unigram balanced 32k</td>
+<td style="text-align: right;">2.7482 ± 0.0114</td>
+<td style="text-align: right;">2.9518</td>
+<td style="text-align: right;">0.2383</td>
+<td style="text-align: right;">72,811</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td>WordPiece balanced 32k</td>
+<td style="text-align: right;">2.6675 ± 0.0023</td>
+<td style="text-align: right;">2.8898</td>
+<td style="text-align: right;">0.2268</td>
+<td style="text-align: right;">71,746</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td><strong>WordPiece natural 32k</strong></td>
+<td style="text-align: right;"><strong>2.6600 ± 0.0088</strong></td>
+<td style="text-align: right;"><strong>2.8753</strong></td>
+<td style="text-align: right;"><strong>0.2245</strong></td>
+<td style="text-align: right;"><strong>74,345</strong></td>
+<td style="text-align: right;"><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The frozen choice is well supported within the screened set: it has the best
+mean and worst-dialect proxy BPC and the lowest token cost among the shortlisted
+non-byte tokenizers. Selection used no test data. The limitation is breadth:
+the proxy study establishes the best local candidate, not superiority to every
+modern Bangla tokenizer.</p>
+<h2>Pretraining corpus and foundation results</h2>
+<p>The revision-pinned FineWeb-2 Bangla build saw 585,619 documents, accepted
+567,746, and produced 300,004,991 training tokens plus 3,000,629 validation
+tokens. Recorded rejections include 3,505 low-Bangla-ratio documents, 2,476
+direct benchmark matches, 49 compact benchmark matches, 130 overlong documents,
+and 69 invalid-Unicode documents. All five source parquet hashes were verified.</p>
+<h3>Fixed-budget foundation comparison</h3>
+<table>
+<thead>
+<tr>
+<th>Run</th>
+<th style="text-align: right;">Tokens</th>
+<th style="text-align: right;">Final validation BPC ↓</th>
+<th style="text-align: right;">Change from 300M dense foundation</th>
+<th style="text-align: right;">Training tok/s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F dense foundation</td>
+<td style="text-align: right;">300.0M</td>
+<td style="text-align: right;">1.230329</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">23,853</td>
+</tr>
+<tr>
+<td>M0 dense continuation</td>
+<td style="text-align: right;">200.0M</td>
+<td style="text-align: right;">1.203249</td>
+<td style="text-align: right;">−2.201%</td>
+<td style="text-align: right;">16,877</td>
+</tr>
+<tr>
+<td>M1 Switch continuation</td>
+<td style="text-align: right;">200.0M</td>
+<td style="text-align: right;"><strong>1.199294</strong></td>
+<td style="text-align: right;"><strong>−2.523%</strong></td>
+<td style="text-align: right;">14,100</td>
+</tr>
+<tr>
+<td>M2 shared top-2 MoE continuation</td>
+<td style="text-align: right;">200.0M</td>
+<td style="text-align: right;">1.202603</td>
+<td style="text-align: right;">−2.254%</td>
+<td style="text-align: right;">18,223</td>
+</tr>
+</tbody>
+</table>
+<p>M1 is best by validation BPC, but its advantage over M0 is only 0.00396 BPC
+(0.329%). M2 improves on M0 by 0.00065 BPC (0.054%). These are single-seed
+foundation results, so they are descriptive and cannot establish a stable
+architecture ranking.</p>
+<p>Router diagnostics passed the non-finite and persistent-collapse guards. M1's
+mean/final load CV is 0.223/0.258; M2's is 0.147/0.043. One isolated M1 CV
+exceedance and no post-stability M2 exceedance were recorded.</p>
+<h2>Development-pilot results</h2>
+<h3>Mature-checkpoint continuation learning rate</h3>
+<table>
+<thead>
+<tr>
+<th>Muon / AdamW LR</th>
+<th style="text-align: right;">Final BPC ↓</th>
+<th style="text-align: right;">Relative change</th>
+<th style="text-align: right;">Eligible</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.001 / 0.000015</td>
+<td style="text-align: right;"><strong>1.226813</strong></td>
+<td style="text-align: right;">−0.286%</td>
+<td style="text-align: right;">Yes</td>
+<td>Selected</td>
+</tr>
+<tr>
+<td>0.002 / 0.000030</td>
+<td style="text-align: right;">1.232059</td>
+<td style="text-align: right;">+0.141%</td>
+<td style="text-align: right;">No</td>
+<td>Rejected</td>
+</tr>
+<tr>
+<td>0.005 / 0.000075</td>
+<td style="text-align: right;">1.254107</td>
+<td style="text-align: right;">+1.933%</td>
+<td style="text-align: right;">No</td>
+<td>Rejected</td>
+</tr>
+<tr>
+<td>0.010 / 0.000150</td>
+<td style="text-align: right;">1.293376</td>
+<td style="text-align: right;">+5.124%</td>
+<td style="text-align: right;">No</td>
+<td>Rejected</td>
+</tr>
+</tbody>
+</table>
+<p>The monotonic deterioration at larger restart rates is credible evidence that a
+mature checkpoint required a low continuation LR.</p>
+<h3>Dense-to-MoE recovery</h3>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th style="text-align: right;">Initial BPC</th>
+<th style="text-align: right;">Final BPC ↓</th>
+<th style="text-align: right;">Maximum regression</th>
+<th style="text-align: right;">Eligible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abrupt bank release</td>
+<td style="text-align: right;">1.230335</td>
+<td style="text-align: right;">1.262179</td>
+<td style="text-align: right;">+3.678%</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td>Unbanked transfer</td>
+<td style="text-align: right;">1.397035</td>
+<td style="text-align: right;">1.255871</td>
+<td style="text-align: right;">0.000%</td>
+<td style="text-align: right;">Negative control</td>
+</tr>
+<tr>
+<td>Random initialization</td>
+<td style="text-align: right;">3.519622</td>
+<td style="text-align: right;">2.559432</td>
+<td style="text-align: right;">0.000%</td>
+<td style="text-align: right;">Negative control</td>
+</tr>
+<tr>
+<td>Annealed cross-bank</td>
+<td style="text-align: right;">1.230335</td>
+<td style="text-align: right;">1.264109</td>
+<td style="text-align: right;">+2.745%</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td><strong>Permanent paired bank</strong></td>
+<td style="text-align: right;">1.230335</td>
+<td style="text-align: right;"><strong>1.228724</strong></td>
+<td style="text-align: right;"><strong>0.000%</strong></td>
+<td style="text-align: right;"><strong>Selected</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Only permanent paired-bank routing satisfied the preregistered transient and
+final regression guards. This is one of the clearest positive pilot findings.</p>
+<h3>Switch-router repair</h3>
+<table>
+<thead>
+<tr>
+<th>Router strategy</th>
+<th style="text-align: right;">Final BPC ↓</th>
+<th style="text-align: right;">Maximum load CV ↓</th>
+<th style="text-align: right;">Final load CV ↓</th>
+<th style="text-align: right;">Eligible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loss-free straight-through</td>
+<td style="text-align: right;">1.227010</td>
+<td style="text-align: right;">0.5061</td>
+<td style="text-align: right;">0.5061</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td><strong>Auxiliary-balance straight-through</strong></td>
+<td style="text-align: right;"><strong>1.226940</strong></td>
+<td style="text-align: right;"><strong>0.2617</strong></td>
+<td style="text-align: right;"><strong>0.0675</strong></td>
+<td style="text-align: right;"><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The auxiliary-balance router is both marginally better in BPC and substantially
+more balanced, justifying its selection.</p>
+<h3>Stage-S retention schedule</h3>
+<table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th style="text-align: right;">Norm/replay fraction</th>
+<th style="text-align: right;">Macro chrF++ ↑</th>
+<th style="text-align: right;">Worst dialect ↑</th>
+<th style="text-align: right;">Replay degradation ↓</th>
+<th style="text-align: right;">Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rejected default</td>
+<td style="text-align: right;">0.55 / 0.10</td>
+<td style="text-align: right;"><strong>44.714</strong></td>
+<td style="text-align: right;"><strong>34.214</strong></td>
+<td style="text-align: right;">15.910%</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td>ret25 balanced</td>
+<td style="text-align: right;">0.40 / 0.25</td>
+<td style="text-align: right;">41.158</td>
+<td style="text-align: right;">31.917</td>
+<td style="text-align: right;">1.336%</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td>ret25 conservative</td>
+<td style="text-align: right;">0.40 / 0.25</td>
+<td style="text-align: right;">41.072</td>
+<td style="text-align: right;">30.621</td>
+<td style="text-align: right;">0.831%</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td><strong>ret35 balanced</strong></td>
+<td style="text-align: right;"><strong>0.30 / 0.35</strong></td>
+<td style="text-align: right;"><strong>41.186</strong></td>
+<td style="text-align: right;"><strong>31.910</strong></td>
+<td style="text-align: right;"><strong>0.972%</strong></td>
+<td style="text-align: right;"><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>ret35 conservative</td>
+<td style="text-align: right;">0.30 / 0.35</td>
+<td style="text-align: right;">40.745</td>
+<td style="text-align: right;">31.285</td>
+<td style="text-align: right;">0.362%</td>
+<td style="text-align: right;">No</td>
+</tr>
+</tbody>
+</table>
+<p>The selected schedule correctly respects the 5% replay guard, but the trade-off
+is large: it gives up 3.53 chrF++ relative to the rejected high-forgetting
+schedule. The choice is protocol-consistent, not evidence that the selected
+score is competitive.</p>
+<h2>Main task development results</h2>
+<p>M0 and M1 have finalized three-seed development runs; M2 seed 1701 is also
+finalized while its other seeds and all M3 runs remain in progress. All values
+below are validation-selection results and must not be reported as locked test
+results.</p>
+<h3>Per-seed results</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th style="text-align: right;">Seed</th>
+<th style="text-align: right;">Norm macro chrF++ ↑</th>
+<th style="text-align: right;">Worst dialect ↑</th>
+<th style="text-align: right;">Replay degradation ↓</th>
+<th style="text-align: right;">ID regional F1 ↑</th>
+<th style="text-align: right;">ID macro-F1 ↑</th>
+<th style="text-align: right;">Accuracy ↑</th>
+<th style="text-align: right;">ECE ↓</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M0</td>
+<td style="text-align: right;">1701</td>
+<td style="text-align: right;">41.186</td>
+<td style="text-align: right;">31.910</td>
+<td style="text-align: right;">0.972%</td>
+<td style="text-align: right;">0.7605</td>
+<td style="text-align: right;">0.7726</td>
+<td style="text-align: right;">0.8436</td>
+<td style="text-align: right;">0.0900</td>
+</tr>
+<tr>
+<td>M0</td>
+<td style="text-align: right;">2903</td>
+<td style="text-align: right;">41.232</td>
+<td style="text-align: right;">32.184</td>
+<td style="text-align: right;">1.128%</td>
+<td style="text-align: right;">0.7519</td>
+<td style="text-align: right;">0.7648</td>
+<td style="text-align: right;">0.8426</td>
+<td style="text-align: right;">0.0882</td>
+</tr>
+<tr>
+<td>M0</td>
+<td style="text-align: right;">4307</td>
+<td style="text-align: right;">41.035</td>
+<td style="text-align: right;">32.733</td>
+<td style="text-align: right;">1.144%</td>
+<td style="text-align: right;">0.7652</td>
+<td style="text-align: right;">0.7769</td>
+<td style="text-align: right;">0.8497</td>
+<td style="text-align: right;">0.1131</td>
+</tr>
+<tr>
+<td>M1</td>
+<td style="text-align: right;">1701</td>
+<td style="text-align: right;">42.278</td>
+<td style="text-align: right;">31.534</td>
+<td style="text-align: right;">1.898%</td>
+<td style="text-align: right;">0.7670</td>
+<td style="text-align: right;">0.7788</td>
+<td style="text-align: right;">0.8533</td>
+<td style="text-align: right;">0.1175</td>
+</tr>
+<tr>
+<td>M1</td>
+<td style="text-align: right;">2903</td>
+<td style="text-align: right;">41.802</td>
+<td style="text-align: right;">31.504</td>
+<td style="text-align: right;">1.705%</td>
+<td style="text-align: right;">0.7678</td>
+<td style="text-align: right;">0.7796</td>
+<td style="text-align: right;">0.8498</td>
+<td style="text-align: right;">0.1197</td>
+</tr>
+<tr>
+<td>M1</td>
+<td style="text-align: right;">4307</td>
+<td style="text-align: right;">41.963</td>
+<td style="text-align: right;">31.806</td>
+<td style="text-align: right;">2.094%</td>
+<td style="text-align: right;">0.7586</td>
+<td style="text-align: right;">0.7706</td>
+<td style="text-align: right;">0.8456</td>
+<td style="text-align: right;">0.1062</td>
+</tr>
+<tr>
+<td>M2</td>
+<td style="text-align: right;">1701</td>
+<td style="text-align: right;">41.728</td>
+<td style="text-align: right;">31.363</td>
+<td style="text-align: right;">1.168%</td>
+<td style="text-align: right;">0.7533</td>
+<td style="text-align: right;">0.7657</td>
+<td style="text-align: right;">0.8404</td>
+<td style="text-align: right;">0.0965</td>
+</tr>
+</tbody>
+</table>
+<h3>Three-seed aggregates and paired M1−M0 effects</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th style="text-align: right;">M0 mean ± SD</th>
+<th style="text-align: right;">M1 mean ± SD</th>
+<th style="text-align: right;">Paired difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normalization macro chrF++ ↑</td>
+<td style="text-align: right;">41.151 ± 0.103</td>
+<td style="text-align: right;"><strong>42.014 ± 0.242</strong></td>
+<td style="text-align: right;"><strong>+0.863 ± 0.267</strong></td>
+</tr>
+<tr>
+<td>Worst-dialect chrF++ ↑</td>
+<td style="text-align: right;"><strong>32.276 ± 0.419</strong></td>
+<td style="text-align: right;">31.615 ± 0.167</td>
+<td style="text-align: right;"><strong>−0.661 ± 0.276</strong></td>
+</tr>
+<tr>
+<td>Replay degradation ↓</td>
+<td style="text-align: right;"><strong>1.081 ± 0.095%</strong></td>
+<td style="text-align: right;">1.899 ± 0.195%</td>
+<td style="text-align: right;"><strong>+0.818 ± 0.209 pp</strong></td>
+</tr>
+<tr>
+<td>ID accuracy ↑</td>
+<td style="text-align: right;">0.8453 ± 0.0038</td>
+<td style="text-align: right;"><strong>0.8495 ± 0.0039</strong></td>
+<td style="text-align: right;">+0.0042 ± 0.0073</td>
+</tr>
+<tr>
+<td>ID balanced accuracy ↑</td>
+<td style="text-align: right;">0.7582 ± 0.0010</td>
+<td style="text-align: right;"><strong>0.7684 ± 0.0031</strong></td>
+<td style="text-align: right;">+0.0102 ± 0.0038</td>
+</tr>
+<tr>
+<td>ID macro-F1 (13) ↑</td>
+<td style="text-align: right;">0.7714 ± 0.0062</td>
+<td style="text-align: right;"><strong>0.7763 ± 0.0050</strong></td>
+<td style="text-align: right;">+0.0049 ± 0.0107</td>
+</tr>
+<tr>
+<td>ID regional macro-F1 ↑</td>
+<td style="text-align: right;">0.7592 ± 0.0067</td>
+<td style="text-align: right;"><strong>0.7645 ± 0.0051</strong></td>
+<td style="text-align: right;">+0.0053 ± 0.0113</td>
+</tr>
+<tr>
+<td>ID ECE ↓</td>
+<td style="text-align: right;"><strong>0.0971 ± 0.0138</strong></td>
+<td style="text-align: right;">0.1145 ± 0.0073</td>
+<td style="text-align: right;">+0.0174 ± 0.0211</td>
+</tr>
+<tr>
+<td>ID Brier ↓</td>
+<td style="text-align: right;"><strong>0.2496 ± 0.0062</strong></td>
+<td style="text-align: right;">0.2589 ± 0.0055</td>
+<td style="text-align: right;">+0.0093 ± 0.0117</td>
+</tr>
+</tbody>
+</table>
+<p>With only three seeds and development reuse, these differences are descriptive.
+The paired signs show a real trade-off: M1 improves mean task scores but is
+worse on the normalization tail, retention, ECE, and Brier score.</p>
+<h3>Normalization validation by dialect</h3>
+<table>
+<thead>
+<tr>
+<th>Dialect</th>
+<th style="text-align: right;">Word rewrite</th>
+<th style="text-align: right;">M0 mean ± SD</th>
+<th style="text-align: right;">M1 mean ± SD</th>
+<th style="text-align: right;">M1−rewrite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BAR</td>
+<td style="text-align: right;">50.978</td>
+<td style="text-align: right;">42.634 ± 1.424</td>
+<td style="text-align: right;">42.841 ± 0.803</td>
+<td style="text-align: right;">−8.137</td>
+</tr>
+<tr>
+<td>CHI</td>
+<td style="text-align: right;">62.192</td>
+<td style="text-align: right;">50.019 ± 1.033</td>
+<td style="text-align: right;">50.077 ± 0.358</td>
+<td style="text-align: right;">−12.115</td>
+</tr>
+<tr>
+<td>KHU</td>
+<td style="text-align: right;">34.604</td>
+<td style="text-align: right;">34.057 ± 1.183</td>
+<td style="text-align: right;"><strong>36.118 ± 1.102</strong></td>
+<td style="text-align: right;">+1.513</td>
+</tr>
+<tr>
+<td>MYM</td>
+<td style="text-align: right;">77.089</td>
+<td style="text-align: right;">52.674 ± 1.181</td>
+<td style="text-align: right;">53.783 ± 0.751</td>
+<td style="text-align: right;">−23.306</td>
+</tr>
+<tr>
+<td>NAR</td>
+<td style="text-align: right;">41.184</td>
+<td style="text-align: right;">35.703 ± 1.033</td>
+<td style="text-align: right;">38.852 ± 2.032</td>
+<td style="text-align: right;">−2.332</td>
+</tr>
+<tr>
+<td>NOA</td>
+<td style="text-align: right;">51.727</td>
+<td style="text-align: right;">38.058 ± 0.742</td>
+<td style="text-align: right;">38.772 ± 0.532</td>
+<td style="text-align: right;">−12.955</td>
+</tr>
+<tr>
+<td>RAN</td>
+<td style="text-align: right;">30.575</td>
+<td style="text-align: right;"><strong>32.311 ± 0.478</strong></td>
+<td style="text-align: right;">31.615 ± 0.167</td>
+<td style="text-align: right;">+1.039</td>
+</tr>
+<tr>
+<td>SYL</td>
+<td style="text-align: right;">55.349</td>
+<td style="text-align: right;">43.753 ± 0.107</td>
+<td style="text-align: right;">44.056 ± 0.292</td>
+<td style="text-align: right;">−11.293</td>
+</tr>
+</tbody>
+</table>
+<p>M1 beats the word-rewrite control only on KHU and RAN. The largest deficit is
+MYM (−23.31 chrF++). This is the most serious current performance finding and
+must not be hidden by an architecture-only comparison.</p>
+<h3>Identification validation by class</h3>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th style="text-align: right;">Support</th>
+<th style="text-align: right;">M0 F1 mean ± SD</th>
+<th style="text-align: right;">M1 F1 mean ± SD</th>
+<th style="text-align: right;">M1−M0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BAR</td>
+<td style="text-align: right;">413</td>
+<td style="text-align: right;">0.8365 ± 0.0150</td>
+<td style="text-align: right;">0.8451 ± 0.0098</td>
+<td style="text-align: right;">+0.0086</td>
+</tr>
+<tr>
+<td>CHI</td>
+<td style="text-align: right;">1,991</td>
+<td style="text-align: right;">0.9446 ± 0.0005</td>
+<td style="text-align: right;">0.9481 ± 0.0031</td>
+<td style="text-align: right;">+0.0035</td>
+</tr>
+<tr>
+<td>KHU</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">0.4613 ± 0.0779</td>
+<td style="text-align: right;">0.4613 ± 0.0442</td>
+<td style="text-align: right;">0.0000</td>
+</tr>
+<tr>
+<td>KIS</td>
+<td style="text-align: right;">797</td>
+<td style="text-align: right;">0.7559 ± 0.0059</td>
+<td style="text-align: right;">0.7632 ± 0.0085</td>
+<td style="text-align: right;">+0.0073</td>
+</tr>
+<tr>
+<td>MYM</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: right;"><strong>0.7826 ± 0.0049</strong></td>
+<td style="text-align: right;">0.7559 ± 0.0080</td>
+<td style="text-align: right;"><strong>−0.0267</strong></td>
+</tr>
+<tr>
+<td>NAR</td>
+<td style="text-align: right;">865</td>
+<td style="text-align: right;">0.7803 ± 0.0135</td>
+<td style="text-align: right;">0.7842 ± 0.0110</td>
+<td style="text-align: right;">+0.0039</td>
+</tr>
+<tr>
+<td>NOA</td>
+<td style="text-align: right;">260</td>
+<td style="text-align: right;">0.7836 ± 0.0109</td>
+<td style="text-align: right;">0.7853 ± 0.0131</td>
+<td style="text-align: right;">+0.0017</td>
+</tr>
+<tr>
+<td>NSD</td>
+<td style="text-align: right;">576</td>
+<td style="text-align: right;">0.6791 ± 0.0189</td>
+<td style="text-align: right;">0.7015 ± 0.0172</td>
+<td style="text-align: right;">+0.0224</td>
+</tr>
+<tr>
+<td>RAJ</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">0.7634 ± 0.0470</td>
+<td style="text-align: right;">0.7696 ± 0.0159</td>
+<td style="text-align: right;">+0.0062</td>
+</tr>
+<tr>
+<td>RAN</td>
+<td style="text-align: right;">680</td>
+<td style="text-align: right;">0.7670 ± 0.0070</td>
+<td style="text-align: right;">0.7825 ± 0.0107</td>
+<td style="text-align: right;">+0.0155</td>
+</tr>
+<tr>
+<td>STD</td>
+<td style="text-align: right;">2,251</td>
+<td style="text-align: right;">0.9185 ± 0.0006</td>
+<td style="text-align: right;">0.9186 ± 0.0042</td>
+<td style="text-align: right;">+0.0001</td>
+</tr>
+<tr>
+<td>SYL</td>
+<td style="text-align: right;">1,407</td>
+<td style="text-align: right;">0.8997 ± 0.0030</td>
+<td style="text-align: right;">0.9058 ± 0.0045</td>
+<td style="text-align: right;">+0.0061</td>
+</tr>
+<tr>
+<td>TAN</td>
+<td style="text-align: right;">519</td>
+<td style="text-align: right;">0.6561 ± 0.0070</td>
+<td style="text-align: right;">0.6713 ± 0.0191</td>
+<td style="text-align: right;">+0.0152</td>
+</tr>
+</tbody>
+</table>
+<p>KHU remains the weakest class at 0.461 F1, consistent with its very small
+training and validation support. M1 improves most classes but materially harms
+MYM.</p>
+<h2>Source-blind evaluation repair (development only)</h2>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th style="text-align: right;">Primary metric</th>
+<th style="text-align: right;">Worst-group metric</th>
+<th style="text-align: right;">Paired gain</th>
+<th style="text-align: right;">95% CI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fair supported-dialect rewrite</td>
+<td style="text-align: right;">50.005 macro chrF++</td>
+<td style="text-align: right;">30.388 chrF++</td>
+<td style="text-align: right;">reference</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>Normalization selector V2, six-run semantic-group OOF mean</td>
+<td style="text-align: right;"><strong>52.667 macro chrF++</strong></td>
+<td style="text-align: right;"><strong>34.851 chrF++</strong></td>
+<td style="text-align: right;"><strong>+2.662</strong></td>
+<td style="text-align: right;"><strong>[2.086, 3.268]</strong></td>
+</tr>
+<tr>
+<td>Raw neural ID, six-run mean</td>
+<td style="text-align: right;">0.7618 regional macro-F1</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">reference</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>Neural/SVM ID blend</td>
+<td style="text-align: right;"><strong>0.8009 regional macro-F1</strong></td>
+<td style="text-align: right;">0.4508 F1</td>
+<td style="text-align: right;"><strong>+0.0390</strong></td>
+<td style="text-align: right;"><strong>[0.0309, 0.0479]</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The normalization selector uses only source text, its neural and rewrite
+candidates, and dialect probabilities inferred from source text. References,
+gold dialects, source IDs, and evaluation-track labels are forbidden inference
+features. All rows and six repeated outputs sharing a semantic group remain in
+the same fold. Resampling assigns one multiplicity or swap to each global
+semantic group and reuses it across runs and cross-dialect realizations. Both
+selection-conditioned paired randomization diagnostics give two-sided
+p=0.000200 with 5,000 draws. These p-values are exploratory because fusion
+settings reused development data. The selected artifacts and their SHA-256
+hashes are registered for protocol freeze; neither pilot accessed a test split.
+An aggregate-only cross-task firewall additionally found zero exact, compact,
+or registered SimHash/Jaccard near-duplicate overlap between all normalization
+evaluation inputs and the 92,897 inputs used to train the dialect classifier;
+it emitted no protected text and was not used for model selection.</p>
+<p>The fixed artifacts have also transferred without retuning to the first later
+architecture run (1/6 planned M2/M3 runs). On M2 seed 1701, normalization rises
+from <strong>41.728 raw</strong> to <strong>54.858 fused</strong> macro chrF++ (worst dialect <strong>36.378</strong>),
+and identification regional macro-F1 rises from <strong>0.7533 raw</strong> to <strong>0.8046
+fused</strong> with <strong>0.0489 ECE-15</strong>. This is a useful architecture-transfer
+diagnostic, but it reuses the same validation rows and one seed cannot establish
+stability or independent confirmation.</p>
+<h2>Fixed classical baselines</h2>
+<p>These baselines were evaluated before the neural protocol freeze. They are
+useful descriptive floors, but the test sets are not pristine. This limitation
+is permanently disclosed and cannot be repaired by deleting outputs.</p>
+<h3>Normalization</h3>
+<table>
+<thead>
+<tr>
+<th>Model / track</th>
+<th style="text-align: right;">Rows</th>
+<th style="text-align: right;">Macro chrF++ ↑</th>
+<th style="text-align: right;">Worst dialect ↑</th>
+<th style="text-align: right;">Macro BLEU ↑</th>
+<th style="text-align: right;">TER ↓</th>
+<th style="text-align: right;">CER ↓</th>
+<th style="text-align: right;">Exact match ↑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copy / validation</td>
+<td style="text-align: right;">4,289</td>
+<td style="text-align: right;">38.401</td>
+<td style="text-align: right;">23.764</td>
+<td style="text-align: right;">10.021</td>
+<td style="text-align: right;">63.106</td>
+<td style="text-align: right;">0.348</td>
+<td style="text-align: right;">0.0415</td>
+</tr>
+<tr>
+<td>Inferred supported-dialect rewrite / validation</td>
+<td style="text-align: right;">4,289</td>
+<td style="text-align: right;"><strong>50.005</strong></td>
+<td style="text-align: right;">30.388</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>Gold-dialect rewrite oracle / validation</td>
+<td style="text-align: right;">4,289</td>
+<td style="text-align: right;">50.462</td>
+<td style="text-align: right;">30.575</td>
+<td style="text-align: right;"><strong>23.774</strong></td>
+<td style="text-align: right;"><strong>45.079</strong></td>
+<td style="text-align: right;"><strong>0.258</strong></td>
+<td style="text-align: right;"><strong>0.0874</strong></td>
+</tr>
+<tr>
+<td>Copy / IID test</td>
+<td style="text-align: right;">5,033</td>
+<td style="text-align: right;">39.260</td>
+<td style="text-align: right;">25.853</td>
+<td style="text-align: right;">10.750</td>
+<td style="text-align: right;">62.102</td>
+<td style="text-align: right;">0.334</td>
+<td style="text-align: right;">0.0296</td>
+</tr>
+<tr>
+<td>Gold-dialect rewrite oracle / IID test</td>
+<td style="text-align: right;">5,033</td>
+<td style="text-align: right;"><strong>50.916</strong></td>
+<td style="text-align: right;"><strong>33.423</strong></td>
+<td style="text-align: right;"><strong>22.912</strong></td>
+<td style="text-align: right;"><strong>44.316</strong></td>
+<td style="text-align: right;"><strong>0.250</strong></td>
+<td style="text-align: right;"><strong>0.0757</strong></td>
+</tr>
+<tr>
+<td>Copy / source OOD</td>
+<td style="text-align: right;">7,592</td>
+<td style="text-align: right;">38.652</td>
+<td style="text-align: right;">25.319</td>
+<td style="text-align: right;">8.602</td>
+<td style="text-align: right;">70.984</td>
+<td style="text-align: right;">0.409</td>
+<td style="text-align: right;">0.1616</td>
+</tr>
+<tr>
+<td>Gold-dialect rewrite oracle / source OOD</td>
+<td style="text-align: right;">7,592</td>
+<td style="text-align: right;"><strong>44.607</strong></td>
+<td style="text-align: right;"><strong>31.767</strong></td>
+<td style="text-align: right;"><strong>15.191</strong></td>
+<td style="text-align: right;"><strong>63.849</strong></td>
+<td style="text-align: right;"><strong>0.378</strong></td>
+<td style="text-align: right;"><strong>0.1927</strong></td>
+</tr>
+<tr>
+<td>Copy / RAJ zero-shot</td>
+<td style="text-align: right;">1,387</td>
+<td style="text-align: right;">48.642</td>
+<td style="text-align: right;">48.642</td>
+<td style="text-align: right;">4.912</td>
+<td style="text-align: right;">59.002</td>
+<td style="text-align: right;">0.357</td>
+<td style="text-align: right;">0.2884</td>
+</tr>
+<tr>
+<td>Gold-dialect rewrite oracle / RAJ zero-shot</td>
+<td style="text-align: right;">1,387</td>
+<td style="text-align: right;">48.642</td>
+<td style="text-align: right;">48.642</td>
+<td style="text-align: right;">4.912</td>
+<td style="text-align: right;">59.002</td>
+<td style="text-align: right;">0.357</td>
+<td style="text-align: right;">0.2884</td>
+</tr>
+</tbody>
+</table>
+<p>The legacy rewrite equals copy on RAJ because RAJ has no learned rewrite
+inventory. All legacy test rewrite values above used gold dialect and are
+diagnostic oracle values. The fair inferred-dialect baseline is evaluated on
+locked tests only after protocol freeze.</p>
+<h3>Identification</h3>
+<table>
+<thead>
+<tr>
+<th>Model / track</th>
+<th style="text-align: right;">Accuracy ↑</th>
+<th style="text-align: right;">Macro-F1 (13) ↑</th>
+<th style="text-align: right;">Regional macro-F1 ↑</th>
+<th style="text-align: right;">ECE ↓</th>
+<th style="text-align: right;">Worst present F1 ↑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SVM / validation</td>
+<td style="text-align: right;">0.8550</td>
+<td style="text-align: right;">0.7838</td>
+<td style="text-align: right;">0.7734</td>
+<td style="text-align: right;">0.0113</td>
+<td style="text-align: right;">0.4138</td>
+</tr>
+<tr>
+<td>SVM / IID test</td>
+<td style="text-align: right;">0.8540</td>
+<td style="text-align: right;">0.7783</td>
+<td style="text-align: right;">0.7669</td>
+<td style="text-align: right;">0.0111</td>
+<td style="text-align: right;">0.4118</td>
+</tr>
+<tr>
+<td>SVM / source OOD</td>
+<td style="text-align: right;">0.4724</td>
+<td style="text-align: right;">0.2229</td>
+<td style="text-align: right;">0.3738</td>
+<td style="text-align: right;">0.1891</td>
+<td style="text-align: right;">0.0343</td>
+</tr>
+<tr>
+<td>SVM / external transcript</td>
+<td style="text-align: right;">0.9705</td>
+<td style="text-align: right;">0.5943</td>
+<td style="text-align: right;">0.9658</td>
+<td style="text-align: right;">0.0146</td>
+<td style="text-align: right;">0.8739</td>
+</tr>
+<tr>
+<td>SGD, 5-seed mean / validation</td>
+<td style="text-align: right;">0.8510</td>
+<td style="text-align: right;">0.7768</td>
+<td style="text-align: right;">0.7664</td>
+<td style="text-align: right;">0.0566</td>
+<td style="text-align: right;">0.3850</td>
+</tr>
+<tr>
+<td>SGD, 5-seed mean / IID test</td>
+<td style="text-align: right;">0.8498</td>
+<td style="text-align: right;">0.7759</td>
+<td style="text-align: right;">0.7653</td>
+<td style="text-align: right;">0.0534</td>
+<td style="text-align: right;">0.4377</td>
+</tr>
+<tr>
+<td>SGD, 5-seed mean / source OOD</td>
+<td style="text-align: right;">0.4686</td>
+<td style="text-align: right;">0.2168</td>
+<td style="text-align: right;">0.3630</td>
+<td style="text-align: right;">0.1624</td>
+<td style="text-align: right;">0.0257</td>
+</tr>
+<tr>
+<td>SGD, 5-seed mean / external</td>
+<td style="text-align: right;">0.9672</td>
+<td style="text-align: right;">0.5917</td>
+<td style="text-align: right;">0.9614</td>
+<td style="text-align: right;">0.0415</td>
+<td style="text-align: right;">0.8483</td>
+</tr>
+</tbody>
+</table>
+<p>The SVM's source-OOD collapse (regional macro-F1 0.374 versus 0.773 on
+validation) strongly motivates source-robust modeling. Conversely, its high
+IID score and excellent calibration mean the neural models must beat a strong,
+cheap baseline—not merely the majority classifier.</p>
+<p>The external macro-F1 (13) is low because absent labels are included in that
+13-way scalar, while regional macro-F1 is computed over labels present in the
+external track. Both must be reported with the coverage definition.</p>
+<h2>Systems results on NVIDIA GB10</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th style="text-align: right;">Total params</th>
+<th style="text-align: right;">Active params/token</th>
+<th style="text-align: right;">Throughput tok/s ↑</th>
+<th style="text-align: right;">Peak memory GiB ↓</th>
+<th style="text-align: right;">Slowdown vs M0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M0 dense</td>
+<td style="text-align: right;">83.79M</td>
+<td style="text-align: right;">83.79M</td>
+<td style="text-align: right;"><strong>15,337</strong></td>
+<td style="text-align: right;"><strong>2.83</strong></td>
+<td style="text-align: right;">1.00×</td>
+</tr>
+<tr>
+<td>M1 Switch</td>
+<td style="text-align: right;">381.11M</td>
+<td style="text-align: right;">83.84M</td>
+<td style="text-align: right;">5,211</td>
+<td style="text-align: right;">5.69</td>
+<td style="text-align: right;">2.94×</td>
+</tr>
+<tr>
+<td>M2 standard MoE</td>
+<td style="text-align: right;">168.77M</td>
+<td style="text-align: right;">83.84M</td>
+<td style="text-align: right;">8,272</td>
+<td style="text-align: right;">3.84</td>
+<td style="text-align: right;">1.85×</td>
+</tr>
+<tr>
+<td>M3 Boichitro</td>
+<td style="text-align: right;">168.79M</td>
+<td style="text-align: right;">83.86M</td>
+<td style="text-align: right;">8,224</td>
+<td style="text-align: right;">3.84</td>
+<td style="text-align: right;">1.86×</td>
+</tr>
+</tbody>
+</table>
+<p>Active parameters are tightly matched, but wall-clock compute is not. M2/M3
+run at only about 54% of dense throughput, and M1 at 34%. M3 adds just 0.58%
+throughput overhead and 0.0068 GiB over M2, which is favorable for the proposed
+mechanisms. Nevertheless, any “compute matched” wording must distinguish active
+parameter matching from measured time/energy matching.</p>
+<h2>Smoke-test-only output</h2>
+<p>A tiny M3 end-to-end smoke run evaluated deterministic prefixes of 8
+normalization and 16 identification examples per track. It scores 2.111 IID
+chrF++, 0 source-OOD/romanized chrF++, and zero ID accuracy. Its manifest
+explicitly states <code>smoke_only_not_scientific_evidence</code>; these values demonstrate
+pipeline execution only and must never appear as model-quality results.</p>
+<h2>Software, tables, and figures</h2>
+<ul>
+<li>Regression suite: <strong>107 passed</strong>, with one non-failing PyTorch GPU-capability
+  warning.</li>
+<li>Journal figure suite: <strong>44 PNG/PDF pairs</strong>, exceeding the requested minimum.</li>
+<li>Figure validation: <strong>398/398 checks passed</strong> for format, hashes, resolution,
+  captions, and source data.</li>
+<li>Evidence classes: <strong>40 development-only</strong> and <strong>4 prior-test descriptive</strong>;
+  none is mislabeled as locked evidence.</li>
+<li>Paper tables: <strong>10 reproducible table families</strong>.</li>
+<li>Manuscript: 3,154 words, structurally sound but still a short journal-neutral
+  draft with withheld results, abbreviated references, and required metadata.</li>
+</ul>
+<p>The figure engineering is strong, but 44 technically valid figures do not
+replace locked evidence. A final paper should curate a small main set and move
+most diagnostics to supplementary material.</p>
+<h2>Claim-by-claim evaluation</h2>
+<table>
+<thead>
+<tr>
+<th>Proposed claim</th>
+<th>Current verdict</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Provenance-first, leakage-controlled benchmark</td>
+<td><strong>Provisionally supported</strong></td>
+<td>Automatic gates pass; native review and redistribution clearance remain</td>
+</tr>
+<tr>
+<td>Frozen tokenizer chosen without test access</td>
+<td><strong>Supported</strong></td>
+<td>Three-seed proxy and immutable hashes exist</td>
+</tr>
+<tr>
+<td>Stable dense-to-MoE upcycling</td>
+<td><strong>Supported developmentally</strong></td>
+<td>Paired-bank pilot passes guards; one pilot seed</td>
+</tr>
+<tr>
+<td>M1 improves over dense M0</td>
+<td><strong>Mixed</strong></td>
+<td>Mean metrics improve slightly; tail performance, replay, and calibration worsen</td>
+</tr>
+<tr>
+<td>M3 outperforms M2 on source-OOD normalization</td>
+<td><strong>Untested</strong></td>
+<td>One M2 development seed exists; no M3 run or locked manifest exists</td>
+</tr>
+<tr>
+<td>Fixed source-blind system is competitive on validation</td>
+<td><strong>Supported developmentally</strong></td>
+<td>Selector reaches 52.667 chrF++; ID blend reaches 0.8009 F1 with paired positive exploratory intervals</td>
+</tr>
+<tr>
+<td>Source-invariant routing works</td>
+<td><strong>Untested</strong></td>
+<td>Locked routing specialization analysis missing</td>
+</tr>
+<tr>
+<td>Robust under perturbation/romanization</td>
+<td><strong>Untested</strong></td>
+<td>Registered robustness evaluation missing</td>
+</tr>
+<tr>
+<td>Positive development fusion diagnostics</td>
+<td><strong>Supported, exploratory</strong></td>
+<td>Dependence-preserving intervals exclude zero, but selection reused these rows and locked confirmation is missing</td>
+</tr>
+<tr>
+<td>Human-acceptable normalization</td>
+<td><strong>Untested</strong></td>
+<td>No blinded native ratings</td>
+</tr>
+</tbody>
+</table>
+<h2>Q1 scorecard</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th style="text-align: right;">Score</th>
+<th>Assessment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Novelty and research framing</td>
+<td style="text-align: right;">8/10</td>
+<td>Important low-resource/source-confounding question</td>
+</tr>
+<tr>
+<td>Data and protocol engineering</td>
+<td style="text-align: right;">8/10</td>
+<td>Strong controls; native and redistribution gates remain</td>
+</tr>
+<tr>
+<td>Reproducibility and artifact discipline</td>
+<td style="text-align: right;">9/10</td>
+<td>Hashes, registries, manifests, tests, source data</td>
+</tr>
+<tr>
+<td>Systems evidence</td>
+<td style="text-align: right;">7/10</td>
+<td>Good active-parameter accounting; no energy/time matching</td>
+</tr>
+<tr>
+<td>Current model competitiveness</td>
+<td style="text-align: right;">6/10</td>
+<td>Raw neural normalization trails, but fair fixed fusion now exceeds the source-blind rewrite validation baseline</td>
+</tr>
+<tr>
+<td>Experimental completeness</td>
+<td style="text-align: right;">3/10</td>
+<td>Seven of twelve main development runs are finalized; downstream locked/ablation studies remain absent</td>
+</tr>
+<tr>
+<td>Statistical evidence</td>
+<td style="text-align: right;">4/10</td>
+<td>Paired development fusion evidence exists; locked architectural inference is absent</td>
+</tr>
+<tr>
+<td>Human linguistic evidence</td>
+<td style="text-align: right;">0/10</td>
+<td>Dataset review and system ratings absent</td>
+</tr>
+<tr>
+<td>Manuscript/submission package</td>
+<td style="text-align: right;">4/10</td>
+<td>Draft exists; core results, metadata, target adaptation absent</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Overall blocking-gate rating: 5.5/10.</strong> This is not an average of cosmetic
+assets; it reflects that the primary hypothesis has no result.</p>
+<h2>Mandatory work before submission</h2>
+<ol>
+<li>Finish all 12 M0–M3 main runs and the registered optimizer,
+   bidirectional-ID, external-baseline, factorial, confirmatory, and optimization
+   studies.</li>
+<li>Freeze the protocol before any main neural test access, retaining the prior
+   classical/smoke disclosure.</li>
+<li>Run all 12 locked main evaluations, at least 30 locked ablation evaluations,
+   external baselines, robustness, routing, and registered statistics.</li>
+<li>Require the primary M3−M2 source-OOD macro-chrF++ 95% hierarchical paired
+   interval to exclude zero and its registered randomization test to survive
+   familywise correction.</li>
+<li>Demonstrate that M3 and the fixed M3 fused view are competitive with the
+   fair inferred-dialect rewrite and credible external baselines—not only M2—
+   while retaining the gold-dialect rewrite solely as an oracle; inspect
+   MYM/NOA/CHI error modes.</li>
+<li>Report IID, source-OOD, RAJ zero-shot, romanized, worst-dialect, calibration,
+   throughput, memory, and retention trade-offs together.</li>
+<li>Complete all 230 native dataset-review rows and blinded multi-rater system
+   evaluation, including adequacy, fluency, hallucination, agreement,
+   qualifications, consent, compensation, and ethics/IRB determination.</li>
+<li>Select an actual target journal, verify its current quartile and policies,
+   complete author metadata/declarations, expand the manuscript, format full
+   references, and curate figures.</li>
+</ol>
+<h2>Final decision</h2>
+<p><strong>Do not submit now.</strong> The project has a credible Q1-level research design, but
+the available evidence is an engineering/development package, not a completed
+paper. Q1 competitiveness becomes plausible only if the locked M3 result is
+positive, statistically robust, competitive with strong baselines, and
+confirmed by native-speaker evaluation. If M3 remains near the present M0/M1
+range, the normalization system will need substantive modeling or decoding
+improvement before journal submission.</p>
+<h2>Exact evidence sources</h2>
+<ul>
+<li>Dataset: <code>reports/FINAL_DATASET_REPORT.md</code> and
+  <code>tables/paper/dataset_counts.csv</code></li>
+<li>Tokenizer: <code>reports/tokenizer/TOKENIZER_FREEZE_REPORT.json</code>,
+  <code>reports/tokenizer/tokenizer_intrinsic_screen.csv</code>, and
+  <code>reports/tokenizer/tokenizer_proxy_summary.csv</code></li>
+<li>Foundation/pilots: <code>runs/*/1701/training_report.json</code> and
+  <code>tables/paper/*.csv</code></li>
+<li>Main validation: <code>runs/task/boichitro_q1_v1/*/*/stage_*/best_selection.json</code></li>
+<li>Consolidated main rows: <code>reports/model/main_validation_results_current.csv</code>
+  with run-count/hash audit in
+  <code>reports/model/development_results_snapshot.json</code></li>
+<li>Dialect/class summaries:
+  <code>reports/model/main_validation_by_dialect_all_current.csv</code> and
+  <code>reports/model/main_identification_by_class_all_current.csv</code></li>
+<li>Classical baselines: <code>reports/model/classical_*_results.csv</code> and <code>metrics/</code></li>
+<li>Source-blind repair: <code>reports/model/source_blind_normalization_baseline_audit.json</code>,
+  <code>reports/model/cross_task_input_firewall.json</code>,
+  <code>reports/model/normalization_fusion_selection_v2.json</code>,
+  <code>reports/model/id_fusion_selection.json</code>, and
+  <code>reports/model/development_fusion_uncertainty.json</code></li>
+<li>Fixed no-retuning transfer:
+  <code>reports/model/development_fusion_architecture_transfer.json</code></li>
+<li>Systems: <code>reports/model/gb10_model_benchmark.json</code></li>
+<li>Disclosure: <code>reports/PRIOR_TEST_ACCESS_DISCLOSURE.md</code></li>
+<li>Readiness: <code>reports/Q1_JOURNAL_READINESS_AUDIT.md</code></li>
+<li>Figure validation: <code>figures/q1/VALIDATION_REPORT.md</code></li>
+</ul>

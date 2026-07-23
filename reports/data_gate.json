@@ -1,0 +1,23 @@
+{
+  "dataset_version": "boichitro_data_v1.0.0",
+  "gates": {
+    "all_task_licenses_resolved": true,
+    "inventory_is_twelve_regional_plus_standard": true,
+    "legacy_derived_archive_absent": true,
+    "locked_ood_sources_never_train": true,
+    "native_human_review_complete": false,
+    "no_compact_train_evaluation_overlap_identification": true,
+    "no_compact_train_evaluation_overlap_normalization": true,
+    "no_cross_label_identification_text": true,
+    "synthetic_excluded_from_identification": true,
+    "synthetic_train_only": true,
+    "thirteen_label_inventory_present": true
+  },
+  "public_redistribution_authorized": false,
+  "publication_blocker": "stratified_native_speaker_review_pending",
+  "publication_claim_authorized": false,
+  "report": "reports/final_dataset_report.json",
+  "scope": "internal_model_and_tokenizer_experiments",
+  "status": "pass",
+  "training_authorized": true
+}

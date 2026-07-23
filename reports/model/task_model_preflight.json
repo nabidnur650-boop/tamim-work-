@@ -1,0 +1,78 @@
+{
+  "status": "PASS_VALIDATION_ONLY",
+  "test_data_access": false,
+  "seed": 8671,
+  "train_examples": 6,
+  "tokenizer_sha256": "0b7ed9de33aedc6c6271a7b8e7b6317d86f22a2f4a0f9c3a7d3fb3723245d512",
+  "checkpoint_sha256": {
+    "runs/U_M0_DENSE_200M/1701/final_checkpoint.pt": "920ea1c032bc868f4490baeee866d639c20fa3ffcd7328cfafd8e91d4d992ce3",
+    "runs/U_M1_SWITCH_200M/1701/final_checkpoint.pt": "d11365ae79bcdd96eb98919996d347b39c808183bd37b59854f6ad1e1d017232",
+    "runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt": "390ad184b3895de01e9f65dd4e03670fc3877cd3d2fe4537e5ddbed0dadcc6b0"
+  },
+  "models": [
+    {
+      "variant": "M0",
+      "source_checkpoint": "runs/U_M0_DENSE_200M/1701/final_checkpoint.pt",
+      "loss": 3.975060224533081,
+      "total_parameters": 83787290,
+      "active_parameters_per_token": 83787290,
+      "routed_assignments": 0,
+      "expected_assignments": 0,
+      "router_gradient_l1": 0,
+      "muon_parameter_tensors": 112,
+      "adamw_parameter_tensors": 71,
+      "permanent_paired_bank_routing": false,
+      "source_adversary": false,
+      "task_conditioning": false,
+      "causal_dialect_evidence_prior": false
+    },
+    {
+      "variant": "M1",
+      "source_checkpoint": "runs/U_M1_SWITCH_200M/1701/final_checkpoint.pt",
+      "loss": 3.9359333515167236,
+      "total_parameters": 381107738,
+      "active_parameters_per_token": 83836442,
+      "routed_assignments": 6264,
+      "expected_assignments": 6264,
+      "router_gradient_l1": 461.5545082092285,
+      "muon_parameter_tensors": 364,
+      "adamw_parameter_tensors": 83,
+      "permanent_paired_bank_routing": false,
+      "source_adversary": false,
+      "task_conditioning": false,
+      "causal_dialect_evidence_prior": false
+    },
+    {
+      "variant": "M2",
+      "source_checkpoint": "runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt",
+      "loss": 3.9923899173736572,
+      "total_parameters": 168771098,
+      "active_parameters_per_token": 83836442,
+      "routed_assignments": 12528,
+      "expected_assignments": 12528,
+      "router_gradient_l1": 260.52419090270996,
+      "muon_parameter_tensors": 400,
+      "adamw_parameter_tensors": 83,
+      "permanent_paired_bank_routing": true,
+      "source_adversary": false,
+      "task_conditioning": false,
+      "causal_dialect_evidence_prior": false
+    },
+    {
+      "variant": "M3",
+      "source_checkpoint": "runs/U_M2_STANDARD_MOE_200M/1701/final_checkpoint.pt",
+      "loss": 7.272706985473633,
+      "total_parameters": 168790591,
+      "active_parameters_per_token": 83855935,
+      "routed_assignments": 12528,
+      "expected_assignments": 12528,
+      "router_gradient_l1": 260.1434912495315,
+      "muon_parameter_tensors": 400,
+      "adamw_parameter_tensors": 95,
+      "permanent_paired_bank_routing": true,
+      "source_adversary": true,
+      "task_conditioning": true,
+      "causal_dialect_evidence_prior": true
+    }
+  ]
+}

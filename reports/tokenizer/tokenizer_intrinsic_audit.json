@@ -1,0 +1,53 @@
+{
+  "status": "INTRINSIC_SCREEN_COMPLETE_PROXY_REQUIRED",
+  "created_utc": "2026-07-19T14:52:57.372275+00:00",
+  "seed": 1701,
+  "train_manifest": "data/manifests/tokenizer_train_v1.parquet",
+  "train_manifest_sha256": "59ca69a87bd160732a6a7bf4b2f90e2537976f4b7d93b0567dca659a56b1f22f",
+  "train_rows": 100236,
+  "train_unique_texts": 100236,
+  "train_frame_sha256": "54bc825198c1b9097de8a8a6de59746d99d22bce1f792ad15b0feaa41d89564b",
+  "balanced_frame_sha256": "a20b9862bf540e71cccc47680cd12d0802b01f52a69d3f9a1fee054b6a06d788",
+  "selection_rows": 10853,
+  "selection_frame_sha256": "2fa355347f043d7d87e20875a6162a271dbf59cd52c7fd0f9aab58efc17cb733",
+  "exact_text_overlap": 0,
+  "candidate_count": 12,
+  "shortlist": [
+    "wordpiece_natural_32k",
+    "wordpiece_balanced_32k",
+    "unigram_balanced_32k",
+    "byte_bpe_balanced_16k"
+  ],
+  "special_tokens": [
+    "<pad>",
+    "<unk>",
+    "<bos>",
+    "<eos>",
+    "<sep>",
+    "<mask>",
+    "<cls>",
+    "<task_norm>",
+    "<task_id>",
+    "<task_clm>",
+    "<dial_unknown>",
+    "<dial:BAR>",
+    "<dial:CHI>",
+    "<dial:KHU>",
+    "<dial:KIS>",
+    "<dial:MYM>",
+    "<dial:NAR>",
+    "<dial:NOA>",
+    "<dial:NSD>",
+    "<dial:RAJ>",
+    "<dial:RAN>",
+    "<dial:STD>",
+    "<dial:SYL>",
+    "<dial:TAN>"
+  ],
+  "software": {
+    "python": "3.12.11",
+    "tokenizers": "0.22.2",
+    "pandas": "3.0.3"
+  },
+  "elapsed_seconds": 5.61826753616333
+}

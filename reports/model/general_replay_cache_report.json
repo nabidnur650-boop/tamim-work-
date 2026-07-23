@@ -1,0 +1,10 @@
+{
+  "name": "general_replay_train",
+  "rows": 60000,
+  "train_documents_seen": 562095,
+  "selection": "bottom_k_sha256_document_id",
+  "max_length": 256,
+  "tokenizer_sha256": "0b7ed9de33aedc6c6271a7b8e7b6317d86f22a2f4a0f9c3a7d3fb3723245d512",
+  "corpus_manifest_sha256": "4d9ad431c3e33d90696576862788e55d965174bc93ca9753c9b60e135d98aaa9",
+  "test_data_access": false
+}

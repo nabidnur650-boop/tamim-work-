@@ -1,0 +1,94 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_fixed_fusion_architecture_transfer_v1",
+  "test_data_access": false,
+  "source_blind": true,
+  "selection_artifacts_modified": false,
+  "selection_variants": [
+    "M0",
+    "M1"
+  ],
+  "transfer_variants": [
+    "M2",
+    "M3"
+  ],
+  "completed_runs": 6,
+  "expected_runs": 6,
+  "interpretation": "fixed-selector transfer to later architectures; validation rows are shared, so this is not an independent-row generalization estimate",
+  "normalization_selection_report_sha256": "0f4cfaf1a7bef5783b2a3449b9aa686c5be167462f6f781aec2af6ac54ae7c94",
+  "identification_selection_report_sha256": "7c9c4304db8dd4b188cd1b7fc50de3537fe43a1870db0631a2fb999ef8c81131",
+  "runs": [
+    {
+      "variant": "M2",
+      "seed": 1701,
+      "normalization_raw_macro_chrfpp": 41.72801121042136,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.85790488785544,
+      "normalization_fused_worst_dialect_chrfpp": 36.37813657754152,
+      "normalization_selected_neural_fraction": 0.47843320121240385,
+      "identification_raw_regional_macro_f1": 0.7533386836217163,
+      "identification_fused_regional_macro_f1": 0.8046200764999353,
+      "identification_fused_ece_15": 0.048851377807866775
+    },
+    {
+      "variant": "M2",
+      "seed": 2903,
+      "normalization_raw_macro_chrfpp": 42.02153196041707,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 55.0155031096422,
+      "normalization_fused_worst_dialect_chrfpp": 36.789433551962254,
+      "normalization_selected_neural_fraction": 0.47237118209372814,
+      "identification_raw_regional_macro_f1": 0.7555390633477385,
+      "identification_fused_regional_macro_f1": 0.7980345546812271,
+      "identification_fused_ece_15": 0.040018275591294464
+    },
+    {
+      "variant": "M2",
+      "seed": 4307,
+      "normalization_raw_macro_chrfpp": 42.10328101050355,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 55.101636448802296,
+      "normalization_fused_worst_dialect_chrfpp": 35.74978212559562,
+      "normalization_selected_neural_fraction": 0.47866635579389133,
+      "identification_raw_regional_macro_f1": 0.7694467247197595,
+      "identification_fused_regional_macro_f1": 0.7984243749120141,
+      "identification_fused_ece_15": 0.040197861358642256
+    },
+    {
+      "variant": "M3",
+      "seed": 1701,
+      "normalization_raw_macro_chrfpp": 40.57730504653903,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.51428624134302,
+      "normalization_fused_worst_dialect_chrfpp": 36.38354809107533,
+      "normalization_selected_neural_fraction": 0.4579155980415015,
+      "identification_raw_regional_macro_f1": 0.7529187697249647,
+      "identification_fused_regional_macro_f1": 0.7986470485740832,
+      "identification_fused_ece_15": 0.046714914817049966
+    },
+    {
+      "variant": "M3",
+      "seed": 2903,
+      "normalization_raw_macro_chrfpp": 40.253017510749665,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.40596118766316,
+      "normalization_fused_worst_dialect_chrfpp": 36.055427898362815,
+      "normalization_selected_neural_fraction": 0.46537654464910233,
+      "identification_raw_regional_macro_f1": 0.7535469046138868,
+      "identification_fused_regional_macro_f1": 0.7942227232599562,
+      "identification_fused_ece_15": 0.0465806666989495
+    },
+    {
+      "variant": "M3",
+      "seed": 4307,
+      "normalization_raw_macro_chrfpp": 39.69577720636692,
+      "normalization_rewrite_macro_chrfpp": 50.00526014259165,
+      "normalization_fused_macro_chrfpp": 54.12102257840991,
+      "normalization_fused_worst_dialect_chrfpp": 35.258204686600244,
+      "normalization_selected_neural_fraction": 0.4436931685707624,
+      "identification_raw_regional_macro_f1": 0.7465634726302675,
+      "identification_fused_regional_macro_f1": 0.7961107564400761,
+      "identification_fused_ece_15": 0.04548700149871508
+    }
+  ]
+}

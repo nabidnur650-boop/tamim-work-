@@ -1,0 +1,123 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_development_fusion_audit_v1",
+  "test_data_access": false,
+  "source_blind": true,
+  "selection_variants": [
+    "M0",
+    "M1"
+  ],
+  "selection_seeds": [
+    1701,
+    2903,
+    4307
+  ],
+  "normalization_comparison": "semantic-group-held-out OOF selector V2 minus inferred-supported-dialect rewrite",
+  "identification_comparison": "calibrated neural/SVM blend minus raw neural classifier",
+  "interval_method": "paired hierarchical bootstrap over six model runs with semantic-group draws synchronized across repeated evaluation rows and cross-dialect realizations",
+  "p_value_method": "paired randomization at the global semantic-group level with swaps synchronized across model runs and cross-dialect realizations",
+  "inference_scope": "selection_conditioned_exploratory_development_diagnostic",
+  "selection_reuse_disclosure": "The selector family/threshold and identification blend weight were chosen using these development rows. Intervals and randomization p-values condition on those selected settings and do not include selection uncertainty.",
+  "confirmatory_inference": false,
+  "normalization": {
+    "task": "normalization",
+    "run_points": [
+      {
+        "seed": 0,
+        "treatment": 52.523347218920094,
+        "control": 50.00526014259165,
+        "delta": 2.5180870763284418
+      },
+      {
+        "seed": 1,
+        "treatment": 52.827825397144046,
+        "control": 50.00526014259165,
+        "delta": 2.8225652545523943
+      },
+      {
+        "seed": 2,
+        "treatment": 52.780730807633816,
+        "control": 50.00526014259165,
+        "delta": 2.775470665042164
+      },
+      {
+        "seed": 3,
+        "treatment": 52.606682952379686,
+        "control": 50.00526014259165,
+        "delta": 2.6014228097880334
+      },
+      {
+        "seed": 4,
+        "treatment": 52.51894641950851,
+        "control": 50.00526014259165,
+        "delta": 2.5136862769168573
+      },
+      {
+        "seed": 5,
+        "treatment": 52.74451745144691,
+        "control": 50.00526014259165,
+        "delta": 2.739257308855258
+      }
+    ],
+    "mean_delta": 2.661748231913858,
+    "bootstrap_mean_delta": 2.6618856062604905,
+    "confidence_lower_95": 2.0857505184342875,
+    "confidence_upper_95": 3.268362326958343,
+    "bootstrap_probability_positive": 1.0,
+    "paired_randomization_observed_delta": 2.661748231913858,
+    "paired_randomization_p_two_sided": 0.0001999600079984003,
+    "bootstrap_replicates": 5000,
+    "randomization_replicates": 5000
+  },
+  "identification": {
+    "task": "identification",
+    "run_points": [
+      {
+        "seed": 0,
+        "treatment": 0.8013365135296011,
+        "control": 0.760473111073548,
+        "delta": 0.04086340245605313
+      },
+      {
+        "seed": 1,
+        "treatment": 0.7969091390036409,
+        "control": 0.751882575530527,
+        "delta": 0.045026563473113956
+      },
+      {
+        "seed": 2,
+        "treatment": 0.7990159713790558,
+        "control": 0.765155735561942,
+        "delta": 0.033860235817113726
+      },
+      {
+        "seed": 3,
+        "treatment": 0.8025664645646309,
+        "control": 0.7669714809199738,
+        "delta": 0.035594983644657074
+      },
+      {
+        "seed": 4,
+        "treatment": 0.804342982614011,
+        "control": 0.7678318337997753,
+        "delta": 0.03651114881423578
+      },
+      {
+        "seed": 5,
+        "treatment": 0.8010715331540399,
+        "control": 0.7586434247222485,
+        "delta": 0.042428108431791345
+      }
+    ],
+    "mean_delta": 0.039047407106160836,
+    "bootstrap_mean_delta": 0.03908198973962148,
+    "confidence_lower_95": 0.030924662822691826,
+    "confidence_upper_95": 0.047896727002659865,
+    "bootstrap_probability_positive": 1.0,
+    "paired_randomization_observed_delta": 0.039047407106160836,
+    "paired_randomization_p_two_sided": 0.0001999600079984003,
+    "bootstrap_replicates": 5000,
+    "randomization_replicates": 5000
+  },
+  "reporting_constraint": "development evidence only; raw locked neural outputs remain primary for architectural and source-OOD claims"
+}

@@ -1,0 +1,1132 @@
+{
+  "artifacts": {
+    "data/final/v1/excluded_rows.parquet": {
+      "bytes": 16667370,
+      "rows": 137386,
+      "sha256": "d1edcff83b2a015476405febae16fdcca49211fd90c4a5133f4d84e0bd55a6cf"
+    },
+    "data/final/v1/identification_all.parquet": {
+      "bytes": 28422001,
+      "rows": 122353,
+      "sha256": "fcca0ac251ceb761691a49058e762987d54b6d31209e17fc0c1a59f42deea181"
+    },
+    "data/final/v1/identification_evaluation.parquet": {
+      "bytes": 5999020,
+      "rows": 29456,
+      "sha256": "212d0cfd6b216c08855fb4222d451a27f8ad7d82e8351d6d53749a83ec9bd728"
+    },
+    "data/final/v1/identification_train.parquet": {
+      "bytes": 22542700,
+      "rows": 92897,
+      "sha256": "e8ffc3ec6402e8de9c9e56d3e9049d09f7aceb5e2e71b0a7c54d06c2d72b5a81"
+    },
+    "data/final/v1/normalization_all.parquet": {
+      "bytes": 18797608,
+      "rows": 57923,
+      "sha256": "2cc87a3d74f5775b7d7e5dde81049b886769513a2310379a9fa109781f7b8626"
+    },
+    "data/final/v1/normalization_synthetic_train.parquet": {
+      "bytes": 1569697,
+      "rows": 3325,
+      "sha256": "1257aac85595d0f0cff46048675b8c3c90d5805c5e690a703a3149fb5ed0fea8"
+    },
+    "data/final/v1/normalization_test_iid.parquet": {
+      "bytes": 1736548,
+      "rows": 5033,
+      "sha256": "fd449a8976c10ea0c486088b5298700af61b41af1a8797fcfc1d048cfa82f19b"
+    },
+    "data/final/v1/normalization_test_ood.parquet": {
+      "bytes": 1105359,
+      "rows": 8979,
+      "sha256": "8dbe9c2fc4685f165ed890e89cf6e3e715e518a9dce0969aa02558227c19161f"
+    },
+    "data/final/v1/normalization_train.parquet": {
+      "bytes": 14310018,
+      "rows": 39622,
+      "sha256": "a430ed7fcef2ca8793350d59c05bc5aa3ab1d712e6e06b886556f9629d77fb60"
+    },
+    "data/final/v1/normalization_validation.parquet": {
+      "bytes": 1410940,
+      "rows": 4289,
+      "sha256": "1caa3f426fcee218ce988a98af4d991baf14729a49f7b6822b88061c050e7b72"
+    },
+    "data/final/v1/romanized_test_ood.parquet": {
+      "bytes": 225815,
+      "rows": 1342,
+      "sha256": "41c0ea2c9719c62316ad8dfe2626135662ed60420132d58769a959bcda3bb8be"
+    },
+    "data/final/v1/tokenizer_train.parquet": {
+      "bytes": 16041782,
+      "rows": 100236,
+      "sha256": "59ca69a87bd160732a6a7bf4b2f90e2537976f4b7d93b0567dca659a56b1f22f"
+    },
+    "data/manifests/canonical_rows.parquet": {
+      "bytes": 48292649,
+      "rows": 180276,
+      "sha256": "5d08f70340ac8ebd8672a0046067ad0286d866f8bedf7720a568979aada0442d"
+    },
+    "data/manifests/excluded_rows.parquet": {
+      "bytes": 16667370,
+      "rows": 137386,
+      "sha256": "d1edcff83b2a015476405febae16fdcca49211fd90c4a5133f4d84e0bd55a6cf"
+    },
+    "data/manifests/licenses.yaml": {
+      "bytes": 3601,
+      "rows": null,
+      "sha256": "04694367df584c6d83446a35cf868d89cec02ee6ade7c8cdb01e133a9dd5b47a"
+    },
+    "data/manifests/semantic_components.parquet": {
+      "bytes": 5143860,
+      "rows": 151292,
+      "sha256": "37a4fde74f11893af0e39fcecb8861802b56abc969863dab7b145ebb643f0aca"
+    },
+    "data/manifests/splits_v1.parquet": {
+      "bytes": 6108453,
+      "rows": 180276,
+      "sha256": "a3a014de498a62a14cd7095257bbf1a18fb5e01f1e7b3599f3c66be8375baf99"
+    },
+    "data/manifests/tokenizer_train_v1.parquet": {
+      "bytes": 16041782,
+      "rows": 100236,
+      "sha256": "59ca69a87bd160732a6a7bf4b2f90e2537976f4b7d93b0567dca659a56b1f22f"
+    }
+  },
+  "counts": {
+    "excluded_row_decisions": 137386,
+    "human_review_sample_rows": 230,
+    "identification_all": 122353,
+    "legacy_derived_archive_quarantined_rows": 51101,
+    "normalization_all": 57923,
+    "normalization_authentic": 54598,
+    "normalization_synthetic": 3325,
+    "romanized_ood": 1342,
+    "tokenizer_train_unique_texts": 100236
+  },
+  "dataset_version": "boichitro_data_v1.0.0",
+  "exclusions_by_task_reason": [
+    {
+      "reason": "cross_label_text_conflict",
+      "rows": 20724,
+      "task": "identification"
+    },
+    {
+      "reason": "fatal_text_quality",
+      "rows": 57,
+      "task": "identification"
+    },
+    {
+      "reason": "hf_district_outside_frozen_taxonomy",
+      "rows": 1989,
+      "task": "identification"
+    },
+    {
+      "reason": "same_label_compact_duplicate",
+      "rows": 38142,
+      "task": "identification"
+    },
+    {
+      "reason": "train_near_protected_evaluation",
+      "rows": 2,
+      "task": "identification"
+    },
+    {
+      "reason": "conflicting_lower_priority_target",
+      "rows": 118,
+      "task": "normalization"
+    },
+    {
+      "reason": "exact_pair_duplicate_lower_priority",
+      "rows": 5516,
+      "task": "normalization"
+    },
+    {
+      "reason": "failed_preliminary_local_normalization_gate",
+      "rows": 164,
+      "task": "normalization"
+    },
+    {
+      "reason": "fatal_text_quality",
+      "rows": 2,
+      "task": "normalization"
+    },
+    {
+      "reason": "ood_overlap_with_development",
+      "rows": 2655,
+      "task": "normalization"
+    },
+    {
+      "reason": "source_maps_multiple_targets_at_best_priority",
+      "rows": 729,
+      "task": "normalization"
+    },
+    {
+      "reason": "train_near_protected_evaluation",
+      "rows": 405,
+      "task": "normalization"
+    },
+    {
+      "reason": "bengali_parent_removed_from_onubad_ood",
+      "rows": 546,
+      "task": "romanized_normalization"
+    },
+    {
+      "reason": "duplicate_romanized_parent",
+      "rows": 72,
+      "task": "romanized_normalization"
+    },
+    {
+      "reason": "duplicate_tokenizer_text",
+      "rows": 66200,
+      "task": "tokenizer"
+    },
+    {
+      "reason": "exact_protected_evaluation_text",
+      "rows": 65,
+      "task": "tokenizer"
+    }
+  ],
+  "gates": {
+    "all_task_licenses_resolved": true,
+    "inventory_is_twelve_regional_plus_standard": true,
+    "legacy_derived_archive_absent": true,
+    "locked_ood_sources_never_train": true,
+    "native_human_review_complete": false,
+    "no_compact_train_evaluation_overlap_identification": true,
+    "no_compact_train_evaluation_overlap_normalization": true,
+    "no_cross_label_identification_text": true,
+    "synthetic_excluded_from_identification": true,
+    "synthetic_train_only": true,
+    "thirteen_label_inventory_present": true
+  },
+  "identification_by_label_split": [
+    {
+      "dialect": "BAR",
+      "rows": 587,
+      "split": "test"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 65,
+      "split": "test_external"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 495,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 4018,
+      "split": "train"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 413,
+      "split": "validation"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 2205,
+      "split": "test"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 162,
+      "split": "test_external"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 1654,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 16886,
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 1991,
+      "split": "validation"
+    },
+    {
+      "dialect": "KHU",
+      "rows": 95,
+      "split": "test"
+    },
+    {
+      "dialect": "KHU",
+      "rows": 668,
+      "split": "train"
+    },
+    {
+      "dialect": "KHU",
+      "rows": 86,
+      "split": "validation"
+    },
+    {
+      "dialect": "KIS",
+      "rows": 793,
+      "split": "test"
+    },
+    {
+      "dialect": "KIS",
+      "rows": 159,
+      "split": "test_external"
+    },
+    {
+      "dialect": "KIS",
+      "rows": 7953,
+      "split": "train"
+    },
+    {
+      "dialect": "KIS",
+      "rows": 797,
+      "split": "validation"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 448,
+      "split": "test"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 701,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 2171,
+      "split": "train"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 302,
+      "split": "validation"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 850,
+      "split": "test"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 162,
+      "split": "test_external"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 8009,
+      "split": "train"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 865,
+      "split": "validation"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 387,
+      "split": "test"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 786,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 1783,
+      "split": "train"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 260,
+      "split": "validation"
+    },
+    {
+      "dialect": "NSD",
+      "rows": 538,
+      "split": "test"
+    },
+    {
+      "dialect": "NSD",
+      "rows": 108,
+      "split": "test_external"
+    },
+    {
+      "dialect": "NSD",
+      "rows": 5300,
+      "split": "train"
+    },
+    {
+      "dialect": "NSD",
+      "rows": 576,
+      "split": "validation"
+    },
+    {
+      "dialect": "RAJ",
+      "rows": 88,
+      "split": "test"
+    },
+    {
+      "dialect": "RAJ",
+      "rows": 717,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "RAJ",
+      "rows": 705,
+      "split": "train"
+    },
+    {
+      "dialect": "RAJ",
+      "rows": 91,
+      "split": "validation"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 698,
+      "split": "test"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 108,
+      "split": "test_external"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 6481,
+      "split": "train"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 680,
+      "split": "validation"
+    },
+    {
+      "dialect": "STD",
+      "rows": 2452,
+      "split": "test"
+    },
+    {
+      "dialect": "STD",
+      "rows": 1172,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "STD",
+      "rows": 18768,
+      "split": "train"
+    },
+    {
+      "dialect": "STD",
+      "rows": 2251,
+      "split": "validation"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 1617,
+      "split": "test"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 283,
+      "split": "test_external"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 1278,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 15134,
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 1407,
+      "split": "validation"
+    },
+    {
+      "dialect": "TAN",
+      "rows": 506,
+      "split": "test"
+    },
+    {
+      "dialect": "TAN",
+      "rows": 104,
+      "split": "test_external"
+    },
+    {
+      "dialect": "TAN",
+      "rows": 5021,
+      "split": "train"
+    },
+    {
+      "dialect": "TAN",
+      "rows": 519,
+      "split": "validation"
+    }
+  ],
+  "lineage_controls": {
+    "bangladial_v2_used_as_lower_confidence_merged_identification_source": true,
+    "bhasabodh_bengali_pairs_counted_as_onubad_companion_not_independent": true,
+    "chattogramsent_exact_chatgaiyya_ancestry_removed_by_priority": true,
+    "hf_habiganj_and_sandwip_not_geographically_relabelled": true,
+    "sylheti_v3_exact_v2_rows_removed_by_priority": true
+  },
+  "near_duplicate_method": {
+    "character_ngram": 4,
+    "compact_exact": true,
+    "direction": "remove_train_against_iid_protected; remove_ood_against_all_development",
+    "maximum_hamming_candidate": 6,
+    "minimum_jaccard": 0.9,
+    "simhash_bits": 64
+  },
+  "normalization_by_dialect_split_synthetic": [
+    {
+      "dialect": "BAR",
+      "is_synthetic": false,
+      "rows": 491,
+      "split": "test"
+    },
+    {
+      "dialect": "BAR",
+      "is_synthetic": false,
+      "rows": 608,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "BAR",
+      "is_synthetic": false,
+      "rows": 2727,
+      "split": "train"
+    },
+    {
+      "dialect": "BAR",
+      "is_synthetic": true,
+      "rows": 408,
+      "split": "train"
+    },
+    {
+      "dialect": "BAR",
+      "is_synthetic": false,
+      "rows": 333,
+      "split": "validation"
+    },
+    {
+      "dialect": "CHI",
+      "is_synthetic": false,
+      "rows": 1879,
+      "split": "test"
+    },
+    {
+      "dialect": "CHI",
+      "is_synthetic": false,
+      "rows": 2096,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "CHI",
+      "is_synthetic": false,
+      "rows": 13655,
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "is_synthetic": true,
+      "rows": 909,
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "is_synthetic": false,
+      "rows": 1706,
+      "split": "validation"
+    },
+    {
+      "dialect": "KHU",
+      "is_synthetic": false,
+      "rows": 101,
+      "split": "test"
+    },
+    {
+      "dialect": "KHU",
+      "is_synthetic": false,
+      "rows": 711,
+      "split": "train"
+    },
+    {
+      "dialect": "KHU",
+      "is_synthetic": true,
+      "rows": 106,
+      "split": "train"
+    },
+    {
+      "dialect": "KHU",
+      "is_synthetic": false,
+      "rows": 89,
+      "split": "validation"
+    },
+    {
+      "dialect": "MYM",
+      "is_synthetic": false,
+      "rows": 375,
+      "split": "test"
+    },
+    {
+      "dialect": "MYM",
+      "is_synthetic": false,
+      "rows": 1384,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "MYM",
+      "is_synthetic": false,
+      "rows": 1868,
+      "split": "train"
+    },
+    {
+      "dialect": "MYM",
+      "is_synthetic": true,
+      "rows": 280,
+      "split": "train"
+    },
+    {
+      "dialect": "MYM",
+      "is_synthetic": false,
+      "rows": 250,
+      "split": "validation"
+    },
+    {
+      "dialect": "NAR",
+      "is_synthetic": false,
+      "rows": 101,
+      "split": "test"
+    },
+    {
+      "dialect": "NAR",
+      "is_synthetic": false,
+      "rows": 928,
+      "split": "train"
+    },
+    {
+      "dialect": "NAR",
+      "is_synthetic": true,
+      "rows": 139,
+      "split": "train"
+    },
+    {
+      "dialect": "NAR",
+      "is_synthetic": false,
+      "rows": 101,
+      "split": "validation"
+    },
+    {
+      "dialect": "NOA",
+      "is_synthetic": false,
+      "rows": 373,
+      "split": "test"
+    },
+    {
+      "dialect": "NOA",
+      "is_synthetic": false,
+      "rows": 1400,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "NOA",
+      "is_synthetic": false,
+      "rows": 1869,
+      "split": "train"
+    },
+    {
+      "dialect": "NOA",
+      "is_synthetic": true,
+      "rows": 280,
+      "split": "train"
+    },
+    {
+      "dialect": "NOA",
+      "is_synthetic": false,
+      "rows": 249,
+      "split": "validation"
+    },
+    {
+      "dialect": "RAJ",
+      "is_synthetic": false,
+      "rows": 1387,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "RAN",
+      "is_synthetic": false,
+      "rows": 127,
+      "split": "test"
+    },
+    {
+      "dialect": "RAN",
+      "is_synthetic": false,
+      "rows": 1100,
+      "split": "train"
+    },
+    {
+      "dialect": "RAN",
+      "is_synthetic": true,
+      "rows": 164,
+      "split": "train"
+    },
+    {
+      "dialect": "RAN",
+      "is_synthetic": false,
+      "rows": 159,
+      "split": "validation"
+    },
+    {
+      "dialect": "SYL",
+      "is_synthetic": false,
+      "rows": 1586,
+      "split": "test"
+    },
+    {
+      "dialect": "SYL",
+      "is_synthetic": false,
+      "rows": 2104,
+      "split": "test_ood"
+    },
+    {
+      "dialect": "SYL",
+      "is_synthetic": false,
+      "rows": 13439,
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "is_synthetic": true,
+      "rows": 1039,
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "is_synthetic": false,
+      "rows": 1402,
+      "split": "validation"
+    }
+  ],
+  "normalization_by_source_dialect_split": [
+    {
+      "dialect": "CHI",
+      "rows": 1428,
+      "source_id": "bd_dialect_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 1384,
+      "source_id": "bd_dialect_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 1400,
+      "source_id": "bd_dialect_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "RAJ",
+      "rows": 1387,
+      "source_id": "bd_dialect_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 1430,
+      "source_id": "bd_dialect_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 300,
+      "source_id": "chattogramsent_v2_novel",
+      "split": "test"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 2222,
+      "source_id": "chattogramsent_v2_novel",
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 298,
+      "source_id": "chattogramsent_v2_novel",
+      "split": "validation"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 810,
+      "source_id": "kothon_v4",
+      "split": "test"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 6344,
+      "source_id": "kothon_v4",
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 775,
+      "source_id": "kothon_v4",
+      "split": "validation"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 953,
+      "source_id": "kothon_v4",
+      "split": "test"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 7385,
+      "source_id": "kothon_v4",
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 878,
+      "source_id": "kothon_v4",
+      "split": "validation"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 394,
+      "source_id": "local_chatgaiyyaalap_v1",
+      "split": "test"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 3220,
+      "source_id": "local_chatgaiyyaalap_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 384,
+      "source_id": "local_chatgaiyyaalap_v1",
+      "split": "validation"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 116,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "test"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 884,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "train"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 84,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "validation"
+    },
+    {
+      "dialect": "KHU",
+      "rows": 101,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "test"
+    },
+    {
+      "dialect": "KHU",
+      "rows": 711,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "train"
+    },
+    {
+      "dialect": "KHU",
+      "rows": 89,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "validation"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 101,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "test"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 928,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "train"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 101,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "validation"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 127,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "test"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 1100,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "train"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 159,
+      "source_id": "local_regional_text_corpus_v4",
+      "split": "validation"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 113,
+      "source_id": "local_sylheti_translation_v2",
+      "split": "test"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 932,
+      "source_id": "local_sylheti_translation_v2",
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 124,
+      "source_id": "local_sylheti_translation_v2",
+      "split": "validation"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 375,
+      "source_id": "local_vashantor_v2",
+      "split": "test"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 1843,
+      "source_id": "local_vashantor_v2",
+      "split": "train"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 249,
+      "source_id": "local_vashantor_v2",
+      "split": "validation"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 375,
+      "source_id": "local_vashantor_v2",
+      "split": "test"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 1869,
+      "source_id": "local_vashantor_v2",
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 249,
+      "source_id": "local_vashantor_v2",
+      "split": "validation"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 375,
+      "source_id": "local_vashantor_v2",
+      "split": "test"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 1868,
+      "source_id": "local_vashantor_v2",
+      "split": "train"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 250,
+      "source_id": "local_vashantor_v2",
+      "split": "validation"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 373,
+      "source_id": "local_vashantor_v2",
+      "split": "test"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 1869,
+      "source_id": "local_vashantor_v2",
+      "split": "train"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 249,
+      "source_id": "local_vashantor_v2",
+      "split": "validation"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 375,
+      "source_id": "local_vashantor_v2",
+      "split": "test"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 1870,
+      "source_id": "local_vashantor_v2",
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 247,
+      "source_id": "local_vashantor_v2",
+      "split": "validation"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 608,
+      "source_id": "onubad_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 668,
+      "source_id": "onubad_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 674,
+      "source_id": "onubad_v2",
+      "split": "test_ood"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 145,
+      "source_id": "sylheti_translation_v3_novel",
+      "split": "test"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 3252,
+      "source_id": "sylheti_translation_v3_novel",
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 153,
+      "source_id": "sylheti_translation_v3_novel",
+      "split": "validation"
+    },
+    {
+      "dialect": "BAR",
+      "rows": 408,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "CHI",
+      "rows": 909,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "KHU",
+      "rows": 106,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "MYM",
+      "rows": 280,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "NAR",
+      "rows": 139,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "NOA",
+      "rows": 280,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "RAN",
+      "rows": 164,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    },
+    {
+      "dialect": "SYL",
+      "rows": 1039,
+      "source_id": "synthetic_robustness_v1",
+      "split": "train"
+    }
+  ],
+  "publication_release_status": "CONDITIONAL_NATIVE_REVIEW_REQUIRED",
+  "required_manual_action": "Complete the stratified native-speaker review sheet before any paper claim that the corpus is publication-ready or linguistically validated.",
+  "romanized_by_dialect": [
+    {
+      "dialect": "CHI",
+      "rows": 668
+    },
+    {
+      "dialect": "SYL",
+      "rows": 674
+    }
+  ],
+  "status": "PASS_INTERNAL_DATA_ENGINEERING",
+  "taxonomy": {
+    "clarification": "13 labels = 12 regional varieties + Standard Bangla",
+    "labels": [
+      "BAR",
+      "CHI",
+      "KHU",
+      "KIS",
+      "MYM",
+      "NAR",
+      "NOA",
+      "NSD",
+      "RAJ",
+      "RAN",
+      "SYL",
+      "TAN",
+      "STD"
+    ],
+    "regional_labels": [
+      "BAR",
+      "CHI",
+      "KHU",
+      "KIS",
+      "MYM",
+      "NAR",
+      "NOA",
+      "NSD",
+      "RAJ",
+      "RAN",
+      "SYL",
+      "TAN"
+    ],
+    "standard_label": "STD"
+  }
+}

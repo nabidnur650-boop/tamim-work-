@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "selection_metric": "objective",
+  "selection_mode": "max",
+  "selected_adamw_learning_rate": 0.0003,
+  "selected_protocol_id": "boichitro_adamw_lr_pilot_v1_3em04",
+  "candidates": [
+    {
+      "adamw_learning_rate": 5e-05,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_5em05",
+      "selection_value": 20.92484888742098,
+      "macro_chrfpp": 20.92484888742098,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_5em05/M3__adamw_only/1701/stage_s/best_selection.json"
+    },
+    {
+      "adamw_learning_rate": 0.0001,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_1em04",
+      "selection_value": 22.943813646665287,
+      "macro_chrfpp": 22.943813646665287,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_1em04/M3__adamw_only/1701/stage_s/best_selection.json"
+    },
+    {
+      "adamw_learning_rate": 0.0002,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_2em04",
+      "selection_value": 27.226386180878958,
+      "macro_chrfpp": 27.226386180878958,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_2em04/M3__adamw_only/1701/stage_s/best_selection.json"
+    },
+    {
+      "adamw_learning_rate": 0.0003,
+      "protocol_id": "boichitro_adamw_lr_pilot_v1_3em04",
+      "selection_value": 29.909007471468673,
+      "macro_chrfpp": 29.909007471468673,
+      "replay_guard_pass": true,
+      "selection_manifest": "runs/task/boichitro_adamw_lr_pilot_v1_3em04/M3__adamw_only/1701/stage_s/best_selection.json"
+    }
+  ],
+  "test_data_access": false
+}

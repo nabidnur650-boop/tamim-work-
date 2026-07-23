@@ -1,0 +1,384 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_upcycling_selection_v1",
+  "protocol_sha256": "40e0f1cce37678cf7ed164673ddd149f50a14a37eca472a07502ae381c911fee",
+  "test_data_access": "forbidden_and_not_accessed",
+  "seed": 1701,
+  "dense_equivalent_baseline_validation_bpc": 1.2303345879245327,
+  "guards": {
+    "maximum_transient_validation_bpc_regression_percent": 0.5,
+    "maximum_final_validation_bpc_regression_percent": 0.0,
+    "initial_bpc_match_absolute_tolerance": 1e-05
+  },
+  "selection_rule": "minimum_final_validation_bpc_among_eligible_candidates",
+  "eligible_candidates": [
+    "permanent_paired_bank"
+  ],
+  "selected_strategy": "permanent_paired_bank",
+  "selected_run_id": "P_M2_PAIRED_20M",
+  "selected_model_overrides": {
+    "banked_upcycle_fraction": 1.0,
+    "banked_upcycle_release_fraction": 1.0,
+    "banked_pairing_penalty": 0.25
+  },
+  "conditions": {
+    "abrupt_banked_release": {
+      "run_id": "P_M2_BANKED_20M",
+      "role": "negative_control",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.2303345879245327,
+      "final_validation_bpc": 1.2621794427402053,
+      "final_change_from_own_initial_percent": 2.5883085079638515,
+      "maximum_transient_change_from_own_initial_percent": 3.6781062749295192,
+      "minimum_change_from_own_initial_percent": 0.0,
+      "validation_points": [
+        {
+          "validation_nll": 3.662293986884915,
+          "validation_perplexity": 38.95059261193791,
+          "validation_bpc": 1.2303345879245327,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.796997051822896,
+          "validation_perplexity": 44.5671505021002,
+          "validation_bpc": 1.2755876016056131,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.7812145924081606,
+          "validation_perplexity": 43.8692926997836,
+          "validation_bpc": 1.270285540719731,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.7616865790620144,
+          "validation_perplexity": 43.02092301357065,
+          "validation_bpc": 1.2637251743648574,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.757085453734106,
+          "validation_perplexity": 42.82343304153002,
+          "validation_bpc": 1.2621794427402053,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.757085453734106,
+        "validation_perplexity": 42.82343304153002,
+        "validation_bpc": 1.2621794427402053,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "b82b32fa409bfcdd6bfa00a938abdac27ff55d13089492cf8ecd9cbab4477273",
+      "training_report_sha256": "b76ee4f1083a3ccf76e6f558ab810a2d15db4365a6917fc5fa5255839cb132a8",
+      "validation_log_sha256": "3ce18da9272e105ff9b4177158018f7789b1f518cd6bb33ef18c3c9add4738db",
+      "model_overrides": null,
+      "eligible": false,
+      "eligibility_reasons": [
+        "registered_negative_control"
+      ]
+    },
+    "unbanked_transfer": {
+      "run_id": "P_M2_UNBANKED_20M",
+      "role": "negative_control",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.397035339749581,
+      "final_validation_bpc": 1.2558707147253643,
+      "final_change_from_own_initial_percent": -10.104585117332856,
+      "maximum_transient_change_from_own_initial_percent": 0.0,
+      "minimum_change_from_own_initial_percent": -10.104585117332856,
+      "validation_points": [
+        {
+          "validation_nll": 4.158506291253226,
+          "validation_perplexity": 63.975889847730244,
+          "validation_bpc": 1.397035339749581,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.8022319326595384,
+          "validation_perplexity": 44.80106594977038,
+          "validation_bpc": 1.2773462411304708,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.7704802639630377,
+          "validation_perplexity": 43.40090372138884,
+          "validation_bpc": 1.2666793814077064,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.7483082917271826,
+          "validation_perplexity": 42.449209544628694,
+          "validation_bpc": 1.259230786504631,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.7383064834439024,
+          "validation_perplexity": 42.02675685609278,
+          "validation_bpc": 1.2558707147253643,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.7383064834439024,
+        "validation_perplexity": 42.02675685609278,
+        "validation_bpc": 1.2558707147253643,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "72cca610ba0f2b0da9df88ff3ee16fe3c19a226098977d015942936e23cf4af4",
+      "training_report_sha256": "abeaa2bd62278c22ea22cc9d30c016e889c9af96cf09618bc8695f3246134c70",
+      "validation_log_sha256": "aa920f82f3cb804942aedb36f0c1e05049ba3a5dc0dc8e77d63ed575370a2aa3",
+      "model_overrides": null,
+      "eligible": false,
+      "eligibility_reasons": [
+        "registered_negative_control"
+      ]
+    },
+    "random_initialization": {
+      "run_id": "P_M2_SCRATCH_20M",
+      "role": "negative_control",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 3.519621897730057,
+      "final_validation_bpc": 2.559431579024191,
+      "final_change_from_own_initial_percent": -27.281064461075513,
+      "maximum_transient_change_from_own_initial_percent": 0.0,
+      "minimum_change_from_own_initial_percent": -27.281064461075513,
+      "validation_points": [
+        {
+          "validation_nll": 10.476735547124123,
+          "validation_perplexity": 35480.39420984753,
+          "validation_bpc": 3.519621897730057,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 9.110129093637271,
+          "validation_perplexity": 9046.462656831785,
+          "validation_bpc": 3.0605153394289006,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 8.36513367283101,
+          "validation_perplexity": 4294.685782476819,
+          "validation_bpc": 2.810236787967505,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 7.953352083478655,
+          "validation_perplexity": 2845.0959831514247,
+          "validation_bpc": 2.6719002333749375,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 7.6185705690967795,
+          "validation_perplexity": 2035.650227791874,
+          "validation_bpc": 2.559431579024191,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 7.6185705690967795,
+        "validation_perplexity": 2035.650227791874,
+        "validation_bpc": 2.559431579024191,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "69f74fed0ff2e8b728531297c7de5d267a7855fcc3a4d40b8b3e126958d19673",
+      "training_report_sha256": "d3285789d9099a5e08ef87884b875305d7a2347832a8e280f0f91dc26e77e519",
+      "validation_log_sha256": "a50e3e31cb02c4983592ba0fe1d5805c85fefd24bb38ce0a5d33c574b356dd94",
+      "model_overrides": null,
+      "eligible": false,
+      "eligibility_reasons": [
+        "registered_negative_control"
+      ]
+    },
+    "annealed_cross_bank": {
+      "run_id": "P_M2_ANNEALED_20M",
+      "role": "candidate",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.2303345879245327,
+      "final_validation_bpc": 1.2641091981016637,
+      "final_change_from_own_initial_percent": 2.7451565215366207,
+      "maximum_transient_change_from_own_initial_percent": 2.7451565215366207,
+      "minimum_change_from_own_initial_percent": -0.3049113668884058,
+      "validation_points": [
+        {
+          "validation_nll": 3.662293986884915,
+          "validation_perplexity": 38.95059261193791,
+          "validation_bpc": 1.2303345879245327,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.6549702264824693,
+          "validation_perplexity": 38.66636986418208,
+          "validation_bpc": 1.2278741967683149,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.6511272362300327,
+          "validation_perplexity": 38.51806053986715,
+          "validation_bpc": 1.2265831579151911,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.652435549911188,
+          "validation_perplexity": 38.56848722521131,
+          "validation_bpc": 1.2270226812247738,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.761416446919344,
+          "validation_perplexity": 43.009303248963946,
+          "validation_bpc": 1.2636344244360893,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.76282968910373,
+        "validation_perplexity": 43.070128781116736,
+        "validation_bpc": 1.2641091981016637,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "f14a784d26b979c84ab6b8997626329fa4cd9f5699740d552c4ac8b11c7186b8",
+      "training_report_sha256": "3cb782328d9b6790a80bb1c86e6a1987bf9680db9162887e95e379b384a82554",
+      "validation_log_sha256": "15312e649168a889f347e30ef563e1046027498a0e2c82321222a908c7f9f50d",
+      "model_overrides": {
+        "banked_upcycle_fraction": 0.02,
+        "banked_upcycle_release_fraction": 0.1,
+        "banked_pairing_penalty": 0.25
+      },
+      "transient_change_from_dense_equivalent_percent": 2.7451565215366207,
+      "final_change_from_dense_equivalent_percent": 2.7451565215366207,
+      "eligible": false,
+      "eligibility_reasons": [
+        "transient_regression_guard_failed",
+        "final_regression_guard_failed"
+      ]
+    },
+    "permanent_paired_bank": {
+      "run_id": "P_M2_PAIRED_20M",
+      "role": "candidate",
+      "tokens_seen": 20000768,
+      "initial_validation_bpc": 1.2303345879245327,
+      "final_validation_bpc": 1.2287236039923957,
+      "final_change_from_own_initial_percent": -0.13093868513073167,
+      "maximum_transient_change_from_own_initial_percent": 0.0,
+      "minimum_change_from_own_initial_percent": -0.2994563644589819,
+      "validation_points": [
+        {
+          "validation_nll": 3.662293986884915,
+          "validation_perplexity": 38.95059261193791,
+          "validation_bpc": 1.2303345879245327,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.6553465415020376,
+          "validation_perplexity": 38.680923338087815,
+          "validation_bpc": 1.2280006184554293,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.65132701445599,
+          "validation_perplexity": 38.525756378374005,
+          "validation_bpc": 1.2266502726968525,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10092544
+        },
+        {
+          "validation_nll": 3.652046231834256,
+          "validation_perplexity": 38.55347473844048,
+          "validation_bpc": 1.2268918912069682,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 115,
+          "tokens_seen": 15073280
+        },
+        {
+          "validation_nll": 3.6574986272928665,
+          "validation_perplexity": 38.764257642702894,
+          "validation_bpc": 1.2287236039923957,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 153,
+          "tokens_seen": 20000768
+        }
+      ],
+      "exact_endpoint_validation": {
+        "validation_nll": 3.6574986272928665,
+        "validation_perplexity": 38.764257642702894,
+        "validation_bpc": 1.2287236039923957,
+        "validation_predicted_tokens": 1002540,
+        "global_step": 153,
+        "tokens_seen": 20000768,
+        "evaluation": "exact_final_training_progress"
+      },
+      "training_config_sha256": "34507ae2c9909dc44f20428d7e2c6cec0d5725abcc48013d59d75393d572ba88",
+      "training_report_sha256": "99995f2f666b04d901edb74c1896b11506e5bd20fd5b86d5a5b7e9c734c9ea06",
+      "validation_log_sha256": "ac862a09b05b3c67faf04d0015dbc3a7730020045e4f0dfbfc369f4baa99acfa",
+      "model_overrides": {
+        "banked_upcycle_fraction": 1.0,
+        "banked_upcycle_release_fraction": 1.0,
+        "banked_pairing_penalty": 0.25
+      },
+      "transient_change_from_dense_equivalent_percent": 0.0,
+      "final_change_from_dense_equivalent_percent": -0.13093868513073167,
+      "eligible": true,
+      "eligibility_reasons": [
+        "all_validation_guards_passed"
+      ]
+    }
+  }
+}

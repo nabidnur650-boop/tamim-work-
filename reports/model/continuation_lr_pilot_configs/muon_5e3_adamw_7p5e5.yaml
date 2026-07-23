@@ -1,0 +1,29 @@
+run_id: P_CONT_LR_MUON_5E3_ADAMW_7P5E5_10M
+seed: 1701
+data_seed: 2903
+architecture: dense
+initial_checkpoint: runs/F_DENSE_300M/1701/final_checkpoint.pt
+packed_data: data/pretraining/packed_1024
+token_budget: 10000000
+validation_token_cap: 1000000
+evaluate_at_start: true
+micro_batch_size: 4
+gradient_accumulation_steps: 32
+global_token_batch: 131072
+warmup_fraction: 0.0
+eval_every_tokens: 5000000
+checkpoint_every_tokens: 10000000
+log_every_optimizer_steps: 10
+resume_checkpoint_every_steps: 50
+model_config: configs/model/main_80m.yaml
+fixed_token_budget: true
+test_data_access: forbidden
+optimizer:
+  muon_lr: 0.005
+  adamw_lr: 7.5e-05
+  router_lr: 0.0002
+  weight_decay: 0.1
+  min_lr_ratio: 0.1
+  gradient_clip: 1.0
+scheduler_token_budget: 200000000
+development_only: true

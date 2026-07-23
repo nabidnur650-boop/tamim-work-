@@ -1,0 +1,477 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_stage_s_retention_pilot_v1",
+  "config_path": "configs/stage_s_retention_pilot.yaml",
+  "config_sha256": "ed11707e1fec26e53b9a8dda4edbf162659dcad07bb35ddb012c6860f41d236a",
+  "development_variant": "M0",
+  "development_seed": 1701,
+  "stage_a_checkpoint": "runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_a/last_checkpoint.pt",
+  "stage_a_sha256": "2c2c68ce7734382ef3102db92f8478f0cefd45248de931355175febbc5101774",
+  "baseline_replay_nll": 3.756948042351618,
+  "selection_rule": {
+    "primary": "validation_macro_chrfpp",
+    "constraint": "replay_relative_degradation_lte_0.05",
+    "tie_breakers": [
+      "validation_worst_dialect_chrfpp",
+      "lower_replay_relative_degradation",
+      "lexical_candidate_id"
+    ],
+    "test_data_access": "forbidden"
+  },
+  "selected_candidate_id": "ret35_balanced",
+  "selected_candidate": {
+    "id": "ret35_balanced",
+    "rationale": "Threefold lower mature-checkpoint rates with 35% replay.",
+    "mixture": {
+      "normalization": 0.3,
+      "identification": 0.2,
+      "dialect_clm": 0.1,
+      "general_replay": 0.35,
+      "romanized": 0.05
+    },
+    "optimizer": {
+      "muon_lr": 0.002,
+      "adamw_lr": 3e-05,
+      "router_lr": 5e-05
+    }
+  },
+  "selected_validation": {
+    "optimizer_step": 232,
+    "macro_chrfpp": 41.185891991833344,
+    "worst_dialect_chrfpp": 31.910084290999404,
+    "replay_nll": 3.793478953781099,
+    "baseline_replay_nll": 3.756948042351618,
+    "replay_relative_degradation": 0.009723560458561709,
+    "replay_guard_pass": true,
+    "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_232.json"
+  },
+  "candidates": [
+    {
+      "candidate_id": "rejected_default",
+      "source": "pre_pilot_failure_curve",
+      "run_dir": "runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_s",
+      "candidate": null,
+      "validation_curve": [
+        {
+          "optimizer_step": 76,
+          "macro_chrfpp": 41.004228103140406,
+          "worst_dialect_chrfpp": 30.430387923110885,
+          "replay_nll": 4.231424133434876,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.12629296059848216,
+          "replay_guard_pass": false,
+          "metrics_path": "runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_s/validation_metrics_epoch_76.json"
+        },
+        {
+          "optimizer_step": 152,
+          "macro_chrfpp": 43.06491915014631,
+          "worst_dialect_chrfpp": 31.637876212813488,
+          "replay_nll": 4.389589596309797,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.1683924150205134,
+          "replay_guard_pass": false,
+          "metrics_path": "runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_s/validation_metrics_epoch_152.json"
+        },
+        {
+          "optimizer_step": 228,
+          "macro_chrfpp": 44.71351579904167,
+          "worst_dialect_chrfpp": 34.21441431129442,
+          "replay_nll": 4.3546656103982055,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.15909657554711698,
+          "replay_guard_pass": false,
+          "metrics_path": "runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_s/validation_metrics_epoch_228.json"
+        },
+        {
+          "optimizer_step": 301,
+          "macro_chrfpp": 44.519148454653546,
+          "worst_dialect_chrfpp": 33.72040650024907,
+          "replay_nll": 4.31083992126681,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.1474313385948478,
+          "replay_guard_pass": false,
+          "metrics_path": "runs/task/boichitro_stage_s_default_pilot_v1/M0__base/1701/stage_s/validation_metrics_epoch_301.json"
+        }
+      ],
+      "eligible_checkpoint_count": 0,
+      "selected_validation": null
+    },
+    {
+      "candidate_id": "ret25_balanced",
+      "source": "registered_candidate",
+      "run_dir": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced",
+      "candidate": {
+        "id": "ret25_balanced",
+        "rationale": "Threefold lower mature-checkpoint rates with 25% replay.",
+        "mixture": {
+          "normalization": 0.4,
+          "identification": 0.2,
+          "dialect_clm": 0.1,
+          "general_replay": 0.25,
+          "romanized": 0.05
+        },
+        "optimizer": {
+          "muon_lr": 0.002,
+          "adamw_lr": 3e-05,
+          "router_lr": 5e-05
+        }
+      },
+      "validation_curve": [
+        {
+          "optimizer_step": 44,
+          "macro_chrfpp": 41.15796108953082,
+          "worst_dialect_chrfpp": 31.917467821672645,
+          "replay_nll": 3.807159586748927,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.013364982382316759,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced/validation_metrics_epoch_44.json"
+        },
+        {
+          "optimizer_step": 88,
+          "macro_chrfpp": 41.08094361043949,
+          "worst_dialect_chrfpp": 31.159675591981,
+          "replay_nll": 3.830834079567279,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.01966650493505706,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced/validation_metrics_epoch_88.json"
+        },
+        {
+          "optimizer_step": 132,
+          "macro_chrfpp": 40.86752835572425,
+          "worst_dialect_chrfpp": 29.828687494502905,
+          "replay_nll": 3.8378163274896484,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.02152499428429988,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced/validation_metrics_epoch_132.json"
+        },
+        {
+          "optimizer_step": 176,
+          "macro_chrfpp": 41.0653544889488,
+          "worst_dialect_chrfpp": 30.321276129472775,
+          "replay_nll": 3.8355846123920605,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.02093097087156437,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced/validation_metrics_epoch_176.json"
+        },
+        {
+          "optimizer_step": 220,
+          "macro_chrfpp": 41.01638763187246,
+          "worst_dialect_chrfpp": 30.0016381041816,
+          "replay_nll": 3.8305778936685675,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.01959831503841114,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced/validation_metrics_epoch_220.json"
+        },
+        {
+          "optimizer_step": 259,
+          "macro_chrfpp": 40.90124183545463,
+          "worst_dialect_chrfpp": 28.44692942734613,
+          "replay_nll": 3.826905159479608,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.01862073053429847,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced/validation_metrics_epoch_259.json"
+        }
+      ],
+      "eligible_checkpoint_count": 6,
+      "selected_validation": {
+        "optimizer_step": 44,
+        "macro_chrfpp": 41.15796108953082,
+        "worst_dialect_chrfpp": 31.917467821672645,
+        "replay_nll": 3.807159586748927,
+        "baseline_replay_nll": 3.756948042351618,
+        "replay_relative_degradation": 0.013364982382316759,
+        "replay_guard_pass": true,
+        "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_balanced/validation_metrics_epoch_44.json"
+      }
+    },
+    {
+      "candidate_id": "ret25_conservative",
+      "source": "registered_candidate",
+      "run_dir": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative",
+      "candidate": {
+        "id": "ret25_conservative",
+        "rationale": "Sixfold lower mature-checkpoint rates with 25% replay.",
+        "mixture": {
+          "normalization": 0.4,
+          "identification": 0.2,
+          "dialect_clm": 0.1,
+          "general_replay": 0.25,
+          "romanized": 0.05
+        },
+        "optimizer": {
+          "muon_lr": 0.001,
+          "adamw_lr": 1.5e-05,
+          "router_lr": 2.5e-05
+        }
+      },
+      "validation_curve": [
+        {
+          "optimizer_step": 44,
+          "macro_chrfpp": 40.69332460302278,
+          "worst_dialect_chrfpp": 30.062053942684308,
+          "replay_nll": 3.779963867267267,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.0061262026134496494,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative/validation_metrics_epoch_44.json"
+        },
+        {
+          "optimizer_step": 88,
+          "macro_chrfpp": 40.752785768572366,
+          "worst_dialect_chrfpp": 31.04004717960513,
+          "replay_nll": 3.7872221813889757,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.008058173468485919,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative/validation_metrics_epoch_88.json"
+        },
+        {
+          "optimizer_step": 132,
+          "macro_chrfpp": 41.07168151663069,
+          "worst_dialect_chrfpp": 30.621387951599168,
+          "replay_nll": 3.7881495524167117,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.008305015058329923,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative/validation_metrics_epoch_132.json"
+        },
+        {
+          "optimizer_step": 176,
+          "macro_chrfpp": 40.77262258694476,
+          "worst_dialect_chrfpp": 29.60432567487188,
+          "replay_nll": 3.7887446360821797,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.008463410558815943,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative/validation_metrics_epoch_176.json"
+        },
+        {
+          "optimizer_step": 220,
+          "macro_chrfpp": 40.759005222686866,
+          "worst_dialect_chrfpp": 30.15035331134542,
+          "replay_nll": 3.7877046754671,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.008186600604737304,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative/validation_metrics_epoch_220.json"
+        },
+        {
+          "optimizer_step": 259,
+          "macro_chrfpp": 41.06529697142514,
+          "worst_dialect_chrfpp": 30.06947369935996,
+          "replay_nll": 3.786721778677898,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.007924979528767473,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative/validation_metrics_epoch_259.json"
+        }
+      ],
+      "eligible_checkpoint_count": 6,
+      "selected_validation": {
+        "optimizer_step": 132,
+        "macro_chrfpp": 41.07168151663069,
+        "worst_dialect_chrfpp": 30.621387951599168,
+        "replay_nll": 3.7881495524167117,
+        "baseline_replay_nll": 3.756948042351618,
+        "replay_relative_degradation": 0.008305015058329923,
+        "replay_guard_pass": true,
+        "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret25_conservative/validation_metrics_epoch_132.json"
+      }
+    },
+    {
+      "candidate_id": "ret35_balanced",
+      "source": "registered_candidate",
+      "run_dir": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced",
+      "candidate": {
+        "id": "ret35_balanced",
+        "rationale": "Threefold lower mature-checkpoint rates with 35% replay.",
+        "mixture": {
+          "normalization": 0.3,
+          "identification": 0.2,
+          "dialect_clm": 0.1,
+          "general_replay": 0.35,
+          "romanized": 0.05
+        },
+        "optimizer": {
+          "muon_lr": 0.002,
+          "adamw_lr": 3e-05,
+          "router_lr": 5e-05
+        }
+      },
+      "validation_curve": [
+        {
+          "optimizer_step": 39,
+          "macro_chrfpp": 40.5479209187551,
+          "worst_dialect_chrfpp": 30.474543849346215,
+          "replay_nll": 3.7929856523461307,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.009592256690341472,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_39.json"
+        },
+        {
+          "optimizer_step": 78,
+          "macro_chrfpp": 41.01921123429269,
+          "worst_dialect_chrfpp": 30.422313147948525,
+          "replay_nll": 3.808071495320619,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.013607708276157204,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_78.json"
+        },
+        {
+          "optimizer_step": 117,
+          "macro_chrfpp": 40.169173569743094,
+          "worst_dialect_chrfpp": 30.950368511691266,
+          "replay_nll": 3.810116401041852,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.01415200798384042,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_117.json"
+        },
+        {
+          "optimizer_step": 156,
+          "macro_chrfpp": 40.831331491215764,
+          "worst_dialect_chrfpp": 30.438316662016284,
+          "replay_nll": 3.804105898941707,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.01255217161868738,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_156.json"
+        },
+        {
+          "optimizer_step": 195,
+          "macro_chrfpp": 40.769116649329064,
+          "worst_dialect_chrfpp": 30.303150350556752,
+          "replay_nll": 3.7974287277314454,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.010774885604882822,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_195.json"
+        },
+        {
+          "optimizer_step": 232,
+          "macro_chrfpp": 41.185891991833344,
+          "worst_dialect_chrfpp": 31.910084290999404,
+          "replay_nll": 3.793478953781099,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.009723560458561709,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_232.json"
+        }
+      ],
+      "eligible_checkpoint_count": 6,
+      "selected_validation": {
+        "optimizer_step": 232,
+        "macro_chrfpp": 41.185891991833344,
+        "worst_dialect_chrfpp": 31.910084290999404,
+        "replay_nll": 3.793478953781099,
+        "baseline_replay_nll": 3.756948042351618,
+        "replay_relative_degradation": 0.009723560458561709,
+        "replay_guard_pass": true,
+        "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_balanced/validation_metrics_epoch_232.json"
+      }
+    },
+    {
+      "candidate_id": "ret35_conservative",
+      "source": "registered_candidate",
+      "run_dir": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative",
+      "candidate": {
+        "id": "ret35_conservative",
+        "rationale": "Sixfold lower mature-checkpoint rates with 35% replay.",
+        "mixture": {
+          "normalization": 0.3,
+          "identification": 0.2,
+          "dialect_clm": 0.1,
+          "general_replay": 0.35,
+          "romanized": 0.05
+        },
+        "optimizer": {
+          "muon_lr": 0.001,
+          "adamw_lr": 1.5e-05,
+          "router_lr": 2.5e-05
+        }
+      },
+      "validation_curve": [
+        {
+          "optimizer_step": 39,
+          "macro_chrfpp": 40.02031979012904,
+          "worst_dialect_chrfpp": 30.728569397055374,
+          "replay_nll": 3.771784097120848,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.0039489645856116695,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative/validation_metrics_epoch_39.json"
+        },
+        {
+          "optimizer_step": 78,
+          "macro_chrfpp": 40.52374594253452,
+          "worst_dialect_chrfpp": 29.606229345541813,
+          "replay_nll": 3.7758037384651715,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.005018886580542281,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative/validation_metrics_epoch_78.json"
+        },
+        {
+          "optimizer_step": 117,
+          "macro_chrfpp": 40.48462154750293,
+          "worst_dialect_chrfpp": 29.81068833957421,
+          "replay_nll": 3.7731729611025475,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.004318643369039865,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative/validation_metrics_epoch_117.json"
+        },
+        {
+          "optimizer_step": 156,
+          "macro_chrfpp": 40.74525016118728,
+          "worst_dialect_chrfpp": 31.284880969193402,
+          "replay_nll": 3.770541291989813,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.0036181627972917685,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative/validation_metrics_epoch_156.json"
+        },
+        {
+          "optimizer_step": 195,
+          "macro_chrfpp": 40.586005632325325,
+          "worst_dialect_chrfpp": 31.0179613093686,
+          "replay_nll": 3.768335993966599,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.0030311709096335626,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative/validation_metrics_epoch_195.json"
+        },
+        {
+          "optimizer_step": 232,
+          "macro_chrfpp": 40.58946149168732,
+          "worst_dialect_chrfpp": 31.149588219179776,
+          "replay_nll": 3.7669976652182244,
+          "baseline_replay_nll": 3.756948042351618,
+          "replay_relative_degradation": 0.002674943266001595,
+          "replay_guard_pass": true,
+          "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative/validation_metrics_epoch_232.json"
+        }
+      ],
+      "eligible_checkpoint_count": 6,
+      "selected_validation": {
+        "optimizer_step": 156,
+        "macro_chrfpp": 40.74525016118728,
+        "worst_dialect_chrfpp": 31.284880969193402,
+        "replay_nll": 3.770541291989813,
+        "baseline_replay_nll": 3.756948042351618,
+        "replay_relative_degradation": 0.0036181627972917685,
+        "replay_guard_pass": true,
+        "metrics_path": "runs/pilots/boichitro_stage_s_retention_pilot_v1/ret35_conservative/validation_metrics_epoch_156.json"
+      }
+    }
+  ],
+  "test_data_access": false
+}

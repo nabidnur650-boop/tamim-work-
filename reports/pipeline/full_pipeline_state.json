@@ -1,0 +1,203 @@
+{
+  "status": "RUNNING",
+  "created_at": "2026-07-19T19:51:12.798251+00:00",
+  "stages": {
+    "foundations": {
+      "status": "COMPLETE",
+      "started_at": "2026-07-20T10:02:34.544644+00:00",
+      "commands": [
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/foundation_300m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/run_continuation_lr_pilot.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/continuation_m0_dense_200m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/pilot_m2_banked_20m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/pilot_m2_unbanked_20m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/pilot_m2_scratch_20m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/pilot_m2_annealed_20m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/pilot_m2_paired_20m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/select_upcycling_strategy.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/continuation_m2_200m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/pilot_m1_loss_free_router_10m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/pilot_m1_aux_router_10m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/select_switch_router.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/train_foundation.py",
+          "--config",
+          "configs/continuation_m1_switch_200m.yaml",
+          "--resume"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/analyze_foundation_routing.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/preflight_task_models.py"
+        ]
+      ],
+      "command_index": 16,
+      "completed_at": "2026-07-20T10:03:11.618757+00:00"
+    },
+    "main_task": {
+      "status": "COMPLETE",
+      "started_at": "2026-07-22T08:53:29.501536+00:00",
+      "commands": [
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/run_task_experiments.py"
+        ]
+      ],
+      "command_index": 1,
+      "completed_at": "2026-07-22T15:01:55.002985+00:00"
+    },
+    "development_system_fusion": {
+      "status": "COMPLETE",
+      "started_at": "2026-07-22T15:01:55.015622+00:00",
+      "commands": [
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/summarize_development_results.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/audit_cross_task_input_firewall.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/audit_source_blind_baselines.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/run_identification_fusion_pilot.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/run_normalization_fusion_pilot.py",
+          "--version",
+          "v1"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/run_normalization_fusion_pilot.py",
+          "--version",
+          "v2"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/audit_development_fusion.py"
+        ],
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/evaluate_development_fusion_transfer.py"
+        ]
+      ],
+      "command_index": 8,
+      "completed_at": "2026-07-22T15:20:40.406302+00:00"
+    },
+    "optimizer_pilot": {
+      "status": "COMPLETE",
+      "started_at": "2026-07-22T15:20:40.406772+00:00",
+      "commands": [
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/run_optimizer_pilot.py"
+        ]
+      ],
+      "command_index": 1,
+      "completed_at": "2026-07-22T16:35:15.558673+00:00"
+    },
+    "task_inference_benchmark": {
+      "status": "COMPLETE",
+      "started_at": "2026-07-22T16:35:15.559742+00:00",
+      "commands": [
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/benchmark_task_inference.py"
+        ]
+      ],
+      "command_index": 1,
+      "completed_at": "2026-07-22T16:41:36.184676+00:00"
+    },
+    "bidirectional_id": {
+      "status": "RUNNING",
+      "started_at": "2026-07-22T22:15:29.847314+00:00",
+      "commands": [
+        [
+          "/opt/miniforge3/bin/python",
+          "tools/run_bidirectional_identification.py"
+        ]
+      ],
+      "command_index": 1
+    }
+  },
+  "last_started_at": "2026-07-22T22:15:29.847047+00:00"
+}

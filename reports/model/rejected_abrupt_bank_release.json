@@ -1,0 +1,29 @@
+{
+  "status": "STOPPED_VALIDATION_ONLY",
+  "reason": "The first validation after the abrupt 4M-token bank release regressed beyond the preregistered no-regression stability guard.",
+  "test_data_access": "forbidden_and_not_accessed",
+  "run_id": "U_M2_STANDARD_MOE_200M",
+  "seed": 1701,
+  "data_seed": 2903,
+  "planned_token_budget": 200000000,
+  "banked_constraint_tokens": 4000000,
+  "last_logged_tokens": 10485760,
+  "last_resumable_checkpoint_tokens": 6553600,
+  "initial_validation_bpc": 1.2303345879245327,
+  "validation_bpc_at_10092544_tokens": 1.2688682815633956,
+  "relative_bpc_change_percent": 3.131968654467069,
+  "resolved_optimizer": {
+    "muon_lr": 0.001,
+    "adamw_lr": 0.000015,
+    "router_lr": 0.0002
+  },
+  "scheduler_token_budget": 200000000,
+  "artifacts": {
+    "directory": "runs/aborted/U_M2_STANDARD_MOE_200M_abrupt_bank_release_20260720/1701",
+    "configuration_snapshot": "reports/model/rejected_abrupt_bank_release_config.yaml",
+    "configuration_sha256": "2a5b437efb26cfbc9b621089b6892266e0072100f3e96cafd0222a1d5044d259",
+    "checkpoint_sha256": "28e877613dc8178fba723b1410e48ea5057f99267fc643dadaa0199b4a6e3102",
+    "train_log_sha256": "4f5672fa2d01b4eb6b670b761bc805e0e2771134c7bee9f2a33dc73c372965b0",
+    "validation_log_sha256": "4a6a485e4263da14d0b664f619d021b3d903f1e0d62f7562f7e20ff7056d7364"
+  }
+}

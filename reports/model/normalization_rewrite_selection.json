@@ -1,0 +1,52 @@
+{
+  "selected_min_count": 2,
+  "selected_confidence": 0.5,
+  "mapping_entries": 2474,
+  "validation_grid": [
+    {
+      "macro_chrfpp": 50.46243953048928,
+      "min_count": 2,
+      "confidence": 0.5
+    },
+    {
+      "macro_chrfpp": 49.504839159397264,
+      "min_count": 2,
+      "confidence": 0.7
+    },
+    {
+      "macro_chrfpp": 49.00580030983227,
+      "min_count": 3,
+      "confidence": 0.5
+    },
+    {
+      "macro_chrfpp": 48.28103979698124,
+      "min_count": 3,
+      "confidence": 0.7
+    },
+    {
+      "macro_chrfpp": 47.08835733450897,
+      "min_count": 2,
+      "confidence": 0.9
+    },
+    {
+      "macro_chrfpp": 47.07411506682018,
+      "min_count": 5,
+      "confidence": 0.5
+    },
+    {
+      "macro_chrfpp": 46.532835935104195,
+      "min_count": 5,
+      "confidence": 0.7
+    },
+    {
+      "macro_chrfpp": 45.879000242254335,
+      "min_count": 3,
+      "confidence": 0.9
+    },
+    {
+      "macro_chrfpp": 44.525080105334276,
+      "min_count": 5,
+      "confidence": 0.9
+    }
+  ]
+}

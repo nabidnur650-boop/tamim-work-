@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "test_data_access": false,
+  "guards": {
+    "router_load_cv_threshold": 0.5,
+    "stability_start_fraction": 0.1,
+    "persistent_consecutive_logs": 3,
+    "persistent_exceedance_fraction": 0.05,
+    "nonfinite_values_allowed": 0
+  },
+  "all_runs_pass_nonfinite_guard": true,
+  "all_runs_pass_persistent_collapse_guard": true,
+  "runs": [
+    {
+      "run_id": "U_M1_SWITCH_200M",
+      "architecture": "switch",
+      "tokens_seen": 200000512,
+      "logged_points": 152,
+      "router_load_cv_mean": 0.22320989166435395,
+      "router_load_cv_max": 0.529137849807739,
+      "router_load_cv_final": 0.257709383964538,
+      "cv_threshold": 0.5,
+      "stability_start_tokens": 20000051,
+      "stability_logged_points": 137,
+      "cv_threshold_exceedances": 1,
+      "cv_threshold_exceedance_fraction": 0.0072992700729927005,
+      "longest_consecutive_cv_exceedance": 1,
+      "router_entropy_min": 1.151327610015869,
+      "router_entropy_final": 1.169250845909118,
+      "router_z_loss_max": 20.271434783935547,
+      "nonfinite_diagnostic_values": 0,
+      "validation_points": 21,
+      "validation_bpc_regressions": 0,
+      "initial_validation_bpc": 1.230333527389825,
+      "final_validation_bpc": 1.199293941742932,
+      "persistent_expert_collapse": false
+    },
+    {
+      "run_id": "U_M2_STANDARD_MOE_200M",
+      "architecture": "standard_moe",
+      "tokens_seen": 200000512,
+      "logged_points": 152,
+      "router_load_cv_mean": 0.1471841905241533,
+      "router_load_cv_max": 0.7707298398017881,
+      "router_load_cv_final": 0.04265696555376,
+      "cv_threshold": 0.5,
+      "stability_start_tokens": 20000051,
+      "stability_logged_points": 137,
+      "cv_threshold_exceedances": 0,
+      "cv_threshold_exceedance_fraction": 0.0,
+      "longest_consecutive_cv_exceedance": 0,
+      "router_entropy_min": 1.789312362670898,
+      "router_entropy_final": 2.077677965164184,
+      "router_z_loss_max": 3.684314250946045,
+      "nonfinite_diagnostic_values": 0,
+      "validation_points": 21,
+      "validation_bpc_regressions": 1,
+      "initial_validation_bpc": 1.230334587924532,
+      "final_validation_bpc": 1.202603332124675,
+      "persistent_expert_collapse": false
+    }
+  ]
+}

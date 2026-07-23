@@ -1,0 +1,246 @@
+{
+  "frozen_on": "2026-07-19",
+  "huggingface_rejections": [
+    {
+      "reason": "exact_blob_duplicate_of_kit_nlp_release",
+      "repo_id": "TanjimKIT/Vulgar_Lexicon_of_Chittagonian_Dialect_of_Bangla_or_Bengali"
+    },
+    {
+      "reason": "gated_and_genre_narrow_not_needed_for_core_tasks",
+      "repo_id": "TanjimKIT/Cyberbullying-detection-in-Chittagonian-dialect-of-Bangla-CBDCB"
+    },
+    {
+      "reason": "no_dataset_card_no_license_fully_synthetic_4_76GB",
+      "repo_id": "Regional-TinyStories/bangla-generated_4o-mini_2M"
+    },
+    {
+      "reason": "no_card_no_license_and_superseded_by_refined_release",
+      "repo_id": "sha1779/Bengali_Regional_dataset"
+    }
+  ],
+  "registry_version": "1.0.0",
+  "sources": [
+    {
+      "decision": "admit_candidate",
+      "doi": "10.17632/2fv6vf9v2z.4",
+      "downloaded_files": [
+        {
+          "filename": "Chittagonian_Sylheti_dataset.zip",
+          "mendeley_file_id": "cd15be5f-c3e9-4283-9ed0-b13e140fa18a",
+          "path": "data/external/raw/mendeley/kothon_v4/Chittagonian_Sylheti_dataset.zip",
+          "sha256": "fa1f80a2797968de9f9ee26767c0daf556118c1c0712379c8312161a2a144178",
+          "size": 1878888
+        }
+      ],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "authentic_parallel_train_candidate",
+      "source_id": "kothon_v4"
+    },
+    {
+      "decision": "admit_eval_only",
+      "doi": "10.17632/k769s4vk5z.2",
+      "downloaded_files": [
+        {
+          "filename": "BD-Dialect 02.zip",
+          "mendeley_file_id": "4cf92210-b6a8-4f7f-988a-cafd01ddbcfa",
+          "path": "data/external/raw/mendeley/bd_dialect_v2/BD-Dialect 02.zip",
+          "sha256": "6162fd347e906835dc48cca784e9f0f01d28b139088a2cc13b5b9f194cd68eb0",
+          "size": 113076938
+        }
+      ],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "locked_source_ood_phrase_and_lexical_challenge",
+      "source_id": "bd_dialect_v2"
+    },
+    {
+      "decision": "admit_candidate",
+      "doi": "10.17632/5rmskrvh6g.3",
+      "downloaded_files": [
+        {
+          "filename": "Bangla Dialect Transaction Dataset_v3.csv",
+          "mendeley_file_id": "9b71b2eb-c10e-4424-8224-fb42048ba953",
+          "path": "data/external/raw/mendeley/sylheti_translation_v3/Bangla Dialect Transaction Dataset_v3.csv",
+          "sha256": "622ef464472b2c7cbaaaf120b969045e8ebd38286d637ae79172fa6d637bfe06",
+          "size": 323177
+        }
+      ],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "authentic_parallel_train_candidate",
+      "source_id": "sylheti_translation_v3"
+    },
+    {
+      "decision": "admit_conditional",
+      "doi": "10.17632/sx6ybcps2n.2",
+      "downloaded_files": [
+        {
+          "filename": "BanglaDial A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis..csv",
+          "mendeley_file_id": "1cd6385e-5795-46ac-ba2a-d69b2ef8086f",
+          "path": "data/external/raw/mendeley/bangladial_v2/BanglaDial A Merged and Imbalanced text Dataset for Bengali Regional dialect analysis..csv",
+          "sha256": "fc00d6ee4df302d9ef35c891f6e0e632873defb716a363788f7916ebac7e17e6",
+          "size": 5637352
+        }
+      ],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "identification_train_candidate_merged_provenance",
+      "source_id": "bangladial_v2"
+    },
+    {
+      "decision": "admit_eval_only",
+      "doi": "10.17632/6ft99kf89b.2",
+      "downloaded_files": [
+        {
+          "filename": "ONUBAD Dataset.zip",
+          "mendeley_file_id": "5fc76ae6-ff1e-4558-8e1b-5c07be32c7da",
+          "path": "data/external/raw/mendeley/onubad_v2/ONUBAD Dataset.zip",
+          "sha256": "75cafef4e2ecf616772ee2f4c7cd85b39bf4f944aa6ab72e71aad82c73c36643",
+          "size": 164543
+        }
+      ],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "locked_source_ood_parallel",
+      "source_id": "onubad_v2"
+    },
+    {
+      "decision": "admit_conditional",
+      "doi": "10.17632/k6hts2ktxw.2",
+      "downloaded_files": [
+        {
+          "filename": "ChattogramSent _ A Multilingual Sentiment Dataset for the Chattogram Dialect, Standard Bengali, and English full.csv",
+          "mendeley_file_id": "1aade5d8-2649-43b7-8845-2d3113799c80",
+          "path": "data/external/raw/mendeley/chattogramsent_v2/ChattogramSent _ A Multilingual Sentiment Dataset for the Chattogram Dialect, Standard Bengali, and English full.csv",
+          "sha256": "ef562f1a0c40baccb845c54bc51cd798e663251076a17c7873a5e7d9c57f9994",
+          "size": 1356402
+        }
+      ],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "parallel_train_candidate_novel_remainder_not_source_ood",
+      "source_id": "chattogramsent_v2"
+    },
+    {
+      "decision": "admit_eval_only",
+      "doi": "10.17632/2jb4k7bb8x.1",
+      "downloaded_files": [
+        {
+          "filename": "BhashaBodh.csv",
+          "mendeley_file_id": "6ecf75c3-2f67-4838-9e57-336d9f7edccb",
+          "path": "data/external/raw/mendeley/bhasabodh_v1/BhashaBodh.csv",
+          "sha256": "d6355f6dcc2c1a3cd77047003abef053f745b3658af91551a06e99ede203a01d",
+          "size": 232991
+        }
+      ],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "locked_romanized_robustness_parallel",
+      "source_id": "bhasabodh_v1"
+    },
+    {
+      "decision": "metadata_only_local_copy",
+      "doi": "10.17632/bj5jgk878b.2",
+      "downloaded_files": [],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "license_and_provenance_verification",
+      "source_id": "vashantor_v2_metadata"
+    },
+    {
+      "decision": "metadata_only_local_copy",
+      "doi": "10.17632/wtms9xbkkw.1",
+      "downloaded_files": [],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "license_and_provenance_verification",
+      "source_id": "chatgaiyyaalap_v1_metadata"
+    },
+    {
+      "decision": "metadata_only_local_copy",
+      "doi": "10.17632/92r62h4k5k.4",
+      "downloaded_files": [],
+      "license": "CC BY 4.0",
+      "provider": "mendeley",
+      "role": "license_and_provenance_verification",
+      "source_id": "regional_text_corpus_v4_metadata"
+    },
+    {
+      "decision": "admit_conditional",
+      "downloaded_files": [],
+      "license": "apache-2.0",
+      "processed_extract": {
+        "district_counts": {
+          "barishal": 796,
+          "chittagong": 1406,
+          "habiganj": 940,
+          "kishoreganj": 1638,
+          "narail": 1488,
+          "narsingdi": 1098,
+          "rangpur": 1037,
+          "sandwip": 1049,
+          "sylhet": 2903,
+          "tangail": 987
+        },
+        "path": "data/external/processed/huggingface/hf_bengali_regional_asr_refine/transcripts_text_only.parquet",
+        "rows": 13342,
+        "sha256": "46df60c0c36dc83e875de245efaff61cc85a77cdf0e07e8dc5031ddf9e5e60b9",
+        "split_counts": {
+          "eval": 1335,
+          "train": 12007
+        },
+        "upstream_shards": [
+          "data/eval-00000-of-00003.parquet",
+          "data/eval-00001-of-00003.parquet",
+          "data/eval-00002-of-00003.parquet",
+          "data/train-00000-of-00024.parquet",
+          "data/train-00001-of-00024.parquet",
+          "data/train-00002-of-00024.parquet",
+          "data/train-00003-of-00024.parquet",
+          "data/train-00004-of-00024.parquet",
+          "data/train-00005-of-00024.parquet",
+          "data/train-00006-of-00024.parquet",
+          "data/train-00007-of-00024.parquet",
+          "data/train-00008-of-00024.parquet",
+          "data/train-00009-of-00024.parquet",
+          "data/train-00010-of-00024.parquet",
+          "data/train-00011-of-00024.parquet",
+          "data/train-00012-of-00024.parquet",
+          "data/train-00013-of-00024.parquet",
+          "data/train-00014-of-00024.parquet",
+          "data/train-00015-of-00024.parquet",
+          "data/train-00016-of-00024.parquet",
+          "data/train-00017-of-00024.parquet",
+          "data/train-00018-of-00024.parquet",
+          "data/train-00019-of-00024.parquet",
+          "data/train-00020-of-00024.parquet",
+          "data/train-00021-of-00024.parquet",
+          "data/train-00022-of-00024.parquet",
+          "data/train-00023-of-00024.parquet"
+        ]
+      },
+      "provider": "huggingface",
+      "revision": "6e3221bdf7f9c8c426276f1b619d7de597963f42",
+      "role": "authentic_identification_transcript_candidate",
+      "source_id": "hf_bengali_regional_asr_refine"
+    },
+    {
+      "decision": "admit_auxiliary_only",
+      "downloaded_files": [
+        {
+          "filename": "Vulgar Word.csv",
+          "path": "data/external/raw/huggingface/hf_chittagonian_vulgar_lexicon/Vulgar Word.csv",
+          "sha256": "56b9b5cdf0f192a5cce035620b28e1e905b06aac73e1b368fc7d2f6ab823f3b6",
+          "size": 22882
+        }
+      ],
+      "license": "apache-2.0",
+      "processed_extract": null,
+      "provider": "huggingface",
+      "revision": "ce4be3814b8eca1a4c0fa85f983625565f887088",
+      "role": "tokenizer_and_safety_lexicon_only",
+      "source_id": "hf_chittagonian_vulgar_lexicon"
+    }
+  ]
+}

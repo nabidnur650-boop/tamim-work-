@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "block_size": 1024,
+  "dtype": "uint16",
+  "tokenizer_sha256": "0b7ed9de33aedc6c6271a7b8e7b6317d86f22a2f4a0f9c3a7d3fb3723245d512",
+  "corpus_manifest_sha256": "4d9ad431c3e33d90696576862788e55d965174bc93ca9753c9b60e135d98aaa9",
+  "splits": {
+    "train": {
+      "filename": "train.uint16.bin",
+      "sha256": "75127a215dd8f472bd7b26a737398be283196a04c3fbd0f82bebbbfbbe29f6e4",
+      "documents": 562095,
+      "raw_tokens_with_boundaries": 300004991,
+      "blocks": 292973,
+      "packed_tokens": 300004352,
+      "dropped_tail_tokens": 639,
+      "characters": 1287123521,
+      "bytes": 3419644711,
+      "document_order_sha256": "69417a86af7e428b1a36accedb9adcdac6d5a6384dc808883186e2f522560970",
+      "elapsed_seconds": 339.643078219
+    },
+    "validation": {
+      "filename": "validation.uint16.bin",
+      "sha256": "4bcb081897db2cf975c2a676f7ae5ed3fa447ed959c432dbf2616440a627fc52",
+      "documents": 5651,
+      "raw_tokens_with_boundaries": 3000629,
+      "blocks": 2930,
+      "packed_tokens": 3000320,
+      "dropped_tail_tokens": 309,
+      "characters": 12884634,
+      "bytes": 34211791,
+      "document_order_sha256": "7dd6cca93167c8b75f6f18c9f6d181a3b50da9052c47c9949a9cf6f8a6286e83",
+      "elapsed_seconds": 6.6575346359895775
+    }
+  }
+}

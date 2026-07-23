@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_q1_v1",
+  "test_data_access": false,
+  "completed_runs": 12,
+  "expected_runs": 12,
+  "completed_by_variant": {
+    "M0": 3,
+    "M1": 3,
+    "M2": 3,
+    "M3": 3
+  },
+  "outputs": {
+    "reports/model/main_validation_results_current.csv": "71334a2c6599d1a86de00e02fcb943416e22e970f0018b0f6acf1fd0456031a5",
+    "reports/model/main_validation_by_dialect_all_current.csv": "41690081a817ebe33881dfac7079e77f4bcb363a14aaa0670fef0590a610a49a",
+    "reports/model/main_identification_by_class_all_current.csv": "a42eaba0a27cb806a777acebf7f55f582ae6a30d147e5002b1be9c74de1cc06b",
+    "reports/model/main_validation_by_dialect_current.csv": "46881826f245d73399ca37bf720679b3a17b81067744747bfab36f263b4dbf82",
+    "reports/model/main_identification_by_class_current.csv": "ecc3035bb417022090b0c33eaf45b5185781d824a5183caf48a32fe44824331a"
+  }
+}

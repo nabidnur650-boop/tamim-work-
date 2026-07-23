@@ -1,0 +1,250 @@
+{
+  "created_at": "2026-07-21T21:13:32.502992+00:00",
+  "status": "INCOMPLETE",
+  "computational_pipeline_complete": false,
+  "human_validation_complete": false,
+  "submission_package_complete": false,
+  "submission_ready": false,
+  "checks_passed": 10,
+  "checks_total": 29,
+  "checks": [
+    {
+      "id": "data_engineering_gate",
+      "label": "Frozen data engineering gate",
+      "passed": true,
+      "evidence": "reports/data_gate.json",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "tokenizer_freeze",
+      "label": "Frozen tokenizer selected without test access",
+      "passed": true,
+      "evidence": "reports/tokenizer/TOKENIZER_FREEZE_REPORT.json (TOKENIZER_FROZEN)",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "foundation_training",
+      "label": "Foundation and matched continuations",
+      "passed": true,
+      "evidence": "4/4 fixed-budget runs complete",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "main_task_runs",
+      "label": "Four models \u00d7 three main seeds",
+      "passed": false,
+      "evidence": "7/12 complete (8 run directories discovered)",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "source_blind_fusion",
+      "label": "Fair source-blind baselines and validation-selected system fusion",
+      "passed": true,
+      "evidence": "reports/model/source_blind_normalization_baseline_audit.json, reports/model/id_fusion_selection.json, reports/model/normalization_fusion_selection_v2.json, reports/model/development_fusion_uncertainty.json",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "cross_task_input_firewall",
+      "label": "No normalization evaluation input appears in ID-classifier training",
+      "passed": true,
+      "evidence": "reports/model/cross_task_input_firewall.json",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "fusion_architecture_transfer",
+      "label": "Fixed fusion transferred without retuning to all M2/M3 development runs",
+      "passed": false,
+      "evidence": "reports/model/development_fusion_architecture_transfer.json (1/6 complete)",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "optimizer_pilot",
+      "label": "AdamW-only learning-rate pilot",
+      "passed": false,
+      "evidence": "reports/model/optimizer_pilot_selection.json (missing or invalid JSON)",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "bidirectional_id",
+      "label": "Three-seed bidirectional ID specialist",
+      "passed": false,
+      "evidence": "0/3 run manifests complete",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "confirmatory_ablations",
+      "label": "Registered three-seed confirmatory ablations",
+      "passed": false,
+      "evidence": "0/24 complete",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "optimization_ablations",
+      "label": "Registered optimizer/MTP ablations",
+      "passed": false,
+      "evidence": "0/6 complete",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "factorial_pilot",
+      "label": "Registered 2^4 development factorial",
+      "passed": false,
+      "evidence": "0/16 selected validation cells",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "protocol_freeze",
+      "label": "Immutable protocol freeze before neural test access",
+      "passed": false,
+      "evidence": "no freeze manifest found",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "locked_main",
+      "label": "Scripted locked main evaluation",
+      "passed": false,
+      "evidence": "0/12 evaluation manifests",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "locked_ablations",
+      "label": "Locked registered ablation evaluation",
+      "passed": false,
+      "evidence": "0/30 or more evaluation manifests",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "external_baselines",
+      "label": "Pinned external baselines",
+      "passed": false,
+      "evidence": "0 locked external manifests",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "robustness",
+      "label": "Registered perturbation robustness",
+      "passed": false,
+      "evidence": "reports/robustness/locked_robustness_v1/robustness_curves.csv",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "routing",
+      "label": "Locked routing specialization analysis",
+      "passed": false,
+      "evidence": "reports/routing/locked_test_v1/expert_specialization_metrics.parquet",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "statistics",
+      "label": "Confirmatory uncertainty and multiplicity control",
+      "passed": false,
+      "evidence": "reports/statistics/locked_test_v1/confirmatory_statistics.csv",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "figure_suite",
+      "label": "At least 30 paired journal figures",
+      "passed": true,
+      "evidence": "manifest=44; paired files=44; figures/q1/figure_manifest.json",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "figure_validation",
+      "label": "Figure hash, format, resolution, caption, and source-data validation",
+      "passed": true,
+      "evidence": "figures/q1/VALIDATION_REPORT.json (398/398)",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "regression_tests",
+      "label": "Full regression test suite",
+      "passed": true,
+      "evidence": "reports/Q1_TEST_REPORT.json (107 passed)",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "paper_tables",
+      "label": "Reproducible paper tables",
+      "passed": true,
+      "evidence": "10 table entries in tables/paper/table_manifest.json",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "pipeline_state",
+      "label": "Registered end-to-end pipeline",
+      "passed": false,
+      "evidence": "reports/pipeline/full_pipeline_state.json (RUNNING)",
+      "scope": "computational",
+      "blocking": true
+    },
+    {
+      "id": "native_dataset_review",
+      "label": "Stratified native-speaker dataset review",
+      "passed": false,
+      "evidence": "reports/native_review_report.json (0/230)",
+      "scope": "human_submission",
+      "blocking": true
+    },
+    {
+      "id": "native_system_ratings",
+      "label": "Blinded native-speaker system-output ratings",
+      "passed": false,
+      "evidence": "human_evaluation/blind_native_normalization_v1/human_evaluation_summary.csv",
+      "scope": "human_submission",
+      "blocking": true
+    },
+    {
+      "id": "manuscript",
+      "label": "Journal-neutral manuscript draft",
+      "passed": true,
+      "evidence": "manuscript/BOICHITRO_MOE_Q1_MANUSCRIPT.md",
+      "scope": "submission_package",
+      "blocking": true
+    },
+    {
+      "id": "author_metadata",
+      "label": "Author, affiliation, CRediT, funding, and conflict metadata",
+      "passed": false,
+      "evidence": "manuscript/AUTHOR_METADATA.yaml",
+      "scope": "submission_package",
+      "blocking": true
+    },
+    {
+      "id": "target_journal",
+      "label": "Target journal and current author-guideline adaptation",
+      "passed": false,
+      "evidence": "manuscript/TARGET_JOURNAL.md",
+      "scope": "submission_package",
+      "blocking": true
+    }
+  ],
+  "claim_guard": {
+    "q1_acceptance_guaranteed": false,
+    "publication_ready_corpus_claim_allowed": false,
+    "native_quality_claim_allowed": false,
+    "computational_claims_allowed": false
+  }
+}

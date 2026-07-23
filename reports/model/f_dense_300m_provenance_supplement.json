@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE_PROVENANCE_SUPPLEMENT",
+  "run_id": "F_DENSE_300M",
+  "seed": 1701,
+  "data_seed": 1701,
+  "tokens_seen": 300000256,
+  "optimizer_steps": 1145,
+  "reason": "The active Python process loaded before metadata-only trainer instrumentation was added. The dense optimization path and configured objective were unchanged.",
+  "not_loaded_by_active_process": [
+    "optional evaluate_at_start handling (disabled in foundation_300m.yaml)",
+    "training_config_sha256, data_seed, and block_order_sha256 checkpoint fields",
+    "hard-linked final checkpoint aliases"
+  ],
+  "compute_affecting_difference": false,
+  "reconstructed_from_frozen_inputs": {
+    "training_config_sha256": "e9f59f03690749bdf7ba8d52e209d577afb290deca66c87c1ff234fb5e5ac5c6",
+    "packed_metadata_sha256": "d2e3fc353bb11a08263f7a7bbcb0b75556e156ca2adb7fea7b07825103fcb77d",
+    "tokenizer_sha256": "0b7ed9de33aedc6c6271a7b8e7b6317d86f22a2f4a0f9c3a7d3fb3723245d512",
+    "block_order_sha256": "bf4a525b845c380832ec8031fd5ba39111945731af90dfe54b5f74f96a29f8eb",
+    "blocks_needed": 292969,
+    "available_train_blocks": 292973
+  },
+  "checkpoint_sha256": {
+    "final_checkpoint.pt": "29ab475382478a1e46c916809d6dc01cb140f38fa77f4b2f14d03c4c0480fdb5",
+    "last_checkpoint.pt": "5f8e6359432d47e2c81967ee9ac4afaf911f0f16afa504f6d70ad1bb9662ce66"
+  },
+  "final_validation": {
+    "validation_nll": 3.662278144213618,
+    "validation_perplexity": 38.949975535390415,
+    "validation_bpc": 1.23032926563568,
+    "validation_predicted_tokens": 1002540
+  }
+}

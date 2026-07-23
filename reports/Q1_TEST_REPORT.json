@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "command": "PYTHONPATH=.:src /opt/miniforge3/bin/python -m pytest -q",
+  "passed": 107,
+  "failed": 0,
+  "warnings": 1,
+  "runtime_seconds": 8.40,
+  "date": "2026-07-22",
+  "timezone": "Asia/Seoul",
+  "warning_summary": "PyTorch forward-compatibility warning for reported GB10 compute capability; execution succeeded"
+}

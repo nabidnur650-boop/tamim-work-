@@ -1,0 +1,27 @@
+{
+  "selected_C": 2.0,
+  "temperature": 0.3112313330722821,
+  "validation_candidates": [
+    {
+      "C": 2.0,
+      "temperature": 0.3112313330722821,
+      "regional_macro_f1": 0.7733845321121686
+    },
+    {
+      "C": 1.0,
+      "temperature": 0.270179445495529,
+      "regional_macro_f1": 0.7727265543676922
+    },
+    {
+      "C": 0.5,
+      "temperature": 0.23278531931038896,
+      "regional_macro_f1": 0.7718320208264982
+    },
+    {
+      "C": 0.25,
+      "temperature": 0.20043288399456602,
+      "regional_macro_f1": 0.7657195382896015
+    }
+  ],
+  "fit_seconds": 98.54476692900062
+}

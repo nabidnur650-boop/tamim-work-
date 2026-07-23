@@ -1,0 +1,33 @@
+{
+  "status": "RUNNING_RECOVERY",
+  "started_at": "2026-07-21T20:04:58.857643+00:00",
+  "supervisor_pid": 3091248,
+  "initial_pipeline_pid": 2887551,
+  "restart_count": 2,
+  "events": [
+    {
+      "at": "2026-07-22T08:53:29.480480+00:00",
+      "event": "initial_pipeline_exited",
+      "pid": 2887551
+    },
+    {
+      "at": "2026-07-22T08:53:29.480729+00:00",
+      "event": "pipeline_restart",
+      "restart": 1,
+      "from_stage": "main_task"
+    },
+    {
+      "at": "2026-07-22T22:14:59.780797+00:00",
+      "event": "pipeline_process_exit",
+      "return_code": -15,
+      "from_stage": "main_task"
+    },
+    {
+      "at": "2026-07-22T22:15:29.807817+00:00",
+      "event": "pipeline_restart",
+      "restart": 2,
+      "from_stage": "bidirectional_id"
+    }
+  ],
+  "last_resume_stage": "bidirectional_id"
+}

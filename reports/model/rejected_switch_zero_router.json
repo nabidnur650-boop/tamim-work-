@@ -1,0 +1,24 @@
+{
+  "status": "STOPPED_VALIDATION_ONLY_ROUTER_COLLAPSE",
+  "reason": "Zero router initialization plus a normalized top-1 gate removed the language-model router gradient and sent every logged optimizer window to one expert.",
+  "test_data_access": "forbidden_and_not_accessed",
+  "run_id": "U_M1_SWITCH_200M",
+  "seed": 1701,
+  "planned_token_budget": 200000000,
+  "last_logged_tokens": 34078720,
+  "last_resumable_checkpoint_tokens": 32768000,
+  "logged_router_load_cv_min": 2.8284270763397217,
+  "logged_router_load_cv_max": 2.8284270763397217,
+  "logged_router_entropy_min": 2.079441547393799,
+  "logged_router_entropy_max": 2.079441547393799,
+  "initial_validation_bpc": 1.230328361696572,
+  "last_validation_bpc": 1.232475792133669,
+  "artifacts": {
+    "directory": "runs/aborted/U_M1_SWITCH_200M_zero_router_collapse_20260720/1701",
+    "configuration_snapshot": "reports/model/rejected_switch_zero_router_config.yaml",
+    "configuration_sha256": "dce9cad60a75b6a068f32646f5cb63b2ef3caa7a751a98c842b3955a7d35ca58",
+    "checkpoint_sha256": "30d73a4883d077eab8f2e725aa0524fdd5c2936139fab8ed2ef3a80f7243d922",
+    "train_log_sha256": "12799089ededde76905c31175847883b7649bdbad3907290a3a1f161770faf05",
+    "validation_log_sha256": "e1862d89c9901939ad1358fe05b1f04097f09238c6721cd7f1e457eaf104d35e"
+  }
+}

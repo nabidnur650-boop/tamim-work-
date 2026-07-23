@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "protocol_id": "boichitro_cross_task_input_firewall_v1",
+  "created_at": "2026-07-22T15:02:07.086230+00:00",
+  "identification_training_rows": 92897,
+  "scope": "automated aggregate-only overlap audit between the frozen ID-classifier training inputs and normalization evaluation inputs",
+  "protected_text_emitted": false,
+  "model_or_hyperparameter_selection_use": false,
+  "prior_test_access_disclosure_applies": true,
+  "near_duplicate_method": {
+    "simhash_bits": 64,
+    "character_ngram": 4,
+    "maximum_hamming_candidate": 6,
+    "minimum_jaccard": 0.9,
+    "minimum_compact_characters": 20
+  },
+  "tracks": [
+    {
+      "track": "normalization_validation",
+      "rows": 4289,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    },
+    {
+      "track": "normalization_iid_test",
+      "rows": 5033,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    },
+    {
+      "track": "normalization_ood_and_zero_shot",
+      "rows": 8979,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    },
+    {
+      "track": "romanized_ood",
+      "rows": 1342,
+      "exact_overlap_rows_with_id_train": 0,
+      "compact_overlap_rows_with_id_train": 0,
+      "near_overlap_rows_with_id_train": 0,
+      "maximum_near_jaccard": null
+    }
+  ]
+}

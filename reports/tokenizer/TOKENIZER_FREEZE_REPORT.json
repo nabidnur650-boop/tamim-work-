@@ -1,0 +1,24 @@
+{
+  "status": "TOKENIZER_FROZEN",
+  "selected_id": "wordpiece_natural_32k",
+  "frozen_dir": "artifacts/tokenizers/frozen",
+  "frozen_tree_sha256": "c15cb92c9f14a0a065f4b6b71c20a99a85c7ed3031a249af3893ea4654eadf8d",
+  "content_tree_sha256": "3728aca820c23596815d841494c2c157cb3987466a2fffbdcbaa982532f110db",
+  "manifest_sha256": "175050ae8ede35e99588dbce5a453d223a6257ccd8ca7b4d1fc51ce16572a487",
+  "candidate_count": 4,
+  "seeds": [
+    1701,
+    2903,
+    4307
+  ],
+  "training_token_budget_per_seed": 2000000,
+  "selection_rows": 2375,
+  "selection_frame_sha256": "34e509e36b5ff3eef5778ff9b8088be5b7521c320644be3bb239a4f26698e6b5",
+  "test_data_used_for_selection": false,
+  "hardware": "NVIDIA GB10",
+  "software": {
+    "python": "3.12.11",
+    "torch": "2.9.0+cu130",
+    "cuda": "13.0"
+  }
+}

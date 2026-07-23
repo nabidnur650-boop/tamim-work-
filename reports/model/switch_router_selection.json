@@ -1,0 +1,121 @@
+{
+  "status": "COMPLETE_VALIDATION_ONLY",
+  "protocol_id": "boichitro_switch_router_selection_v1",
+  "protocol_sha256": "48eb0d0ac0631d73955bdb2c516d2cf34ec43fc4dcc770101c7f7d37551429ed",
+  "test_data_access": "forbidden_and_not_accessed",
+  "seed": 1701,
+  "dense_equivalent_baseline_validation_bpc": 1.2303335273898253,
+  "guards": {
+    "initial_bpc_match_absolute_tolerance": 1e-05,
+    "maximum_final_validation_bpc_regression_percent": 0.0,
+    "maximum_logged_router_load_cv": 0.5
+  },
+  "selection_rule": "minimum_final_validation_bpc_among_eligible_candidates",
+  "eligible_candidates": [
+    "auxiliary_balance_straight_through"
+  ],
+  "selected_strategy": "auxiliary_balance_straight_through",
+  "selected_run_id": "P_M1_AUX_ROUTER_10M",
+  "selected_upcycle_router_init_std": 0.001,
+  "selected_model_overrides": {
+    "balance_loss_weight": 0.01
+  },
+  "candidates": {
+    "loss_free_straight_through": {
+      "run_id": "P_M1_LOSS_FREE_ROUTER_10M",
+      "tokens_seen": 10000384,
+      "initial_validation_bpc": 1.2303335273898253,
+      "final_validation_bpc": 1.2270098335202515,
+      "final_change_percent": -0.2701457609324066,
+      "maximum_logged_router_load_cv": 0.5061083436012268,
+      "minimum_logged_router_load_cv": 0.24312110245227814,
+      "final_logged_router_load_cv": 0.5061083436012268,
+      "validation_points": [
+        {
+          "validation_nll": 3.6622908300283004,
+          "validation_perplexity": 38.95046965069606,
+          "validation_bpc": 1.2303335273898253,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.654576979851236,
+          "validation_perplexity": 38.65116743383915,
+          "validation_bpc": 1.2277420869667195,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.6523973065979627,
+          "validation_perplexity": 38.567012266677565,
+          "validation_bpc": 1.2270098335202515,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10000384
+        }
+      ],
+      "upcycle_router_init_std": 0.001,
+      "model_overrides": {
+        "balance_loss_weight": 0.0
+      },
+      "training_config_sha256": "b12d9da03febd69fb44519b11c9c7bc101b7c04865ba70d185a75a47e5b32ecb",
+      "training_report_sha256": "65d6663b1770f3b9c2ef0454928b036738882e399878366ce909e9e23a92b142",
+      "validation_log_sha256": "2b635a7687f641dece4da17ea9e4c922330b9a2e5d204a75a9efe0c239126df0",
+      "train_log_sha256": "f983f951705a8d76127dc2cc53a7cfd46dda99ab4eaa1fac0ec2e839df5fb9f9",
+      "eligible": false,
+      "eligibility_reasons": [
+        "router_load_cv_guard_failed"
+      ]
+    },
+    "auxiliary_balance_straight_through": {
+      "run_id": "P_M1_AUX_ROUTER_10M",
+      "tokens_seen": 10000384,
+      "initial_validation_bpc": 1.2303335273898253,
+      "final_validation_bpc": 1.2269397058261782,
+      "final_change_percent": -0.2758456538892463,
+      "maximum_logged_router_load_cv": 0.2616977393627167,
+      "minimum_logged_router_load_cv": 0.06746005266904831,
+      "final_logged_router_load_cv": 0.06746005266904831,
+      "validation_points": [
+        {
+          "validation_nll": 3.6622908300283004,
+          "validation_perplexity": 38.95046965069606,
+          "validation_bpc": 1.2303335273898253,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 0,
+          "tokens_seen": 0
+        },
+        {
+          "validation_nll": 3.6547486645834786,
+          "validation_perplexity": 38.65780381883757,
+          "validation_bpc": 1.2277997638394809,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 39,
+          "tokens_seen": 5111808
+        },
+        {
+          "validation_nll": 3.652188559940883,
+          "validation_perplexity": 38.558962372016886,
+          "validation_bpc": 1.2269397058261782,
+          "validation_predicted_tokens": 1002540,
+          "global_step": 77,
+          "tokens_seen": 10000384
+        }
+      ],
+      "upcycle_router_init_std": 0.001,
+      "model_overrides": {
+        "balance_loss_weight": 0.01
+      },
+      "training_config_sha256": "9846114f497233c852d1ef90e45d7a6e8cb1fc7cd3bf8fa7e30e2abd6cb48b03",
+      "training_report_sha256": "0bf5eaec8b97265be852677d802c45c24a88fc59de0ad77fbc33d70bc0be06da",
+      "validation_log_sha256": "781b33940b3c44b8d7a9a52a24a794c5413b78962c118328603c8f518af13d51",
+      "train_log_sha256": "4309ace8a9518b6984f197621adb59d7cef46b9cb9f1fb1210757592edaa948b",
+      "eligible": true,
+      "eligibility_reasons": [
+        "all_validation_guards_passed"
+      ]
+    }
+  }
+}
