@@ -1,0 +1,2397 @@
+{
+  "status": "PASS",
+  "figure_pairs": 44,
+  "checks_passed": 398,
+  "checks_total": 398,
+  "failed_checks": [],
+  "checks": [
+    {
+      "figure_id": "bundle",
+      "check": "unique figure IDs",
+      "passed": true,
+      "evidence": "44 entries"
+    },
+    {
+      "figure_id": "bundle",
+      "check": "minimum figure count",
+      "passed": true,
+      "evidence": "44/30"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_tokenizer_tradeoff.png; fig_tokenizer_tradeoff.pdf"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 194673; PDF 21459 bytes"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "2745\u00d71954 pixels"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Tokenizer efficiency\u2013quality frontier"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_tokenizer_tradeoff.csv"
+    },
+    {
+      "figure_id": "fig_tokenizer_tradeoff",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_compute_pareto.png; fig_compute_pareto.pdf"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 175643; PDF 18752 bytes"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "2787\u00d71954 pixels"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Active-compute systems frontier"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_compute_pareto.csv"
+    },
+    {
+      "figure_id": "fig_compute_pareto",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_classical_id_floor.png; fig_classical_id_floor.pdf"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 220984; PDF 19657 bytes"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "3289\u00d72018 pixels"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Classical dialect-identification floors"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_classical_id_floor.csv"
+    },
+    {
+      "figure_id": "fig_classical_id_floor",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "prior_test_descriptive"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_classical_norm_floor.png; fig_classical_norm_floor.pdf"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 296324; PDF 21003 bytes"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "4662\u00d72052 pixels"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Fair normalization floors and oracle disclosure"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_classical_norm_floor.csv"
+    },
+    {
+      "figure_id": "fig_classical_norm_floor",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "prior_test_descriptive"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_continuation_lr_stability.png; fig_continuation_lr_stability.pdf"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 206801; PDF 19967 bytes"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "3330\u00d72002 pixels"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Continuation learning-rate stability"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_continuation_lr_stability.csv"
+    },
+    {
+      "figure_id": "fig_continuation_lr_stability",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_stage_s_retention_tradeoff.png; fig_stage_s_retention_tradeoff.pdf"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 526729; PDF 25514 bytes"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5013\u00d72210 pixels"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Normalization\u2013retention trade-off"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_stage_s_retention_tradeoff.csv"
+    },
+    {
+      "figure_id": "fig_stage_s_retention_tradeoff",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_architecture.png; fig_architecture.pdf"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 492992; PDF 25356 bytes"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5002\u00d72199 pixels"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Boichitro-MoE architecture"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_architecture.json"
+    },
+    {
+      "figure_id": "fig_architecture",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_protocol_flow.png; fig_protocol_flow.pdf"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 519452; PDF 25371 bytes"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5327\u00d72291 pixels"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Leakage-safe experimental protocol"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_protocol_flow.json"
+    },
+    {
+      "figure_id": "fig_protocol_flow",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_training_curves.png; fig_training_curves.pdf"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 615128; PDF 29663 bytes"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5547\u00d71954 pixels"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Foundation and continuation learning curves"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_training_curves.csv"
+    },
+    {
+      "figure_id": "fig_training_curves",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_upcycling_recovery.png; fig_upcycling_recovery.pdf"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 266808; PDF 23027 bytes"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "2917\u00d71954 pixels"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Dense-to-MoE recovery pilot"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_upcycling_recovery.csv"
+    },
+    {
+      "figure_id": "fig_upcycling_recovery",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_switch_router_recovery.png; fig_switch_router_recovery.pdf"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 381656; PDF 23641 bytes"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "4772\u00d72059 pixels"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Switch-router failure and repair"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_switch_router_validation.csv"
+    },
+    {
+      "figure_id": "fig_switch_router_recovery",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_split_dialect_balance.png; fig_data_split_dialect_balance.pdf"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 347907; PDF 23010 bytes"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5037\u00d73477 pixels"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Dialect and split balance"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_split_dialect_balance.csv"
+    },
+    {
+      "figure_id": "fig_data_split_dialect_balance",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_source_composition.png; fig_data_source_composition.pdf"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 494289; PDF 21579 bytes"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "6117\u00d72397 pixels"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Source composition"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_source_composition.csv"
+    },
+    {
+      "figure_id": "fig_data_source_composition",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_text_length.png; fig_data_text_length.pdf"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 302483; PDF 22316 bytes"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5397\u00d73477 pixels"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Input-length distributions"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_text_length.csv"
+    },
+    {
+      "figure_id": "fig_data_text_length",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_evaluation_tracks.png; fig_data_evaluation_tracks.pdf"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 474727; PDF 20570 bytes"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "6597\u00d72697 pixels"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Registered evaluation-track composition"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_evaluation_tracks.csv"
+    },
+    {
+      "figure_id": "fig_data_evaluation_tracks",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_synthetic_footprint.png; fig_data_synthetic_footprint.pdf"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 204105; PDF 19849 bytes"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "4917\u00d72157 pixels"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Synthetic-data footprint"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_synthetic_footprint.csv"
+    },
+    {
+      "figure_id": "fig_data_synthetic_footprint",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_romanized_coverage.png; fig_data_romanized_coverage.pdf"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 250390; PDF 20352 bytes"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5157\u00d72037 pixels"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Romanized challenge coverage"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_romanized_coverage.csv"
+    },
+    {
+      "figure_id": "fig_data_romanized_coverage",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_quality_tiers.png; fig_data_quality_tiers.pdf"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 391684; PDF 20083 bytes"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "6597\u00d72337 pixels"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Dataset quality tiers"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_quality_tiers.csv"
+    },
+    {
+      "figure_id": "fig_data_quality_tiers",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_data_source_dialect_coverage.png; fig_data_source_dialect_coverage.pdf"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 345679; PDF 26754 bytes"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5568\u00d72877 pixels"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Source\u2013dialect coverage matrix"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_data_source_dialect_coverage.csv"
+    },
+    {
+      "figure_id": "fig_data_source_dialect_coverage",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_tokenizer_vocab_scaling.png; fig_tokenizer_vocab_scaling.pdf"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 326218; PDF 24951 bytes"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5637\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Tokenizer vocabulary scaling"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_tokenizer_vocab_scaling.csv"
+    },
+    {
+      "figure_id": "fig_tokenizer_vocab_scaling",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_tokenizer_dialect_fertility.png; fig_tokenizer_dialect_fertility.pdf"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 454390; PDF 25515 bytes"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5567\u00d72037 pixels"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Tokenizer cost by dialect"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_tokenizer_dialect_fertility.csv"
+    },
+    {
+      "figure_id": "fig_tokenizer_dialect_fertility",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_tokenizer_fairness.png; fig_tokenizer_fairness.pdf"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 245027; PDF 19467 bytes"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "3837\u00d72277 pixels"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Tokenizer dialect parity"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_tokenizer_fairness.csv"
+    },
+    {
+      "figure_id": "fig_tokenizer_fairness",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_tokenizer_proxy_stability.png; fig_tokenizer_proxy_stability.pdf"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 249240; PDF 21716 bytes"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5877\u00d72157 pixels"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Tokenizer proxy stability"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_tokenizer_proxy_stability.csv"
+    },
+    {
+      "figure_id": "fig_tokenizer_proxy_stability",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_pretraining_acceptance.png; fig_pretraining_acceptance.pdf"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 269132; PDF 19754 bytes"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5210\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Pretraining corpus acceptance gate"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_pretraining_acceptance.csv"
+    },
+    {
+      "figure_id": "fig_pretraining_acceptance",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_pretraining_shard_balance.png; fig_pretraining_shard_balance.pdf"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 459566; PDF 20908 bytes"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5637\u00d72037 pixels"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Pretraining shard balance"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_pretraining_shard_balance.csv"
+    },
+    {
+      "figure_id": "fig_pretraining_shard_balance",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_model_parameter_decomposition.png; fig_model_parameter_decomposition.pdf"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 176238; PDF 18296 bytes"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "4317\u00d72217 pixels"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Model parameter decomposition"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_model_parameter_decomposition.csv"
+    },
+    {
+      "figure_id": "fig_model_parameter_decomposition",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_model_throughput_memory.png; fig_model_throughput_memory.pdf"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 273637; PDF 23303 bytes"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5277\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Measured systems efficiency"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_model_throughput_memory.csv"
+    },
+    {
+      "figure_id": "fig_model_throughput_memory",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_foundation_loss_components.png; fig_foundation_loss_components.pdf"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 1026099; PDF 26838 bytes"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5517\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Foundation continuation loss components"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_foundation_loss_components.csv"
+    },
+    {
+      "figure_id": "fig_foundation_loss_components",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_foundation_router_dynamics.png; fig_foundation_router_dynamics.pdf"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 557491; PDF 25811 bytes"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5517\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Foundation router dynamics"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_foundation_router_dynamics.csv"
+    },
+    {
+      "figure_id": "fig_foundation_router_dynamics",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_foundation_router_stability.png; fig_foundation_router_stability.pdf"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 191491; PDF 16474 bytes"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5997\u00d71977 pixels"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Router stability summary"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_foundation_router_stability.csv"
+    },
+    {
+      "figure_id": "fig_foundation_router_stability",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_stage_s_trajectories.png; fig_task_stage_s_trajectories.pdf"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 502202; PDF 19090 bytes"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "4317\u00d72277 pixels"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Normalization validation trajectories"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_stage_s_trajectories.csv"
+    },
+    {
+      "figure_id": "fig_task_stage_s_trajectories",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_replay_tradeoff.png; fig_task_replay_tradeoff.pdf"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 286976; PDF 20600 bytes"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "4197\u00d72337 pixels"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Main-run retention trade-off"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_replay_tradeoff.csv"
+    },
+    {
+      "figure_id": "fig_task_replay_tradeoff",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_stage_id_trajectories.png; fig_task_stage_id_trajectories.pdf"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 591571; PDF 20721 bytes"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "4317\u00d72277 pixels"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Identification validation trajectories"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_stage_id_trajectories.csv"
+    },
+    {
+      "figure_id": "fig_task_stage_id_trajectories",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_seed_stability.png; fig_task_seed_stability.pdf"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 228260; PDF 19527 bytes"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5277\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Main-run seed stability"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_seed_stability.csv"
+    },
+    {
+      "figure_id": "fig_task_seed_stability",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_norm_dialect_heatmap.png; fig_task_norm_dialect_heatmap.pdf"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 262316; PDF 22508 bytes"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5267\u00d71797 pixels"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Validation normalization by dialect"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_norm_dialect_heatmap.csv"
+    },
+    {
+      "figure_id": "fig_task_norm_dialect_heatmap",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_id_class_heatmap.png; fig_task_id_class_heatmap.pdf"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 294668; PDF 22985 bytes"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5386\u00d71797 pixels"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Validation identification by class"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_id_class_heatmap.csv"
+    },
+    {
+      "figure_id": "fig_task_id_class_heatmap",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_id_confusion.png; fig_task_id_confusion.pdf"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 319664; PDF 34151 bytes"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "9175\u00d72457 pixels"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Validation identification confusion structure"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_id_confusion.csv"
+    },
+    {
+      "figure_id": "fig_task_id_confusion",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_calibration.png; fig_task_calibration.pdf"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 416286; PDF 22927 bytes"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5277\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Validation calibration"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_calibration.csv"
+    },
+    {
+      "figure_id": "fig_task_calibration",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_training_efficiency.png; fig_task_training_efficiency.pdf"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 216101; PDF 18737 bytes"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "6297\u00d72037 pixels"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Task-stage training efficiency"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_training_efficiency.csv"
+    },
+    {
+      "figure_id": "fig_task_training_efficiency",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_task_stage_loss_components.png; fig_task_stage_loss_components.pdf"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 868136; PDF 30461 bytes"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "6477\u00d72037 pixels"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Task-stage optimization curves"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_task_stage_loss_components.csv"
+    },
+    {
+      "figure_id": "fig_task_stage_loss_components",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_validation_checkpoint_selection.png; fig_validation_checkpoint_selection.pdf"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 281727; PDF 20379 bytes"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5277\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Validation checkpoint selection"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_validation_checkpoint_selection.csv"
+    },
+    {
+      "figure_id": "fig_validation_checkpoint_selection",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_classical_norm_dialect.png; fig_classical_norm_dialect.pdf"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 662594; PDF 28795 bytes"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5507\u00d72517 pixels"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Classical normalization error structure"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_classical_norm_dialect.csv"
+    },
+    {
+      "figure_id": "fig_classical_norm_dialect",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "prior_test_descriptive"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_classical_id_class.png; fig_classical_id_class.pdf"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 292460; PDF 25088 bytes"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5386\u00d71797 pixels"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Classical identification error structure"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_classical_id_class.csv"
+    },
+    {
+      "figure_id": "fig_classical_id_class",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "prior_test_descriptive"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "paired files",
+      "passed": true,
+      "evidence": "fig_development_source_blind_fusion.png; fig_development_source_blind_fusion.pdf"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "nontrivial file size",
+      "passed": true,
+      "evidence": "PNG 505673; PDF 25576 bytes"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "recorded hashes",
+      "passed": true,
+      "evidence": "SHA-256 matches manifest"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "raster dimensions",
+      "passed": true,
+      "evidence": "5277\u00d72097 pixels"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "raster DPI",
+      "passed": true,
+      "evidence": "600.0 DPI"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "valid PDF header",
+      "passed": true,
+      "evidence": "b'%PDF-'"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "caption indexed",
+      "passed": true,
+      "evidence": "Development-only source-blind fusion gains"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "source data or method specification",
+      "passed": true,
+      "evidence": "figures/q1/source_data/fig_development_source_blind_fusion.csv"
+    },
+    {
+      "figure_id": "fig_development_source_blind_fusion",
+      "check": "evidence label",
+      "passed": true,
+      "evidence": "development_only"
+    }
+  ]
+}
