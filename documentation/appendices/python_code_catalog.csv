@@ -1,0 +1,89 @@
+path,role,lines,bytes,sha256,imports,classes,functions
+src/boichitro/__init__.py,Reusable experiment library module.,4,83,5c2dd9fef1482a970c5aed0a8dc7dcb1b7ed4eecf0b70364ed822dea328f83de,0,0,0
+src/boichitro/data.py,"Canonical data loading, splits, and task-cache contracts.",482,18717,adbf746ed998595596000c2fa4b30e7e4b1c51229c717b95224715b490df4de1,13,5,12
+src/boichitro/experiments.py,"Experiment registries, variants, and run-level orchestration.",101,3917,237fab35c90de6b02b37b8a2c648e87753158f56f4b622b8161bed4354500cb7,5,0,2
+src/boichitro/fusion.py,Source-blind candidate selection and probability fusion.,316,11603,4908a8c299016813b057f0d71a74d0638609e2130c2656191e9db8f8721eeec2,7,0,10
+src/boichitro/inference.py,"Task inference, decoding, and prediction artifact creation.",272,10853,3f66df9013136087ba3094457550d76c4d4cf1b1099efd4aa37ce8fcd42ae6ae,10,0,4
+src/boichitro/metrics.py,"Normalization, identification, calibration, and statistical metrics.",178,7089,1684a8705a6b378377e9d2b32ce817f7e84e3e2119cfa937f64f60252cd73cef,11,0,6
+src/boichitro/modeling.py,"Dense, Switch, shared-expert MoE, and Boichitro model definitions.",1015,44990,bbdff139f946629eee07873bb4725dd8724f23bfc9eedcb57e70dac70c58c038,7,10,7
+src/boichitro/optim.py,Muon/AdamW parameter ownership and optimization construction.,177,6112,5c69338338279d1837d056d7f5b5dcd458a5cf346342765ff25759f411c68193,6,1,6
+src/boichitro/pretraining.py,Packed-block loading and language-model pretraining utilities.,53,1842,13d99243171572b8f019c00370ad79924082b6665e81c05bae559dbe24eddd0e,7,2,1
+src/boichitro/protocol.py,"Hashing, immutable manifests, and test-access controls.",86,3174,79805567671ee536a4ef5ec2e0c92bb69be4de4c51a80916e3b61a508a43203e,5,0,8
+src/boichitro/robustness.py,Registered perturbation and robustness transformations.,59,2269,7b8681c9e882b60bc78a7b7eea1a55576663f8b0681c09927ff528713744eba5,4,0,2
+src/boichitro/tokenization.py,"Tokenizer training, loading, and intrinsic evaluation.",344,12897,e8cbed9e9f386ae7a0224c0fff343e6dd7c5271593658dc0f84b4f7a3dce46ff,11,1,13
+src/boichitro/training.py,"Training loops, checkpointing, validation, and retention controls.",746,31079,6ef9c2c258a00f78d4bcf71eb726e74e417f983c143cf927082361e1f0a60da4,15,2,9
+tests/test_development_summary.py,Regression or protocol test.,92,3304,9b84ba218c114d51bd1bc44572e634ad248fb3939ca1186f5adcd13c4a5f1832,7,1,0
+tests/test_evaluation_protocol.py,Regression or protocol test.,43,1533,93ccb41f11e33a30a10d52e68c5afb694effc65975628baf839bcb328414f349,6,1,0
+tests/test_experiments.py,Regression or protocol test.,247,9691,6197355576c5879b4e26765b9e413bcb7ab9f14a5e7cbb0030f0c4c1f3f80689,9,1,1
+tests/test_final_dataset.py,Regression or protocol test.,280,11916,82d4b64011777039921e4bc9ac691d19629143ca1a78f80a3da26d2895f44012,8,1,1
+tests/test_fusion.py,Regression or protocol test.,134,4802,8c13140e67f3175a1e17c0d59ebfacdcc4bafe20b012065fa2739ed5662ee158,6,0,8
+tests/test_human_evaluation.py,Regression or protocol test.,51,1622,6ff750932077ca3c0d3f1ebaf6894b2fba2b9d773e9bc7e372758e9733328256,6,1,0
+tests/test_inference.py,Regression or protocol test.,65,2203,60616e9e567662162602c52bf0460d03275e8489097e298100eb8a0bcdf7fb79,10,1,0
+tests/test_local_data_gate.py,Regression or protocol test.,198,7460,c135fb3ce4359e8356626e7259b7c4b2262939943326b792175599c89d234a35,6,1,0
+tests/test_metrics.py,Regression or protocol test.,39,1280,bcadd1e05cf4745d014e8d428d48b1e6afc2f34d42feeda697950b6a3814048a,7,1,0
+tests/test_modeling.py,Regression or protocol test.,395,15852,deaeb0338dd04687e48aeb0af6e075386978b79becd85e7561e717fc8c903d3e,8,1,1
+tests/test_native_review.py,Regression or protocol test.,53,1854,e728a203024105801969d3000fa23ab4dd3b3e9d448ccb37cf34443680d14080,7,1,0
+tests/test_pretraining.py,Regression or protocol test.,23,674,60bf034c904f3c44ca85f9e45a6644fd8aa832e37a35d1eb0828ed465ee31d1f,6,1,0
+tests/test_protocol.py,Regression or protocol test.,71,2607,c36e8f3ce9621bbb3a6da737bdbce9a3a6654dc79d9eca5522426954315ded49,8,1,0
+tests/test_robustness.py,Regression or protocol test.,31,1098,910458abe2754d28e7db7c9b05cdb11704fe2b400a60cc9c24d94235680bcf0c,5,1,0
+tests/test_stage_s_retention_pilot.py,Regression or protocol test.,73,2666,c35dbce4b80a1975770a92e9181c92cc1d850e0c615e1dada87d5fd5f65066b5,6,1,0
+tests/test_statistics.py,Regression or protocol test.,120,4875,c5765409635611efd9610ebbd440b028b2e8ec345c8426574607ddc9c91df64b,7,1,0
+tests/test_task_data.py,Regression or protocol test.,186,7156,0ac81ba2311934595c262ed1559b5c7c7704e1ef84497121546ed5725637e514,8,1,0
+tests/test_task_runner_protocol.py,Regression or protocol test.,95,3634,19e8081cffb95a12656648f12b4437768a08f297e8daadbf0637253def25f3e5,8,1,0
+tests/test_tokenization.py,Regression or protocol test.,60,2135,95b49708a42cbdf9b9946c1d731424cf7d1b00357ad4ed1ded641d9eef860578,7,1,0
+tests/test_training.py,Regression or protocol test.,200,7038,9d75fa3790e72f15a0749bfc07db0f07604d0aaadedf2f9954339e10286a14f7,10,1,0
+tools/acquire_pretraining_corpus.py,Data or artifact preparation utility.,337,13995,84580ac573aafa812888908ba93e3e6bcb7738fa224f88951d819f239313a3ed,18,0,12
+tools/adopt_stage_s_retention_pilot.py,Experiment command-line utility.,173,6772,fadf0f4e8fd6133d329a2dc37a5aae26c439c5f30aa34e24e85b89cca4bb0292,10,0,3
+tools/analyze_foundation_routing.py,Analysis and reporting utility.,154,6157,bb38c98949d6c21399454265cb58de747c793c2661af12f8abf45513c85671d3,6,0,3
+tools/analyze_human_evaluation.py,Analysis and reporting utility.,232,9969,ef14fe43e73b2ca29d7fd2c0bec10243ce73c2d777180d3d065793c16328b8ed,9,0,4
+tools/analyze_native_review.py,Analysis and reporting utility.,158,6509,d8f2a98a3d4ef453acae4285bf5c62583b93cfa66b71ec8da5633d899971baee,7,0,4
+tools/analyze_routing.py,Analysis and reporting utility.,227,10317,926d4a188e25cc9cafd220e39e166b6da0f41d7238feed3c451e27f0f67cca37,10,0,6
+tools/audit_cross_task_input_firewall.py,"Audit, verification, or validation utility.",148,5172,fc80378e4f52fa5fd70e31b3775c4567c2e431d2402e8b316eaee82f22619468,9,0,3
+tools/audit_development_fusion.py,"Audit, verification, or validation utility.",198,7401,c1c0dab5933c3eebe442e78a35260acb2a7359d8bead73ce55faeba45e827072,7,0,4
+tools/audit_local_archives.py,"Audit, verification, or validation utility.",984,37797,903fa44940a3d0ec4cf3756360b30994e7db8646c320b7337c9e596ef82fff7d,14,0,17
+tools/audit_q1_readiness.py,"Audit, verification, or validation utility.",420,19730,a8549a085a3fc112e60d0d971338af19fb3da0248ac1ff9f4da34c4fb8d4f239,6,0,7
+tools/audit_source_blind_baselines.py,"Audit, verification, or validation utility.",268,10728,ad301e58e19dc18dd75f73f7928c458bd43ced2ed256e59bdfa73ae09aedd6ba,13,0,8
+tools/benchmark_models.py,Experiment command-line utility.,177,5792,8181b355ec073bb2294d7d914cbda81241c1be218787808c1b15c296629e44b5,13,0,3
+tools/benchmark_task_inference.py,Experiment command-line utility.,217,7941,e8181956cfba97bf597b9f6a9d61fcddefd8b74a93ed0a8ebf2dc1ce15a68e8f,14,0,7
+tools/build_final_dataset.py,Data or artifact preparation utility.,2142,84421,a493ea7c56b2b049057c324f61f665e4f149762caf58bb78d40585ebfdc13e1b,16,0,44
+tools/build_preliminary_manifest.py,Data or artifact preparation utility.,1064,38556,b2724f41ef8ab025b3838d6a9a898e87c1402189ef8846b7b05d3fbff4bcd9fc,12,1,21
+tools/build_q1_manuscript.py,Data or artifact preparation utility.,462,36358,17ae16223feb02bb0fe79d3c44b1cc65cb3edb0ba97e7be27a8c394826391dd4,7,0,7
+tools/capture_environment.py,Experiment command-line utility.,85,3021,b48a2471962098c973555a85c646564dff6675aba773fab14d22455934ad6a92,9,0,3
+tools/evaluate_bidirectional_identification_locked.py,Evaluation entry point.,269,11400,9225393086e1a514d2c81912662c12f509eefe435b855ca64ed24e5fbbf569f7,17,0,3
+tools/evaluate_development_fusion_transfer.py,Evaluation entry point.,224,8925,47a5204158a2f6a90bf7cff4014eb9f5f09a0dfb5a98145c2816289abeacaf83,11,0,2
+tools/evaluate_external_locked.py,Evaluation entry point.,412,16670,d8bfdec91bb0ec247d48c4af6b7752009bff016ad7f799f2c3110add56c41b29,19,1,9
+tools/evaluate_locked.py,Evaluation entry point.,698,29308,108de1ce046e218883d49c4137400827979db93a17749f053ffdf6dccb90f64f,19,0,12
+tools/evaluate_robustness.py,Evaluation entry point.,501,22295,fdb04a44a588524937d3ab4a385a94ffdaf5e99f70224f5f4c7cf0af1bd6bc53,19,0,6
+tools/fetch_external_sources.py,Experiment command-line utility.,306,11452,2bf297056ce35d3c837d521a705dfbc0b78209de488852f20a7a1a81819d6171,13,0,9
+tools/freeze_protocol.py,Protocol-freeze utility.,635,26107,5365404051e9a5e2e30a4a2c186bcc0fcd4b1950cdb4888bed2c6bcb2cb919ee,9,0,7
+tools/make_paper_figures.py,"Figure, table, or report generation utility.",1663,66048,25a33de1a77ebcf81dc1b42921a481a4fa21d712e4c006fb121f55348678f788,10,0,25
+tools/make_paper_tables.py,"Figure, table, or report generation utility.",563,23486,6fc33259569a88efefdcbef1c7824dc5f83bc3b61b926a0031da71e98e4c25d8,5,0,6
+tools/make_q1_figure_suite.py,"Figure, table, or report generation utility.",1425,66116,232c8563907c1630c61e6bacfccd80266d05120856aac69f00a875a92bc7e8bf,12,0,19
+tools/plot_final_dataset.py,"Figure, table, or report generation utility.",200,6879,3d6b16b69ef9ecb821ff64468ee7acab176bab89ba5ceb48706ac4fe2611a4d2,6,0,6
+tools/preflight_task_models.py,Experiment command-line utility.,142,5414,44ce364723cc57b99a436e9b5c94c31eab5d5800a3879562d32d2ef744397785,11,0,1
+tools/prepare_human_evaluation.py,Data or artifact preparation utility.,176,7414,cd913d90acdcd87faaf9a38d16dd510befc04688d421bef24539478a45ac08d4,7,0,4
+tools/prepare_pretraining_blocks.py,Data or artifact preparation utility.,131,4671,cb62921c2467664375c49d830ed466f6ae7cc23e7a922dc5007f1db5bc0526b2,10,0,3
+tools/prepare_replay_cache.py,Data or artifact preparation utility.,106,3895,d8f94ed66c3dff20bc53853c6a570299f2cbaa72b4a6be823fe63114dcdaaf17,10,0,3
+tools/prepare_task_cache.py,Data or artifact preparation utility.,157,5534,9a887776e0ea30f9cf430ece892967dffe4fcd0fe62c2662adbd3420fd4c7e6e,8,0,3
+tools/run_ablation_suite.py,Pipeline orchestration utility.,107,3297,8b5722c47a29f779c0875b346e5cb7a6936cb028a2cfc67ba7e4a844d457e09e,9,0,3
+tools/run_bidirectional_identification.py,Pipeline orchestration utility.,371,14320,2ac585b8173ea25887bb0fc4e0209e996264e8230dece04c460d46fc715536a6,19,0,8
+tools/run_classical_baselines.py,Pipeline orchestration utility.,338,14204,895866118a1ff0f2eec33dfc055033fc6ea94ede5f807025c70e546e8473664b,22,0,9
+tools/run_continuation_lr_pilot.py,Pipeline orchestration utility.,164,7066,895dd22b5b9acf67bc09ce8ccf1504407f64c440f56fe2a7dbf01c7e316fd1f4,9,0,4
+tools/run_full_pipeline.py,Pipeline orchestration utility.,290,11356,e3258d0116fbf6d9c5bddb96ea46150d69af34dae97ab17b8342341462e1c3f4,8,0,7
+tools/run_identification_fusion_pilot.py,Pipeline orchestration utility.,226,9434,caa28bef7461073448ff87de366323f6d4fb63206e735940ca2d484b558868bf,11,0,4
+tools/run_normalization_fusion_pilot.py,Pipeline orchestration utility.,456,18353,35b60b362009eb896f72885c359076c46e1cdb989db4f2fc118ce6bfa9ea5bb3,15,0,5
+tools/run_optimizer_pilot.py,Pipeline orchestration utility.,113,3845,1e8fba5891200edef7595d4f1ea03c88f662a98cf6c3c5780f356a49a12dfc5f,8,0,3
+tools/run_stage_s_retention_pilot.py,Pipeline orchestration utility.,375,14764,10f9f0b824cc1a6fc12b64f77ec2db1d5d16bd5efa36b7671b327936929c4806,16,0,8
+tools/run_statistics.py,Pipeline orchestration utility.,640,25196,7426dc085acdcdd395bbd1f650bc18f9ef4d5603e757d552973c04a6ff3dffe2,12,0,21
+tools/run_task_experiments.py,Pipeline orchestration utility.,833,35010,15b1098b507b4d7c8fda770d56dff02c2a47bf5c2f4529096ce7b7b389219d16,23,0,14
+tools/run_tokenizer_proxy.py,Pipeline orchestration utility.,450,18772,251cd58ce4db49f9ce46f20bc745d69f0dd53ec4cdeb087913002d38ff90e42a,23,0,8
+tools/select_switch_router.py,Experiment command-line utility.,129,5256,c82fc88a2327a27dea589512d37208a13510b5a8a42805290ce3b7b15842b03c,5,0,3
+tools/select_upcycling_strategy.py,Experiment command-line utility.,157,6359,cdb20aa9fa6fc2c31b6ac6ee159e246267f44792839e72d0063231b538240f7b,5,0,3
+tools/summarize_development_results.py,Analysis and reporting utility.,257,9909,3567517794c9dd30eca98f5b27f9acdd51bff4412d17acb804a5fb3cd3cca149,6,0,5
+tools/supervise_full_pipeline.py,Pipeline orchestration utility.,207,6640,59d5cd9b7407d893b6d59005391644bbd380b54b5f728901f3d83fd5aa457575,9,0,8
+tools/train_external_identification.py,Training entry point.,339,14859,b1b5013eef92cc7e362dee9b78fdff159abd77962c5bdae759d6db04515d32ea,20,1,7
+tools/train_external_normalization.py,Training entry point.,313,13390,06d285a76e632add97dfc9d565ff29eea17037a82f3b3d496653eaf66d0496b4,18,1,5
+tools/train_foundation.py,Training entry point.,547,26112,0402c4889a4a1edf9d57ae80bfa7b77f6aa620ff96df8a5da168598f578e59de,18,0,3
+tools/train_tokenizer_candidates.py,Training entry point.,234,9820,60c91acbfd4803a4dba343bdb38bb4dd364d292e84c0dd65682a0908b0745dde,16,0,5
+tools/validate_q1_bundle.py,"Audit, verification, or validation utility.",116,4745,84bec10d4d2f2d5128b0b2e24b230c5cdfece7e8e1b3beaf942e92e2af14a917,6,0,2
+tools/verify_pretraining_sources.py,"Audit, verification, or validation utility.",46,1386,29d1d7cdf44dc9ba44c2e868cb89bf542572a288155099fd9c43779869a5bb56,6,0,1
